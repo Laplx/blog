@@ -1,6 +1,5 @@
 # Python 第三方库管理等问题
 
-> 申明：我是非专业电脑小白。  
 > 以下均为我在碰到类似问题搜索并尝试后自己判断的结论，**无法保证正确性与普适性**。  
 > 标有 [?] 为不清楚或待补充，[*] 为特殊情况或附注  
 > 欢迎指正和补充，希望有所帮助！  
@@ -87,6 +86,6 @@
 
 其他解决方案：各种重装、使用anaconda下的IDE（包都装了，基本不存在问题）
 
-<font face="Segoe Script" size=5>Laplace</font>
+
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />本作品采用<a rel="license" href="http://creativecommons.org/licenses/by/4.0/">知识共享署名 4.0 国际许可协议</a>进行许可。
