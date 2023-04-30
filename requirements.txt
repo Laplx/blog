@@ -1,0 +1,4 @@
+jupyter-book>=0.7.0b
+matplotlib
+numpy
+importlib-metadata==4.13.0

@@ -1,10 +1,12 @@
 # Python 第三方库管理等问题
 
-> 以下均为我在碰到类似问题搜索并尝试后自己判断的结论，**无法保证正确性与普适性**。  
-> 标有 [?] 为不清楚或待补充，[*] 为特殊情况或附注  
-> 欢迎指正和补充，希望有所帮助！  
-> 如果发现本文对你没有帮助，请上网探索：  
-> <鸣谢> CSDN  知乎  官方文档  SatckOverflow  博客园  掘金  其他网站
+```{note}
+以下均为我在碰到类似问题搜索并尝试后自己判断的结论，**无法保证正确性与普适性**。  
+标有 [?] 为不清楚或待补充，[*] 为特殊情况或附注  
+欢迎指正和补充，希望有所帮助！  
+如果发现本文对你没有帮助，请上网探索：  
+<鸣谢>  CSDN  知乎  官方文档  SatckOverflow  博客园  掘金  其他网站
+```
 
 ### 1. 导入库失败
 
@@ -50,39 +52,41 @@
 （我发现有些安装选择了Global，不过在用户文件夹下似乎有一个'代理'的地方[?]，环境变量直接使用WindowsApps下的地址非根权限会拒绝访问）  
 一般ipython在anaconda3\Scripts下，打开后 `pwd` 可能不同
 
-- [*] 小白学习时间：
+```{admonition} 小白学习时间
+:class: tip
 
-  .py默认运行方式可以到设置更改，如果想修改右键菜单，运行regedit添删注册表的项
+.py默认运行方式可以到设置更改，如果想修改右键菜单，运行regedit添删注册表的项
 
-  vscode ctrl+shift+P调出设置搜索 Python: Select Interpreter 查看并更换Python解释器
+vscode ctrl+shift+P调出设置搜索 Python: Select Interpreter 查看并更换Python解释器
 
-  白色图标的是pyw文件，运行不弹窗  
-  带火箭的是Python Launcher，它根据文件头说明选择版本运行  
-  pyc为二进制文件，即解释前先编译成的字节码（PythonCodeObject，可反编译），
-  当被作为模块导入时会生成（运行后认为要写回硬盘，节省下次加载的时间），存于\__pycache__文件夹
+白色图标的是pyw文件，运行不弹窗  
+带火箭的是Python Launcher，它根据文件头说明选择版本运行  
+pyc为二进制文件，即解释前先编译成的字节码（PythonCodeObject，可反编译），
+当被作为模块导入时会生成（运行后认为要写回硬盘，节省下次加载的时间），存于\__pycache__文件夹
+```
 
-- 关于cmd命令：
+```{admonition} 关于cmd命令
+:class: tip
 
-  可用 where 查看 pip python 等命令的调用对象及优先级
+可用 where 查看 pip python 等命令的调用对象及优先级
 
-  直接下方查找栏找环境变量设置比较快  
-  命令会先搜索系统变量后搜索用户变量  
-  命令行终端需要重开才能更新环境变量等设置
+直接下方查找栏找环境变量设置比较快  
+命令会先搜索系统变量后搜索用户变量  
+命令行终端需要重开才能更新环境变量等设置
 
-  python.exe位于的文件夹路径决定了python命令，一般pip可能位于本文件夹或其\Scripts下
+python.exe位于的文件夹路径决定了python命令，一般pip可能位于本文件夹或其\Scripts下
 
-  通常 `python3.10 -m pip` 可以管理特定3.10版本的解释器
+通常 `python3.10 -m pip` 可以管理特定3.10版本的解释器
+```
 
-- [?] `pip` 与 `conda` ：
+ `pip` 与 `conda` ：
 
-  conda install 安装在anaconda3/pkgs下，conda能够管理各环境而pip只对特定环境进行包管理  
-  pip install（conda里的python的pip）安装在Lib/site-packages，这个文件夹有可能不认需要添加
+conda install 安装在anaconda3/pkgs下，conda能够管理各环境而pip只对特定环境进行包管理  
+pip install（conda里的python的pip）安装在Lib/site-packages，这个文件夹有可能不认需要添加
 
-  conda命令一直停留在 `Solving environment` 的问题：翻墙（从网上看可能还有其他不少原因会导致）
+conda命令一直停留在 `Solving environment` 的问题：翻墙（从网上看可能还有其他不少原因会导致）
 
-  `conda activate` 激活环境，'base'是基础环境，可以尝试virtualenv，使用环境隔离
-
-（写不动了:joy:）
+`conda activate` 激活环境，'base'是基础环境，可以尝试virtualenv，使用环境隔离
 
 其他解决方案：各种重装、使用anaconda下的IDE（包都装了，基本不存在问题）
 
