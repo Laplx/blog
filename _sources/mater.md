@@ -7,3 +7,11 @@ I share useful or interesting topics and materials, including my own exploration
 **目录**
 
 红楼梦与语言统计学
+
+---
+
+```{warning}
+作者（Laplx）对‘周五碎笔’内全部内容享有著作权。
+
+The author (Laplx) holds copyright to all content in 'Frivolous Friday'.
+```
