@@ -1,15 +1,17 @@
-# 首页
+# 首页 Welcome
 
-<font size=8 color= ＃1E90FF>My Blog</font>
+### 这里有什么？What's here?
 
-### 这里有什么？
+这里是 <font size=5 color=#00EEEE><i>Laplx</i></font> 的博客。
 
-这里什么都没有。
+我会分享我创作和收集的一些文件资料、课题与想法。
 
-### 山姆是巨头吗？
+也许在我真正制作了个人网站后会补充更多的介绍。
 
-是。
+This is my blog. I create ideas, make studies and share informations here.
 
----
+### 怎么联系我？Want to contact me?
 
-<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />本作品采用<a rel="license" href="http://creativecommons.org/licenses/by/4.0/">知识共享署名 4.0 国际许可协议</a>进行许可。
+邮箱 email：laplx@outlook.com
+
+单位 affiliation：复旦大学经济学院 School of Economics, Fudan University, Shanghai
