@@ -2,11 +2,11 @@
 
 ### 这里有什么？What's here?
 
-这里是 <font size=5 color=#00EEEE><i>Laplx</i></font> 的博客。
+这里是 <font size=5 color=#006699><i>Laplx</i></font> 的博客。
 
 我会分享我创作和收集的一些文件资料、课题与想法。
 
-也许在我真正制作了个人网站后会补充更多的介绍。
+（也许在我真正制作了个人网站后会补充更多的介绍。）
 
 This is my blog. I create ideas, make studies and share informations here.
 
