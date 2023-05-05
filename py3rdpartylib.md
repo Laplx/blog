@@ -89,7 +89,3 @@ conda命令一直停留在 `Solving environment` 的问题：翻墙（从网上�
 `conda activate` 激活环境，'base'是基础环境，可以尝试virtualenv，使用环境隔离
 
 其他解决方案：各种重装、使用anaconda下的IDE（包都装了，基本不存在问题）
-
-
-
-<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />本作品采用<a rel="license" href="http://creativecommons.org/licenses/by/4.0/">知识共享署名 4.0 国际许可协议</a>进行许可。
