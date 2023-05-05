@@ -10,8 +10,7 @@ I will upload one of my ideas, fantasies, or proposals every frivolous Friday, m
 
 ---
 
-```{warning}注意
-作者（Laplx）对“周五碎笔”内全部内容享有著作权。<br>
+作者（Laplx）对“周五碎笔”内全部内容享有著作权。
+
 The author (Laplx) holds copyright to all content in 'Frivolous Friday'.
-```
 
