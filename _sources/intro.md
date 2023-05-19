@@ -2,7 +2,7 @@
 
 ### 这里有什么？What's here?
 
-这里是 <font size=5 color=#006699><i>Laplx</i></font> 的博客。
+这里是 <font size=5 color=#006699><i>Laplx</i></font> 的 GithubPage 博客。
 
 我会分享我创作和收集的一些文件资料、课题与想法。
 
