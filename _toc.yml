@@ -7,5 +7,6 @@
     - file: hlm/hlm_index
 - file: wonder
   sections:
+    - file: wonder/23.5.19
     - file: wonder/23.5.12
     - file: wonder/23.5.5
