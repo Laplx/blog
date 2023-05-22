@@ -11,19 +11,19 @@
 
 **打卡的对数正态分布？**
 
-<img src="./SwarmTex/qq.png" alt="qq"/>
+<img src="./SwarmTex/qq.png">
 
 **用户偏好的因子模型？**
 
-<img src="./SwarmTex/fac2_oblique.png" alt="fac"/>
+<img src="./SwarmTex/fac2_oblique.png">
 
-<img src="./SwarmTex/group.png" alt="gr"/>
+<img src="./SwarmTex/group.png">
 
 **判别本地还是外来？**
 
-<img src="./SwarmTex/disc.png" alt="disc"/>
+<img src="./SwarmTex/disc.png">
 
-![err](./SwarmTex/err_f.png)
+<img src="./SwarmTex/err_f.png">
 
 ---
 
