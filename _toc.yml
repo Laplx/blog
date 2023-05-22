@@ -4,6 +4,7 @@
     - file: py3rdpartylib
 - file: mater
   sections:
+    - file: swarm/Swarm.md
     - file: hlm/hlm_index
 - file: wonder
   sections:

@@ -14,7 +14,7 @@ I will upload one of my ideas, fantasies, or proposals every frivolous Friday, m
 
 ---
 
-作者（Laplx）对“周五碎笔”内全部内容享有著作权。
+作者（Laplx）对“周五碎笔”内**全部内容享有著作权**。
 
-The author (Laplx) holds copyright to all content in 'Frivolous Friday'.
+The author (Laplx) **holds copyright to all content** in 'Frivolous Friday'.
 
