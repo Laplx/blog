@@ -11,26 +11,26 @@
 
 **打卡的对数正态分布？**
 
-<img src="./SwarmTex/qq.png">
+![](./SwarmTex/qq.png)
 
 **用户偏好的因子模型？**
 
-<img src="./SwarmTex/fac2_oblique.png">
+![](./SwarmTex/fac2_oblique.png)
 
-<img src="./SwarmTex/group.png">
+![](./SwarmTex/group.png)
 
 **判别本地还是外来？**
 
-<img src="./SwarmTex/disc.png">
+![](./SwarmTex/disc.png)
 
-<img src="./SwarmTex/err_f.png">
+![](./SwarmTex/err_f.png)
 
 ---
 
 下载链接：
 
-<a href="./SwarmData.zip" download>原数据集</a>
+<a href="./SwarmData.zip" download="./SwarmData.zip">原数据集</a>
 
-<a href="./Swarm.pdf" download>(几乎)完整报告</a>
+<a href="./Swarm.pdf" download="./Swarm.pdf">(几乎)完整报告</a>
 
-<a href="./SwarMatlab.zip" download>源代码</a>（包括实时脚本、函数及工作区快照，较大）
+<a href="./SwarMatlab.zip" download="./SwarMatlab.zip">源代码</a>（包括实时脚本、函数及工作区快照，较大）
