@@ -1,4 +1,4 @@
-# 打卡软件 Swarm
+# 打卡软件Swarm
 
 > Swarm 是 4sq 的一款依靠签到的社交应用。用户可以在自己感兴趣的地点打卡发照片，展示给好友。
 >
@@ -9,21 +9,21 @@
 >
 > 众所周知位置信息具有非常巨大的商业价值。
 
-#### 打卡的对数正态分布？
+**打卡的对数正态分布？**
 
-![qq](\SwarmTex\qq.png)
+<img src="./SwarmTex/qq.png" alt="qq" style="zoom:67%;" />
 
-#### 用户偏好的因子模型？
+**用户偏好的因子模型？**
 
-![fac](\SwarmTex\fac2_oblique.png)
+<img src="./SwarmTex/fac2_oblique.png" alt="fac" style="zoom:67%;" />
 
-![gr](\SwarmTex\group.png)
+<img src="./SwarmTex/group.png" alt="gr" style="zoom: 50%;" />
 
-#### 判别本地还是外来？
+**判别本地还是外来？**
 
-![disc](\SwarmTex\disc.png)
+<img src="./SwarmTex/disc.png" alt="disc" style="zoom: 33%;" />
 
-![err](\SwarmTex\err_f.png)
+![err](./SwarmTex/err_f.png)
 
 ---
 
@@ -33,4 +33,4 @@
 
 <a href="Swarm.pdf" download>(几乎)完整报告</a>
 
-<a href="SwarMatlab.zip" download>源代码</a>（包括实时脚本、函数及工作区快照）
+<a href="SwarMatlab.zip" download>源代码</a>（包括实时脚本、函数及工作区快照，较大）

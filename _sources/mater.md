@@ -6,6 +6,8 @@ I share useful or interesting topics and materials, including my own exploration
 
 **目录**
 
+打卡软件Swarm数据分析报告
+
 红楼梦与语言统计学初探
 
 ---
