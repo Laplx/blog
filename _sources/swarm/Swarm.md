@@ -29,8 +29,8 @@
 
 下载链接：
 
-<a href="./SwarmData.zip" download="./SwarmData.zip">原数据集</a>
+{download}`原数据集 <./SwarmData.zip>`
 
-<a href="./Swarm.pdf" download="./Swarm.pdf">(几乎)完整报告</a>
+{download}`（几乎）完整数据报告 <./Swarm.pdf>`
 
-<a href="./SwarMatlab.zip" download="./SwarMatlab.zip">源代码</a>（包括实时脚本、函数及工作区快照，较大）
+{download}`源码 <./SwarmMatlab.zip>`（包括实时脚本、函数及工作区快照，较大）
