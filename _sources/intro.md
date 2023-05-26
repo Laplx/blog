@@ -12,6 +12,6 @@ This is my blog. I create ideas, make studies and share informations here.
 
 ### 怎么联系我？Want to contact me?
 
-邮箱 email：laplx@outlook.com
+邮箱 email：laplx@outlook.com	laplx@qq.com (in China)
 
 单位 affiliation：复旦大学经济学院 School of Economics, Fudan University, Shanghai
