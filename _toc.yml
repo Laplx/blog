@@ -2,12 +2,14 @@
 - file: exper
   sections:
     - file: py3rdpartylib
+    - file: pyPEP8
 - file: mater
   sections:
     - file: swarm/Swarm.md
     - file: hlm/hlm_index
 - file: wonder
   sections:
+    - file: wonder/23.5.26
     - file: wonder/23.5.19
     - file: wonder/23.5.12
     - file: wonder/23.5.5

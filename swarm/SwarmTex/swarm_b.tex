@@ -54,7 +54,7 @@
 		
 		冒号后为其关键词列表，通过提取地点字段中名称是否包含该关键词进行归类。存在一定数量的地点未归入上述类别，暂不考虑这些特殊或小众的地点；注意以上类别数量总和反而超过了数据集签到条数，是由于部分地点同时带有两类关键词（具有两方面功能），应予以保留。当然，地点功能归类依靠人工设置关键词，必然存在少许偏颇、缺漏、类型不对等的情况，在后续（3.3节）中会进一步筛选和调整。
 		
-		随后读取 nyc\_local\_checkin.csv、nyc\_traveler\_checkin.csv、hk\_local\_checkin.csv、hk\_traveler\_checkin.csv、、sfo\_local\_checkin.csv、sfo\_traveler\_checkin.csv，调用 vent 函数并进行 tabulate 统计（纵轴为频数占比），得到
+		随后读取 nyc\_local\_checkin.csv、nyc\_traveler\_checkin.csv、hk\_local\_\\checkin.csv、hk\_traveler\_checkin.csv、sfo\_local\_checkin.csv、sfo\_traveler\_\\checkin.csv，调用 vent 函数并进行 tabulate 统计（纵轴为频数占比），得到
 		
 		\begin{figure}[h]
 			\centering

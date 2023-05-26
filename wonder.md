@@ -6,6 +6,8 @@ I will upload one of my ideas, fantasies, or proposals every frivolous Friday, m
 
 **目录**
 
+23.5.26  选课学导论
+
 23.5.19  朋友圈熵
 
 23.5.12  进校权限市场
