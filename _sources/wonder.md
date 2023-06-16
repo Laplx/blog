@@ -6,6 +6,8 @@ I will upload one of my ideas, fantasies, or proposals every frivolous Friday, m
 
 **目录**
 
+23.6.16  观测同态
+
 23.6.9  划线围格
 
 23.6.2  占有空位子

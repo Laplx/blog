@@ -8,8 +8,6 @@ I share useful or interesting topics and materials, including my own exploration
 
 打卡软件Swarm数据分析报告
 
-红楼梦与语言统计学初探
-
 ---
 
 作者（Laplx）对“课题探讨”内除标明出处的参考资料外的全部内容享有著作权。

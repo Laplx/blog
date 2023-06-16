@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>打卡软件 Swarm &#8212; My Blog</title>
+    <title>打卡软件Swarm数据分析报告 &#8212; My Blog</title>
   
   
   
@@ -64,7 +64,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'swarm/Swarm';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="红楼梦与语言统计学" href="../hlm/hlm_index.html" />
+    <link rel="next" title="周五碎笔 Friday" href="../wonder.html" />
     <link rel="prev" title="课题探讨 Research" href="../mater.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -164,10 +164,10 @@ const thebe_selector_output = ".output, .cell_output"
 </li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../mater.html">课题探讨 Research</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">打卡软件 Swarm</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../hlm/hlm_index.html">红楼梦与语言统计学</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../wonder.html">周五碎笔 Friday</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../wonder/23.6.16.html">Frivolity: Homomorphic Observation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../wonder/23.6.9.html">Frivolity: Dots and Boxes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../wonder/23.6.2.html">Frivolity: Choose Your Seat</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../wonder/23.5.26.html">Frivolity: Introduction to Roll Theory</a></li>
@@ -176,6 +176,12 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../wonder/23.5.5.html">Frivolity: Start and Bikes on Campus</a></li>
 </ul>
 </li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../idea.html">胡乱收录 Sundries</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../idea/toiletology.html">厕学</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../idea/xingqisiji.html">行乞寺记</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../know.html">个人讲义 Knowledge</a></li>
 </ul>
 
     </div>
@@ -310,7 +316,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>打卡软件 Swarm</h1>
+    <h1>打卡软件Swarm数据分析报告</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -325,12 +331,12 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="swarm">
-<h1>打卡软件 Swarm<a class="headerlink" href="#swarm" title="Permalink to this heading">#</a></h1>
+<h1>打卡软件Swarm数据分析报告<a class="headerlink" href="#swarm" title="Permalink to this heading">#</a></h1>
 <blockquote>
 <div><p>Swarm 是 4sq 的一款依靠签到的社交应用。用户可以在自己感兴趣的地点打卡发照片，展示给好友。</p>
 <p>本数据集中给出了三个城市范围内的签到数据和对应签到用户的个人信息数据，分别是纽约市（nyc）、旧金山（sfo）和香港（hk）。</p>
 <p>各城市的签到数据包括 8 个字段：用户 id，本地/外地，签到地点 id， 地点类型，地点类型 id，地点经度、纬度，签到时间。
-各城市对应签到的用 户数据包括 6 个字段：用户 id，本地/外地，男/女，签到发布数，照片发布 数，好友数。</p>
+各城市对应签到的用 户数据包括 6 个字段：用户 id，本地/外地，男/女，签到发布数，照片发布数，好友数。</p>
 <p>众所周知位置信息具有非常巨大的商业价值。本文仅仅作了一些初步的整理和观察。</p>
 </div></blockquote>
 <p><strong>打卡的对数正态分布</strong></p>
@@ -389,11 +395,11 @@ document.write(`
       </div>
     </a>
     <a class="right-next"
-       href="../hlm/hlm_index.html"
+       href="../wonder.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">红楼梦与语言统计学</p>
+        <p class="prev-next-title">周五碎笔 Friday</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
