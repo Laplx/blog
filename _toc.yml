@@ -16,7 +16,8 @@
     - file: wonder/23.5.19
     - file: wonder/23.5.12
     - file: wonder/23.5.5
-    sections:
-    title: 胡乱收录站 Sundries
-      - file: idea/toiletology
-      - file: idea/xingqisiji
+- file: idea
+  sections:
+    - file: idea/toiletology
+    - file: idea/xingqisiji
+- file: know
