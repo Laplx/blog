@@ -6,6 +6,7 @@
 - file: mater
   sections:
     - file: swarm/Swarm.md
+      title: 打卡软件 Swarm
 - file: wonder
   sections:
     - file: wonder/23.6.16
@@ -15,7 +16,7 @@
     - file: wonder/23.5.19
     - file: wonder/23.5.12
     - file: wonder/23.5.5
-  - caption: 胡乱收录站
     sections:
+    title: 胡乱收录站 Sundries
       - file: idea/toiletology
       - file: idea/xingqisiji
