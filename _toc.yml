@@ -6,12 +6,16 @@
 - file: mater
   sections:
     - file: swarm/Swarm.md
-    - file: hlm/hlm_index
 - file: wonder
   sections:
+    - file: wonder/23.6.16
     - file: wonder/23.6.9
     - file: wonder/23.6.2
     - file: wonder/23.5.26
     - file: wonder/23.5.19
     - file: wonder/23.5.12
     - file: wonder/23.5.5
+  - caption: 胡乱收录站
+    sections:
+      - file: idea/toiletology
+      - file: idea/xingqisiji
