@@ -8,9 +8,9 @@ I share my own notes here, most of which are extracted and adapted and some of w
 
 *Laplx* 多元统计讲义
 
-[*Laplx* 物理竞赛笔记（上）](know/phy-1.pdf)
+{doc}`*Laplx* 物理竞赛笔记（上） <know/phy-1.pdf>`
 
-[*Laplx* 物理竞赛笔记（下）](know/phy-2.pdf)
+{doc}`*Laplx* 物理竞赛笔记（下） <know/phy-2.pdf>`
 
 ---
 
