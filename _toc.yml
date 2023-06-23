@@ -9,6 +9,7 @@
       title: 打卡软件 Swarm
 - file: wonder
   sections:
+    - file: wonder/23.6.23
     - file: wonder/23.6.16
     - file: wonder/23.6.9
     - file: wonder/23.6.2
