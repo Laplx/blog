@@ -4,6 +4,10 @@
 
 I share my own notes here, most of which are extracted and adapted and some of which are original. Please be sure to contact me if you reprint.
 
+**个人图书**
+
+library.laplx.cc
+
 **下载目录**
 
 *Laplx* 多元统计讲义
