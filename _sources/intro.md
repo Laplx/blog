@@ -15,5 +15,3 @@ This is my blog. I create ideas, make studies and share informations here.
 邮箱 email：laplx@outlook.com  laplx@foxmail.com  ch@laplx.cc
 
 单位 affiliation：复旦大学经济学院 School of Economics, Fudan University, Shanghai
-
-本站 Github：github.com/laplx/blog
