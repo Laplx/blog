@@ -6,6 +6,8 @@ I will upload one of my ideas, fantasies, or proposals every frivolous Friday, m
 
 **目录**
 
+23.7.7  优秀的博弈家
+
 23.6.30  路在何方
 
 23.6.23  显著你的显著
