@@ -64,6 +64,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'hlm/hlm_index';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="周五碎笔 Friday" href="../wonder.html" />
+    <link rel="prev" title="打卡软件Swarm数据分析报告" href="../swarm/Swarm.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -154,17 +156,19 @@ const thebe_selector_output = ".output, .cell_output"
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
+        <ul class="current nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="../exper.html">经验记录 Notes</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../py3rdpartylib.html">Python 第三方库管理等问题</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../pyPEP8.html">Python 代码规范</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../mater.html">课题探讨 Research</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../mater.html">课题探讨 Research</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../swarm/Swarm.html">打卡软件 Swarm</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">红楼遗梦</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../wonder.html">周五碎笔 Friday</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../wonder/23.7.14.html">Frivolity: Semantic Information</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../wonder/23.7.7.html">Frivolity: Excellent Player</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../wonder/23.6.30.html">Frivolity: How to Get a Path</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../wonder/23.6.23.html">Notion: Hype Significance</a></li>
@@ -333,6 +337,25 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="id1">
 <h1>红楼梦与语言统计学浅探<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h1>
+<p>红楼遗梦——红楼梦作者有谁？胡适的前80后40之说是否正确？</p>
+<p>1987年，复旦大学李贤平教授的一篇《〈红楼梦〉成书新说》[1] 以一个全新的视角震动了红学界。其时作者自述用UWMadison的硬软件设备分析数月，当今俺花一天时间在pc上简单复现了文中的成果。</p>
+<p>为了获取高质量的文本，最后选择了直接爬取“红楼星语”网站。我以庚辰本（北大脂批本）作1-80回，81-120采用程乙本。（庚辰本1718未分回，李文中对半拆开）</p>
+<p>![](scatter plot.png)</p>
+<p><em>P1 以120回每回作为观测数据，以44个虚词和句长为特征，对应变换后在主平面的投影</em></p>
+<p><img alt="" src="../_images/clustering.png" /></p>
+<p><em>P2 以类卡方距离度量，类平均法递归的系统聚类图</em></p>
+<p>与 [1] 给出的主要论据“正视图”“聚类图”基本一致。可以看到两部分点有明显的分隔——前80回与后40回很可能出自截然不同的手笔。</p>
+<p>争议极大的1-5回（“曹第五次批阅说”）、17-18回、53回都得到了一定的支持。</p>
+<p>细分来看前80与后40均非浑然一体，李文还给出了许多激进的论断：前80由佚名《石头记》经曹雪芹《风月宝鉴》插入；及三次增删的具体回目；后40并非胡适所说高鹗一人而由曹家据遗稿补写，程刊高校而成；但同时回避了脂砚斋、曹頫等说的疑问。其后对此文章观点、方法论讨论不少。</p>
+<p><strong>reference</strong></p>
+<p>[1] 李贤平. (1987). 《红楼梦》成书新说. Fu Dan Xue Bao. She Hui Ke Xue Ban, (5), 3-16.</p>
+<p>[2] 施建军. (2010). 关于以《红楼梦》120回为样本进行其作者聚类分析的可信度问题研究. Hong Lou Meng Xue Kan, (5), 318-335.</p>
+<p>[3] 潘旭澜. (1987). 序《成书新说》. Fu Dan Xue Bao. She Hui Ke Xue Ban, (5), 17-18.</p>
+<p>[4] 碧峰. (1988). 《〈红楼梦〉成书新探》讨论会简述. Fu Dan Xue Bao. She Hui Ke Xue Ban, (1), 111-112.</p>
+<hr class="docutils" />
+<p>下载链接：</p>
+<p><a class="reference download internal" download="" href="../_downloads/b46c8cc1e1b6ab2486384edc94149856/text.zip"><code class="xref download docutils literal notranslate"><span class="pre">红楼梦文本</span></code></a>（网站文本、电子书转换的较脏文本，包含庚辰本、程乙本、当代校注本、脂评汇校本）</p>
+<p><a class="reference download internal" download="" href="../_downloads/8cd2993b988aeaafa8be7ab33e6ee038/code.zip"><code class="xref download docutils literal notranslate"><span class="pre">处理代码</span></code></a>（<em>Python</em>，包括爬虫、分析、变量数据）</p>
 </section>
 
     <script type="text/x-thebe-config">
@@ -366,6 +389,24 @@ document.write(`
   
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="../swarm/Swarm.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">打卡软件Swarm数据分析报告</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../wonder.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">周五碎笔 Friday</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div></div>
   
 </div>
