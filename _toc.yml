@@ -7,8 +7,11 @@
   sections:
     - file: swarm/Swarm.md
       title: 打卡软件 Swarm
+    - file: hlm/hlm_index.md
+      title: 红楼遗梦
 - file: wonder
   sections:
+    - file: wonder/23.7.14
     - file: wonder/23.7.7
     - file: wonder/23.6.30
     - file: wonder/23.6.23
