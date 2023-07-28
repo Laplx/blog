@@ -11,6 +11,8 @@
       title: 红楼遗梦
 - file: wonder
   sections:
+    - file: wonder/23.7.28
+    - file: wonder/23.7.21
     - file: wonder/23.7.14
     - file: wonder/23.7.7
     - file: wonder/23.6.30
@@ -26,4 +28,5 @@
   sections:
     - file: idea/toiletology
     - file: idea/xingqisiji
+    - file: idea/olympics
 - file: know
