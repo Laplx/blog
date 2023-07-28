@@ -66,8 +66,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'wonder/23.7.14';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Frivolity: Excellent Player" href="23.7.7.html" />
-    <link rel="prev" title="周五碎笔 Friday" href="../wonder.html" />
+    <link rel="next" title="Notion: Excellent Player" href="23.7.7.html" />
+    <link rel="prev" title="Frivolity: Winner - Take - All Game" href="23.7.21.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -159,7 +159,7 @@ const thebe_selector_output = ".output, .cell_output"
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="../exper.html">经验记录 Notes</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../exper.html">经验分享 Notes</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../py3rdpartylib.html">Python 第三方库管理等问题</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../pyPEP8.html">Python 代码规范</a></li>
 </ul>
@@ -170,8 +170,10 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 </li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../wonder.html">周五碎笔 Friday</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="23.7.28.html">Frivolity: Meme Alive</a></li>
+<li class="toctree-l2"><a class="reference internal" href="23.7.21.html">Frivolity: Winner - Take - All Game</a></li>
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">Frivolity: Semantic Information</a></li>
-<li class="toctree-l2"><a class="reference internal" href="23.7.7.html">Frivolity: Excellent Player</a></li>
+<li class="toctree-l2"><a class="reference internal" href="23.7.7.html">Notion: Excellent Player</a></li>
 <li class="toctree-l2"><a class="reference internal" href="23.6.30.html">Frivolity: How to Get a Path</a></li>
 <li class="toctree-l2"><a class="reference internal" href="23.6.23.html">Notion: Hype Significance</a></li>
 <li class="toctree-l2"><a class="reference internal" href="23.6.16.html">Frivolity: Homomorphic Observation</a></li>
@@ -186,6 +188,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1 has-children"><a class="reference internal" href="../idea.html">其他收录 Sundries</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../idea/toiletology.html">厕学</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../idea/xingqisiji.html">行乞寺记</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../idea/olympics.html">谈竞赛</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../know.html">个人资料 Knowledge</a></li>
@@ -356,7 +359,7 @@ document.write(`
 <p><span class="math notranslate nohighlight">\(I = I(主) I(谓) I(宾) + I(定) I(宾) + I(状) I(谓) + I(谓) I(补) + \cdots\)</span></p>
 <p>这个定义方式保证同样的几个实词，分成两句说和一句说有相同的信息量。</p>
 <p>虚词应该直接定义为信息量为0的词，如 <span class="math notranslate nohighlight">\(I(但)=0\)</span> <span class="math notranslate nohighlight">\(I(也)=0\)</span>。这个角度来说，’是’不能算虚词。</p>
-<p>目前认为 <span class="math notranslate nohighlight">\(I(是) = I(一定) = 1\)</span>、<span class="math notranslate nohighlight">\(I(有) = I(存在) = 1\)</span> 而 <span class="math notranslate nohighlight">\(I(不是) =  I(一定不) = 0\)</span>  <span class="math notranslate nohighlight">\(I(可能) &lt; 0\)</span>（到底多少还应细化可能的含义才可以确定）</p>
+<p>目前认为 <span class="math notranslate nohighlight">\(I(是) = I(一定) = 1\)</span>、<span class="math notranslate nohighlight">\(I(有) = I(存在) = 1\)</span> 而 <span class="math notranslate nohighlight">\(I(不是) =  I(一定不) = 0\)</span>、<span class="math notranslate nohighlight">\(I(可能) &lt; 0\)</span>（到底多少还应细化可能的含义才可以确定）</p>
 <p>以上关键词的信息量推导自众所周知的香农的概念，他的信息量无关语义，这里可以构造出对接的地方。我得到的是 <span class="math notranslate nohighlight">\(I(p) = p\log p + p\)</span>（具体过程问我）。</p>
 <p>容我解释一下，这个负信息量是有一定道理的。</p>
 <div class="math notranslate nohighlight">
@@ -369,7 +372,10 @@ I(而它不是红色) &gt; 0
 \end{split}\]</div>
 <p>一个很重要的概念是’无知信息量’。我们简单一想就会发现，语义的信息量是依赖于语境的，或者说相对于预设的。<span class="math notranslate nohighlight">\(I(2|1) = I(2\&amp;1) - I(1)\)</span> 而有些时候这个1句是隐藏的——所以我们需要一个不加预设的’无知信息量’。在你啥啥不懂的情况下突然告诉你它不是红色有什么用呢？还有无数种颜色可选。但为什么大家会认为有信息量？因为本来在大家眼里，它可能是红色的、黄色的、绿色的（一个分布），但现在排除掉一个了。在’可能是红色’这个（负的）语境下，这句话是有正信息量的。</p>
 <p>那么还有海量的实词，它们如何标定？一个非常的朴素的想法是，越稀有越有价值——考察搭配的概率。</p>
-<p>（空间和精力有限，先讲这么多……有想法欢迎交流）</p>
+<p>（下面是两个相关参考。空间精力有限，先讲这么多……有想法欢迎交流）</p>
+<p><strong>Reference</strong></p>
+<p>[1] 辛港涛 &amp; 樊平毅..语义信息论的回顾与展望. <em>中兴通讯技术</em>. DOI：10.12142/ZTETJ.202302003</p>
+<p>[2] <a class="reference external" href="http://survivor99.com/lcg/books/git/qt.htm%EF%BC%88%E6%B5%85%E8%B0%88%E8%AF%AD%E4%B9%89%E4%BF%A1%E6%81%AF%E8%AE%A1%E7%AE%97%EF%BC%89">http://survivor99.com/lcg/books/git/qt.htm（浅谈语义信息计算）</a></p>
 </section>
 </section>
 
@@ -405,12 +411,12 @@ I(而它不是红色) &gt; 0
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
-       href="../wonder.html"
+       href="23.7.21.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">周五碎笔 Friday</p>
+        <p class="prev-next-title">Frivolity: Winner - Take - All Game</p>
       </div>
     </a>
     <a class="right-next"
@@ -418,7 +424,7 @@ I(而它不是红色) &gt; 0
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Frivolity: Excellent Player</p>
+        <p class="prev-next-title">Notion: Excellent Player</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>

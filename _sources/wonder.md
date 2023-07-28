@@ -6,7 +6,11 @@ I will upload one of my ideas, fantasies, or proposals every frivolous Friday, m
 
 **目录**
 
-23.7.14 语义信息量
+23.7.28  流行的机制
+
+23.7.21  一个游戏
+
+23.7.14  语义信息量
 
 23.7.7  优秀的博弈家
 

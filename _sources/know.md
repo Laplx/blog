@@ -1,6 +1,6 @@
 # 个人资料 Knowledge
 
-我会上传一些我学习所写的讲义，大部分经过改编，部分内容原创。转载请务必联系。
+我会上传一些我学习所写的讲义，部分经过改编，部分内容原创。转载请务必联系。
 
 I share my own notes here, most of which are extracted and adapted and some of which are original. Please be sure to contact me if you reprint.
 
