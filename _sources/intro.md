@@ -3,11 +3,10 @@
 <table bgcolor=#B2E2FF>
     <tr>
         <td><font face='Consolas' size=7>
-            <strong>半周年庆 🥳</strong>
+            <strong>    半周年庆 🥳    </strong>
         </td>
     </tr>
 </table>
-
 
 ### 这里有什么？What's here?
 
