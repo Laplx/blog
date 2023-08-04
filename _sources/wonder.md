@@ -6,6 +6,8 @@ I will upload one of my ideas, fantasies, or proposals every frivolous Friday, m
 
 **目录**
 
+23.8.4  步数模式
+
 23.7.28  流行的生命机制
 
 23.7.21  一个游戏
