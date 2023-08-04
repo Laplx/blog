@@ -1,16 +1,16 @@
 # 首页 Welcome
 
-<table bgcolor=#B2E2FF>
+<table bgcolor=#B2E2FF width='200%' align='center'>
     <tr>
-        <td><font face='Consolas' size=7>
-            <strong>    半周年庆 🥳    </strong>
+        <td><font size=6>
+            半周年庆 🥳
         </td>
     </tr>
 </table>
 
 ### 这里有什么？What's here?
 
-这里是 <font size=5 color=#006699><i>Laplx</i></font> 的 GithubPage 博客。
+这里是 <font size=4 color=#006699><i>Laplx (Hao Chen)</i></font> 的 GithubPage 博客。
 
 我会分享我创作和收集的一些文件资料、课题与想法。
 
