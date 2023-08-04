@@ -11,6 +11,7 @@
       title: 红楼遗梦
 - file: wonder
   sections:
+    - file: wonder/23.8.4
     - file: wonder/23.7.28
     - file: wonder/23.7.21
     - file: wonder/23.7.14
@@ -30,3 +31,7 @@
     - file: idea/xingqisiji
     - file: idea/olympics
 - file: know
+- file: others
+  sections:
+    - file: other/rglights
+    - file: other/planck
