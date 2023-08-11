@@ -6,6 +6,8 @@ There is some boring, funny and messy content.
 
 **目录**
 
+趣味问题集
+
 厕学
 
 行乞寺记
