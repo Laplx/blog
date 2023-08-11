@@ -1,13 +1,5 @@
 # 首页 Welcome
 
-<table bgcolor=#B2E2FF width='200%' align='center'>
-    <tr>
-        <td><font size=6>
-            半周年庆 🥳
-        </td>
-    </tr>
-</table>
-
 ### 这里有什么？What's here?
 
 这里是 <font size=4 color=#006699><i>Laplx (Hao Chen)</i></font> 的 GithubPage 博客。
@@ -23,3 +15,7 @@ This is my blog. I create ideas, make studies and share informations here.
 邮箱 email：laplx@outlook.com  laplx@foxmail.com  ch@laplx.cc
 
 单位 affiliation：复旦大学经济学院 School of Economics, Fudan University, Shanghai
+
+### 每周一句  Weekly sentence
+
+I think the next century will be the century of complexity. —— StephenHaking, 2000（斯蒂芬 . 霍金）
