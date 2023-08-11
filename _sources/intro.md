@@ -18,4 +18,4 @@ This is my blog. I create ideas, make studies and share informations here.
 
 ### 每周一句  Weekly sentence
 
-I think the next century will be the century of complexity. —— StephenHaking, 2000（斯蒂芬 . 霍金）
+I think the next century will be the century of complexity. —— Stephen Haking, 2000（斯蒂芬 . 霍金）
