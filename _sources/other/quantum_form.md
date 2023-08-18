@@ -11,23 +11,23 @@
 > 利用归一基 $\ket{a}$ 对应的算符 $\hat{P} = \ket{a} \bra{a}$ 可以求得态矢在其方向上的投影。类似地，可以将态矢按照本征函数集展开。
 > 
 > $$
-> \ket{ \mathfrak{I} } = \sum_{a} \ket{a} \braket{ a | \mathfrak{I} }
-> $$
+\ket{ \mathfrak{I} } = \sum_{a} \ket{a} \braket{ a | \mathfrak{I} }
+  $$
 > 
 > 通过确定在每个基矢 $\ket{a}$ 上的系数，我们可以确定对应的态。这种描述的态矢称为可测力学量 $A$ 对应的表象中的波函数。**不同表象间可以相互变换**，例如坐标表象和动量表象
 > 
 > $$
-> \begin{array}{l}
-> \ket{ \mathfrak{I} } = \sum_{r} \ket{r} \underbrace{ \braket{ r | \mathfrak{I} } }_{ \psi(r) } = \sum _{p} \ket{p} \underbrace{ \braket{ p | \mathfrak{I} } } _{ \phi(p) } = \sum _{p,r} \ket{p} \braket{ p | r} \braket{ r | \mathfrak{I} } \\
-> \phi(p) = \sum _{r} \braket{ p | r } \psi(r)
-> \end{array}
-> $$
+ \begin{array}{l}
+ \ket{ \mathfrak{I} } = \sum_{r} \ket{r} \underbrace{ \braket{ r | \mathfrak{I} } }_{ \psi(r) } = \sum _{p} \ket{p} \underbrace{ \braket{ p | \mathfrak{I} } } _{ \phi(p) } = \sum _{p,r} \ket{p} \braket{ p | r} \braket{ r | \mathfrak{I} } \\
+ \phi(p) = \sum _{r} \braket{ p | r } \psi(r)
+ \end{array}
+  $$
 > 
 > 考虑坐标表象中的动量本征函数 $\psi_{p}(r,t) = A(t) e^{ i \frac{p \cdot r}{\hbar} }$ ，有 $\ket{p} = \sum_{r} \ket{r} \psi_{p}(r)$ ， 即
 > 
 > $$
-> \braket{ r | p } = \psi_{p}(r) = \frac{1}{(2 \pi \hbar)^{3/2}} e^{ i \frac{ p \cdot r }{ \hbar } }
-> $$
+ \braket{ r | p } = \psi_{p}(r) = \frac{1}{(2 \pi \hbar)^{3/2}} e^{ i \frac{ p \cdot r }{ \hbar } }
+  $$
 > 
 > 作为理论自洽性的考量，还要证明两个表象下态矢的演化规律等价。
 
@@ -58,20 +58,20 @@ $$
 > 具体到坐标表象中， $\ket{\psi} = \sum_{r} \ket{r} \psi(r)$ ， $\hat{H} = \frac{\hat{p}^{2}}{2m} + V(\hat{r})$
 > 
 > $$
-> i\hbar \frac{\partial}{\partial t} \psi(r, t) = \left( - \frac{\hbar^{2}}{2m} \nabla^{2} + V(r) \right) \psi(r, t)
-> $$
+ i\hbar \frac{\partial}{\partial t} \psi(r, t) = \left( - \frac{\hbar^{2}}{2m} \nabla^{2} + V(r) \right) \psi(r, t)
+  $$
 > 
 > 我们一般先求解所谓定态 Schrodinger 方程
 > 
 > $$
-> \hat{H} \psi_{E}(r) = E \psi_{E}(r)
-> $$
+ \hat{H} \psi_{E}(r) = E \psi_{E}(r)
+  $$
 > 
 > 然后再将初态波函数以之为基底展开，求得任意时刻的波函数。（直接用上面的算符表达式计算波函数演化也行。）此后我们再求可测力学量 $\hat{A}$ 的本征函数
 > 
 > $$
-> \hat{A} \psi_{a}(r) = a \psi_{a}(r)
-> $$
+ \hat{A} \psi_{a}(r) = a \psi_{a}(r)
+  $$
 > 
 > 通过将某刻波函数与之做内积得到测量的概率分布。
 

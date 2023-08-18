@@ -6,7 +6,7 @@ I invite others to write something here.
 
 **ljh（山姆）**
 
-牛顿力学
+Newton 力学
 
 量子力学的形式理论
 

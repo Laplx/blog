@@ -123,10 +123,13 @@ $$
 **推论：保守力与能量守恒**
 
 在此基础上，若做功与路径无关，即外力为保守力
+
 $$
 \oint \mathbf{F}\cdot d\mathbf{r}=0 \iff \mathbf{F}=-\nabla V(\mathbf{r})
 $$
+
 有能量守恒
+
 $$
 T+V=E
 $$
@@ -136,11 +139,13 @@ $$
 ### Newton 第三定律
 
 弱形式
+
 $$
 \mathbf{F}_{ji} = - \mathbf{F}_{ij}
 $$
 
 强形式
+
 $$
 \mathbf{r}_{i} \times \mathbf{F}_{ji} + \mathbf{M}_{ji} + \mathbf{r}_{j} \times \mathbf{F}_{ij} + \mathbf{M}_{ij} = 0
 $$
@@ -150,17 +155,23 @@ $$
 结合牛顿定律，可以将数学规律概括为如下形式。
 
 n 点系统的运动为映射
+
 $$
 \mathbf{r}(t):\mathbf{I} \to \mathbb{R}^{3n}
 $$
+
 牛顿方程假设，存在映射
+
 $$
 \mathbf{F}(\mathbf{r},\dot{\mathbf{r}},t):\mathbb{R}^{3n}\times \mathbb{R}^{3n}\times \mathbb{R} \to \mathbb{R}^{3n}
 $$
+
 使
+
 $$
 \ddot{\mathbf{r}}=\mathbf{F}(\mathbf{r},\dot{\mathbf{r}},t)
 $$
+
 由常微分方程解的存在与唯一性定理，该映射与初始条件唯一决定一个运动，因此一个力学系统的初始位置和初速度唯一地决定其运动。
 
 ### 伽利略相对性原理
@@ -173,6 +184,7 @@ $$
 ### 守恒量
 
 在多质点系统中类似有
+
 $$
 \sum_{i}F_{i}^{(e)}=\frac{d}{dt} \sum_{i}m_{i}\dot{\mathbf{r}}_{i}
 $$
@@ -188,7 +200,8 @@ $$
 $$
 (dW_{外宏}+dQ+(-dE_{微})=dE_{宏})
 $$
-普遍情况见[[诺特定理]]。
+
+普遍情况见诺特定理。
 
 ### 质心
 
@@ -201,6 +214,7 @@ $$
 m \ddot{\mathbf{r}}_{c} = \sum \mathbf{F}_{i}^{(e)}
 $$
 可以推出质心像一个质点的守恒量，尤其是
+
 $$
 \sum \mathbf{F}_{i}^{(e)} \cdot d \mathbf{r}_{c} =d \left( \frac{1}{2} m \dot{r}_{c}^{2} \right)
 $$

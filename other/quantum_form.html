@@ -363,21 +363,21 @@ document.write(`
 <p>利用归一基 <span class="math notranslate nohighlight">\(\ket{a}\)</span> 对应的算符 <span class="math notranslate nohighlight">\(\hat{P} = \ket{a} \bra{a}\)</span> 可以求得态矢在其方向上的投影。类似地，可以将态矢按照本征函数集展开。</p>
 <div class="math notranslate nohighlight">
 \[
-&gt; \ket{ \mathfrak{I} } = \sum_{a} \ket{a} \braket{ a | \mathfrak{I} }
-&gt; \]</div>
+\ket{ \mathfrak{I} } = \sum_{a} \ket{a} \braket{ a | \mathfrak{I} }
+  \]</div>
 <p>通过确定在每个基矢 <span class="math notranslate nohighlight">\(\ket{a}\)</span> 上的系数，我们可以确定对应的态。这种描述的态矢称为可测力学量 <span class="math notranslate nohighlight">\(A\)</span> 对应的表象中的波函数。<strong>不同表象间可以相互变换</strong>，例如坐标表象和动量表象</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-&gt; \begin{array}{l}
-&gt; \ket{ \mathfrak{I} } = \sum_{r} \ket{r} \underbrace{ \braket{ r | \mathfrak{I} } }_{ \psi(r) } = \sum _{p} \ket{p} \underbrace{ \braket{ p | \mathfrak{I} } } _{ \phi(p) } = \sum _{p,r} \ket{p} \braket{ p | r} \braket{ r | \mathfrak{I} } \\
-&gt; \phi(p) = \sum _{r} \braket{ p | r } \psi(r)
-&gt; \end{array}
-&gt; \end{split}\]</div>
+ \begin{array}{l}
+ \ket{ \mathfrak{I} } = \sum_{r} \ket{r} \underbrace{ \braket{ r | \mathfrak{I} } }_{ \psi(r) } = \sum _{p} \ket{p} \underbrace{ \braket{ p | \mathfrak{I} } } _{ \phi(p) } = \sum _{p,r} \ket{p} \braket{ p | r} \braket{ r | \mathfrak{I} } \\
+ \phi(p) = \sum _{r} \braket{ p | r } \psi(r)
+ \end{array}
+  \end{split}\]</div>
 <p>考虑坐标表象中的动量本征函数 <span class="math notranslate nohighlight">\(\psi_{p}(r,t) = A(t) e^{ i \frac{p \cdot r}{\hbar} }\)</span> ，有 <span class="math notranslate nohighlight">\(\ket{p} = \sum_{r} \ket{r} \psi_{p}(r)\)</span> ， 即</p>
 <div class="math notranslate nohighlight">
 \[
-&gt; \braket{ r | p } = \psi_{p}(r) = \frac{1}{(2 \pi \hbar)^{3/2}} e^{ i \frac{ p \cdot r }{ \hbar } }
-&gt; \]</div>
+ \braket{ r | p } = \psi_{p}(r) = \frac{1}{(2 \pi \hbar)^{3/2}} e^{ i \frac{ p \cdot r }{ \hbar } }
+  \]</div>
 <p>作为理论自洽性的考量，还要证明两个表象下态矢的演化规律等价。</p>
 </div></blockquote>
 <p>由于实验上测得的都是可测力学量的概率分布，即 Hilbert 空间中态矢与可测力学量归一基底的内积模方。因而态矢的演化有两种视角，一种是认为力学量对应的算符及其特征矢量不随时间演化，而是态矢与能量本征矢量随时间演化（Schrodinger 绘景）；另一种是认为态矢与能量本征函数不随时间演化，而是力学量算符随时间演化（Heisenberg 绘景）。（为什么能量本征函数上的系数不变？）</p>
@@ -405,18 +405,18 @@ i \hbar \frac{d}{dt} \ket{\psi} = \hat{H} \ket{\psi} \\
 <div><p>具体到坐标表象中， <span class="math notranslate nohighlight">\(\ket{\psi} = \sum_{r} \ket{r} \psi(r)\)</span> ， <span class="math notranslate nohighlight">\(\hat{H} = \frac{\hat{p}^{2}}{2m} + V(\hat{r})\)</span></p>
 <div class="math notranslate nohighlight">
 \[
-&gt; i\hbar \frac{\partial}{\partial t} \psi(r, t) = \left( - \frac{\hbar^{2}}{2m} \nabla^{2} + V(r) \right) \psi(r, t)
-&gt; \]</div>
+ i\hbar \frac{\partial}{\partial t} \psi(r, t) = \left( - \frac{\hbar^{2}}{2m} \nabla^{2} + V(r) \right) \psi(r, t)
+  \]</div>
 <p>我们一般先求解所谓定态 Schrodinger 方程</p>
 <div class="math notranslate nohighlight">
 \[
-&gt; \hat{H} \psi_{E}(r) = E \psi_{E}(r)
-&gt; \]</div>
+ \hat{H} \psi_{E}(r) = E \psi_{E}(r)
+  \]</div>
 <p>然后再将初态波函数以之为基底展开，求得任意时刻的波函数。（直接用上面的算符表达式计算波函数演化也行。）此后我们再求可测力学量 <span class="math notranslate nohighlight">\(\hat{A}\)</span> 的本征函数</p>
 <div class="math notranslate nohighlight">
 \[
-&gt; \hat{A} \psi_{a}(r) = a \psi_{a}(r)
-&gt; \]</div>
+ \hat{A} \psi_{a}(r) = a \psi_{a}(r)
+  \]</div>
 <p>通过将某刻波函数与之做内积得到测量的概率分布。</p>
 </div></blockquote>
 <p>最后，作为一个应用，我们来讨论不确定原理与最小不确定波包。</p>
