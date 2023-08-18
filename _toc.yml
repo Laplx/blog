@@ -11,6 +11,7 @@
       title: 红楼遗梦
 - file: wonder
   sections:
+    - file: wonder/23.8.18
     - file: wonder/23.8.11
     - file: wonder/23.8.4
     - file: wonder/23.7.28
@@ -35,5 +36,7 @@
 - file: know
 - file: others
   sections:
+    - file: other/Newton
+    - file: other/quantum_form
     - file: other/rglights
     - file: other/planck
