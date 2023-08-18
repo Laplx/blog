@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>十字路口的选择 &#8212; My Blog</title>
+    <title>量子力学的形式理论 &#8212; My Blog</title>
   
   
   
@@ -63,11 +63,11 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'other/rglights';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'other/quantum_form';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Planck 公式在历史上是怎么诞生的" href="planck.html" />
-    <link rel="prev" title="量子力学的形式理论" href="quantum_form.html" />
+    <link rel="next" title="十字路口的选择" href="rglights.html" />
+    <link rel="prev" title="Newton 力学" href="Newton.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -198,8 +198,8 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="../know.html">个人资料 Knowledge</a></li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../others.html">友情特供 Column</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="Newton.html">Newton 力学</a></li>
-<li class="toctree-l2"><a class="reference internal" href="quantum_form.html">量子力学的形式理论</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">十字路口的选择</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">量子力学的形式理论</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rglights.html">十字路口的选择</a></li>
 <li class="toctree-l2"><a class="reference internal" href="planck.html">Planck 公式在历史上是怎么诞生的</a></li>
 </ul>
 </li>
@@ -257,7 +257,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../_sources/other/rglights.md" target="_blank"
+      <li><a href="../_sources/other/quantum_form.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -326,9 +326,7 @@ document.write(`
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="fa-solid fa-list"></span>
-</label>
+
 </div></div>
       
     </div>
@@ -339,24 +337,11 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>十字路口的选择</h1>
+    <h1>量子力学的形式理论</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
-            <div>
-                <h2> Contents </h2>
-            </div>
-            <nav aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">最简单的模型</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">过于理想化的因素</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">绿波带</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">改变右转的等待时间</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">另一种红绿灯策略</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">红绿灯的持续时间</a></li>
-</ul>
-            </nav>
         </div>
     </div>
 </div>
@@ -367,42 +352,95 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="id1">
-<h1>十字路口的选择<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h1>
-<section id="id2">
-<h2>最简单的模型<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h2>
-<p>假设城市的道路只有东南西北走向，起点与终点的方向固定。那么从起点到终点的所有最短路径长度都等于 1-范数，转过的角度必为 { 0, 左90, 右90 } 之一。</p>
-<p>考虑所有红绿灯的计时是独立同分布。假设右转一直可行，直行与左转持续时间相同，为四分之一个周期。那么假设路上的左转数为 x，直行数为 y，右转数为 z，总共转过角度 p = 0/1/-1 for { 0, +90, -90 }，总共经过路口数 n 一定。有小学二年级的方程</p>
+<h1>量子力学的形式理论<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h1>
+<p>系统的运动状态<strong>由 Hilbert 空间（所有平方可积函数构成的线性空间）中的一个矢量 <span class="math notranslate nohighlight">\(\ket{ \mathfrak{I} }\)</span> 描述</strong>。</p>
+<blockquote>
+<div><p><span class="math notranslate nohighlight">\(\ket{ \mathfrak{I} } \in \mathcal{H}\)</span> ， <span class="math notranslate nohighlight">\(\mathcal{H}\)</span> 可以为分立维空间，也可以为连续维空间。 <span class="math notranslate nohighlight">\(\bra{I} \in \mathcal{H}^{ * }\)</span> 为其对偶矢量，把矢量映射为一个数。对分立维矢量，其对应的左矢看作其 Hermitian 的左乘；对连续维矢量（函数），看作一个对积分的指定 <span class="math notranslate nohighlight">\(\int f^{ * }(x) [ \dots ] \mathrm{~d}^{3} x\)</span> 。</p>
+</div></blockquote>
+<p><strong>可测力学量与 Hermitian 算符一一对应</strong>，对可测力学量的观测结果必为其对应算符的本征值之一。将态矢 <span class="math notranslate nohighlight">\(\ket{ \mathfrak{ I } }\)</span> 按照其本征函数集做线性展开，得到的<strong>系数取模方即为测得对应本征态的概率。测量过后态矢坍缩为对应本征态</strong>。</p>
+<blockquote>
+<div><p>Hermitian 算符为 Hilbert 空间中的线性变换，且对应的矩阵为 Hermitian 矩阵（转置共轭等于自身）。由此可以证明，Hermitian 算符的本征值必为实数，属于不同本征值的本征函数必定正交。Dirac 取公理为，可测力学量对应的 Hermitian 算符必有一个正交完备的本征函数集。</p>
+<p>利用归一基 <span class="math notranslate nohighlight">\(\ket{a}\)</span> 对应的算符 <span class="math notranslate nohighlight">\(\hat{P} = \ket{a} \bra{a}\)</span> 可以求得态矢在其方向上的投影。类似地，可以将态矢按照本征函数集展开。</p>
+<div class="math notranslate nohighlight">
+\[
+&gt; \ket{ \mathfrak{I} } = \sum_{a} \ket{a} \braket{ a | \mathfrak{I} }
+&gt; \]</div>
+<p>通过确定在每个基矢 <span class="math notranslate nohighlight">\(\ket{a}\)</span> 上的系数，我们可以确定对应的态。这种描述的态矢称为可测力学量 <span class="math notranslate nohighlight">\(A\)</span> 对应的表象中的波函数。<strong>不同表象间可以相互变换</strong>，例如坐标表象和动量表象</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+&gt; \begin{array}{l}
+&gt; \ket{ \mathfrak{I} } = \sum_{r} \ket{r} \underbrace{ \braket{ r | \mathfrak{I} } }_{ \psi(r) } = \sum _{p} \ket{p} \underbrace{ \braket{ p | \mathfrak{I} } } _{ \phi(p) } = \sum _{p,r} \ket{p} \braket{ p | r} \braket{ r | \mathfrak{I} } \\
+&gt; \phi(p) = \sum _{r} \braket{ p | r } \psi(r)
+&gt; \end{array}
+&gt; \end{split}\]</div>
+<p>考虑坐标表象中的动量本征函数 <span class="math notranslate nohighlight">\(\psi_{p}(r,t) = A(t) e^{ i \frac{p \cdot r}{\hbar} }\)</span> ，有 <span class="math notranslate nohighlight">\(\ket{p} = \sum_{r} \ket{r} \psi_{p}(r)\)</span> ， 即</p>
+<div class="math notranslate nohighlight">
+\[
+&gt; \braket{ r | p } = \psi_{p}(r) = \frac{1}{(2 \pi \hbar)^{3/2}} e^{ i \frac{ p \cdot r }{ \hbar } }
+&gt; \]</div>
+<p>作为理论自洽性的考量，还要证明两个表象下态矢的演化规律等价。</p>
+</div></blockquote>
+<p>由于实验上测得的都是可测力学量的概率分布，即 Hilbert 空间中态矢与可测力学量归一基底的内积模方。因而态矢的演化有两种视角，一种是认为力学量对应的算符及其特征矢量不随时间演化，而是态矢与能量本征矢量随时间演化（Schrodinger 绘景）；另一种是认为态矢与能量本征函数不随时间演化，而是力学量算符随时间演化（Heisenberg 绘景）。（为什么能量本征函数上的系数不变？）</p>
+<p><strong>Schrodinger 绘景下，态矢的运动方程为</strong></p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \begin{array}{l}
-x - z = p \\
-x + y + z = n
+i \hbar \frac{d}{dt} \ket{\psi} = \hat{H} \ket{\psi} \\
+\ket{\psi(t)} = e^{ -i \frac{ \hat{H} t }{\hbar} } \ket{\psi(0)} = \hat{U} \ket{\psi(0)}
 \end{array}
 \end{split}\]</div>
-<p>是一组不定方程。C(1， -2， 1)<sup>T</sup> 是齐次方程的通解。我们希望总共的等待时间 <span class="math notranslate nohighlight">\(T = x + y\)</span> 最小，就是希望 z 最大，x 最大，y 最小，得到一个显然但不是那么有用的结论：我们应该优先选择左转或右转，尽量减少直行。</p>
-</section>
-<section id="id3">
-<h2>过于理想化的因素<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h2>
-<p>然而城市的道路不总是四四方方，不同道路的容量、流量、路况各不相同，不同转向的绿灯持续时间、转向消耗时间、危险性等各不相同，何况红绿灯间未必独立，也未必同规律。因此在路面上常出现以下几种情况。</p>
-</section>
-<section id="id4">
-<h2>绿波带<a class="headerlink" href="#id4" title="Permalink to this heading">#</a></h2>
-<p>假设车辆行驶速度一定，那么我们就可以通过控制直行道路上前后两个红灯的相位差，来使得一直直行的车辆不用等待红灯。再假设道路是四方等边长的，于是可以在每两个相邻十字路口都实现同样的事情。如此一来，直行的期望等待时间下降到了 0，两个直行的策略优于一个左转加一个右转。</p>
-<p>另一方面，在作者的臆想中，转弯的事故率总是大于直行。</p>
-</section>
-<section id="id5">
-<h2>改变右转的等待时间<a class="headerlink" href="#id5" title="Permalink to this heading">#</a></h2>
-<p>然而在前两天作者出门时，突然发现门口的红绿灯的右转灯规律发生了变化。原本的右转灯仅在其他转向灯情况变换时短暂地变为红灯，而现在则是在直行绿灯亮前始终保持红灯。如此一来，直行的等待时间也就不大于转弯了。不知这么设定是否也是基于安全考虑。</p>
-</section>
-<section id="id6">
-<h2>另一种红绿灯策略<a class="headerlink" href="#id6" title="Permalink to this heading">#</a></h2>
-<p>作者去其他城市游玩时还见到过一种其他的红绿灯方式：四个方向依次开始通行，转弯和直行同时绿灯。这么做的好处或许是节约车道？</p>
-</section>
-<section id="id7">
-<h2>红绿灯的持续时间<a class="headerlink" href="#id7" title="Permalink to this heading">#</a></h2>
-<p>由于某方向绿灯的时间占比是一定的，所以理论上绿灯时间只要能保证积累的车辆完全驶过路口即可。而行人一般比车辆要慢，这应该就是为何直行绿灯时间一般恰为行人过街时间。</p>
-<p>除此之外，还有行人过街红绿灯分段等问题。考虑到篇幅已经超出预算，在此就不讨论了。</p>
-<!-- 20230730 ljh --></section>
+<p>力学量期望的演化为</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{array}{l}
+\braket{A} &amp;= \bra{\psi(t)} \hat{A} \ket{\psi(t)} \\
+&amp;= \bra{\psi(0)} \hat{U}^{+} \hat{A} \hat{U} \ket{\psi(0)}
+\end{array}
+\end{split}\]</div>
+<p>后者为 Heisenberg 绘景。</p>
+<blockquote>
+<div><p>Heisenberg 绘景中， <span class="math notranslate nohighlight">\(\hat{A}(t) = \sum_{m,n} \ket{m} A_{m,n} e^{i \frac{ E_{m} - E_{n} }{\hbar} t } \bra{n}\)</span></p>
+</div></blockquote>
+<blockquote>
+<div><p>具体到坐标表象中， <span class="math notranslate nohighlight">\(\ket{\psi} = \sum_{r} \ket{r} \psi(r)\)</span> ， <span class="math notranslate nohighlight">\(\hat{H} = \frac{\hat{p}^{2}}{2m} + V(\hat{r})\)</span></p>
+<div class="math notranslate nohighlight">
+\[
+&gt; i\hbar \frac{\partial}{\partial t} \psi(r, t) = \left( - \frac{\hbar^{2}}{2m} \nabla^{2} + V(r) \right) \psi(r, t)
+&gt; \]</div>
+<p>我们一般先求解所谓定态 Schrodinger 方程</p>
+<div class="math notranslate nohighlight">
+\[
+&gt; \hat{H} \psi_{E}(r) = E \psi_{E}(r)
+&gt; \]</div>
+<p>然后再将初态波函数以之为基底展开，求得任意时刻的波函数。（直接用上面的算符表达式计算波函数演化也行。）此后我们再求可测力学量 <span class="math notranslate nohighlight">\(\hat{A}\)</span> 的本征函数</p>
+<div class="math notranslate nohighlight">
+\[
+&gt; \hat{A} \psi_{a}(r) = a \psi_{a}(r)
+&gt; \]</div>
+<p>通过将某刻波函数与之做内积得到测量的概率分布。</p>
+</div></blockquote>
+<p>最后，作为一个应用，我们来讨论不确定原理与最小不确定波包。</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{array}{l}
+\sigma_{A}^{2} \sigma_{B}^{2} &amp;= \braket{ (\hat{A} - \braket{A}) \psi | (\hat{A} - \braket{A}) \psi } \braket{ (\hat{B} - \braket{B}) \psi | (\hat{B} - \braket{B}) \psi } \\
+&amp;\geq \left\lvert \braket{ (\hat{A} - \braket{A}) \psi | (\hat{B} - \braket{B}) \psi } \right\rvert^{2} \\
+&amp;\geq \left\lvert \frac{1}{2i} ( \braket{ (\hat{A} - \braket{A}) \psi | (\hat{B} - \braket{B}) \psi } - \braket{ (\hat{B} - \braket{B}) \psi | (\hat{A} - \braket{A}) \psi } ) \right\rvert^{2} \\
+&amp;\geq \left( \frac{1}{2i} \braket{ [\hat{A}, \hat{B}] } \right)^{2}
+\end{array}
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[
+\iff (\hat{A} - \braket{A}) \psi = ia (\hat{B} - \braket{B}) \psi
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+\frac{d}{dt} \braket{A} = \frac{1}{i \hbar} \braket{ [\hat{A}, \hat{H}] } + \underbrace{ \braket{ \frac{\partial \hat{A}}{\partial t} } }_{\mathrm{usually = 0}}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+\sigma_{A} \sigma_{H} \geq \frac{\hbar}{2} \left\lvert \frac{d \braket{A}}{dt} \right\rvert \implies \frac{\sigma_{A}}{ \lvert d\braket{A}/dt \rvert } \sigma_{H} \geq \frac{\hbar}{2}
+\]</div>
 </section>
 
     <script type="text/x-thebe-config">
@@ -437,20 +475,20 @@ x + y + z = n
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
-       href="quantum_form.html"
+       href="Newton.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">量子力学的形式理论</p>
+        <p class="prev-next-title">Newton 力学</p>
       </div>
     </a>
     <a class="right-next"
-       href="planck.html"
+       href="rglights.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Planck 公式在历史上是怎么诞生的</p>
+        <p class="prev-next-title">十字路口的选择</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -463,25 +501,6 @@ x + y + z = n
             </div>
             
             
-              
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-  <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> Contents
-  </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">最简单的模型</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">过于理想化的因素</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">绿波带</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">改变右转的等待时间</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">另一种红绿灯策略</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">红绿灯的持续时间</a></li>
-</ul>
-  </nav></div>
-
-</div></div>
               
             
           </div>
