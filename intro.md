@@ -18,4 +18,10 @@ This is my blog. I create ideas, make studies and share informations here.
 
 ### 每周一句  Weekly sentence
 
-关关雎鸠，在河之洲。
+All knowledge is, in final analysis, history.
+
+All sciences are, in the abstract, mathematics.
+
+All judgements are, in their rationale, statistics.
+
+—— *Statistics and Truth*, C.R.Rao（劳，1920.9.10 - 2023.8.23）
