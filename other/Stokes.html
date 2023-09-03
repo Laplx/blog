@@ -168,7 +168,8 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../wonder.html">周五碎笔 Friday</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../wonder/23.8.25.html">Frivolity:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wonder/23.9.1.html">Frivolity: Theory of lazing in military training</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wonder/23.8.25.html">Frivolity: Currency Reverie</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../wonder/23.8.18.html">Notion: Templatization</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../wonder/23.8.11.html">Frivolity: Annealed Polity Emerges</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../wonder/23.8.4.html">Frivolity: WeRun Pattern</a></li>
@@ -366,7 +367,7 @@ document.write(`
   <section class="tex2jax_ignore mathjax_ignore" id="stokes">
 <h1>Stokes 公式<a class="headerlink" href="#stokes" title="Permalink to this heading">#</a></h1>
 <p>假设某界面上下有四束平面电磁波，介质 1 中入射与出射电磁波为 <span class="math notranslate nohighlight">\(\vec{E}_{1}, \vec{E}_{1}^{\prime}\)</span>，介质 2 中入射与出射电磁波为 <span class="math notranslate nohighlight">\(\vec{E}_{2}, \vec{E}_{2}^{\prime}\)</span>。</p>
-<p><img alt="图片" src="other/Stokes1.png" /></p>
+<p><img alt="图片" src="../_images/Stokes1.png" /></p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \begin{array}{l}
@@ -376,7 +377,7 @@ document.write(`
 \vec{E}_{2}^{\prime} = \mathrm{Re}{( \vec{E}_{2}^{\prime} e^{ i \vec{k}_{2}^{\prime} \cdot \vec{r} - i \omega t } )}
 \end{array}
 \end{split}\]</div>
-<p><img alt="图片" src="other/Stokes2.png" /></p>
+<p><img alt="图片" src="../_images/Stokes2.png" /></p>
 <p>简单起见，以下忽略 <span class="math notranslate nohighlight">\(\mathrm{Re}\)</span> 与 <span class="math notranslate nohighlight">\(\vec{E}\)</span>。当反向传播时采用 <span class="math notranslate nohighlight">\(\bar{E}\)</span> 作为记号，当 <span class="math notranslate nohighlight">\(\bar{E}_{i}^{\prime} = E_{i}\)</span> 时，<span class="math notranslate nohighlight">\(\bar{E}_{i} = E_{i}^{\prime}\)</span>。界面处的振幅反射率与振幅折射率定义为</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -406,18 +407,18 @@ r_{1}^{*} t_{1} + r_{2} t_{1}^{*} = 0
 <section id="id1">
 <h2>介质交界面处的等效系数<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h2>
 <p>以 s 光为例，Maxwell 方程组的边界条件为</p>
-<p><img alt="图片" src="other/Stokes3.png" /></p>
+<p><img alt="图片" src="../_images/Stokes3.png" /></p>
 <div class="math notranslate nohighlight">
 \[ \begin{align}\begin{aligned}
 \begin{array}{l}\\\begin{split}\varepsilon_{r1} \cdot 0 = \varepsilon_{r2} \cdot 0 \\\end{split}\\\begin{split}E_{1s} + E_{1s}^{\prime} = E_{2s} + E_{2s}^{\prime} \\\end{split}\\\begin{split}B_{1s} \sin \theta_{1} + B_{1s}^{\prime} \sin \theta_{1}^{\prime} = B_{2s} \sin \theta_{2} + B_{2s}^{\prime} \sin \theta_{2}^{\prime} \\\end{split}\\\begin{split}B_{1s} \cos \theta_{1} - B_{1s}^{\prime} \cos \theta_{1}^{\prime} = B_{2s} \cos \theta_{2} + B_{2s}^{\prime} \cos \theta_{2}^{\prime} \\\end{split}\\\begin{split}k_{1} E_{1} = \omega B_{1} \quad k_{1} E_{1}^{\prime} = \omega B_{1}^{\prime} \quad k_{1} = \sqrt{\varepsilon_{r1}} \frac{\omega}{c} \\\end{split}\\k_{2} E_{2} = \omega B_{2} \quad k_{2} E_{2}^{\prime} = \omega B_{2}^{\prime} \quad k_{2} = \sqrt{\varepsilon_{r2}} \frac{\omega}{c}\\\end{array}
 \end{aligned}\end{align} \]</div>
-<p><img alt="图片" src="other/Stokes4.png" /></p>
-<p>则考虑 <span class="math notranslate nohighlight">\(t = 0\)</span> 时刻空间中的电磁波，令所有的 <span class="math notranslate nohighlight">\(k\)</span> 反向，所有的 <span class="math notranslate nohighlight">\(B\)</span> 反向，则所有的 <span class="math notranslate nohighlight">\(E\)</span> 不变，上述方程依旧成立。注意上两张图中的 <span class="math notranslate nohighlight">\(E_{1}\)</span> 未必相等，而是由 Maxwell 方程组保证可能出现想等的情况。介质表面只有两个自由度（只有两束光是能任意选择大小的）。</p>
+<p><img alt="图片" src="../_images/Stokes4.png" /></p>
+<p>则考虑 <span class="math notranslate nohighlight">\(t = 0\)</span> 时刻空间中的电磁波，令所有的 <span class="math notranslate nohighlight">\(k\)</span> 反向，所有的 <span class="math notranslate nohighlight">\(B\)</span> 反向，则所有的 <span class="math notranslate nohighlight">\(E\)</span> 不变，上述方程依旧成立。注意上两张图中的 <span class="math notranslate nohighlight">\(E_{1}\)</span> 未必相等，而是由 Maxwell 方程组保证可能出现相等的情况。介质表面只有两个自由度（只有两束光是能任意选择大小的）。</p>
 </section>
 <section id="id2">
 <h2>介质板的等效系数<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h2>
 <p>介质板的相位偏移来源于内部光程，以介质薄膜为例，<span class="math notranslate nohighlight">\(E_{2} = 0\)</span>时</p>
-<p><img alt="图片" src="other/Stokes5.png" /></p>
+<p><img alt="图片" src="../_images/Stokes5.png" /></p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \begin{array}{l}
@@ -426,12 +427,12 @@ E_{2}^{\prime} = E_{1} ( t t^{\prime} e^{i \Delta \varphi^{\prime}} \sum_{j = 0}
 \end{array}
 \end{split}\]</div>
 <p>则考虑 <span class="math notranslate nohighlight">\(t = 0\)</span> 时刻空间中的电磁波，令所有的 <span class="math notranslate nohighlight">\(k\)</span> 反向，所有的 <span class="math notranslate nohighlight">\(B\)</span> 反向，则所有的 <span class="math notranslate nohighlight">\(E\)</span> 不变。由于光线反向传播所有的 <span class="math notranslate nohighlight">\(\Delta \varphi\)</span> 反号，<span class="math notranslate nohighlight">\(r, t, r^{\prime}, t^{\prime}\)</span> 为实数，因此新的 <span class="math notranslate nohighlight">\(\bar{E}_{1}, \bar{E}_{1}^{\prime}, \bar{E}_{2}, \bar{E}_{2}^{\prime}\)</span> 满足原本 <span class="math notranslate nohighlight">\(E_{1}^{*}, E_{1}^{\prime *}, E_{2}^{*}, E_{2}^{\prime *}\)</span> 间的关系。</p>
-<p><img alt="图片" src="other/Stokes6.png" /></p>
+<p><img alt="图片" src="../_images/Stokes6.png" /></p>
 </section>
 <section id="id3">
 <h2>构造<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h2>
 <p>假设初始只有 <span class="math notranslate nohighlight">\(E_{1} = 1\)</span> 入射，产生了 <span class="math notranslate nohighlight">\(E_{1}^{\prime} = r_{1}, E_{2}^{\prime} = t_{1}\)</span>。</p>
-<p><img alt="图片" src="other/Stokes7.png" /></p>
+<p><img alt="图片" src="../_images/Stokes7.png" /></p>
 <p><strong>对于两介质分界面</strong>，</p>
 <ol class="arabic simple">
 <li><p>构造 <span class="math notranslate nohighlight">\(\bar{E}_{1}^{\prime} = r_{1}\)</span>，产生 <span class="math notranslate nohighlight">\(\bar{E}_{1} = r_{1}^{2}, \bar{E}_{2} = r_{1} t_{1}\)</span>。将光线反向，振幅不变。</p></li>
@@ -444,7 +445,7 @@ r_{1}^{2} + t_{1} t_{2} = 1 \\
 r_{1} t_{1} + t_{1} r_{2} = 0
 \end{array}
 \end{split}\]</div>
-<p><img alt="图片" src="other/Stokes8.png" /></p>
+<p><img alt="图片" src="../_images/Stokes8.png" /></p>
 <p><strong>对于介质板的等效系数</strong></p>
 <ol class="arabic simple">
 <li><p>构造 <span class="math notranslate nohighlight">\(\bar{E}_{1}^{\prime} = r_{1}^{*}\)</span>，则出射光为 <span class="math notranslate nohighlight">\(\bar{E}_{1} = r_{1}^{*} r_{1}, \bar{E}_{2} = r_{1}^{*} t_{1}\)</span>。反向后为 <span class="math notranslate nohighlight">\(E_{1}^{\prime} = r_{1}, E_{1} = r_{1} r_{1}^{*}, E_{2} = r_{1} t_{1}^{*}\)</span>。</p></li>

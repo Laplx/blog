@@ -6,7 +6,9 @@ I will upload one of my ideas, fantasies, or proposals every frivolous Friday, m
 
 **目录**
 
-*23.8.25  下周前更新*
+23.9.1  军训偷懒学
+
+23.8.25  货币遐想
 
 23.8.18  模板化
 
