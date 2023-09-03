@@ -38,6 +38,7 @@
 - file: know
 - file: others
   sections:
+    - file: other/Stokes
     - file: other/Newton
     - file: other/quantum_form
     - file: other/rglights
