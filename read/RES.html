@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Newton 力学 &#8212; My Blog</title>
+    <title>RES &#8212; My Blog</title>
   
   
   
@@ -61,13 +61,9 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'other/Newton';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'read/RES';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="量子力学的形式理论" href="quantum_form.html" />
-    <link rel="prev" title="Stokes 公式" href="Stokes.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -158,7 +154,7 @@ const thebe_selector_output = ".output, .cell_output"
                 </a>
             </li>
         </ul>
-        <ul class="current nav bd-sidenav">
+        <ul class="nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="../exper.html">经验分享 Notes</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../py3rdpartylib.html">Python 第三方库管理等问题</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../pyPEP8.html">Python 代码规范</a></li>
@@ -200,12 +196,12 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../know.html">个人资料 Knowledge</a></li>
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="../others.html">友情特供 Column</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="Stokes.html">Stokes 公式</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">Newton 力学</a></li>
-<li class="toctree-l2"><a class="reference internal" href="quantum_form.html">量子力学的形式理论</a></li>
-<li class="toctree-l2"><a class="reference internal" href="rglights.html">十字路口的选择</a></li>
-<li class="toctree-l2"><a class="reference internal" href="planck.html">Planck 公式在历史上是怎么诞生的</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../others.html">友情特供 Column</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../other/Stokes.html">Stokes 公式</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../other/Newton.html">Newton 力学</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../other/quantum_form.html">量子力学的形式理论</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../other/rglights.html">十字路口的选择</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../other/planck.html">Planck 公式在历史上是怎么诞生的</a></li>
 </ul>
 </li>
 </ul>
@@ -262,7 +258,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../_sources/other/Newton.md" target="_blank"
+      <li><a href="../_sources/read/RES.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -344,7 +340,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Newton 力学</h1>
+    <h1>RES</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -354,21 +350,7 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#galileo">Galileo 时空</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">质点与质点组</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Newton 第一定律</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gailileo">Gailileo 变换</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Newton 第二定律</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Newton 第三定律</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">运动与牛顿方程</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">伽利略相对性原理</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">守恒量</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">质心</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">质心运动</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">质心系 (相对质心运动的描述以及地系到质心系的转化)</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">坐标系及参照系变换</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">2023.</a></li>
 </ul>
             </nav>
         </div>
@@ -380,234 +362,10 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="newton">
-<h1>Newton 力学<a class="headerlink" href="#newton" title="Permalink to this heading">#</a></h1>
-<section id="galileo">
-<h2>Galileo 时空<a class="headerlink" href="#galileo" title="Permalink to this heading">#</a></h2>
-<p>Galileo 模型把事件抽象为时空中的一个点，时空同胚于在 <span class="math notranslate nohighlight">\(\mathbb{R}\)</span> 上的四维仿射空间 <span class="math notranslate nohighlight">\(\mathcal{A}^{4}\)</span>。</p>
-<p>定义时间间隔 <span class="math notranslate nohighlight">\(t(a,b) \in \mathbb{R}\)</span> 使所有与某事件同时的事件构成一个三维仿射子空间 <span class="math notranslate nohighlight">\(\mathcal{A}^{3}\)</span>。这一附加结构指定了绝对时间。</p>
-<p>定义同时事件的空间间隔 <span class="math notranslate nohighlight">\(d(a,b)\)</span> 使得同时事件空间成为三维欧式空间 <span class="math notranslate nohighlight">\(\mathbf{E}^3\)</span>。</p>
-<p>某参照系 <span class="math notranslate nohighlight">\((O,\hat{e_{i}})\)</span> 指定任一时刻的原点位置和笛卡尔坐标系的三个方向。此时任意事件在该参考系下具有一个时间坐标和三个空间坐标 <span class="math notranslate nohighlight">\(a \mapsto (t,\mathbf{r})\)</span>。我们描述物理过程总是离不开参考系。上述两个假定保证了不同参照系间的时间间隔不变性和空间间隔不变性。</p>
-</section>
+  <section class="tex2jax_ignore mathjax_ignore" id="res">
+<h1>RES<a class="headerlink" href="#res" title="Permalink to this heading">#</a></h1>
 <section id="id1">
-<h2>质点与质点组<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h2>
-<p>质点是描述力学系统运动最基本的单元，其运动用 <span class="math notranslate nohighlight">\(\mathbf{r}(t)\)</span> 描述，具有内禀属性质量 m。</p>
-<p>复杂的力学系统可以分解成质点的集合，系统的内部性质由质点间的相互作用表示。对质点的作用用力表示。</p>
-<p>此时每个质点受到的力可以归结为外部作用力（包括保守力和非保守力）加上质点组内部的作用力。</p>
-<div class="math notranslate nohighlight">
-\[
-\mathbf{F}_{i}=\sum_{j\neq i} \mathbf{F}_{ji}+\mathbf{F}_{i}^{(e)}(+\mathbf{F}_{i}^{(s)})
-\]</div>
-</section>
-<section id="id2">
-<h2>Newton 第一定律<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h2>
-<p>有一类特殊的参照系，其时空平直，称为惯性系。惯性系中，自由质点有</p>
-<div class="math notranslate nohighlight">
-\[
-\ddot{\mathbf{r}}=0
-\]</div>
-<p>这是自然的，因为平直时空中不受外部作用的质点应当没有向任何方向运动的趋势。</p>
-<p>根据惯性系中自由质点的要求可推出两惯性系间有Galileo 变换。</p>
-</section>
-<section id="gailileo">
-<h2>Gailileo 变换<a class="headerlink" href="#gailileo" title="Permalink to this heading">#</a></h2>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\begin{pmatrix}
-t^{'} \\
-\mathbf{r}^{'} \\
-1
-\end{pmatrix}=
-\begin{pmatrix}
-1 &amp; 0 &amp; t_{0} \\
-\mathbf{v} &amp; \mathbf{R} &amp; x_{0} \\
-0 &amp; 0 &amp; 1
-\end{pmatrix}
-\begin{pmatrix}
-t \\
-\mathbf{r} \\
-1
-\end{pmatrix}
-\end{split}\]</div>
-<p>其中<span class="math notranslate nohighlight">\(\mathbf{R}^{T}\mathbf{R}=\mathbf{I}\)</span></p>
-<blockquote>
-<div><p>由于 Galileo 的假定，引入的参照系可以是非局域的。</p>
-</div></blockquote>
-<p><strong>推导</strong></p>
-<p>时空中某点 <span class="math notranslate nohighlight">\(P\)</span>，在两个参照系下的坐标为 <span class="math notranslate nohighlight">\((t,\mathbf{r}),(t^{'},\mathbf{r}^{'})\)</span>，考虑一个小偏移</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\left\{
-\begin{matrix}
-\mathrm{d} t^{'} = \mathrm{d} t \\
-\lvert \mathrm{d} \mathbf{r}^{'} \rvert = \lvert \mathrm{d} \mathbf{r} \rvert
-\end{matrix}
-\right.
-\end{split}\]</div>
-<p>代入到线性变换中得到</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\begin{pmatrix}
-\mathrm{d} t^{'} \\
-\mathrm{d} \mathbf{r}^{'}
-\end{pmatrix} =
-\begin{pmatrix}
-1 &amp; 0 \\
-\mathbf{v} &amp; \mathbf{R}
-\end{pmatrix}
-\begin{pmatrix}
-\mathrm{d} t \\
-\mathrm{d} \mathbf{r}
-\end{pmatrix}
-\end{split}\]</div>
-<div class="math notranslate nohighlight">
-\[
-\mathbf{R}^{T} \mathbf{R} = \mathbf{I}
-\]</div>
-<p>再由时空线性得到伽利略变换。</p>
-</section>
-<section id="id3">
-<h2>Newton 第二定律<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h2>
-<div class="math notranslate nohighlight">
-\[
-m \ddot{ \mathbf{r} } = \mathbf{F}
-\]</div>
-<p><span class="math notranslate nohighlight">\(\mathbf{F}\)</span> 反应质点受到的作用。<span class="math notranslate nohighlight">\(\mathbf{F}=\mathbf{F}^{(e)}+\mathbf{F}^{(s)}\)</span>，前者为外界对质点的作用，与参照系无关；后者为惯性力，反应某参照系下时空不再各向同性的贡献。<strong>此后研究问题默认在惯性系中。</strong></p>
-<p>尽管从因果逻辑上讲是由力决定了加速度，但力作为对质点作用的描述，由 Newton 第二定律定标。</p>
-<p><strong>推论：单质点的线动量与角动量定理，能量定理</strong></p>
-<p>由牛顿定律推得</p>
-<div class="math notranslate nohighlight">
-\[
-\mathbf{F} \mathrm{d} t = \mathrm{d} ( m \dot{ \mathbf{r} } )
-\]</div>
-<div class="math notranslate nohighlight">
-\[
-\mathbf{r} \times \mathbf{F} \mathrm{d}t = \mathrm{d} ( \mathbf{r} \times m \dot{ \mathbf{r} } )
-\]</div>
-<div class="math notranslate nohighlight">
-\[
-\mathbf{F} \cdot \mathrm{d} \mathbf{r} = \mathrm{d} \left( \frac{1}{2} m \dot{ \mathbf{r} }^{2} \right)
-\]</div>
-<p><strong>推论：保守力与能量守恒</strong></p>
-<p>在此基础上，若做功与路径无关，即外力为保守力</p>
-<div class="math notranslate nohighlight">
-\[
-\oint \mathbf{F}\cdot d\mathbf{r}=0 \iff \mathbf{F}=-\nabla V(\mathbf{r})
-\]</div>
-<p>有能量守恒</p>
-<div class="math notranslate nohighlight">
-\[
-T+V=E
-\]</div>
-<blockquote>
-<div><p>接下来我们的研究对象从单质点变为质点组。</p>
-</div></blockquote>
-</section>
-<section id="id4">
-<h2>Newton 第三定律<a class="headerlink" href="#id4" title="Permalink to this heading">#</a></h2>
-<p>弱形式</p>
-<div class="math notranslate nohighlight">
-\[
-\mathbf{F}_{ji} = - \mathbf{F}_{ij}
-\]</div>
-<p>强形式</p>
-<div class="math notranslate nohighlight">
-\[
-\mathbf{r}_{i} \times \mathbf{F}_{ji} + \mathbf{M}_{ji} + \mathbf{r}_{j} \times \mathbf{F}_{ij} + \mathbf{M}_{ij} = 0
-\]</div>
-</section>
-<section id="id5">
-<h2>运动与牛顿方程<a class="headerlink" href="#id5" title="Permalink to this heading">#</a></h2>
-<p>结合牛顿定律，可以将数学规律概括为如下形式。</p>
-<p>n 点系统的运动为映射</p>
-<div class="math notranslate nohighlight">
-\[
-\mathbf{r}(t):\mathbf{I} \to \mathbb{R}^{3n}
-\]</div>
-<p>牛顿方程假设，存在映射</p>
-<div class="math notranslate nohighlight">
-\[
-\mathbf{F}(\mathbf{r},\dot{\mathbf{r}},t):\mathbb{R}^{3n}\times \mathbb{R}^{3n}\times \mathbb{R} \to \mathbb{R}^{3n}
-\]</div>
-<p>使</p>
-<div class="math notranslate nohighlight">
-\[
-\ddot{\mathbf{r}}=\mathbf{F}(\mathbf{r},\dot{\mathbf{r}},t)
-\]</div>
-<p>由常微分方程解的存在与唯一性定理，该映射与初始条件唯一决定一个运动，因此一个力学系统的初始位置和初速度唯一地决定其运动。</p>
-</section>
-<section id="id6">
-<h2>伽利略相对性原理<a class="headerlink" href="#id6" title="Permalink to this heading">#</a></h2>
-<p>要求牛顿方程在伽利略变换下不变。</p>
-<ul class="simple">
-<li><p>时间平移不变<span class="math notranslate nohighlight">\(\implies \ddot{\mathbf{r}}=\mathbf{F}(\mathbf{r},\dot{\mathbf{r}})\)</span></p></li>
-<li><p>空间平移不变<span class="math notranslate nohighlight">\(\implies \ddot{x}_{i}=F_{i}(x_{j}-x_{k},y_{j},z_{j};\dot{x}_{j}-\dot{x}_{k},\dot{y}_{j},\dot{z}_{j};t)\)</span></p></li>
-<li><p>空间正交变换不变 <span class="math notranslate nohighlight">\(\implies \mathbf{F}(\mathbf{R}\mathbf{x},\mathbf{R}\dot{\mathbf{x}},t)=\mathbf{R}\mathbf{F}(\mathbf{x},\dot{\mathbf{x}})\)</span></p></li>
-</ul>
-</section>
-<section id="id7">
-<h2>守恒量<a class="headerlink" href="#id7" title="Permalink to this heading">#</a></h2>
-<p>在多质点系统中类似有</p>
-<div class="math notranslate nohighlight">
-\[
-\sum_{i}F_{i}^{(e)}=\frac{d}{dt} \sum_{i}m_{i}\dot{\mathbf{r}}_{i}
-\]</div>
-<div class="math notranslate nohighlight">
-\[
-\sum_{i} \mathbf{r}_{i} \times \mathbf{F}_{i}^{(e)}=\frac{d}{dt} \sum_{i} \mathbf{r}_{i} \times m_{i} \dot{\mathbf{r}}_{i}
-\]</div>
-<div class="math notranslate nohighlight">
-\[
-\sum_{i} \mathbf{F}_{i}^{(e)} \cdot d \mathbf{r}_{i} + \sum_{i,j&gt;i} \mathbf{F}_{ji} \cdot (d \mathbf{r}_{i}-d \mathbf{r}_{j}) = d \sum_{i} \frac{1}{2} m_{i} \dot{\mathbf{r}}_{i}^{2}
-\]</div>
-<div class="math notranslate nohighlight">
-\[
-dW_{外}+dW_{内非}=d(T+V_{内势})
-\]</div>
-<div class="math notranslate nohighlight">
-\[
-(dW_{外宏}+dQ+(-dE_{微})=dE_{宏})
-\]</div>
-<p>普遍情况见诺特定理。</p>
-</section>
-<section id="id8">
-<h2>质心<a class="headerlink" href="#id8" title="Permalink to this heading">#</a></h2>
-<section id="id9">
-<h3>质心运动<a class="headerlink" href="#id9" title="Permalink to this heading">#</a></h3>
-<div class="math notranslate nohighlight">
-\[
-\mathbf{r}_{c} = \frac{\sum m_{i} \mathbf{r}_{i}}{\sum m_{i}}
-\]</div>
-<div class="math notranslate nohighlight">
-\[
-m \ddot{\mathbf{r}}_{c} = \sum \mathbf{F}_{i}^{(e)}
-\]</div>
-<p>可以推出质心像一个质点的守恒量，尤其是</p>
-<div class="math notranslate nohighlight">
-\[
-\sum \mathbf{F}_{i}^{(e)} \cdot d \mathbf{r}_{c} =d \left( \frac{1}{2} m \dot{r}_{c}^{2} \right)
-\]</div>
-</section>
-<section id="id10">
-<h3>质心系 (相对质心运动的描述以及地系到质心系的转化)<a class="headerlink" href="#id10" title="Permalink to this heading">#</a></h3>
-<p>地系中与质心系中物理量的变换有 Konig 定理</p>
-<div class="math notranslate nohighlight">
-\[
-T=T^{'}+\frac{1}{2}m \dot{\mathbf{r}}_{c}^{2}
-\]</div>
-<div class="math notranslate nohighlight">
-\[
-L=L^{'}+\mathbf{r}_{c} \times m \dot{\mathbf{r}}_{c}
-\]</div>
-<div class="math notranslate nohighlight">
-\[
-p^{'}=0
-\]</div>
-<p>以质心为参考点时惯性系定律成立。</p>
-</section>
-</section>
-<section id="id11">
-<h2>坐标系及参照系变换<a class="headerlink" href="#id11" title="Permalink to this heading">#</a></h2>
+<h2>2023.<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h2>
 </section>
 </section>
 
@@ -624,7 +382,7 @@ p^{'}=0
         },
         kernelOptions: {
             name: "python3",
-            path: "./other"
+            path: "./read"
         },
         predefinedOutput: true
     }
@@ -642,24 +400,6 @@ p^{'}=0
   
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
-    <a class="left-prev"
-       href="Stokes.html"
-       title="previous page">
-      <i class="fa-solid fa-angle-left"></i>
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Stokes 公式</p>
-      </div>
-    </a>
-    <a class="right-next"
-       href="quantum_form.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">量子力学的形式理论</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
-    </a>
 </div></div>
   
 </div>
@@ -678,21 +418,7 @@ p^{'}=0
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#galileo">Galileo 时空</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">质点与质点组</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Newton 第一定律</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gailileo">Gailileo 变换</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Newton 第二定律</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Newton 第三定律</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">运动与牛顿方程</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">伽利略相对性原理</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">守恒量</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">质心</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">质心运动</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">质心系 (相对质心运动的描述以及地系到质心系的转化)</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">坐标系及参照系变换</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">2023.</a></li>
 </ul>
   </nav></div>
 
