@@ -6,6 +6,8 @@ I will upload one of my ideas, fantasies, or proposals every frivolous Friday, m
 
 **目录**
 
+*23.9.22 下周前更新*
+
 23.9.15  更新之谜
 
 23.9.8  新生命游戏
