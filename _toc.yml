@@ -1,11 +1,11 @@
 - file: intro
 - file: exper
   sections:
-    - file: exper/cookbook
+    - file: exper/cookbook.md
       title: Matrix Cookbook
     - file: exper/py3rdpartylib
     - file: exper/pyPEP8
-    - file: exper/Gregg
+    - file: exper/Gregg.md
       title: Gregg Shorthand
 - file: mater
   sections:
