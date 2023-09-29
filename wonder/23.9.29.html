@@ -372,7 +372,7 @@ document.write(`
 <h1>Frivolity: The Limit of Handwritting<a class="headerlink" href="#frivolity-the-limit-of-handwritting" title="Permalink to this heading">#</a></h1>
 <section id="id1">
 <h2>书写有极限吗<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h2>
-<p>作为速记爱好者，我开发过不止一套自己的速记符号，期间的考虑无非是平衡简化程度与易学易辨的程度。这次突然想来思考一下手写本身的physical bound在哪里。</p>
+<p>作为速记爱好者，我开发过不止一套自己的速记符号，期间的考虑无非是平衡简化程度与易学易辨的程度。本周突然想来思考一下手写本身的physical bound在哪里。</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \begin{align}
@@ -424,10 +424,11 @@ time \left\{
 <p>上面的假设都还没怎么用，还可以再详细一点，比如从解析几何的角度，斜椭圆曲线任一点斜率的一定概率范围的偏差有多大可能使得整条线变入另一个符号的范围？从信息论的角度，这个高斯信道（准确说是这两个）的容量香农已经告诉我们了，而 Yury, 2010 指出，在有限码长和一定错误概率下的最大码率</p>
 <div class="math notranslate nohighlight">
 \[
-Maximal\ rate\ achivable\ R \approx C − \sqrt{\frac{V}{n}}Q^{−1}(ϵ)
+Max\ rate\ achivable\ R \approx C − \sqrt{\frac{V}{n}}Q^{−1}(ϵ)
 \]</div>
 <p>where <span class="math notranslate nohighlight">\(n\)</span> is the blocklength, <span class="math notranslate nohighlight">\(C\)</span> is the capacity, <span class="math notranslate nohighlight">\(\epsilon\)</span> is the error probability, <span class="math notranslate nohighlight">\(V\)</span> is a characteristic of the channel referred to as <em>channel dispersion</em> and <span class="math notranslate nohighlight">\(Q\)</span> is the complementary Gaussian cumulative distribution function.</p>
 <p>(This guy has almost killed my problem.)</p>
+<p><strong>Reference</strong></p>
 <p>[1] Y. Polyanskiy, H. V. Poor and S. Verdu, “Channel Coding Rate in the Finite Blocklength Regime,” in IEEE Transactions on Information Theory, vol. 56, no. 5, pp. 2307-2359, May 2010, doi: 10.1109/TIT.2010.2043769.</p>
 </section>
 </section>
