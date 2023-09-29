@@ -66,7 +66,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'wonder/23.9.29';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Frivolity: measure design" href="23.9.22.html" />
+    <link rel="next" title="Frivolity: Measure Design" href="23.9.22.html" />
     <link rel="prev" title="周五碎笔 Friday" href="../wonder.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -171,7 +171,7 @@ const thebe_selector_output = ".output, .cell_output"
 </li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../wonder.html">周五碎笔 Friday</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">Frivolity: The Limit of Handwritting</a></li>
-<li class="toctree-l2"><a class="reference internal" href="23.9.22.html">Frivolity: measure design</a></li>
+<li class="toctree-l2"><a class="reference internal" href="23.9.22.html">Frivolity: Measure Design</a></li>
 <li class="toctree-l2"><a class="reference internal" href="23.9.15.html">Frivolity: Can I Update in Time</a></li>
 <li class="toctree-l2"><a class="reference internal" href="23.9.8.html">Frivolity: New Game of Life</a></li>
 <li class="toctree-l2"><a class="reference internal" href="23.9.1.html">Frivolity: Theory of lazing in military training</a></li>
@@ -372,8 +372,9 @@ document.write(`
 <h1>Frivolity: The Limit of Handwritting<a class="headerlink" href="#frivolity-the-limit-of-handwritting" title="Permalink to this heading">#</a></h1>
 <section id="id1">
 <h2>书写有极限吗<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h2>
-<p>作为速记爱好者，我开发过不止一套自己的速记符号，期间的考虑无非是平衡简化程度与易学易辨的程度。这次突然想来思考一下手写本身的physical bound在哪里。
-$<span class="math notranslate nohighlight">\(
+<p>作为速记爱好者，我开发过不止一套自己的速记符号，期间的考虑无非是平衡简化程度与易学易辨的程度。这次突然想来思考一下手写本身的physical bound在哪里。</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
 \begin{align}
 Systematic\ process:\\
 1.\ infor&amp;mation\ flow\ (sounds\ etc.)\\
@@ -384,7 +385,7 @@ Systematic\ process:\\
 &amp; \downarrow interpreting\\
 4.\ recov&amp;ered\ information
 \end{align}
-\)</span>$</p>
+\end{split}\]</div>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \begin{align}
@@ -393,19 +394,21 @@ Systematic\ process:\\
 &amp; 2.\ Smoothness: There\ is\ no\ sharp\ angles\ and\ writter's\ acceleration\ can\ be\ infinity.
 \end{align}
 \end{split}\]</div>
-<p>那么总时间可以被分为两部分（充分效率，即没有空闲时间）：
-$<span class="math notranslate nohighlight">\(
+<p>那么总时间可以被分为两部分（充分效率，即没有空闲时间）：</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
 time \left\{
 \begin{align}
 &amp; drawing\ lines\ and\ curves\ \ \ \ \mathbf{t_L = \frac{L}{v}} \\
 &amp; real/unreal\ lines\ changing\ (lifting\ up\ and\ down\ the\ pen)\ \ \ \ \mathbf{t_S}
 \end{align}
 \right.
-\)</span>$
-从一个符号到另一个符号中间笔尖的移动可以视为写一条unreal line，这个提落笔的转换需要时间（由于手部的摩擦等）。</p>
+\end{split}\]</div>
+<p>从一个符号到另一个符号中间笔尖的移动可以视为写一条unreal line，这个提落笔的转换需要时间（由于手部的摩擦等）。</p>
 <p>书写符号系统将语段的信息流划分为一个个 info element ，每个信息元对应一个符号来记录。<span class="math notranslate nohighlight">\(l\)</span> 表示信息元的平均长度；我们在第四步解读的过程中，部分多义或偏误的符号可以通过上下文判断，即 <span class="math notranslate nohighlight">\(revision\ rate\ \mathbf{c = c(l)}，\mathbf{c'(l) \le0}\)</span> ，有一定概率 <span class="math notranslate nohighlight">\(c\)</span> 的内容可以被矫正，其与元长成负相关。符号的压缩密度 <span class="math notranslate nohighlight">\(\eta\)</span> 表征了记号的简洁程度；随着 <span class="math notranslate nohighlight">\(\mathbf{v}\)</span> 的提高，书写的 deviation 上升，如果压缩率高，最终偏误的可能性越大。</p>
-<p>如同平衡投资的风险与收益一样，我们用一个效用函数平衡速度与失误率 <span class="math notranslate nohighlight">\(U(k,e)\)</span> ，其中 <span class="math notranslate nohighlight">\(k\)</span> 为信息流速率，即总信息量 <span class="math notranslate nohighlight">\(I = kT\)</span> 。一种unexamined and nearly impossible的情况：
-$<span class="math notranslate nohighlight">\(
+<p>如同平衡投资的风险与收益一样，我们用一个效用函数平衡速度与失误率 <span class="math notranslate nohighlight">\(U(k,e)\)</span> ，其中 <span class="math notranslate nohighlight">\(k\)</span> 为信息流速率，即总信息量 <span class="math notranslate nohighlight">\(I = kT\)</span> 。一种unexamined and nearly impossible的情况：</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
 \left\{
 \begin{align}
 &amp; maximize\ \ U=k(1-\frac{e}{T})\\
@@ -417,12 +420,13 @@ $<span class="math notranslate nohighlight">\(
 &amp; f(\eta,v) = \frac{v}{\eta}, c(l) = \frac{c}{l}
 \end{align}
 \right.
-\)</span><span class="math notranslate nohighlight">\(
-上面的假设都还没怎么用，还可以再详细一点，比如从解析几何的角度，斜椭圆曲线任一点斜率的一定概率范围的偏差有多大可能使得整条线变入另一个符号的范围？从信息论的角度，这个高斯信道（准确说是这两个）的容量香农已经告诉我们了，而 Yury, 2010 指出，在有限码长和一定错误概率下的最大码率
-\)</span><span class="math notranslate nohighlight">\(
+\end{split}\]</div>
+<p>上面的假设都还没怎么用，还可以再详细一点，比如从解析几何的角度，斜椭圆曲线任一点斜率的一定概率范围的偏差有多大可能使得整条线变入另一个符号的范围？从信息论的角度，这个高斯信道（准确说是这两个）的容量香农已经告诉我们了，而 Yury, 2010 指出，在有限码长和一定错误概率下的最大码率</p>
+<div class="math notranslate nohighlight">
+\[
 Maximal\ rate\ achivable\ R \approx C − \sqrt{\frac{V}{n}}Q^{−1}(ϵ)
-\)</span><span class="math notranslate nohighlight">\(
-where \)</span>n<span class="math notranslate nohighlight">\( is the blocklength, \)</span>C<span class="math notranslate nohighlight">\( is the capacity, \)</span>\epsilon<span class="math notranslate nohighlight">\( is the error probability, \)</span>V<span class="math notranslate nohighlight">\( is a characteristic of the channel referred to as *channel dispersion* and \)</span>Q$ is the complementary Gaussian cumulative distribution function.</p>
+\]</div>
+<p>where <span class="math notranslate nohighlight">\(n\)</span> is the blocklength, <span class="math notranslate nohighlight">\(C\)</span> is the capacity, <span class="math notranslate nohighlight">\(\epsilon\)</span> is the error probability, <span class="math notranslate nohighlight">\(V\)</span> is a characteristic of the channel referred to as <em>channel dispersion</em> and <span class="math notranslate nohighlight">\(Q\)</span> is the complementary Gaussian cumulative distribution function.</p>
 <p>(This guy has almost killed my problem.)</p>
 <p>[1] Y. Polyanskiy, H. V. Poor and S. Verdu, “Channel Coding Rate in the Finite Blocklength Regime,” in IEEE Transactions on Information Theory, vol. 56, no. 5, pp. 2307-2359, May 2010, doi: 10.1109/TIT.2010.2043769.</p>
 </section>
@@ -473,7 +477,7 @@ where \)</span>n<span class="math notranslate nohighlight">\( is the blocklength
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Frivolity: measure design</p>
+        <p class="prev-next-title">Frivolity: Measure Design</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
