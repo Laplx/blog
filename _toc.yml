@@ -1,8 +1,12 @@
 - file: intro
 - file: exper
   sections:
-    - file: py3rdpartylib
-    - file: pyPEP8
+    - file: exper/cookbook
+      title: Matrix Cookbook
+    - file: exper/py3rdpartylib
+    - file: exper/pyPEP8
+    - file: exper/Gregg
+      title: Gregg Shorthand
 - file: mater
   sections:
     - file: swarm/Swarm.md
@@ -11,6 +15,8 @@
       title: 红楼遗梦
 - file: wonder
   sections:
+    - file: wonder/23.9.29
+    - file: wonder/23.9.22
     - file: wonder/23.9.15
     - file: wonder/23.9.8
     - file: wonder/23.9.1
