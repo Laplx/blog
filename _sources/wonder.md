@@ -6,7 +6,9 @@ I will upload one of my ideas, fantasies, or proposals every frivolous Friday, m
 
 **目录**
 
-*23.9.22 下周前更新*
+23.9.29  书写有极限吗
+
+23.9.22  建筑设计的计量
 
 23.9.15  更新之谜
 

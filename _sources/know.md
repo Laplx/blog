@@ -8,6 +8,8 @@ I share my own notes here, most of which are extracted and adapted and some of w
 
 library.laplx.cc
 
+*（每年1月、7月更新 updated every Jan. and Jul.）*
+
 **下载目录**
 
 *Laplx* 多元统计讲义

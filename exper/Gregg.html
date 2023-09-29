@@ -1,0 +1,685 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>&lt;no title&gt; &#8212; My Blog</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'exper/Gregg';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="课题探讨 Research" href="../mater.html" />
+    <link rel="prev" title="Python 代码规范" href="pyPEP8.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    首页 Welcome
+                </a>
+            </li>
+        </ul>
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../exper.html">经验分享 Notes</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="py3rdpartylib.html">Python 第三方库管理等问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyPEP8.html">Python 代码规范</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../mater.html">课题探讨 Research</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../swarm/Swarm.html">打卡软件 Swarm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../hlm/hlm_index.html">红楼遗梦</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../wonder.html">周五碎笔 Friday</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../wonder/23.9.29.html">Frivolity: The Limit of Handwritting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wonder/23.9.22.html">Frivolity: measure design</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wonder/23.9.15.html">Frivolity: Can I Update in Time</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wonder/23.9.8.html">Frivolity: New Game of Life</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wonder/23.9.1.html">Frivolity: Theory of lazing in military training</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wonder/23.8.25.html">Frivolity: Currency Reverie</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wonder/23.8.18.html">Notion: Templatization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wonder/23.8.11.html">Frivolity: Annealed Polity Emerges</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wonder/23.8.4.html">Frivolity: WeRun Pattern</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wonder/23.7.28.html">Frivolity: Meme Alive</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wonder/23.7.21.html">Frivolity: Winner-Take-All Game</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wonder/23.7.14.html">Frivolity: Semantic Information</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wonder/23.7.7.html">Notion: Excellent Player</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wonder/23.6.30.html">Frivolity: How to Get a Path</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wonder/23.6.23.html">Notion: Hype Significance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wonder/23.6.16.html">Frivolity: Homomorphic Observation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wonder/23.6.9.html">Frivolity: Dots and Boxes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wonder/23.6.2.html">Frivolity: Choose Your Seat</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wonder/23.5.26.html">Frivolity: Introduction to Roll Theory</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wonder/23.5.19.html">Frivolity: Moments Entropy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wonder/23.5.12.html">Frivolity: Touter or Scalper</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wonder/23.5.5.html">Frivolity: Start and Bikes on Campus</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../idea.html">其他收录 Sundries</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../idea/ques.html">趣味问题集</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../idea/toiletology.html">厕学</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../idea/xingqisiji.html">行乞寺记</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../idea/olympics.html">谈竞赛</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../know.html">个人资料 Knowledge</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../others.html">友情特供 Column</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../other/Stokes.html">Stokes 公式</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../other/Newton.html">Newton 力学</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../other/quantum_form.html">量子力学的形式理论</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../other/rglights.html">十字路口的选择</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../other/planck.html">Planck 公式在历史上是怎么诞生的</a></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/exper/Gregg.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1><no title></h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="simple visible nav section-nav flex-column">
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <p><img alt="0001" src="../_images/0001.jpg" /></p>
+<p><img alt="0002" src="../_images/0002.jpg" /></p>
+<p><img alt="0003" src="../_images/0003.jpg" /></p>
+<p><img alt="0004" src="../_images/0004.jpg" /></p>
+<p><img alt="0005" src="../_images/0005.jpg" /></p>
+<p><img alt="0006" src="../_images/0006.jpg" /></p>
+<p><img alt="0007" src="../_images/0007.jpg" /></p>
+<p><img alt="0008" src="../_images/0008.jpg" /></p>
+<p><img alt="0009" src="../_images/0009.jpg" /></p>
+<p><img alt="0010" src="../_images/0010.jpg" /></p>
+<p><img alt="0011" src="../_images/0011.jpg" /></p>
+<p><img alt="0012" src="../_images/0012.jpg" /></p>
+<p><img alt="0013" src="../_images/0013.jpg" /></p>
+<p><img alt="0014" src="../_images/0014.jpg" /></p>
+<p><img alt="0015" src="../_images/0015.jpg" /></p>
+<p><img alt="0016" src="../_images/0016.jpg" /></p>
+<p><img alt="0017" src="../_images/0017.jpg" /></p>
+<p><img alt="0018" src="../_images/0018.jpg" /></p>
+<p><img alt="0019" src="../_images/0019.jpg" /></p>
+<p><img alt="0020" src="../_images/0020.jpg" /></p>
+<p><img alt="0021" src="../_images/0021.jpg" /></p>
+<p><img alt="0022" src="../_images/0022.jpg" /></p>
+<p><img alt="0023" src="../_images/0023.jpg" /></p>
+<p><img alt="0024" src="../_images/0024.jpg" /></p>
+<p><img alt="0025" src="../_images/0025.jpg" /></p>
+<p><img alt="0026" src="../_images/0026.jpg" /></p>
+<p><img alt="0027" src="../_images/0027.jpg" /></p>
+<p><img alt="0028" src="../_images/0028.jpg" /></p>
+<p><img alt="0029" src="../_images/0029.jpg" /></p>
+<p><img alt="0030" src="../_images/0030.jpg" /></p>
+<p><img alt="0031" src="../_images/0031.jpg" /></p>
+<p><img alt="0032" src="../_images/0032.jpg" /></p>
+<p><img alt="0033" src="../_images/0033.jpg" /></p>
+<p><img alt="0034" src="../_images/0034.jpg" /></p>
+<p><img alt="0035" src="../_images/0035.jpg" /></p>
+<p><img alt="0036" src="../_images/0036.jpg" /></p>
+<p><img alt="0037" src="../_images/0037.jpg" /></p>
+<p><img alt="0038" src="../_images/0038.jpg" /></p>
+<p><img alt="0039" src="../_images/0039.jpg" /></p>
+<p><img alt="0040" src="../_images/0040.jpg" /></p>
+<p><img alt="0041" src="../_images/0041.jpg" /></p>
+<p><img alt="0042" src="../_images/0042.jpg" /></p>
+<p><img alt="0043" src="../_images/0043.jpg" /></p>
+<p><img alt="0044" src="../_images/0044.jpg" /></p>
+<p><img alt="0045" src="../_images/0045.jpg" /></p>
+<p><img alt="0046" src="../_images/0046.jpg" /></p>
+<p><img alt="0047" src="../_images/0047.jpg" /></p>
+<p><img alt="0048" src="../_images/0048.jpg" /></p>
+<p><img alt="0049" src="../_images/0049.jpg" /></p>
+<p><img alt="0050" src="../_images/0050.jpg" /></p>
+<p><img alt="0051" src="../_images/0051.jpg" /></p>
+<p><img alt="0052" src="../_images/0052.jpg" /></p>
+<p><img alt="0053" src="../_images/0053.jpg" /></p>
+<p><img alt="0054" src="../_images/0054.jpg" /></p>
+<p><img alt="0055" src="../_images/0055.jpg" /></p>
+<p><img alt="0056" src="../_images/0056.jpg" /></p>
+<p><img alt="0057" src="../_images/0057.jpg" /></p>
+<p><img alt="0058" src="../_images/0058.jpg" /></p>
+<p><img alt="0059" src="../_images/0059.jpg" /></p>
+<p><img alt="0060" src="../_images/0060.jpg" /></p>
+<p><img alt="0061" src="../_images/0061.jpg" /></p>
+<p><img alt="0062" src="../_images/0062.jpg" /></p>
+<p><img alt="0063" src="../_images/0063.jpg" /></p>
+<p><img alt="0064" src="../_images/0064.jpg" /></p>
+<p><img alt="0065" src="../_images/0065.jpg" /></p>
+<p><img alt="0066" src="../_images/0066.jpg" /></p>
+<p><img alt="0067" src="../_images/0067.jpg" /></p>
+<p><img alt="0068" src="../_images/0068.jpg" /></p>
+<p><img alt="0069" src="../_images/0069.jpg" /></p>
+<p><img alt="0070" src="../_images/0070.jpg" /></p>
+<p><img alt="0071" src="../_images/0071.jpg" /></p>
+<p><img alt="0072" src="../_images/0072.jpg" /></p>
+<p><img alt="0073" src="../_images/0073.jpg" /></p>
+<p><img alt="0074" src="../_images/0074.jpg" /></p>
+<p><img alt="0075" src="../_images/0075.jpg" /></p>
+<p><img alt="0076" src="../_images/0076.jpg" /></p>
+<p><img alt="0077" src="../_images/0077.jpg" /></p>
+<p><img alt="0078" src="../_images/0078.jpg" /></p>
+<p><img alt="0079" src="../_images/0079.jpg" /></p>
+<p><img alt="0080" src="../_images/0080.jpg" /></p>
+<p><img alt="0081" src="../_images/0081.jpg" /></p>
+<p><img alt="0082" src="../_images/0082.jpg" /></p>
+<p><img alt="0083" src="../_images/0083.jpg" /></p>
+<p><img alt="0084" src="../_images/0084.jpg" /></p>
+<p><img alt="0085" src="../_images/0085.jpg" /></p>
+<p><img alt="0086" src="../_images/0086.jpg" /></p>
+<p><img alt="0087" src="../_images/0087.jpg" /></p>
+<p><img alt="0088" src="../_images/0088.jpg" /></p>
+<p><img alt="0089" src="../_images/0089.jpg" /></p>
+<p><img alt="0090" src="../_images/0090.jpg" /></p>
+<p><img alt="0091" src="../_images/0091.jpg" /></p>
+<p><img alt="0092" src="../_images/0092.jpg" /></p>
+<p><img alt="0093" src="../_images/0093.jpg" /></p>
+<p><img alt="0094" src="../_images/0094.jpg" /></p>
+<p><img alt="0095" src="../_images/0095.jpg" /></p>
+<p><img alt="0096" src="../_images/0096.jpg" /></p>
+<p><img alt="0097" src="../_images/0097.jpg" /></p>
+<p><img alt="0098" src="../_images/0098.jpg" /></p>
+<p><img alt="0099" src="../_images/0099.jpg" /></p>
+<p><img alt="0100" src="../_images/0100.jpg" /></p>
+<p><img alt="0101" src="../_images/0101.jpg" /></p>
+<p><img alt="0102" src="../_images/0102.jpg" /></p>
+<p><img alt="0103" src="../_images/0103.jpg" /></p>
+<p><img alt="0104" src="../_images/0104.jpg" /></p>
+<p><img alt="0105" src="../_images/0105.jpg" /></p>
+<p><img alt="0106" src="../_images/0106.jpg" /></p>
+<p><img alt="0107" src="../_images/0107.jpg" /></p>
+<p><img alt="0108" src="../_images/0108.jpg" /></p>
+<p><img alt="0109" src="../_images/0109.jpg" /></p>
+<p><img alt="0110" src="../_images/0110.jpg" /></p>
+<p><img alt="0111" src="../_images/0111.jpg" /></p>
+<p><img alt="0112" src="../_images/0112.jpg" /></p>
+<p><img alt="0113" src="../_images/0113.jpg" /></p>
+<p><img alt="0114" src="../_images/0114.jpg" /></p>
+<p><img alt="0115" src="../_images/0115.jpg" /></p>
+<p><img alt="0116" src="../_images/0116.jpg" /></p>
+<p><img alt="0117" src="../_images/0117.jpg" /></p>
+<p><img alt="0118" src="../_images/0118.jpg" /></p>
+<p><img alt="0119" src="../_images/0119.jpg" /></p>
+<p><img alt="0120" src="../_images/0120.jpg" /></p>
+<p><img alt="0121" src="../_images/0121.jpg" /></p>
+<p><img alt="0122" src="../_images/0122.jpg" /></p>
+<p><img alt="0123" src="../_images/0123.jpg" /></p>
+<p><img alt="0124" src="../_images/0124.jpg" /></p>
+<p><img alt="0125" src="../_images/0125.jpg" /></p>
+<p><img alt="0126" src="../_images/0126.jpg" /></p>
+<p><img alt="0127" src="../_images/0127.jpg" /></p>
+<p><img alt="0128" src="../_images/0128.jpg" /></p>
+<p><img alt="0129" src="../_images/0129.jpg" /></p>
+<p><img alt="0130" src="../_images/0130.jpg" /></p>
+<p><img alt="0131" src="../_images/0131.jpg" /></p>
+<p><img alt="0132" src="../_images/0132.jpg" /></p>
+<p><img alt="0133" src="../_images/0133.jpg" /></p>
+<p><img alt="0134" src="../_images/0134.jpg" /></p>
+<p><img alt="0135" src="../_images/0135.jpg" /></p>
+<p><img alt="0136" src="../_images/0136.jpg" /></p>
+<p><img alt="0137" src="../_images/0137.jpg" /></p>
+<p><img alt="0138" src="../_images/0138.jpg" /></p>
+<p><img alt="0139" src="../_images/0139.jpg" /></p>
+<p><img alt="0140" src="../_images/0140.jpg" /></p>
+<p><img alt="0141" src="../_images/0141.jpg" /></p>
+<p><img alt="0142" src="../_images/0142.jpg" /></p>
+<p><img alt="0143" src="../_images/0143.jpg" /></p>
+<p><img alt="0144" src="../_images/0144.jpg" /></p>
+<p><img alt="0145" src="../_images/0145.jpg" /></p>
+<p><img alt="0146" src="../_images/0146.jpg" /></p>
+<p><img alt="0147" src="../_images/0147.jpg" /></p>
+<p><img alt="0148" src="../_images/0148.jpg" /></p>
+<p><img alt="0149" src="../_images/0149.jpg" /></p>
+<p><img alt="0150" src="../_images/0150.jpg" /></p>
+<p><img alt="0151" src="../_images/0151.jpg" /></p>
+<p><img alt="0152" src="../_images/0152.jpg" /></p>
+<p><img alt="0153" src="../_images/0153.jpg" /></p>
+<p><img alt="0154" src="../_images/0154.jpg" /></p>
+<p><img alt="0155" src="../_images/0155.jpg" /></p>
+<p><img alt="0156" src="../_images/0156.jpg" /></p>
+<p><img alt="0157" src="../_images/0157.jpg" /></p>
+<p><img alt="0158" src="../_images/0158.jpg" /></p>
+<p><img alt="0159" src="../_images/0159.jpg" /></p>
+<p><img alt="0160" src="../_images/0160.jpg" /></p>
+<p><img alt="0161" src="../_images/0161.jpg" /></p>
+<p><img alt="0162" src="../_images/0162.jpg" /></p>
+<p><img alt="0163" src="../_images/0163.jpg" /></p>
+<p><img alt="0164" src="../_images/0164.jpg" /></p>
+<p><img alt="0165" src="../_images/0165.jpg" /></p>
+<p><img alt="0166" src="../_images/0166.jpg" /></p>
+<p><img alt="0167" src="../_images/0167.jpg" /></p>
+<p><img alt="0168" src="../_images/0168.jpg" /></p>
+<p><img alt="0169" src="../_images/0169.jpg" /></p>
+<p><img alt="0170" src="../_images/0170.jpg" /></p>
+<p><img alt="0171" src="../_images/0171.jpg" /></p>
+<p><img alt="0172" src="../_images/0172.jpg" /></p>
+<p><img alt="0173" src="../_images/0173.jpg" /></p>
+<p><img alt="0174" src="../_images/0174.jpg" /></p>
+<p><img alt="0175" src="../_images/0175.jpg" /></p>
+<p><img alt="0176" src="../_images/0176.jpg" /></p>
+<p><img alt="0177" src="../_images/0177.jpg" /></p>
+<p><img alt="0178" src="../_images/0178.jpg" /></p>
+<p><img alt="0179" src="../_images/0179.jpg" /></p>
+<p><img alt="0180" src="../_images/0180.jpg" /></p>
+<p><img alt="0181" src="../_images/0181.jpg" /></p>
+<p><img alt="0182" src="../_images/0182.jpg" /></p>
+<p><img alt="0183" src="../_images/0183.jpg" /></p>
+<p><img alt="0184" src="../_images/0184.jpg" /></p>
+<p><img alt="0185" src="../_images/0185.jpg" /></p>
+<p><img alt="0186" src="../_images/0186.jpg" /></p>
+<p><img alt="0187" src="../_images/0187.jpg" /></p>
+<p><img alt="0188" src="../_images/0188.jpg" /></p>
+<p><img alt="0189" src="../_images/0189.jpg" /></p>
+<p><img alt="0190" src="../_images/0190.jpg" /></p>
+<p><img alt="0191" src="../_images/0191.jpg" /></p>
+<p><img alt="0192" src="../_images/0192.jpg" /></p>
+<hr class="docutils" />
+<p><a class="reference download internal" download="" href="../_downloads/5ba63c9f56592ae3dff7265103d70a15/Gregg.pdf"><code class="xref download docutils literal notranslate"><span class="pre">下载链接</span></code></a></p>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./exper"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="pyPEP8.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Python 代码规范</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../mater.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">课题探讨 Research</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="simple visible nav section-nav flex-column">
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Laplx (Hao Chen)
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

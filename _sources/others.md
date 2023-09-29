@@ -1,6 +1,6 @@
 # 友情特供 Column
 
-邀请其他人写点小文章发在这里。
+邀请其他人写点内容发在这里。
 
 I invite others to write something here.
 
