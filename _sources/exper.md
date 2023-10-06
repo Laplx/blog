@@ -26,7 +26,7 @@ MATLAB 完全自学一本通（R2014a）
 
 Gregg Shorthand -- A Light-Line Phonography for the Million (Anniversary Edition)
 
-*（如果是pdf，在转换后超链接会带有框……下载链接在具体页末）*
+*（如果是pdf，在转换后超链接会带有框，且服务器响应较慢……下载链接在具体页末）*
 
 ---
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />“经验记录”栏目作品采用<a rel="license" href="http://creativecommons.org/licenses/by/4.0/">知识共享署名 4.0 国际许可协议</a>进行许可。
