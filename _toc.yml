@@ -2,6 +2,7 @@
 - file: exper
   sections:
     - file: exper/cookbook.md
+    - file: exper/mechbrief
     - file: exper/py3rdpartylib
     - file: exper/pyPEP8
     - file: exper/Gregg.md
@@ -14,6 +15,7 @@
       title: 红楼遗梦
 - file: wonder
   sections:
+    - file: wonder/23.10.13
     - file: wonder/23.10.6
     - file: wonder/23.9.29
     - file: wonder/23.9.22

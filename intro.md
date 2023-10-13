@@ -18,4 +18,4 @@ This is my blog. I create ideas, make studies and share informations here.
 
 ### 每周一句  Weekly sentence
 
-A rule of behavior which does not imply the superiority of diversification must be rejected both as a  hypothesis and as a maxim.  —— Markowitz (1927.8.4 - 2023.6.22)
+It is not possible to address the aging problem quickly through an increase in fertility since that will increase the dependency ratio long before it has a chance to reduce it.  —— Claudia Goldin (2023 Nobel Prize winner)
