@@ -6,6 +6,8 @@ I will upload one of my ideas, fantasies, or proposals every frivolous Friday, m
 
 **目录**
 
+23.10.13  起立欢呼
+
 23.10.6  知子网
 
 23.9.29  书写有极限吗

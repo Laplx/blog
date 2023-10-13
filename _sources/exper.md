@@ -1,6 +1,6 @@
 # 经验分享 Notes
 
-我可能会把碰到的一些问题与事情记录下来，此外还有一些搜集而得的电子书和资料，以期帮助。
+我可能会把碰到的一些问题与事情记录下来，此外还有一些搜集的电子书，以期帮助。
 
 I may record some problems and events I encountered, as well as some collected e-books. Hoping these helps.
 
@@ -9,6 +9,8 @@ I may record some problems and events I encountered, as well as some collected e
 *数理*
 
 The Matrix and Probability Cookbook
+
+经典力学简稿
 
 *计算机*
 
