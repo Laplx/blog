@@ -1,5 +1,7 @@
 # 首页 Welcome
 
+<img src="./introg.jpg" style="zoom: 33%;" />
+
 ### 这里有什么？What's here?
 
 这里是 <font size=4 color=#006699><i>Laplx (Hao Chen)</i></font> 的 GithubPage 博客。
@@ -18,4 +20,7 @@ This is my blog. I create ideas, make studies and share informations here.
 
 ### 每周一句  Weekly sentence
 
-It is not possible to address the aging problem quickly through an increase in fertility since that will increase the dependency ratio long before it has a chance to reduce it.  —— Claudia Goldin (2023 Nobel Prize winner)
+荷叶生时春恨生，荷叶枯时秋恨成。<br>
+深知身在情长在，怅望江头江水声。
+
+—— 李商隐《暮秋独游曲江》
