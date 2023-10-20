@@ -1,6 +1,6 @@
 # 首页 Welcome
 
-<img src="./introg.jpg" style="zoom: 33%;" />
+<img src="./introg.jpg" width="60%" />
 
 ### 这里有什么？What's here?
 
