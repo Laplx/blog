@@ -1,12 +1,16 @@
 # 其他收录 Sundries
 
-这里有一些无聊、搞笑和乱七八糟的内容。
+这里收藏一些无聊、搞笑和乱七八糟的内容。
 
 There is some boring, funny and messy content.
 
 **目录**
 
 趣味问题集
+
+文章集萃
+
+外部链接 Portal
 
 厕学
 

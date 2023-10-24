@@ -1,8 +1,8 @@
-# 个人资料 Knowledge
+# 资料分享 Knowledge
 
-我会上传一些我学习所写的讲义，部分经过改编，部分内容原创。转载请务必联系。
+这里有我收集的一些文件和电子书，以期帮助。
 
-I share my own notes here, most of which are extracted and adapted and some of which are original. Please be sure to contact me if you reprint.
+Here are some files and e-books I have collected. Hoping these helps.
 
 **个人图书**
 
@@ -10,16 +10,30 @@ library.laplx.cc
 
 *（每年1月、7月更新 updated every Jan. and Jul.）*
 
-**下载目录**
+**数理**
 
-*Laplx* 多元统计讲义
+The Matrix and Probability Cookbook
 
-[*Laplx* 物理竞赛笔记（上）](know/phy-1.pdf)
+经典力学简稿
 
-[*Laplx* 物理竞赛笔记（下）](know/phy-2.pdf)
+**计算技术**
+
+Python 第三方库管理等问题
+
+Style Guide for Python Code（Python官网翻译，有删节）
+
+MATLAB 完全自学一本通（R2014a）
+
+**经济**
+
+中国经济中的政府：机制与现象（兰小欢，七讲）
+
+**其它**
+
+Gregg Shorthand -- A Light-Line Phonography for the Million (Anniversary Edition)
+
+*（如果是pdf，在转换后超链接会带有框，且服务器响应较慢……下载链接在具体页末）*
 
 ---
 
-作者（Laplx）对“个人资料”内**全部内容享有著作权**。
-
-The author (Laplx) **holds copyright to all content** in ‘Knowledge’. 
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />“经验记录”栏目作品采用<a rel="license" href="http://creativecommons.org/licenses/by/4.0/">知识共享署名 4.0 国际许可协议</a>进行许可。

@@ -1,13 +1,8 @@
 - file: intro
-- file: exper
+- file: note
   sections:
-    - file: exper/cookbook.md
-    - file: exper/mechbrief
-    - file: exper/py3rdpartylib
-    - file: exper/pyPEP8
-    - file: exper/Gregg.md
-      title: Gregg Shorthand
-- file: mater
+    - file: read/23.11
+- file: proj
   sections:
     - file: swarm/Swarm.md
       title: 打卡软件 Swarm
@@ -39,14 +34,23 @@
     - file: wonder/23.5.19
     - file: wonder/23.5.12
     - file: wonder/23.5.5
-- file: idea
-  sections:
-    - file: idea/ques
-    - file: idea/toiletology
-    - file: idea/xingqisiji
-    - file: idea/olympics
 - file: know
-- file: others
+  sections:
+    - file: know/cookbook.md
+    - file: know/mechbrief
+    - file: know/py3rdpartylib
+    - file: know/pyPEP8
+    - file: know/Gregg.md
+      title: Gregg Shorthand
+- file: sund
+  sections:
+    - file: sund/ques
+    - file: sund/articles
+    - file: sund/links
+    - file: sund/toiletology
+    - file: sund/xingqisiji
+    - file: sund/olympics
+- file: other
   sections:
     - file: other/Stokes
     - file: other/Newton
