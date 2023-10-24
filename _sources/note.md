@@ -16,4 +16,4 @@
 
 **书著笔记**
 
-演化博弈论 E
+演化博弈论  EVolutionary Game Theory, Weibull, 

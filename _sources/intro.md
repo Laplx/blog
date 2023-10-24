@@ -1,6 +1,6 @@
 # 首页 Welcome
 
-<p><img alt="" src="./introg.jpg" width="60%" /></p>
+<img alt="" src="./introg.jpg" width="60%" />
 
 ### 这里有什么？What's here?
 
