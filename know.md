@@ -4,19 +4,17 @@
 
 Here are some files and e-books I have collected. Hoping these helps.
 
-**个人图书**
+### 个人图书
 
 library.laplx.cc
 
 *（每年1月、7月更新 updated every Jan. and Jul.）*
 
-**数理**
+### 数理
 
 The Matrix and Probability Cookbook
 
-经典力学简稿
-
-**计算技术**
+### 计算技术
 
 Python 第三方库管理等问题
 
@@ -24,11 +22,11 @@ Style Guide for Python Code（Python官网翻译，有删节）
 
 MATLAB 完全自学一本通（R2014a）
 
-**经济**
+### 经济
 
 中国经济中的政府：机制与现象（兰小欢，七讲）
 
-**其它**
+### 其它
 
 Gregg Shorthand -- A Light-Line Phonography for the Million (Anniversary Edition)
 

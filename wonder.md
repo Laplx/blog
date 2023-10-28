@@ -4,9 +4,11 @@
 
 I will upload one of my ideas, fantasies, or proposals every frivolous Friday, most of which are probably useless and ridiculous. A good idea often starts as a bad one.
 
-**目录**
+### 目录
 
-*23.10.20  忙于重构网站……周五一并更新 (I'm sure!)*
+23.10.27  抢红灯偏好
+
+23.10.20  理论的理论
 
 23.10.13  起立欢呼
 
