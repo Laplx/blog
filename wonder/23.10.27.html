@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Frivolity: New Game of Life &#8212; My Blog</title>
+    <title>Frivolity: Red-light Preference &#8212; My Blog</title>
   
   
   
@@ -63,11 +63,11 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'wonder/23.9.8';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'wonder/23.10.27';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Frivolity: Theory of lazing in military training" href="23.9.1.html" />
-    <link rel="prev" title="Frivolity: Can I Update in Time" href="23.9.15.html" />
+    <link rel="next" title="Notion: Theory of Theory" href="23.10.20.html" />
+    <link rel="prev" title="周五碎笔 Friday" href="../wonder.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -170,14 +170,14 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 </li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../wonder.html">周五碎笔 Friday</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="23.10.27.html">Frivolity: Red-light Preference</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Frivolity: Red-light Preference</a></li>
 <li class="toctree-l2"><a class="reference internal" href="23.10.20.html">Notion: Theory of Theory</a></li>
 <li class="toctree-l2"><a class="reference internal" href="23.10.13.html">Frivolity: Stand up and Cheer</a></li>
 <li class="toctree-l2"><a class="reference internal" href="23.10.6.html">Frivolity: Knoid</a></li>
 <li class="toctree-l2"><a class="reference internal" href="23.9.29.html">Frivolity: The Limit of Handwritting</a></li>
 <li class="toctree-l2"><a class="reference internal" href="23.9.22.html">Frivolity: Measure Design</a></li>
 <li class="toctree-l2"><a class="reference internal" href="23.9.15.html">Frivolity: Can I Update in Time</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">Frivolity: New Game of Life</a></li>
+<li class="toctree-l2"><a class="reference internal" href="23.9.8.html">Frivolity: New Game of Life</a></li>
 <li class="toctree-l2"><a class="reference internal" href="23.9.1.html">Frivolity: Theory of lazing in military training</a></li>
 <li class="toctree-l2"><a class="reference internal" href="23.8.25.html">Frivolity: Currency Reverie</a></li>
 <li class="toctree-l2"><a class="reference internal" href="23.8.18.html">Notion: Templatization</a></li>
@@ -276,7 +276,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../_sources/wonder/23.9.8.md" target="_blank"
+      <li><a href="../_sources/wonder/23.10.27.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -358,7 +358,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Frivolity: New Game of Life</h1>
+    <h1>Frivolity: Red-light Preference</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -368,7 +368,7 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">新生命游戏</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">抢红灯偏好</a></li>
 </ul>
             </nav>
         </div>
@@ -380,28 +380,16 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="frivolity-new-game-of-life">
-<h1>Frivolity: New Game of Life<a class="headerlink" href="#frivolity-new-game-of-life" title="Permalink to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="frivolity-red-light-preference">
+<h1>Frivolity: Red-light Preference<a class="headerlink" href="#frivolity-red-light-preference" title="Permalink to this heading">#</a></h1>
 <section id="id1">
-<h2>新生命游戏<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h2>
-<p>Conway 的生命游戏是一个零玩家的元胞自动机（cellular automata）。每个单元格即一个细胞，其有生死两种状态； 当细胞的周围少于两个活细胞时，其会死于孤立；周围多于三个活细胞时，其会死于拥挤；两个或三个时能继续存活；当死细胞周围刚好有三个活细胞时，其会被繁殖激活。</p>
-<p><img alt="" src="../_images/23.9.8.gif" /></p>
-<p><em>（涌现出了的各式各样的模式，上图为滑翔者枪 glider gun）</em></p>
-<p><em>（有非常多网页实现此程序，推荐一个 <a class="reference external" href="http://conwaylife.com">conwaylife.com</a>）</em></p>
-<p>（灵感来自军训时的迷彩服）我想把生命游戏扩展到多种类（部落），它们以不同颜色表示。下面以双色为例。</p>
-<p><img alt="" src="../_images/23.9.8(2).png" /></p>
-<p>除了单色下已有的模式，列举一个新发现的模式：</p>
-<p><img alt="" src="../_images/23.9.8(5).gif" /></p>
-<p>（<span class="math notranslate nohighlight">\(2\times2\)</span>方块具有很强的稳定性，几乎不会被吞噬；吐司、灯塔、蜂巢等稳定结构均可以充当飞船反射镜，将另一个颜色的宇宙飞船以<span class="math notranslate nohighlight">\(45^{\circ}\)</span>角反弹为滑翔机，或称拓荒者；风车、四风车均能被拓荒者侵占）</p>
-<p>（将规则中允许 cell that has 4 living same-color cells around keep alive 还能看到领地的城墙、界河等等现象）</p>
-<p>可能还具有一些研究和现实的意义，在此按下不表。程序附于页末（py tk库制作）。</p>
-<p>这里再发散一下，其实我们还可以多样化。棋盘可以使用各种密铺图形，它们不必相同，甚至可以模拟各种地理环境；规则也可以因此更加复杂，并向现实匹配；还可以增高维度，变成立方的生命游戏……</p>
-<p><img alt="" src="../_images/23.9.8(3).png" /></p>
-<p><em>（一种不完全正镶嵌——中间的大多边形会是城堡吗？）</em></p>
-<hr class="docutils" />
-<p><a class="reference download internal" download="" href="../_downloads/1a09c751c4e815be2aff7d8fa3a37f81/23.9.8.zip"><code class="xref download docutils literal notranslate"><span class="pre">新生命游戏(双色)</span></code></a></p>
-<p><em>界面如下：</em></p>
-<p><img alt="" src="../_images/23.9.8(4).png" /></p>
+<h2>抢红灯偏好<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h2>
+<p>我想到一个有趣的可能的联系：</p>
+<p>会不会市场上的风险偏好者，喜欢在过路口时抢红灯？</p>
+<p>仔细一点说，是否每个人的 Arrow - Pratt RRA (相对风险厌恶系数 <span class="math notranslate nohighlight">\(A\)</span>) 与 <span class="math notranslate nohighlight">\(B\)</span> 有显著的正相关？</p>
+<p>这里 <span class="math notranslate nohighlight">\(B\)</span> 的定义参考 <span class="math notranslate nohighlight">\(A\)</span> 的方法，我们认为决策者的效用到达时刻 <span class="math notranslate nohighlight">\(t_u = E(t) - \frac{1}{2} B \sigma^2_t\)</span>（<span class="math notranslate nohighlight">\(t\)</span> 指到达路口时信号灯的时间，正为绿灯，负为红灯——当然，纳入黄灯结论更为丰富，暂留不表）。于是决策者的预期加速度 <span class="math notranslate nohighlight">\(a\)</span> 满足匀加速运动的方程 <span class="math notranslate nohighlight">\(t_u = \frac{x}{v+\frac{at_u}{2}}\)</span> 即 <span class="math notranslate nohighlight">\(a=\frac{2}{t_u^2}(x-vt_u)\)</span>（显然这是一个简化的思考）。关于 <span class="math notranslate nohighlight">\(t\)</span> 的分布是与 <span class="math notranslate nohighlight">\(a\)</span>、<span class="math notranslate nohighlight">\(x\)</span>、<span class="math notranslate nohighlight">\(v\)</span>、<span class="math notranslate nohighlight">\(T\)</span>（此时的绿灯剩余秒数）有关的，例如 <span class="math notranslate nohighlight">\(t \sim \mathbb{N} (T-t_0(a,x,v),\sigma^2)\)</span>，<span class="math notranslate nohighlight">\(where\ t_0\ is\ the\ solution\ of\ constant\ acceleration\ motion\)</span>，联立即可得到 <span class="math notranslate nohighlight">\(a\)</span>。</p>
+<p>这是（连续的）均衡的方式。（我觉得离散的决策也是有道理的。）通过测量这些投资者过路口时运动的物理数据，我们或许可以估计出他们的 <span class="math notranslate nohighlight">\(\sigma^2\)</span> 和 <span class="math notranslate nohighlight">\(B\)</span>。</p>
+<p>（好吧照这个逻辑也许还有很多生活中的行为都可以……）</p>
 </section>
 </section>
 
@@ -437,20 +425,20 @@ document.write(`
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
-       href="23.9.15.html"
+       href="../wonder.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Frivolity: Can I Update in Time</p>
+        <p class="prev-next-title">周五碎笔 Friday</p>
       </div>
     </a>
     <a class="right-next"
-       href="23.9.1.html"
+       href="23.10.20.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Frivolity: Theory of lazing in military training</p>
+        <p class="prev-next-title">Notion: Theory of Theory</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -472,7 +460,7 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">新生命游戏</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">抢红灯偏好</a></li>
 </ul>
   </nav></div>
 

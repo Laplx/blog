@@ -159,6 +159,7 @@ const thebe_selector_output = ".output, .cell_output"
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="note.html">学习评记 Notes</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="read/23.11.html">Journal: 23.11</a></li>
+<li class="toctree-l2"><a class="reference internal" href="know/mechbrief.html">A Brief Draft of Classical Mechanics</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="proj.html">课题探讨 Projects</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -167,6 +168,8 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="wonder.html">周五碎笔 Friday</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="wonder/23.10.27.html">Frivolity: Red-light Preference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="wonder/23.10.20.html">Notion: Theory of Theory</a></li>
 <li class="toctree-l2"><a class="reference internal" href="wonder/23.10.13.html">Frivolity: Stand up and Cheer</a></li>
 <li class="toctree-l2"><a class="reference internal" href="wonder/23.10.6.html">Frivolity: Knoid</a></li>
 <li class="toctree-l2"><a class="reference internal" href="wonder/23.9.29.html">Frivolity: The Limit of Handwritting</a></li>
@@ -195,7 +198,6 @@ const thebe_selector_output = ".output, .cell_output"
 </li>
 <li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">资料分享 Knowledge</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="know/cookbook.html">The Matrix Cookbook</a></li>
-<li class="toctree-l2"><a class="reference internal" href="know/mechbrief.html">A Brief Draft of Classical Mechanics</a></li>
 <li class="toctree-l2"><a class="reference internal" href="know/py3rdpartylib.html">Python 第三方库管理等问题</a></li>
 <li class="toctree-l2"><a class="reference internal" href="know/pyPEP8.html">Python 代码规范</a></li>
 <li class="toctree-l2"><a class="reference internal" href="know/Gregg.html">Gregg Shorthand</a></li>
@@ -341,7 +343,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -357,6 +361,18 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">个人图书</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">数理</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">计算技术</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">经济</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">其它</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -370,23 +386,32 @@ document.write(`
 <h1>资料分享 Knowledge<a class="headerlink" href="#knowledge" title="Permalink to this heading">#</a></h1>
 <p>这里有我收集的一些文件和电子书，以期帮助。</p>
 <p>Here are some files and e-books I have collected. Hoping these helps.</p>
-<p><strong>个人图书</strong></p>
+<section id="id1">
+<h2>个人图书<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h2>
 <p><a class="reference external" href="http://library.laplx.cc">library.laplx.cc</a></p>
 <p><em>（每年1月、7月更新 updated every Jan. and Jul.）</em></p>
-<p><strong>数理</strong></p>
+</section>
+<section id="id2">
+<h2>数理<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h2>
 <p>The Matrix and Probability Cookbook</p>
-<p>经典力学简稿</p>
-<p><strong>计算技术</strong></p>
+</section>
+<section id="id3">
+<h2>计算技术<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h2>
 <p>Python 第三方库管理等问题</p>
 <p>Style Guide for Python Code（Python官网翻译，有删节）</p>
 <p>MATLAB 完全自学一本通（R2014a）</p>
-<p><strong>经济</strong></p>
+</section>
+<section id="id4">
+<h2>经济<a class="headerlink" href="#id4" title="Permalink to this heading">#</a></h2>
 <p>中国经济中的政府：机制与现象（兰小欢，七讲）</p>
-<p><strong>其它</strong></p>
+</section>
+<section id="id5">
+<h2>其它<a class="headerlink" href="#id5" title="Permalink to this heading">#</a></h2>
 <p>Gregg Shorthand – A Light-Line Phonography for the Million (Anniversary Edition)</p>
 <p><em>（如果是pdf，在转换后超链接会带有框，且服务器响应较慢……下载链接在具体页末）</em></p>
 <hr class="docutils" />
 <p><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />“经验记录”栏目作品采用<a rel="license" href="http://creativecommons.org/licenses/by/4.0/">知识共享署名 4.0 国际许可协议</a>进行许可。</p>
+</section>
 <div class="toctree-wrapper compound">
 </div>
 </section>
@@ -449,6 +474,24 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">个人图书</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">数理</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">计算技术</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">经济</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">其它</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
