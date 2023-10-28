@@ -144,7 +144,7 @@
 
 [张量函数及其导数](https://m.doc88.com/p-0733165392439.html?r=1#)
 
-[Perron-Frobenius理论](https://dna049.github.io/2015/12/17/Perron-Frobenius Theory/)
+[Perron-Frobenius理论](https://dna049.github.io/2015/12/17/Perron-Frobenius Theory)
 
 [Correspondence analysis - Wikipedia](https://en.wikipedia.org/wiki/Correspondence_analysis)
 
@@ -163,8 +163,6 @@
 [集智俱乐部 (swarma.org)](https://swarma.org/)
 
 [Tensor Network](https://tensornetwork.org/)
-
-[Penrose graphical notation - formulasearchengine](https://en.formulasearchengine.com/wiki/Penrose_graphical_notation#:~:text=In mathematics and physics%2C Penrose graphical notation or,linked together by lines%2C much like tinker toys.)
 
 [Introduction to Linear Algebra, 5th Edition](https://math.mit.edu/~gs/linearalgebra/)
 
@@ -200,13 +198,11 @@
 
 [一份其实很短的 LaTeX 入门文档](https://liam.page/2014/09/08/latex-introduction/)
 
-[Python正则表达式细节小记](https://blog.51cto.com/u_15061934/4540449#:~:text=连起来看 look-behind requires fixed-width pattern 这个错误，意思就是,(%3F<%3D [pattern]) 中的待匹配子模式 [pattern] 的 宽度一定要能确定 ！)
-
-[TeXstudio：用户手册](file:///C:/Program Files/texstudio/help/usermanual_en.html)
+[Python正则表达式细节小记](https://blog.51cto.com/u_15061934/4540449)
 
 [MyST syntax cheat sheet](https://jupyterbook.org/en/stable/reference/cheatsheet.html)
 
-[Pandoc User’s Guide](file:///C:/Users/Laplace/AppData/Local/Pandoc/Pandoc User's Guide.html)
+[Pandoc - Pandoc User’s Guide](https://pandoc.org/MANUAL.html)
 
 [JabRef 指南 - 知乎](https://zhuanlan.zhihu.com/p/288131233)
 
