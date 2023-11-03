@@ -1,6 +1,8 @@
 # 外部链接
 
-*持续补充  有时间再细分*
+持续补充  有时间再细分
+
+*上次更新：23.11.3*
 
 ---
 
@@ -22,6 +24,8 @@
 
 [复旦数据库导航](https://libdbnav.fudan.edu.cn/database/navigation#/home)
 
+[数字资源推荐-中国社会科学院图书馆](http://lib.cssn.cn/zy/dzzy/szzytj/)
+
 [CSMAR](https://data.csmar.com/)
 
 [国研网](https://data.drcnet.com.cn/)
@@ -38,13 +42,21 @@
 
 [统计年鉴下载站](https://www.zgtjnj.org/index.aspx)
 
+[World Bank Open Data | Data](https://data.worldbank.org/)
+
 [UNdata](http://data.un.org/)
 
 [UNSD](https://unstats.un.org/UNSDWebsite)
 
+[IMF Data](https://data.imf.org/?sk=388dfa60-1d26-4ade-b505-a05a558d9a42)
+
+[Federal Reserve Board - Data](https://www.federalreserve.gov/data.htm)
+
 [Kenneth R. French](https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/)
 
 [CRSP](https://crsp.org/)
+
+[CEIC](https://www.ceicdata.com.cn/zh-hans/products)
 
 [Wharton Research Data Services](https://wrds-www.wharton.upenn.edu/)
 
@@ -62,7 +74,9 @@
 
 [CEPS 中国教育追踪调查](http://ceps.ruc.edu.cn/)
 
-[CHNS China Health and Nutrition Survey](https://www.cpc.unc.edu/projects/china)
+[CHNS 中国健康与营养调查](https://www.cpc.unc.edu/projects/china)
+
+[CHFS 中国家庭金融调查](https://chfs.swufe.edu.cn/)
 
 ### 一些
 
@@ -98,7 +112,15 @@
 
 [开源网站检索](https://osintframework.com/)
 
-[Sci-Hub: 将知识带给每个人](https://sci-hub.se/)
+[Google Scholar](https://scholar.google.com/)
+
+[Sci-Hub](https://sci-hub.se)
+
+[JSTOR Home](https://www.jstor.org/)
+
+[中国知网](https://www.cnki.net/)
+
+[Home - Springer](https://link.springer.com/)
 
 [freemagazinepdf](https://freemagazinepdf.com/?s=economist)
 
@@ -144,7 +166,7 @@
 
 [张量函数及其导数](https://m.doc88.com/p-0733165392439.html?r=1#)
 
-[Perron-Frobenius理论](https://dna049.github.io/2015/12/17/Perron-Frobenius Theory)
+[Perron-Frobenius理论](https://dna049.github.io/2015/12/17/Perron-Frobenius%20Theory)
 
 [Correspondence analysis - Wikipedia](https://en.wikipedia.org/wiki/Correspondence_analysis)
 

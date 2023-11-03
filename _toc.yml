@@ -2,7 +2,8 @@
 - file: note
   sections:
     - file: read/23.11
-    - file: know/mechbrief
+    - file: read/mechbrief
+    - file: read/solow
 - file: proj
   sections:
     - file: swarm/Swarm.md
@@ -11,6 +12,7 @@
       title: 红楼遗梦
 - file: wonder
   sections:
+    - file: wonder/23.11.3
     - file: wonder/23.10.27
     - file: wonder/23.10.20
     - file: wonder/23.10.13
@@ -46,9 +48,9 @@
       title: Gregg Shorthand
 - file: sund
   sections:
-    - file: sund/ques
     - file: sund/articles
     - file: sund/links
+    - file: sund/ques
     - file: sund/toiletology
     - file: sund/xingqisiji
     - file: sund/olympics

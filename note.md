@@ -34,6 +34,8 @@ Share my own notes here. Some are original, and some are abstracts or comments. 
 
 加密货币简稿
 
+索洛模型
+
 ### 简单教程
 
 搜索引擎介绍
