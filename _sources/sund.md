@@ -6,11 +6,11 @@ There is some boring, funny and messy content.
 
 ### 目录
 
+文章集萃 Articles
+
+外部链接 Portal
+
 趣味问题集
-
-文章集萃
-
-**外部链接 Portal**
 
 厕学
 

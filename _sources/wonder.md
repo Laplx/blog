@@ -6,6 +6,8 @@ I will upload one of my ideas, fantasies, or proposals every frivolous Friday, m
 
 ### 目录
 
+23.11.3  暧昧：进化和均衡
+
 23.10.27  抢红灯偏好
 
 23.10.20  理论的理论

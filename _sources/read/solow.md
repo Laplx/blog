@@ -1,0 +1,3 @@
+# Solow Model
+
+![](./Solow.jpg)

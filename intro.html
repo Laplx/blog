@@ -158,7 +158,8 @@ const thebe_selector_output = ".output, .cell_output"
         <ul class="nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="note.html">学习评记 Notes</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="read/23.11.html">Journal: 23.11</a></li>
-<li class="toctree-l2"><a class="reference internal" href="know/mechbrief.html">A Brief Draft of Classical Mechanics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="read/mechbrief.html">A Brief Draft of Classical Mechanics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="read/solow.html">Solow Model</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="proj.html">课题探讨 Projects</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -167,6 +168,7 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="wonder.html">周五碎笔 Friday</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="wonder/23.11.3.html">Frivolity: Love in Evolution and Equilirium</a></li>
 <li class="toctree-l2"><a class="reference internal" href="wonder/23.10.27.html">Frivolity: Red-light Preference</a></li>
 <li class="toctree-l2"><a class="reference internal" href="wonder/23.10.20.html">Notion: Theory of Theory</a></li>
 <li class="toctree-l2"><a class="reference internal" href="wonder/23.10.13.html">Frivolity: Stand up and Cheer</a></li>
@@ -203,9 +205,9 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="sund.html">其他收录 Sundries</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="sund/ques.html">趣味问题集</a></li>
 <li class="toctree-l2"><a class="reference internal" href="sund/articles.html">文章集萃</a></li>
 <li class="toctree-l2"><a class="reference internal" href="sund/links.html">外部链接</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sund/ques.html">趣味问题集</a></li>
 <li class="toctree-l2"><a class="reference internal" href="sund/toiletology.html">厕学</a></li>
 <li class="toctree-l2"><a class="reference internal" href="sund/xingqisiji.html">行乞寺记</a></li>
 <li class="toctree-l2"><a class="reference internal" href="sund/olympics.html">谈竞赛</a></li>
@@ -382,8 +384,7 @@ document.write(`
   <section class="tex2jax_ignore mathjax_ignore" id="welcome">
 <h1>首页 Welcome<a class="headerlink" href="#welcome" title="Permalink to this heading">#</a></h1>
 <p><img alt="" src="_images/introg.jpg" /></p>
-<p><em>（东海黎明，于舟山·东极岛）</em></p>
-<p><strong>更新说明</strong>：原本想把网站由 Jupyter 改为由 Jekyll 部署，做一个更现代化的界面，同时重新规划了栏目，但手机端的自适应问题似乎一直没搞好？于是只能留到寒假了……（以及方便起见，把我部分收藏夹放到<em>外部链接</em>页里了）拖更抱歉！</p>
+<p><em>（流向北冰洋——阿勒泰·额尔齐斯河）</em></p>
 <section id="what-s-here">
 <h2>这里有什么？What’s here?<a class="headerlink" href="#what-s-here" title="Permalink to this heading">#</a></h2>
 <p>这里是 <font size=4 color=#006699><i>Laplx (Hao Chen)</i></font> 的 GithubPage 博客。</p>
@@ -397,8 +398,8 @@ document.write(`
 </section>
 <section id="weekly-sentence">
 <h2>每周一句  Weekly sentence<a class="headerlink" href="#weekly-sentence" title="Permalink to this heading">#</a></h2>
-<p>把经济学视为”科学”是错误的，它在性质上根本不是如此，这也可以说是我为何会有这种感觉的根源所在。今天的理论物理学家自认——并不全然是自我调侃——他们已经趋近一个放造四海而皆准的原理。但在经济学里，没有这类理论；如果想建构这类理论，最后很可能会落到什么也不是的下场。假如你认为我这是在嘲讽当代宏观经济学的某些倾向，那你想得没错。这与我坚信经济学应力求”科学化”的想法完全不冲突。所谓科学化，我指的只是我们应采用逻辑的思考方式并尊重事实。</p>
-<p>—— Robot M. Solow（索洛）</p>
+<p>“受审的不是一个个体，也不仅仅是纳粹当局，而是整个历史上的反犹主义。”本·古里安设定了这样的基调，而豪斯纳先生忠实地履行。在持续了三场的开庭陈词中，豪斯纳引用埃及法老和哈曼的格言“去毁灭，去杀戮，去让他们灭绝”，然后进一步引用《圣经·以西结书》，“我(上帝)从你旁边经过，见你滚在血中，就对你说：你虽在血中，仍可存活”，还解释说，这些话必须理解为“这个国家首次登上历史舞台以来所必须面对的使命”。这是拼凑的历史、廉价的修辞：更恶劣的是，这些话明显与对艾希曼进行审判的目的相矛盾，暗示他可能仅仅是早已注定的神秘命运的无辜执行者。</p>
+<p>—— 汉娜·阿伦特《艾希曼在耶路撒冷》（Eichmann in Jerusalem: A Report of the Banality of Evil, by Hannah Arendt, a Jewish）</p>
 </section>
 <div class="toctree-wrapper compound">
 </div>
