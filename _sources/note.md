@@ -20,9 +20,11 @@ Share my own notes here. Some are original, and some are abstracts or comments. 
 
 ### 书著笔记
 
-演化博弈论  Jorgen W. Weibull, *Evolutionary Game Theory*, MIT Press, 1995
+Jorgen W. Weibull, *Evolutionary Game Theory*, MIT Press, 1995  演化博弈论  
 
-微分方程、动力系统与混沌引论  Hirsch, Smale & Devaney, *Differential Equations, Dynamical Systems, and an Introduction to Chaos*,  Elsevier Inc., 2013
+Hirsch, Smale & Devaney, *Differential Equations, Dynamical Systems, and an Introduction to Chaos*,  Elsevier Inc., 2013  微分方程、动力系统与混沌引论
+
+Norbert Weiner, *Cybernetics, or Control and Communication in the Animal and the Machine*, MIT Press, 1948 and 1961  控制论
 
 **Lecture Notes** of Differential Game Theory and Mean Field Game Theory
 

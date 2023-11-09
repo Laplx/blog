@@ -67,7 +67,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Frivolity: Red-light Preference" href="23.10.27.html" />
-    <link rel="prev" title="周五碎笔 Friday" href="../wonder.html" />
+    <link rel="prev" title="Frivolity: Weighted Synchronicity" href="23.11.10.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -160,9 +160,11 @@ const thebe_selector_output = ".output, .cell_output"
         </ul>
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="../note.html">学习评记 Notes</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../read/23.11.html">Journal: 23.11</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../read/mechbrief.html">A Brief Draft of Classical Mechanics</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../read/solow.html">Solow Model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../note/23.11.html">Journal: 23.11</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../note/mechbrief.html">A Brief Draft of Classical Mechanics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../note/astrology.html">Astrology</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../note/crypto.html">Cryptocurrency</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../note/solow.html">Solow Model</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../proj.html">课题探讨 Projects</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -171,6 +173,7 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 </li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../wonder.html">周五碎笔 Friday</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="23.11.10.html">Frivolity: Weighted Synchronicity</a></li>
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">Frivolity: Love in Evolution and Equilirium</a></li>
 <li class="toctree-l2"><a class="reference internal" href="23.10.27.html">Frivolity: Red-light Preference</a></li>
 <li class="toctree-l2"><a class="reference internal" href="23.10.20.html">Notion: Theory of Theory</a></li>
@@ -387,7 +390,7 @@ document.write(`
 <section id="id1">
 <h2>暧昧：进化和均衡<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h2>
 <p>（本周分享的算是一个失败的建模，但话题有趣嘿嘿）</p>
-<p>这个比较失败的模型描述了两个个体（男女）在暧昧阶段的互动（博弈）。不过博弈可能给人感觉怪怪的——原因是我们这里假设两人都在努力最大化自己的关于爱的效用，并规划和调整自己的做法。</p>
+<p>这个模型描述了两个个体（男女）在暧昧阶段的互动（博弈）。不过博弈可能给人感觉怪怪的——原因是我们这里假设两人都在努力最大化自己的关于爱的效用，并规划和调整自己的做法。</p>
 <p><span class="math notranslate nohighlight">\(t\)</span> 时刻博弈双方的状态记作 <span class="math notranslate nohighlight">\(x(t)=(x_1(t), x_2(t)) \in [0,1]^2\)</span> ，表示男方和女方的爱意。同时他们的行动（一些或直白或隐晦的示爱的方式）<span class="math notranslate nohighlight">\(a(t)=(a_1(t), a_2(t)) \in [0,1]^2\)</span> ，其中 <span class="math notranslate nohighlight">\(0\)</span> 代表没有示爱，<span class="math notranslate nohighlight">\(1\)</span> 代表直球表白。当然对于未来，我们对时间价值做了一个折现率 <span class="math notranslate nohighlight">\(r\)</span> 。</p>
 <p>状态过程（dynamics）：</p>
 <div class="math notranslate nohighlight">
@@ -400,13 +403,13 @@ document.write(`
 \[
 U_i = \max\limits_{a} \int_0^T x_i(t)e^{-rt}dt + D(x(T))
 \]</div>
-<p>（理论上应加上 <span class="math notranslate nohighlight">\(\lim\limits_{T\rightarrow \infty}\)</span>；这样终态效用 <span class="math notranslate nohighlight">\(D\)</span> 就比较直接，或许是一个狄拉克函数，只在未来能配对成功的 <span class="math notranslate nohighlight">\((1,1)\)</span> 点取到无穷（笑））</p>
+<p>（理论上应加上 <span class="math notranslate nohighlight">\(\lim\limits_{T\rightarrow \infty}\)</span>；这样终态效用 <span class="math notranslate nohighlight">\(D\)</span> 就比较直接，比如或许是一个狄拉克函数，只在未来能配对成功的 <span class="math notranslate nohighlight">\((1,1)\)</span> 点取到无穷）</p>
 <p>但爱情真是一个复杂的东西（笑），高冷人设和舔狗人设的效用函数大概率是非常不一样的。我们这里仅仅设想一种 Platonic Love，有着逻辑清晰简单的个体爱意作为效用——即自我的爱意就是感受到的幸福。并且这个爱意随着双方对白的互动可以得到增强和减弱；从式子可以看到真正影响人的是比值 <span class="math notranslate nohighlight">\(\frac{a_1}{a_2}\)</span>，对方超额的行为才能进一步增加你的爱意并引发你的进一步互动（我经过深思熟虑认为导数比值 <span class="math notranslate nohighlight">\(\frac{\dot{a_1}}{\dot{a_2}}\)</span> 更为合适，但接下来的解析将过于复杂）；同时设置了一个“折旧率” <span class="math notranslate nohighlight">\(\delta\)</span> 作为没有足够互动之后与日俱减的爱情（想来有人会说……君子之交淡如水）。</p>
-<p>好的那我们继续，构造哈密顿量（先看 <span class="math notranslate nohighlight">\(1\)</span> 这边）</p>
+<p>好的那我们继续，构造哈密顿量</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-\mathcal{H} = \nabla_x V \cdot \dot{x}(t,x(t),a(t))+u(t,x(t),a(t))\\
-= x_1(\frac{a_2}{a_1}-\delta) \frac{\partial V}{\partial x_1}+x_2(\frac{a_1}{a_2}-\delta) \frac{\partial V}{\partial x_2}+x_1(t)e^{-rt}
+\mathcal{H} = \nabla_x V \cdot \dot{x}(t,x(t),a(t))+u_i(t,x(t),a(t))\\
+= x_1(\frac{a_2}{a_1}-\delta) \frac{\partial V}{\partial x_1}+x_2(\frac{a_1}{a_2}-\delta) \frac{\partial V}{\partial x_2}+x_i(t)e^{-rt}
 \end{split}\]</div>
 <p>有微分博弈常用的 HJB 方程</p>
 <div class="math notranslate nohighlight">
@@ -421,13 +424,13 @@ U_i = \max\limits_{a} \int_0^T x_i(t)e^{-rt}dt + D(x(T))
 <p>代入得到</p>
 <div class="math notranslate nohighlight">
 \[
-\frac{u_1^2}{x_1V_{x_1}} = \frac{u_2^2}{x_2V_{x_2}}
+\frac{a_1^2}{x_1V_{x_1}} = \frac{a_2^2}{x_2V_{x_2}}
 \]</div>
 <p>由于对称性，纳什均衡的两个 HJB 要求 <span class="math notranslate nohighlight">\(x_1 e^{-rt} = x_2 e^{-rt}\)</span>。对于双方开始时 <span class="math notranslate nohighlight">\(x_1(0) \neq x_2(0)\)</span>，我们发现不存在纳什均衡——男女双方总有一方没有满意——爱情真是折磨人（笑）。</p>
 <p>还可能效用需要考虑双方示爱的付出，即目标改为</p>
 <div class="math notranslate nohighlight">
 \[
-U_i = \max\limits_{a} \int_0^T (x_i(t)-u_i(t))e^{-rt}dt + D(x(T))
+U_i = \max\limits_{a} \int_0^T (x_i(t)-a_i(t))e^{-rt}dt + D(x(T))
 \]</div>
 <p>这样得到</p>
 <div class="math notranslate nohighlight">
@@ -447,8 +450,8 @@ a_1 = a_2 \sqrt{\frac{x_1V_{x_1}}{x_2V_{x_2}-a_2e^{-rt}}}
 <p>如果不是囚徒博弈（上图的一或四）而是鹰鸽博弈（斗鸡博弈，即你进我退或我退你进是最好选择），那么我们看到（上图的三）最终人们会演化到一个稳定的混合策略比例，一部分人主动表白，一部分人做接受。</p>
 <p>不过等一下，如果我们分了男女两个群体并假定只有男女两个性别（笑），同时复制动态中的群体平均值改为本群体和对面群体博弈收益的平均值，这个多群体演化模型的相图变成</p>
 <p><img alt="" src="../_images/23.11.3(2).jpg" /></p>
-<p>原本的单群体模型位于 <span class="math notranslate nohighlight">\(45^{\circ}\)</span> 线上，但这里中间的混合策略是一个鞍点——最终要么男生追求女生，要么女生追求男生（到达两个角点）。（是江西天价彩礼现象的一种可能的解释吗？）当然群体再细分兴许会更好。</p>
-<p>（好的总的来看，这篇讲的内容完全不接近现实……数学在人心面前显得无能为力。有些超越理性的东西我们称之为情感。）</p>
+<p>原本的单群体模型位于 <span class="math notranslate nohighlight">\(45^{\circ}\)</span> 线上，但这里中间的混合策略是一个不稳定的鞍点。最终要么男生追求女生，要么女生追求男生（到达两个角点）。（是江西天价彩礼现象的一种可能的解释吗？）当然群体再细分兴许会更好。</p>
+<p>（好的总的来看，这篇讲的内容完全不接近现实……数学在人心面前显得无能为力——有些超越理性的东西我们称之为情感。）</p>
 </section>
 </section>
 
@@ -484,12 +487,12 @@ a_1 = a_2 \sqrt{\frac{x_1V_{x_1}}{x_2V_{x_2}-a_2e^{-rt}}}
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
-       href="../wonder.html"
+       href="23.11.10.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">周五碎笔 Friday</p>
+        <p class="prev-next-title">Frivolity: Weighted Synchronicity</p>
       </div>
     </a>
     <a class="right-next"
