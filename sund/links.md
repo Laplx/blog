@@ -114,9 +114,11 @@
 
 [Google Scholar](https://scholar.google.com/)
 
-[Sci-Hub](https://sci-hub.se)
-
 [JSTOR Home](https://www.jstor.org/)
+
+[EconPapers](https://econpapers.repec.org/)
+
+[Sci-Hub](https://sci-hub.se)
 
 [中国知网](https://www.cnki.net/)
 

@@ -1,9 +1,12 @@
 - file: intro
 - file: note
   sections:
-    - file: read/23.11
-    - file: read/mechbrief
-    - file: read/solow
+    - file: note/23.11
+    - file: note/evol_game
+    - file: note/mechbrief
+    - file: note/astrology
+    - file: note/crypto
+    - file: note/solow
 - file: proj
   sections:
     - file: swarm/Swarm.md
@@ -12,6 +15,7 @@
       title: 红楼遗梦
 - file: wonder
   sections:
+    - file: wonder/23.11.10
     - file: wonder/23.11.3
     - file: wonder/23.10.27
     - file: wonder/23.10.20
