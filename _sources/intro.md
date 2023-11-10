@@ -20,9 +20,9 @@ This is my blog. I create ideas, make studies and share informations here.
 
 ### 每周一句  Weekly sentence
 
-门前冷落鞍马稀，老大嫁作商人妇。
-商人重利轻别离，前月浮梁买茶去。
-去来江口守空船，绕船月明江水寒。
+门前冷落鞍马稀，老大嫁作商人妇。<br/>
+商人重利轻别离，前月浮梁买茶去。<br/>
+去来江口守空船，绕船月明江水寒。<br/>
 夜深忽梦少年事，梦啼妆泪红阑干。
 
 ——白居易《琵琶行》
