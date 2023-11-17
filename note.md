@@ -6,7 +6,7 @@ Share my own notes here. Some are original, and some are abstracts or comments. 
 
 ### 个人讲义
 
-*Laplx* 多元统计讲义（两周内上传）
+*Laplx* 多元统计讲义（打算改作电子版，尽力12月内上传）
 
 [*Laplx* 物理竞赛笔记（上）](note/phy-1.pdf)
 

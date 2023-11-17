@@ -3,6 +3,10 @@ title: My Blog
 author: Laplx (Hao Chen)
 logo: 'logo.png'
 
+html:
+  favicon: favicon.ico
+  google_analytics_id: G-PPZXJ9B1BG
+
 latex:
   latex_documents:
     targetname: book.tex

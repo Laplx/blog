@@ -6,6 +6,8 @@ I will upload one of my ideas, fantasies, or proposals every frivolous Friday, m
 
 ### 目录
 
+23.11.17  永不落地的苹果
+
 23.11.10  加权共时
 
 23.11.3  暧昧：进化和均衡

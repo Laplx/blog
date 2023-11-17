@@ -12,6 +12,8 @@ There is some boring, funny and messy content.
 
 趣味问题集
 
+民科小传
+
 厕学
 
 行乞寺记

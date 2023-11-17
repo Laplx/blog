@@ -2,6 +2,7 @@
 - file: note
   sections:
     - file: note/23.11
+    - file: note/pre1
     - file: note/evol_game
     - file: note/mechbrief
     - file: note/astrology
@@ -15,6 +16,7 @@
       title: 红楼遗梦
 - file: wonder
   sections:
+    - file: wonder/23.11.17
     - file: wonder/23.11.10
     - file: wonder/23.11.3
     - file: wonder/23.10.27
@@ -55,6 +57,7 @@
     - file: sund/articles
     - file: sund/links
     - file: sund/ques
+    - file: sund/folkscience
     - file: sund/toiletology
     - file: sund/xingqisiji
     - file: sund/olympics
