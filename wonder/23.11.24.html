@@ -416,11 +416,12 @@ document.write(`
 </ul>
 <p>影响国家决策的无非是两个方面：Development 和 Security。（就像 <span class="math notranslate nohighlight">\(\mu\)</span> 和 <span class="math notranslate nohighlight">\(\sigma\)</span> 那样）或者说，国际关系无非是 Benefit 和 Security 的综合作用（Inner &amp; Outer）。不过我们这里要把原来的 IS-LM-BP model 说的详细一些，把 NX 拆开写为 <span class="math notranslate nohighlight">\(NX_{ij}(e_{ij},Y_i,Y_j,r_{ij})\)</span> 表示 <span class="math notranslate nohighlight">\(i\)</span> 国向 <span class="math notranslate nohighlight">\(j\)</span> 国的净出口。即有 <span class="math notranslate nohighlight">\(NX_{ij}(e_{ij},Y_i,Y_j,r_{ij}) = KF_{ij}(i_i,i_j,K_i,K_j,r_{ij})\)</span>。总而言之：</p>
 <div class="math notranslate nohighlight">
-\[
+\[\begin{split}
 \begin{align}
-Y(L,K,A) = C(Y,\dot{Y},i,T,PI) + I(i,T) + G + NX(e,Y) \tag{IB}
+Y(L,K,A) &amp; = C(Y,\dot{Y},i,T,PI) + I(i,T)\\
+&amp; + G + NX(e,Y) \tag{IB}
 \end{align}
-\]</div>
+\end{split}\]</div>
 <div class="math notranslate nohighlight">
 \[
 NX(e,Y,r) = KF(i,K) \tag{OB}
@@ -433,7 +434,7 @@ PO(U,D,W,G_{S},ID) = RE(T,G) \tag{IS}
 \[
 DT(M,\epsilon,r,ID) = M(G_M,A) \tag{OS}
 \]</div>
-<p>（<span class="math notranslate nohighlight">\(IB\)</span>、<span class="math notranslate nohighlight">\(OB\)</span> 即原本的 <span class="math notranslate nohighlight">\(IS\)</span>、<span class="math notranslate nohighlight">\(BP\)</span>）其中政府开支（外生）<span class="math notranslate nohighlight">\(G = G_N + G_M + G_A + G_D + G_{S} + G_O\)</span> ，包括民生、军备、科技、文化、治安及其他不纳入模型的经常性开支 <span class="math notranslate nohighlight">\(G_O\)</span>（建设性投资等资本积累已计入 <span class="math notranslate nohighlight">\(I\)</span> 中）。<span class="math notranslate nohighlight">\(DT\)</span> 即 Deterrent 他国的威慑作为外部安全的需求函数；<span class="math notranslate nohighlight">\(\epsilon_{ij}\)</span> 为地缘因子 Geographic factor，表示相互军事力量的威胁程度（当有海外军事基地部署时，<span class="math notranslate nohighlight">\(\epsilon_{ij} \neq \epsilon_{ji}\)</span>）（“一切政治首先是地缘政治”）；<span class="math notranslate nohighlight">\(\lVert ID_i-ID_j \rVert\)</span> 为可能存在的非主要影响因素。<span class="math notranslate nohighlight">\(PO\)</span> 即 Public Order 为内部安全供给，受到包括群众福利在内的多变量影响；<span class="math notranslate nohighlight">\(RE\)</span> 即 Regime Exertion 公权力的行使，准确来说应写为各不同部分收支的函数（<span class="math notranslate nohighlight">\(G_N\)</span>、<span class="math notranslate nohighlight">\(G_M\)</span>、<span class="math notranslate nohighlight">\(G_A\)</span>、<span class="math notranslate nohighlight">\(G_D\)</span>、<span class="math notranslate nohighlight">\(G_O\)</span>，<span class="math notranslate nohighlight">\(T\)</span> 也可拆开），表示内部安全需求。</p>
+<p>其中政府开支（外生）<span class="math notranslate nohighlight">\(G = G_N + G_M + G_A + G_D + G_{S} + G_O\)</span> ，包括民生、军备、科技、文化、治安及其他不纳入模型的经常性开支 <span class="math notranslate nohighlight">\(G_O\)</span>（建设性投资等资本积累已计入 <span class="math notranslate nohighlight">\(I\)</span> 中）。<span class="math notranslate nohighlight">\(DT\)</span> 即 Deterrent 他国的威慑作为外部安全的需求函数；<span class="math notranslate nohighlight">\(\epsilon_{ij}\)</span> 为地缘因子 Geographic factor，表示相互军事力量的威胁程度（当有海外军事基地部署时，<span class="math notranslate nohighlight">\(\epsilon_{ij} \neq \epsilon_{ji}\)</span>）（“一切政治首先是地缘政治”）；<span class="math notranslate nohighlight">\(\lVert ID_i-ID_j \rVert\)</span> 为可能存在的非主要影响因素。<span class="math notranslate nohighlight">\(PO\)</span> 即 Public Order 为内部安全供给，受到包括群众福利在内的多变量影响；<span class="math notranslate nohighlight">\(RE\)</span> 即 Regime Exertion 公权力的行使，准确来说应写为各不同部分收支的函数（<span class="math notranslate nohighlight">\(G_N\)</span>、<span class="math notranslate nohighlight">\(G_M\)</span>、<span class="math notranslate nohighlight">\(G_A\)</span>、<span class="math notranslate nohighlight">\(G_D\)</span>、<span class="math notranslate nohighlight">\(G_O\)</span>，<span class="math notranslate nohighlight">\(T\)</span> 也可拆开），表示内部安全需求。</p>
 <p>ICR 需要各国的利益与安全同时出清。</p>
 <p>当然，我们还可以纳入增长，要为其他几个变量刻画动态，完善方程组：</p>
 <div class="math notranslate nohighlight">
