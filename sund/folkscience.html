@@ -170,9 +170,10 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../note/pre1.html">Pre 1</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../note/evol_game.html">Outline of Evolutionary Game Theory</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../note/mechbrief.html">A Brief Draft of Classical Mechanics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../note/millerorr.html">Proof of Miller-Orr Model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../note/solow.html">Solow Model</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../note/astrology.html">Astrology</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../note/crypto.html">Cryptocurrency</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../note/solow.html">Solow Model</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../proj.html">课题探讨 Projects</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -181,6 +182,7 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../wonder.html">周五碎笔 Friday</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../wonder/23.11.24.html">Frivolity: Model for the Nations</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../wonder/23.11.17.html">Notion: The Apple that Never Lands</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../wonder/23.11.10.html">Frivolity: Weighted Synchronicity</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../wonder/23.11.3.html">Frivolity: Love in Evolution and Equilirium</a></li>
@@ -887,7 +889,7 @@ ZY是辽阳市1968年初中毕业的下乡青年，1978年返城后当过多年�
 <p>相比“民科”，我更加赞同本文开头所提及的“江湖科学”的称谓。说是“民间科学爱好者”恐怕“科学”二字难以成立，而修饰以“江湖”较能体现其气质和属性。</p>
 <p>田松大概是国内最早学术性研究民科群体的人，做过北大博后和物理教师，曾任北师大科学哲学教授，知网上可以查到他的数篇民科相关的作品。值得注意的是，其本人亦存在诸多争议——有不少人质疑其治学水平和思维能力，认为他本身就带有神棍气质，且发表过“警惕科学家”（即科学理性作为新宗教的态度）一类的类民科言论。（尼采：“和怪物作战者，应谨防自己成为怪物。而当你凝视深渊之时，深渊亦将凝视着你”）留待读者自行甄别考证。</p>
 <p>总而言之，民科产生的原因可以概括为国家刚成立后和那个混乱时代所弘扬的激情、奉献、家国精神与浪漫情怀（一种感性的东西）深入民众内心，而在大乱结束、骤然间迎来科学之春的时候，大部分民科普遍只受过中小学教育，缺乏基本的科学素养和理性思维，却应着社会潮流、凭着内心仅剩的感性对准了理性的东西进发。他们有着无与伦比的热情，甚至不顾生活所迫的追求所谓科学的高峰。</p>
-<p>这个科学的流行期大概持续了十余年。到80年代后思想启蒙纷争，文学和文青兴起；再到90年代后改革进一步深化和进一步世俗化，经管、法律和实用工科登上主流，民科这个群体被迭代进历史。当团结就是力量、玉米赛大象的感性变成了十一届三中全会上“实事求是”的理性，一部分人带着旧发展水平的烙印、延续着旧的东西来到了今天并深深的陷入了偏执的变态心理中，成为了时代变迁的缩影。这样的变态来自于暴露在科学技术蓬勃发展前教育与素养缺乏——因此我们看到民科很多行为和言论都带有神话色彩甚至原始巫术的元素，仍然亟待理性的去魅；也来自于轰动一时的科普（如徐迟的《哥德巴赫猜想》），它们只宣传苹果掉落的瞬间，而不是苹果落地之后的事。这些浪漫主义的科普文学作品令人印象深刻的无非是苹果砸脑袋的“灵机一动”——硬币的另一面便是“铁杵成针”，民科们竞相等待那个要落下的苹果。</p>
+<p>这个科学的流行期大概持续了十余年。到80年代后思想启蒙纷争，文学和文青兴起；再到90年代后改革进一步深化和进一步世俗化，经管、法律和实用工科登上主流，民科这个群体被迭代进历史。当团结就是力量、玉米赛大象的感性变成了十一届三中全会上“实事求是”的理性，一部分人带着旧发展水平的烙印、延续着旧的东西来到了今天并深深的陷入了偏执的变态心理中，成为了时代变迁的缩影。这样的变态来自于暴露在科学技术蓬勃发展前教育与素养缺乏——因此我们看到民科很多行为和言论都带有神话色彩甚至原始巫术的元素，仍然亟待理性的去魅；也来自于轰动一时的科普（如徐迟的《哥德巴赫猜想》），它们只宣传苹果掉落的瞬间，而不是苹果落地之后的事。这些浪漫主义的科普文学作品令人印象深刻的无非是苹果砸脑袋的“灵机一动”——硬币的另一面便是“铁杵成针”，民科们竞相等待那个要落下的苹果，等到天荒人老。</p>
 <p>不过在我的观点里科学一直不单单等于理性的代名词，它既有严谨的理论，也有感性激昂的一面，但其建立在合格的科学素养和训练下，在科学话语共同体当中前进探索，而不是闭门造车、无法交流、高举英雄主义与奉献精神。</p>
 <p>值得指出的是，随着时代的进一步发展，当下的民科又出现了另一批群体，他们不再是传统的农民或工人，而往往是有头衔有职位的甚至学校和高等院校的人，对着自己不懂的领域大放厥词。举例有李子丰、雷奕安等。</p>
 <ul>

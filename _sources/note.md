@@ -32,11 +32,13 @@ Norbert Weiner, *Cybernetics, or Control and Communication in the Animal and the
 
 经典力学简稿
 
+米勒-奥尔模型
+
+索洛模型
+
 观星基础
 
 加密货币简稿
-
-索洛模型
 
 ### 简单教程
 
