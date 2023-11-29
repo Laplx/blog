@@ -1,7 +1,6 @@
 - file: intro
 - file: note
   sections:
-    - file: note/23.11
     - file: note/pre1
     - file: note/evol_game
     - file: note/mechbrief
