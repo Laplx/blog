@@ -28,6 +28,10 @@ This is my blog. I create ideas, make studies and share informations here.
 
 ### 欢迎评论！Comments
 
+评论需使用 Github accounts。
+
+警告 warning：请勿发布无关内容。留言须遵守国家法律法规。Do not post irrelevant content. Comments must comply with laws and regulations.
+
 
 ```{div}
 <div id="container"></div>

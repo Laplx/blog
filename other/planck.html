@@ -68,6 +68,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'other/planck';</script>
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -401,63 +403,72 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section id="planck">
+  <section class="tex2jax_ignore mathjax_ignore" id="planck">
 <h1>Planck 公式在历史上是怎么诞生的<a class="headerlink" href="#planck" title="Permalink to this heading">#</a></h1>
 <section id="wein">
 <h2>Wein：热力学结合实验定律猜测<a class="headerlink" href="#wein" title="Permalink to this heading">#</a></h2>
 <p>1896，Wien 考虑缓慢膨胀的球体中的单频平衡辐射场，由多普勒效应</p>
-<p>$$
+<div class="math notranslate nohighlight">
+\[
 \nu / T = Const
-$$</p>
+\]</div>
 <p>结合 Stefan-Boltzmann 的结果，平衡辐射场的能谱应为</p>
-<p>$$
+<div class="math notranslate nohighlight">
+\[
 u d\nu = \nu^{3} f(\nu/T)
-$$</p>
+\]</div>
 <p>结合实验规律，猜测未知函数为指数形式</p>
-<p>$$
+<div class="math notranslate nohighlight">
+\[
 u d\nu = c_{1} \nu^{3} e^{ - c_{2} \nu / T }
-$$</p>
+\]</div>
 <p>这个公式对实验的符合结果不错，替代了之前一系列猜的公式。</p>
 </section>
 <section id="rayleigh">
 <h2>Rayleigh：从电磁和统计的理论出发<a class="headerlink" href="#rayleigh" title="Permalink to this heading">#</a></h2>
-<p>1900，Rayleigh 不满 Wein 的结果没有电磁相关基础，考虑一个电磁方腔，内部所有允许的电磁驻波构成了一系列振子，某个频率附近的振子数 $\frac{8\pi}{c^3} V \nu^{2} d \nu$。</p>
-<p>考虑能均分定理，每个振子的平均能量$U = kT$，得到</p>
-<p>$$
+<p>1900，Rayleigh 不满 Wein 的结果没有电磁相关基础，考虑一个电磁方腔，内部所有允许的电磁驻波构成了一系列振子，某个频率附近的振子数 <span class="math notranslate nohighlight">\(\frac{8\pi}{c^3} V \nu^{2} d \nu\)</span>。</p>
+<p>考虑能均分定理，每个振子的平均能量<span class="math notranslate nohighlight">\(U = kT\)</span>，得到</p>
+<div class="math notranslate nohighlight">
+\[
 u d\nu = \frac{8\pi k}{c^{3}} \nu^{2} T d\nu
-$$</p>
+\]</div>
 <p>这里出现了著名的紫外灾难，Rayleigh于是强行在后面增加了指数衰减项。而在 1905 年 Jeans 算出了系数，并坚定地去掉了指数项。Jeans 敢于坚持紫外发散，又在历史上先于 Planck 接受了量子的观点，不失为一段趣事。</p>
 </section>
 <section id="id1">
 <h2>Planck：内插法与量子解释<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h2>
 <p>1900.10，Planck通过内插法，具体而言，考虑所有振子间能量的涨落</p>
-<p>$$
+<div class="math notranslate nohighlight">
+\[\begin{split}
 \begin{array}{l}
-U = \bar{E} = \frac{1}{Z} \sum E e^{- \beta E} = - \frac{\partial \ln Z}{\partial \beta}\
+U = \bar{E} = \frac{1}{Z} \sum E e^{- \beta E} = - \frac{\partial \ln Z}{\partial \beta}\\
 \overline{(E-U)^{2}} = \frac{1}{Z} \sum (E^2 - U^2) e^{- \beta E} = - \frac{1}{Z} \frac{\partial}{\partial \beta} (Z U) - U^2 = - \frac{\partial U}{\partial \beta}\end{array}
-$$</p>
+\end{split}\]</div>
 <p>对 Wien 公式</p>
-<p>$$
+<div class="math notranslate nohighlight">
+\[\begin{split}
 \begin{array}{l}
-U = c_{1} \nu e^{- c_{2} \nu / T} \
+U = c_{1} \nu e^{- c_{2} \nu / T} \\
 \overline{(E-U)^{2}} = k c_{2} \nu U
 \end{array}
-$$</p>
+\end{split}\]</div>
 <p>对 Rayleigh 公式</p>
-<p>$$
+<div class="math notranslate nohighlight">
+\[\begin{split}
 \begin{array}{l}
-U = kT \
+U = kT \\
 \overline{(E - U)^{2}} = U^{2}
 \end{array}
-$$</p>
+\end{split}\]</div>
 <p>注意此处用 U 表示而非用 T，可能因为 T 反应不同能级上分布？求解</p>
-<p>$$
+<div class="math notranslate nohighlight">
+\[
 -k \frac{1}{\frac{d (1/T)}{d U}} = k c_{2} \nu U + U^{2}
-$$</p>
-<p>$$
+\]</div>
+<div class="math notranslate nohighlight">
+\[
 U = \frac{h \nu}{e^{h\nu / kT} - 1} = \frac{\sum nh\nu e^{-\beta nh\nu}}{\sum e^{- \beta nh\nu}}
-$$</p>
-<p>解释为每个振子的能量只能处在 $h\nu$ 的整数倍上。</p>
+\]</div>
+<p>解释为每个振子的能量只能处在 <span class="math notranslate nohighlight">\(h\nu\)</span> 的整数倍上。</p>
 <!-- 20230730 ljh --></section>
 </section>
 

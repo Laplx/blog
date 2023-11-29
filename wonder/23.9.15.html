@@ -68,6 +68,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'wonder/23.9.15';</script>
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -400,19 +402,20 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section id="frivolity-can-i-update-in-time">
+  <section class="tex2jax_ignore mathjax_ignore" id="frivolity-can-i-update-in-time">
 <h1>Frivolity: Can I Update in Time<a class="headerlink" href="#frivolity-can-i-update-in-time" title="Permalink to this heading">#</a></h1>
 <section id="id1">
 <h2>更新之谜<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h2>
 <p>（发现真是很久没有更新这么困难了！很难说是自己不去动脑思考了还是对内容的要求变高了……于是这周来试着模型化一下这件事，但我并未给出解答）</p>
-<p>我们把 $T$ 记两个星期五之间的一个更新区间。idea的到来视作Poisson过程，其参数为 $\lambda$ 。在产生一个idea之后，我会花费一定的时间思考以判断和调整其价值。我们假设idea们都具有一个unknown的actual quality $g$ ，服从指数分布 $ f(g) = \frac{1}{g_e} e^{-\frac{g}{g_e}}， where\ g_e = E(g)$ 。（准确来说应该是两者独立，$dt$ 时间段内产生质量 $g$ 附近 $dg$ 元段的idea的概率是 $\lambda f(g)dtdg$ ）刚产生时我对它的认知为 $g(0)$，其后如果花的思考时间 $t_k$ 越多，对其的估计也能越准，即 $g(t) \sim \mathcal N(g, \sigma^2(t)),\ where\ \sigma^2(t)=\sigma_0^2e^{-\alpha t}$ （有待商榷，因为我的认知大概是连续光滑变动的，但或许我可以设计一个合适的随机过程使得累积量满足这样的正态分布）。我可以根据自己的strategy随时终止对此idea的思考和研究（要么感觉不错很有价值就写这个了，要么感觉价值很低算了算了）。如果没有达到标准，在 $t_1 + t_{k1}$（$t_1$ 为产生用时，满足指数衰减）之后我可以继续等待 $t_2$ ，并对其进行思考。</p>
-<p>我对栏目设置了一个价值下限 $g_h$ ，只有（在我的认知里）$g \geq g_h$ 的idea才能更新。那么就可能出现 $T$ 时段内我一直没有合适的idea的情况，我想来看看它的概率（跟这几个参数设置有关，这是讨论的重点）（假设每周五之后都重新开始准备下一周）。同时，本周的忙碌程度也会影响idea的产出，如果花费过多时间在思考上，便会较难保持正常的课业和任务，因此 $\lambda$ 实为函数 $\lambda(\theta) = \lambda_0 (1-\frac{\theta}{\theta_m})$ ，其中 $\theta=\frac{\sum t_k}{t},\ \theta_m=\frac{T_0}{T}$ ，$t$ 表示此时点到上周五的总时长，$\sum t_k$ 即耗费的思考时间，这个比例不能过高，需要保证在一个 $T - T_0$ 的每周课业时间之下。</p>
+<p>我们把 <span class="math notranslate nohighlight">\(T\)</span> 记两个星期五之间的一个更新区间。idea的到来视作Poisson过程，其参数为 <span class="math notranslate nohighlight">\(\lambda\)</span> 。在产生一个idea之后，我会花费一定的时间思考以判断和调整其价值。我们假设idea们都具有一个unknown的actual quality <span class="math notranslate nohighlight">\(g\)</span> ，服从指数分布 <span class="math notranslate nohighlight">\( f(g) = \frac{1}{g_e} e^{-\frac{g}{g_e}}， where\ g_e = E(g)\)</span> 。（准确来说应该是两者独立，<span class="math notranslate nohighlight">\(dt\)</span> 时间段内产生质量 <span class="math notranslate nohighlight">\(g\)</span> 附近 <span class="math notranslate nohighlight">\(dg\)</span> 元段的idea的概率是 <span class="math notranslate nohighlight">\(\lambda f(g)dtdg\)</span> ）刚产生时我对它的认知为 <span class="math notranslate nohighlight">\(g(0)\)</span>，其后如果花的思考时间 <span class="math notranslate nohighlight">\(t_k\)</span> 越多，对其的估计也能越准，即 <span class="math notranslate nohighlight">\(g(t) \sim \mathcal N(g, \sigma^2(t)),\ where\ \sigma^2(t)=\sigma_0^2e^{-\alpha t}\)</span> （有待商榷，因为我的认知大概是连续光滑变动的，但或许我可以设计一个合适的随机过程使得累积量满足这样的正态分布）。我可以根据自己的strategy随时终止对此idea的思考和研究（要么感觉不错很有价值就写这个了，要么感觉价值很低算了算了）。如果没有达到标准，在 <span class="math notranslate nohighlight">\(t_1 + t_{k1}\)</span>（<span class="math notranslate nohighlight">\(t_1\)</span> 为产生用时，满足指数衰减）之后我可以继续等待 <span class="math notranslate nohighlight">\(t_2\)</span> ，并对其进行思考。</p>
+<p>我对栏目设置了一个价值下限 <span class="math notranslate nohighlight">\(g_h\)</span> ，只有（在我的认知里）<span class="math notranslate nohighlight">\(g \geq g_h\)</span> 的idea才能更新。那么就可能出现 <span class="math notranslate nohighlight">\(T\)</span> 时段内我一直没有合适的idea的情况，我想来看看它的概率（跟这几个参数设置有关，这是讨论的重点）（假设每周五之后都重新开始准备下一周）。同时，本周的忙碌程度也会影响idea的产出，如果花费过多时间在思考上，便会较难保持正常的课业和任务，因此 <span class="math notranslate nohighlight">\(\lambda\)</span> 实为函数 <span class="math notranslate nohighlight">\(\lambda(\theta) = \lambda_0 (1-\frac{\theta}{\theta_m})\)</span> ，其中 <span class="math notranslate nohighlight">\(\theta=\frac{\sum t_k}{t},\ \theta_m=\frac{T_0}{T}\)</span> ，<span class="math notranslate nohighlight">\(t\)</span> 表示此时点到上周五的总时长，<span class="math notranslate nohighlight">\(\sum t_k\)</span> 即耗费的思考时间，这个比例不能过高，需要保证在一个 <span class="math notranslate nohighlight">\(T - T_0\)</span> 的每周课业时间之下。</p>
 <p>（假设了两个指数分布、一个正态分布和线性衰减，个人觉得可以接受，还可以简化一些，比如把正态换成线性衰减在一个范围内以得到解析解）</p>
 <p>那么应该采用怎样的strategy呢？最小的拖更率是多少呢？我先给出永远只思考一个idea的方式下的答案：</p>
-<p>$$
+<div class="math notranslate nohighlight">
+\[
 p_1 = e^{-\lambda_0T} + \int_0^T \lambda_0 e^{-\lambda_0T} dt_0 \int_0^{+\infty} \frac{1}{g_e}e^{-\frac{g}{g_e}} \frac{1}{\sqrt{2\pi\sigma^2(t)}} \mathcal{\Pi}(\frac{g_h-g}{\sigma(t)}) dg
-$$
-其中 $\mathcal{\Pi}(x)$ 为 $\int_{-\infty}^x e^{-t^2}dt = \sqrt{\pi}\ erf(x)$ 的反函数，类似正态分位数。</p>
+\]</div>
+<p>其中 <span class="math notranslate nohighlight">\(\mathcal{\Pi}(x)\)</span> 为 <span class="math notranslate nohighlight">\(\int_{-\infty}^x e^{-t^2}dt = \sqrt{\pi}\ erf(x)\)</span> 的反函数，类似正态分位数。</p>
 </section>
 </section>
 

@@ -68,6 +68,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'wonder/23.9.1';</script>
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -400,7 +402,7 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section id="frivolity-theory-of-lazing-in-military-training">
+  <section class="tex2jax_ignore mathjax_ignore" id="frivolity-theory-of-lazing-in-military-training">
 <h1>Frivolity: Theory of lazing in military training<a class="headerlink" href="#frivolity-theory-of-lazing-in-military-training" title="Permalink to this heading">#</a></h1>
 <section id="id1">
 <h2>军训偷懒学<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h2>
@@ -411,11 +413,11 @@ document.write(`
 <p><em>军训技巧学</em>：1. 使用厚厚的鞋垫或用来垫的物体，还可以使用硬硬的东西避免踩鞋 2. 前倾，但是动态——指可以来回前后倾倒，甚至引发教官对你的关心 3. 利用观测漏洞动手动脚，例如双脚向外折开休息 4. 表现出很严肃对待但实在很愚笨的样子 5. 喊话时滥竽充数，即挤眉弄眼扯喉咙，表现出声嘶力竭的样子</p>
 <p><em>军训观测学</em>：来考虑一下当我们视野里没有教官的时候是否可以乱动。</p>
 <p><img alt="" src="../_images/23.9.1(2).jpg" /></p>
-<p><em>（人眼具有约$\it 120^{\circ}$的视野张角）</em></p>
+<p><em>（人眼具有约<span class="math notranslate nohighlight">\(\it 120^{\circ}\)</span>的视野张角）</em></p>
 <p>先假设所有人站成一个标准的方阵。我们把每个人看成一条线光源：</p>
 <p><img alt="" src="../_images/23.9.1.jpg" /></p>
-<p>（共 $m_f+m_b+1$ 行 $n_l+n_r+1$ 列）</p>
-<p>简化起见我们认为教官没有离方队那么近，其视野能够覆盖整个方队且面向方队，即能捕捉到视野内的动态。鉴于光路可逆，我们不予讨论前向$120^{\circ}$内的视角。每个线光源的两端与我们观测点 $(x, y)$ 的连线的角度之间即是遮挡域，我们逐一计算出各个人的遮挡域并取出交集。</p>
+<p>（共 <span class="math notranslate nohighlight">\(m_f+m_b+1\)</span> 行 <span class="math notranslate nohighlight">\(n_l+n_r+1\)</span> 列）</p>
+<p>简化起见我们认为教官没有离方队那么近，其视野能够覆盖整个方队且面向方队，即能捕捉到视野内的动态。鉴于光路可逆，我们不予讨论前向<span class="math notranslate nohighlight">\(120^{\circ}\)</span>内的视角。每个线光源的两端与我们观测点 <span class="math notranslate nohighlight">\((x, y)\)</span> 的连线的角度之间即是遮挡域，我们逐一计算出各个人的遮挡域并取出交集。</p>
 <p>计算过程以伪代码展示：</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span><span class="p">,</span><span class="n">j</span> <span class="ow">in</span> <span class="p">(</span><span class="o">-</span><span class="n">n_l</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">|</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">n_r</span><span class="p">),(</span><span class="o">-</span><span class="n">m_b</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">|</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">m_f</span><span class="p">):</span> <span class="c1"># 遍历其他所有人</span>
 <span class="n">theta_r</span> <span class="o">=</span> <span class="n">atan2</span><span class="p">(</span><span class="n">j</span><span class="o">*</span><span class="n">h</span><span class="o">-</span><span class="n">y</span><span class="p">,</span><span class="n">i</span><span class="o">*</span><span class="n">l</span><span class="o">+</span><span class="n">d</span><span class="o">/</span><span class="mi">2</span><span class="o">-</span><span class="n">x</span><span class="p">)</span> <span class="c1"># 四象限反正切(0-2pi)</span>
@@ -432,11 +434,11 @@ document.write(`
 <span class="n">calculate</span> <span class="n">the</span> <span class="n">length</span> <span class="n">of</span> <span class="n">each</span> <span class="n">interval</span> <span class="ow">and</span> <span class="n">add</span> <span class="n">then</span> <span class="n">together</span><span class="o">.</span>
 </pre></div>
 </div>
-<p>（可以预见，在具有一定人数且人靠内部的情况下，偷偷动动手是大概率不会发现的。一般教官要求的参数：$h=l=75cm$（左右转后一致），$l-d = 10cm\ 即\ d=65cm$。为了方便继续研究，$(x,y)$ 用以表示相对人中心一定偏移处的动作影响，如左手在腿边拨动手指应取 $(-32.5,0)$）</p>
+<p>（可以预见，在具有一定人数且人靠内部的情况下，偷偷动动手是大概率不会发现的。一般教官要求的参数：<span class="math notranslate nohighlight">\(h=l=75cm\)</span>（左右转后一致），<span class="math notranslate nohighlight">\(l-d = 10cm\ 即\ d=65cm\)</span>。为了方便继续研究，<span class="math notranslate nohighlight">\((x,y)\)</span> 用以表示相对人中心一定偏移处的动作影响，如左手在腿边拨动手指应取 <span class="math notranslate nohighlight">\((-32.5,0)\)</span>）</p>
 <p>可是我们知道很多时候是会被发现的，尤其像擦汗抓痒。一是这些动作持续时间长，风险在增加；二是幅度大，除了动动手指可能没什么影响，其他很多动作会对整个躯体带来震动，比如头部会起伏。我们再来考虑这个维度。</p>
-<p>方法非常简单，我们只需要把参数换成脑袋的宽度和距离即可。同时部分线光源的区间由于比被观测者矮 $H(i,j) \le H(0,0)$ 应删去。（不妨设一个正态分布，可以代入自己身高得到一个概率$p$也可以综合起来就是$1/2$）</p>
-<p>准确的说，不同高度下这个剖面的参数都不相同，且应考虑视线斜向下的遮挡问题，但这个略显细节。还有一些数学上的操作和讨论，例如方阵不标准，即 $(il+\delta_1,jh+\delta_2)$，在此不做赘述。</p>
-<p>为一个简单的例子算个值：我的位置在 $15\times 15$ 的方阵中的第 $3$ 行第 $7$ 列，那么当正前方没看到教官时动一动大概有 $45.5%$ 的概率被抓。（假设我是矮子即没有删人，代码见页末）</p>
+<p>方法非常简单，我们只需要把参数换成脑袋的宽度和距离即可。同时部分线光源的区间由于比被观测者矮 <span class="math notranslate nohighlight">\(H(i,j) \le H(0,0)\)</span> 应删去。（不妨设一个正态分布，可以代入自己身高得到一个概率<span class="math notranslate nohighlight">\(p\)</span>也可以综合起来就是<span class="math notranslate nohighlight">\(1/2\)</span>）</p>
+<p>准确的说，不同高度下这个剖面的参数都不相同，且应考虑视线斜向下的遮挡问题，但这个略显细节。还有一些数学上的操作和讨论，例如方阵不标准，即 <span class="math notranslate nohighlight">\((il+\delta_1,jh+\delta_2)\)</span>，在此不做赘述。</p>
+<p>为一个简单的例子算个值：我的位置在 <span class="math notranslate nohighlight">\(15\times 15\)</span> 的方阵中的第 <span class="math notranslate nohighlight">\(3\)</span> 行第 <span class="math notranslate nohighlight">\(7\)</span> 列，那么当正前方没看到教官时动一动大概有 <span class="math notranslate nohighlight">\(45.5\%\)</span> 的概率被抓。（假设我是矮子即没有删人，代码见页末）</p>
 <p>（需要指出这里最大的疏忽：教官的概率空间是怎么样的？真的是以我观测的角度均匀分布的吗？）</p>
 <p><em>军训伪装学</em>：理论上只要报告身体不适即可休息，但我们来假想一种不允许这样子干的疯狂训练。例如你可以双腿一软，缓缓躺倒或跪下，闭上眼睛或大声喘气……</p>
 <p>最后再给各位支上几招（不负责噢）：</p>

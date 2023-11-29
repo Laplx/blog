@@ -68,6 +68,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'wonder/23.6.9';</script>
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -400,11 +402,11 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section id="frivolity-dots-and-boxes">
+  <section class="tex2jax_ignore mathjax_ignore" id="frivolity-dots-and-boxes">
 <h1>Frivolity: Dots and Boxes<a class="headerlink" href="#frivolity-dots-and-boxes" title="Permalink to this heading">#</a></h1>
 <section id="id1">
 <h2>划线围格<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h2>
-<p>这是一个曾在我高中时流行的简单的纸笔小游戏。经过搜索叫做点格棋 Dots and Boxes，由法国数学家Lucas在1891年推出（原本以为没名字，自己取了中文名划线围格和英文名Grid Enclosing）（失望的发现已经是一个经典的Computer Games项目了，但还是坚持完成本篇吧）。游戏进程如下：有 $n \times n$ 大小的网格，双方玩家互相沿着某一条直线划线（一次划一个单位小格的边），当某块区域被合拢围起来时，内部格数归最后一笔合拢的玩家所有，此时该玩家必须再走一步棋（直至没有产生围格为止）。到最后棋面被完全瓜分成若干个完整区域（最外的边线也要一笔笔划上），计算玩家得分（所占格数）判断胜利。</p>
+<p>这是一个曾在我高中时流行的简单的纸笔小游戏。经过搜索叫做点格棋 Dots and Boxes，由法国数学家Lucas在1891年推出（原本以为没名字，自己取了中文名划线围格和英文名Grid Enclosing）（失望的发现已经是一个经典的Computer Games项目了，但还是坚持完成本篇吧）。游戏进程如下：有 <span class="math notranslate nohighlight">\(n \times n\)</span> 大小的网格，双方玩家互相沿着某一条直线划线（一次划一个单位小格的边），当某块区域被合拢围起来时，内部格数归最后一笔合拢的玩家所有，此时该玩家必须再走一步棋（直至没有产生围格为止）。到最后棋面被完全瓜分成若干个完整区域（最外的边线也要一笔笔划上），计算玩家得分（所占格数）判断胜利。</p>
 <p>这里简单介绍我的一小部分想法：将游戏局面转化为连接图。（便于计算机存储、处理并设计算法；目前网上可以搜到最好的程序是alpha-beta search）</p>
 <p>从每个边界开口进去，经过所有奇性格（四边中只有两条边被划过的格子），到达一处格子（小于等于一条边被划过的），称为中心格。中心格用圈表示，圈之间用直线连接，线旁标上连接管的格子长度（0长可不写）。每一步都是cut off一段直线并把其上数字归为己有。若一个圈只有两条线连接了，它将消失并与两边的线联合起来成为新的更长的管。</p>
 <p><img alt="" src="../_images/23.6.9.jpg" /></p>
@@ -418,9 +420,9 @@ document.write(`
 <p>[3] Barker, Joseph, and Richard Korf. “Solving dots-and-boxes.” <em>Proceedings of the AAAI Conference on Artificial Intelligence</em>. Vol. 26. No. 1. 2012.</p>
 <p>[4] Buchin, Kevin, et al. “Dots &amp; boxes is pspace-complete.” <em>arXiv preprint arXiv:2105.02837</em> (2021).</p>
 <p><strong>23.7.1 插播：My Own New Conclusion !</strong></p>
-<p><strong>In $n \times n$ dots &amp; boxes game, Zermelo’s Theorem can be specified to:
-The first player wins or at least draws if $n$ is even;
-The second player wins if $n$ is odd.</strong></p>
+<p><strong>In <span class="math notranslate nohighlight">\(n \times n\)</span> dots &amp; boxes game, Zermelo’s Theorem can be specified to:
+The first player wins or at least draws if <span class="math notranslate nohighlight">\(n\)</span> is even;
+The second player wins if <span class="math notranslate nohighlight">\(n\)</span> is odd.</strong></p>
 <p>(Whole proof will be uploaded at proper time.)</p>
 </section>
 </section>

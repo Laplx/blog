@@ -68,6 +68,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'wonder/23.10.27';</script>
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -400,15 +402,15 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section id="frivolity-red-light-preference">
+  <section class="tex2jax_ignore mathjax_ignore" id="frivolity-red-light-preference">
 <h1>Frivolity: Red-light Preference<a class="headerlink" href="#frivolity-red-light-preference" title="Permalink to this heading">#</a></h1>
 <section id="id1">
 <h2>抢红灯偏好<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h2>
 <p>我想到一个有趣的可能的联系：</p>
 <p>会不会市场上的风险偏好者，喜欢在过路口时抢红灯？（比如在快到路口绿灯时间所剩无几时选择加速冲过而不是减速等待）</p>
-<p>仔细一点说，是否每个人的 Arrow - Pratt RRA (相对风险厌恶系数 $A$) 与 $B$ 有显著的正相关？</p>
-<p>这里 $B$ 的定义参考 $A$ 的方法，我们认为决策者的效用到达时刻 $t_u = E(t) - \frac{1}{2} B \sigma^2_t$（$t$ 指到达路口时信号灯的时间，正为绿灯，负为红灯——当然，纳入黄灯结论更为丰富）。于是决策者的预期加速度 $a$ 满足匀加速运动的方程 $t_u = \frac{x}{v+\frac{at_u}{2}}$ 即 $a=\frac{2}{t_u^2}(x-vt_u)$（显然这是一个简化的思考）。关于 $t$ 的分布是与 $a$、$x$、$v$、$T$（此时的绿灯剩余秒数）有关的，例如 $t \sim \mathbb{N} (T-t_0(a,x,v),\sigma^2)$，$where\ t_0\ is\ the\ solution\ of\ $$constant\ acceleration\ motion$，联立即可得到 $a$。</p>
-<p>这是（连续的）均衡的方式。（我觉得离散的决策也是有道理的。）通过测量这些投资者过路口时运动的物理数据，我们大概可以估计出他们的 $\sigma^2$ 和 $B$。或许 $B$ 为负数的人在股市上更可能表现出风险偏好的倾向。</p>
+<p>仔细一点说，是否每个人的 Arrow - Pratt RRA (相对风险厌恶系数 <span class="math notranslate nohighlight">\(A\)</span>) 与 <span class="math notranslate nohighlight">\(B\)</span> 有显著的正相关？</p>
+<p>这里 <span class="math notranslate nohighlight">\(B\)</span> 的定义参考 <span class="math notranslate nohighlight">\(A\)</span> 的方法，我们认为决策者的效用到达时刻 <span class="math notranslate nohighlight">\(t_u = E(t) - \frac{1}{2} B \sigma^2_t\)</span>（<span class="math notranslate nohighlight">\(t\)</span> 指到达路口时信号灯的时间，正为绿灯，负为红灯——当然，纳入黄灯结论更为丰富）。于是决策者的预期加速度 <span class="math notranslate nohighlight">\(a\)</span> 满足匀加速运动的方程 <span class="math notranslate nohighlight">\(t_u = \frac{x}{v+\frac{at_u}{2}}\)</span> 即 <span class="math notranslate nohighlight">\(a=\frac{2}{t_u^2}(x-vt_u)\)</span>（显然这是一个简化的思考）。关于 <span class="math notranslate nohighlight">\(t\)</span> 的分布是与 <span class="math notranslate nohighlight">\(a\)</span>、<span class="math notranslate nohighlight">\(x\)</span>、<span class="math notranslate nohighlight">\(v\)</span>、<span class="math notranslate nohighlight">\(T\)</span>（此时的绿灯剩余秒数）有关的，例如 <span class="math notranslate nohighlight">\(t \sim \mathbb{N} (T-t_0(a,x,v),\sigma^2)\)</span>，<span class="math notranslate nohighlight">\(where\ t_0\ is\ the\ solution\ of\ \)</span><span class="math notranslate nohighlight">\(constant\ acceleration\ motion\)</span>，联立即可得到 <span class="math notranslate nohighlight">\(a\)</span>。</p>
+<p>这是（连续的）均衡的方式。（我觉得离散的决策也是有道理的。）通过测量这些投资者过路口时运动的物理数据，我们大概可以估计出他们的 <span class="math notranslate nohighlight">\(\sigma^2\)</span> 和 <span class="math notranslate nohighlight">\(B\)</span>。或许 <span class="math notranslate nohighlight">\(B\)</span> 为负数的人在股市上更可能表现出风险偏好的倾向。</p>
 <p>（好吧照这个逻辑也许还有很多生活中的行为都可以……）</p>
 </section>
 </section>
