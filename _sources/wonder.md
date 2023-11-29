@@ -6,13 +6,15 @@ I will upload one of my ideas, fantasies, or proposals every frivolous Friday, m
 
 ### 目录
 
+23.12.1  国际关系续论
+
 23.11.24  国际关系模型
 
 23.11.17  永不落地的苹果
 
 23.11.10  加权共时
 
-23.11.3  暧昧：进化和均衡
+23.11.3  暧昧：进化与均衡
 
 23.10.27  抢红灯偏好
 
@@ -71,4 +73,3 @@ I will upload one of my ideas, fantasies, or proposals every frivolous Friday, m
 作者（Laplx）对“周五碎笔”内**全部内容享有著作权**。
 
 The author (Laplx) **holds copyright to all content** in 'Frivolous Friday'.
-

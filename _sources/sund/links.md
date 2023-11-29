@@ -2,15 +2,19 @@
 
 持续补充  有时间再细分
 
-*上次更新：23.11.3*
+*上次更新：23.12.1*
 
 ---
 
 ### 期刊
 
+[JSTOR](https://www.jstor.org/)
+
 [经济研究](https://navi.cnki.net/knavi/journals/JJYJ/detail?uniplatform=NZKPT)
 
 [金融研究](https://navi.cnki.net/knavi/journals/JRYJ/detail?uniplatform=NZKPT)
+
+[世界经济](https://navi.cnki.net/knavi/journals/SJJJ/detail?uniplatform=NZKPT)
 
 [AER](https://www.aeaweb.org/journals/AER)
 
@@ -18,7 +22,15 @@
 
 [RES](https://academic.oup.com/restud)
 
+[ECTA](https://www.jstor.org/journal/econometrica)
+
+[JPE](https://www.jstor.org/journal/jpoliecon)
+
 [JOF](https://onlinelibrary.wiley.com/loi/15406261)
+
+[JFE](https://www.sciencedirect.com/journal/journal-of-financial-economics/issues)
+
+[JCE](https://www.jstor.org/journal/jcultecon)
 
 ### 数据
 
@@ -84,6 +96,8 @@
 
 [Stack Exchange](https://stackexchange.com/)
 
+[东方财富](https://www.eastmoney.com/)
+
 [巨潮资讯](http://www.cninfo.com.cn/new/index)
 
 [Regulations.gov](https://www.regulations.gov/)
@@ -107,6 +121,12 @@
 [Wordle - 每日文字游戏](https://yundongfang.com/wordlegame/wordlegame.html?continueFlag=53d1cd9e118a8f5e30bc5b0d3b79e23e)
 
 [术语在线](https://www.termonline.cn/)
+
+[Macaulay Library](https://secure.birds.cornell.edu/cassso/login?service=https://www.macaulaylibrary.org/&gateway=true)
+
+[字鉴 - 书法智能识别](https://api.shufashibie.com/page/index.html)
+
+[余钊焕的个人网站 - 星图](http://yzhxxzxy.github.io/cn/starcharts.html)
 
 ### 检索
 
@@ -192,6 +212,8 @@
 
 [微分几何入门及广义相对论答案 - 豆丁网](https://www.docin.com/touch_new/preview_new.do?id=729855794)
 
+[Rudin《数学分析原理》习题解答指导 - 原创力文档](https://m.book118.com/html/2020/1005/7051011154003003.shtm)
+
 ### 计算技术
 
 [财务函数（参考） - Microsoft 支持](https://support.microsoft.com/zh-cn/office/财务函数-参考-5658d81e-6035-4f24-89c1-fbf124c2b1d8)
@@ -246,9 +268,17 @@
 
 ### 经济
 
+[Sterman Business Dynamics](http://www.mhhe.com/business/opsci/sterman/)
+
 [中国的IS-LM曲线及其宏观经济政策效应 - 豆丁网](https://www.docin.com/touch_new/preview_new.do?id=525134665)
 
 [流动性经济学｜人民币汇率70年：从固定汇率制到汇率双轨制](https://m.thepaper.cn/newsDetail_forward_3992983)
+
+[流动性经济学｜南北战争与国民银行时代的开启_手机新浪网](https://finance.sina.cn/2022-04-07/detail-imcwiwst0343775.d.html?from=wap)
+
+[债市概览 - 新浪](https://finance.sina.cn/2021-04-20/detail-ikmyaawc0821576.d.html?from=wap)
+
+[大白话CPA- 知乎](https://zhuanlan.zhihu.com/p/353638890)
 
 [布兰查德中级宏观经济学第七版课后答案（全英文） - 道客巴巴](https://m.doc88.com/p-09316172309399.html?r=1#)
 
