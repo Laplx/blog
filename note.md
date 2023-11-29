@@ -36,6 +36,10 @@ Norbert Weiner, *Cybernetics, or Control and Communication in the Animal and the
 
 索洛模型
 
+因果推断导论
+
+数学建模简稿
+
 观星基础
 
 加密货币简稿

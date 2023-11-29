@@ -7,6 +7,8 @@
     - file: note/mechbrief
     - file: note/millerorr
     - file: note/solow
+    - file: note/intro_causalinfer
+    - file: note/mathmodel
     - file: note/astrology
     - file: note/crypto
 - file: proj
@@ -17,6 +19,7 @@
       title: 红楼遗梦
 - file: wonder
   sections:
+    - file: wonder/23.12.1
     - file: wonder/23.11.24
     - file: wonder/23.11.17
     - file: wonder/23.11.10
