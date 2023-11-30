@@ -32,15 +32,14 @@ This is my blog. I create ideas, make studies and share informations here.
 
 发布内容须遵守国家法律法规。Comments must comply with laws and regulations.
 
+
 ```{div}
-<-- 引入 -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
   <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
 
-<-- 添加一个容器-->
 <div id="gitalk-container"></div>
 
-<-- 生成 gitalk 插件-->
+<script>
 var gitalk = new Gitalk({
   clientID: '4a0be11acd2141eb88a2',
 
@@ -54,5 +53,6 @@ var gitalk = new Gitalk({
 })
 
 gitalk.render('gitalk-container')
+</script>
 ```
 
