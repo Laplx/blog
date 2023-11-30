@@ -164,7 +164,6 @@ const thebe_selector_output = ".output, .cell_output"
         </ul>
         <ul class="nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="../note.html">学习评记 Notes</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../note/23.11.html">Journal: 23.11</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../note/pre1.html">Pre 1</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../note/evol_game.html">Outline of Evolutionary Game Theory</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../note/mechbrief.html">A Brief Draft of Classical Mechanics</a></li>
@@ -403,7 +402,9 @@ document.write(`
 <section id="id1">
 <h2>可设性<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h2>
 <p><img alt="" src="../_images/23.12.8.jpg" /></p>
-<p>因果图</p>
+<p>因果图作为一种常见的因果推断甚至因果识别的表示方法，我们来尝试提出一点诘难。</p>
+<p>为了识别是 X 到 Y 而非 Y 到 X，需要 set Y = y（Pearl 称作 do）。但问题是，how we set Y？想要敲定一个确定的 Y，我们必须存在一个事先已确定的因果力量，能够绝对作用于 Y。这就导致了也许某一些变量，它是 unsettable 的。设想一个年久失修的螺旋测微器，我们扭动设定了 x ——但是由于螺距偏差和噪声，最终的 X 飘在 x 附近甚至抖来抖去……那么我们还存在现实的因果吗？（感觉有些像实验派和SEM派的争论）</p>
+<p>（其实还有一种可能的情况是 reciprocated variables。X 和 Y 会互相作用、互为因果。比如随机动力系统？）</p>
 </section>
 </section>
 

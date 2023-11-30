@@ -167,7 +167,6 @@ const thebe_selector_output = ".output, .cell_output"
         </ul>
         <ul class="nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="note.html">学习评记 Notes</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="note/23.11.html">Journal: 23.11</a></li>
 <li class="toctree-l2"><a class="reference internal" href="note/pre1.html">Pre 1</a></li>
 <li class="toctree-l2"><a class="reference internal" href="note/evol_game.html">Outline of Evolutionary Game Theory</a></li>
 <li class="toctree-l2"><a class="reference internal" href="note/mechbrief.html">A Brief Draft of Classical Mechanics</a></li>
@@ -408,7 +407,7 @@ document.write(`
 <h1>首页 Welcome<a class="headerlink" href="#welcome" title="Permalink to this heading">#</a></h1>
 <p><img alt="" src="_images/introg.jpg" /></p>
 <p><em>（上海·上海展览中心夜）</em></p>
-<p><strong>更新说明</strong>：我使用 Gitment 为网站加入了评论功能。它调用了 Github 仓库的 Issue 操作，无需第三方组件或备案，因此需要评论者拥有 Github 账号并登录来进行评论。</p>
+<p><strong>更新说明</strong>：我使用 Gitalk 为网站加入了评论功能。它调用了 Github 仓库的 Issue 操作，无需第三方组件或备案，因此需要评论者拥有 Github 账号并登录来进行评论。</p>
 <p><strong>勘误</strong>：23.10.20 篇中链式法则处 <span class="math notranslate nohighlight">\(o(logK(T_1,T_2))\)</span> 应改为 <span class="math notranslate nohighlight">\(O(logK(T_1,T_2))\)</span>；<span class="math notranslate nohighlight">\((2)\)</span>式上方 <span class="math notranslate nohighlight">\(K(T_2|T_1) \le T(T_2)\)</span> 应改为 <span class="math notranslate nohighlight">\(K(T_2|T_1) \le K(T_2)\)</span>。</p>
 <section id="what-s-here">
 <h2>这里有什么？What’s here?<a class="headerlink" href="#what-s-here" title="Permalink to this heading">#</a></h2>
@@ -428,23 +427,24 @@ document.write(`
 <section id="comments">
 <h2>欢迎评论！Comments<a class="headerlink" href="#comments" title="Permalink to this heading">#</a></h2>
 <p>评论需使用 Github accounts。</p>
-<p>警告 warning：请勿发布无关内容。留言须遵守国家法律法规。Do not post irrelevant content. Comments must comply with laws and regulations.</p>
+<p>发布内容须遵守国家法律法规。Comments must comply with laws and regulations.</p>
 <div class="docutils">
-<div id="container"></div>
-<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
-<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
-<script>
-var gitment = new Gitment({
-  id: 'blog ID', // default is 'location.href'
-  owner: 'Laplx',
-  repo: 'blog_comment',
-  oauth: {
-    client_id: '4a0be11acd2141eb88a2',
-    client_secret: '5942a71cb0015f68c2a99f26d66afe8e91ee6624',
-  },
-})
-gitment.render('container')
-</script>
+<p>&lt;– 引入 –&gt;</p>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+  <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<p>&lt;– 添加一个容器–&gt;</p>
+<div id="gitalk-container"></div>
+<p>&lt;– 生成 gitalk 插件–&gt;
+var gitalk = new Gitalk({
+clientID: ‘4a0be11acd2141eb88a2’,</p>
+<p>clientSecret: ‘5942a71cb0015f68c2a99f26d66afe8e91ee6624’,</p>
+<p>repo: ‘blog_comment’,
+owner: ‘Laplx’,
+admin: [‘Laplx’],
+id: ‘blog_id’,  // Ensure uniqueness and length less than 50
+distractionFreeMode: false  // Facebook-like distraction free mode
+})</p>
+<p>gitalk.render(‘gitalk-container’)</p>
 </div>
 </section>
 <div class="toctree-wrapper compound">
