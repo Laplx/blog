@@ -4,9 +4,13 @@
 
 Share my own notes here. Some are original, and some are abstracts or comments. Please be sure to contact me if reproducing.
 
-### 个人讲义
+### 个人笔记
 
-*Laplx* 多元统计讲义（打算改作电子版，尽力12月内上传）
+*Laplx* 多元统计讲义（拖拉……）  [*Laplx* 多元统计手稿](note/multistat_o.pdf)
+
+[*Laplx* 线性代数笔记](note/la.pdf)
+
+[*Laplx* 概率统计笔记](note/probstat.pdf)
 
 [*Laplx* 物理竞赛笔记（上）](note/phy-1.pdf)
 
@@ -14,11 +18,11 @@ Share my own notes here. Some are original, and some are abstracts or comments. 
 
 ### 期刊月读
 
-23.11
+24.1
 
 **Presentation** of Zhuo Chen, Zhiguo He, Chun Liu, *The financing of local government in China: Stimulus loan wanes and shadow banking waxes*, Journal of Financial Economics, Volume 137, Issue 1, 2020
 
-### 书著笔记
+### 书著摘要
 
 Jorgen W. Weibull, *Evolutionary Game Theory*, MIT Press, 1995  演化博弈论  
 
