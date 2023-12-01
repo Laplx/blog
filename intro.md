@@ -4,7 +4,7 @@
 
 *（上海·上海展览中心夜）*
 
-**更新说明**：我使用 Gitalk 为网站加入了评论功能。它调用了 Github 仓库的 Issue 操作，无需第三方组件或备案，因此需要评论者拥有 Github 账号并登录来进行评论。
+**更新说明**：上传了今年3-5月份所写完的线代、概统、多元笔记。使用 Gitalk 为网站加入了评论功能；它调用了 Github 仓库的 Issue 操作，无需第三方组件或备案，因此需要评论者拥有 Github 账号并登录来进行评论。
 
 **勘误**：23.10.20 篇中链式法则处 $o(logK(T_1,T_2))$ 应改为 $O(logK(T_1,T_2))$；$(2)$式上方 $K(T_2|T_1) \le T(T_2)$ 应改为 $K(T_2|T_1) \le K(T_2)$。
 
@@ -30,7 +30,7 @@ This is my blog. I create ideas, make studies and share informations here.
 
 评论需使用 Github accounts。
 
-发布内容须遵守国家法律法规。Comments must comply with laws and regulations.
+发布内容须遵守国家法律法规。Comments must comply with relevant laws and regulations.
 
 
 ```{div}
