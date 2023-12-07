@@ -168,7 +168,6 @@ const thebe_selector_output = ".output, .cell_output"
         </ul>
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="../note.html">学习评记 Notes</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../note/pre1.html">Pre 1</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../note/evol_game.html">Outline of Evolutionary Game Theory</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../note/mechbrief.html">A Brief Draft of Classical Mechanics</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../note/millerorr.html">Proof of Miller-Orr Model</a></li>
@@ -177,6 +176,8 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../note/mathmodel.html">Elements of Mathmatical Modeling</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../note/astrology.html">Astrology</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../note/crypto.html">Cryptocurrency</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../note/23.12.html">Read: 23.12</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../note/pre1.html">Pre 1</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../proj.html">课题探讨 Projects</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -185,6 +186,7 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 </li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../wonder.html">周五碎笔 Friday</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="23.12.8.html">Notion: Settability</a></li>
 <li class="toctree-l2"><a class="reference internal" href="23.12.1.html">Sequel: Model for the Nations II</a></li>
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">Frivolity: Model for the Nations</a></li>
 <li class="toctree-l2"><a class="reference internal" href="23.11.17.html">Notion: The Apple that Never Lands</a></li>
@@ -409,21 +411,22 @@ document.write(`
 <p>我们要多引入一些将被考虑的内生和外生变量，它们有一些类似于模块化拼装，可以纳入也可能在考察后认为不足轻重而舍去。除了熟知的 <span class="math notranslate nohighlight">\(Y\)</span> 产出、<span class="math notranslate nohighlight">\(A\)</span> 技术（这里将科教研究水平与技术合一视之了）、<span class="math notranslate nohighlight">\(C\)</span> 消费、<span class="math notranslate nohighlight">\(P\)</span> 价格水平、<span class="math notranslate nohighlight">\(T\)</span> 税收（及其它强制扭曲）等总量以外，我们还有 <span class="math notranslate nohighlight">\(D\)</span> 文化富合度（Cultural Affluence）（正面反映了闲暇和文娱时间；同时负向描述了种族、宗教冲突的程度）、<span class="math notranslate nohighlight">\(W\)</span> 民众福利（Welfare）、<span class="math notranslate nohighlight">\(M\)</span> 武装力量（Millitary Power）、<span class="math notranslate nohighlight">\(U\)</span> 意识介度（Consciousness Dissemination）（指出社会意见和思想的传播程度或多元程度；同时一定的反映政权或宣传机器的把控力量）等。还要介绍的有 <span class="math notranslate nohighlight">\(ID\)</span> 政治位移（Ideology），不称意识形态的原因是它可以不仅仅是衡量左右，而是一个可以在设定的多个意识评价标准下的多维空间里移动的一个矢量，其决定了政治和经济制度，特别反映在产权组织 <span class="math notranslate nohighlight">\(PI(ID)\)</span> 上（跟政府架构等有关，但核心归于 <span class="math notranslate nohighlight">\(ID\)</span>）。<span class="math notranslate nohighlight">\(PI\)</span>（Property Inequality）将政治光谱（空间）划分开来（或连续化），表示了“生产关系”（比如可以粗分为资本主义、社会主义等）及其导致的分配关系。再如 <span class="math notranslate nohighlight">\(U\)</span> 应该也与 <span class="math notranslate nohighlight">\(ID\)</span> 有关。</p>
 <p>模型的假设（缺陷）包括：</p>
 <ul class="simple">
-<li><p>市场化（may not by free markets but there must exists an adjusting power not controlling）</p></li>
+<li><p>市场化（may not be free markets but there must exists an adjusting power not controlling）</p></li>
 <li><p>不考虑预期，且无理性预期（no long-term expectation）</p></li>
 <li><p>仅宏观政策（macroscopic open actions 即没有微观或暗面的操作，如针对个别企业的制裁或间谍行为）</p></li>
 <li><p>无随机扰动（no stochastic terms 不包含概率成分，没有影响国际关系的黑天鹅事件）</p></li>
 <li><p>不考虑能源、移民、生态环境等其他重要因素（only has political interest and economic interest / no key mesoscopic factors 不考虑关键中观领域的作用）</p></li>
 <li><p>无阶层分化（no hierarchy 尽管有 PI 且纳入了分配结构，但并未分群体建模）</p></li>
 </ul>
-<p>影响国家决策的无非是两个方面：一边讲发展，一边要安全（就像投资决策的 <span class="math notranslate nohighlight">\(\mu\)</span> 和 <span class="math notranslate nohighlight">\(\sigma\)</span> 那样）。或者说，国际关系无非是 Benefit 和 Security 的综合作用（Inner &amp; Outer）。不过我们这里要把原来的 IS-LM-BP model 说的详细一些，把 <span class="math notranslate nohighlight">\(NX\)</span> 拆开写为 <span class="math notranslate nohighlight">\(NX_{ij}(e_{ij},Y_i,Y_j,r_{ij})\)</span> 表示 <span class="math notranslate nohighlight">\(i\)</span> 国向 <span class="math notranslate nohighlight">\(j\)</span> 国的净出口。即有 <span class="math notranslate nohighlight">\(NX_{ij}(e_{ij},Y_i,Y_j,r_{ij})\)</span> <span class="math notranslate nohighlight">\(=\)</span> <span class="math notranslate nohighlight">\(KF_{ij}(i_i,i_j,K_i,K_j,r_{ij})\)</span>。注意实际上我们应分写进口 <span class="math notranslate nohighlight">\(IM\)</span> 和出口 <span class="math notranslate nohighlight">\(EX\)</span> 函数，鉴于双向大量贸易和几乎不贸易在净值上无法区别。总而言之：
-$<span class="math notranslate nohighlight">\(
+<p>影响国家决策的无非是两个方面：一边讲发展，一边要安全（就像投资决策的 <span class="math notranslate nohighlight">\(\mu\)</span> 和 <span class="math notranslate nohighlight">\(\sigma\)</span> 那样）。或者说，国际关系无非是 Benefit 和 Security 的综合作用（Inner &amp; Outer）。不过我们这里要把原来的 IS-LM-BP model 说的详细一些，把 <span class="math notranslate nohighlight">\(NX\)</span> 拆开写为 <span class="math notranslate nohighlight">\(NX_{ij}(e_{ij},Y_i,Y_j,r_{ij})\)</span> 表示 <span class="math notranslate nohighlight">\(i\)</span> 国向 <span class="math notranslate nohighlight">\(j\)</span> 国的净出口。即有 <span class="math notranslate nohighlight">\(NX_{ij}(e_{ij},Y_i,Y_j,r_{ij})\)</span> <span class="math notranslate nohighlight">\(=\)</span> <span class="math notranslate nohighlight">\(KF_{ij}(i_i,i_j,K_i,K_j,r_{ij})\)</span>。注意实际上我们应分写进口 <span class="math notranslate nohighlight">\(IM\)</span> 和出口 <span class="math notranslate nohighlight">\(EX\)</span> 函数，鉴于双向大量贸易和几乎不贸易在净值上无法区别。总而言之：</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
 \tag{IB}
 \begin{align}
 Y(L,K,A) &amp; = C(Y,\dot{Y},i,T,PI)\\
 &amp;  + I(i,T) + G + NX
 \end{align}
-\)</span>$</p>
+\end{split}\]</div>
 <div class="math notranslate nohighlight">
 \[
 NX(e,Y,r,T) = KF(i,K) \tag{OB}
