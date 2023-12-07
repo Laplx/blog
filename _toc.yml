@@ -1,7 +1,6 @@
 - file: intro
 - file: note
   sections:
-    - file: note/pre1
     - file: note/evol_game
     - file: note/mechbrief
     - file: note/millerorr
@@ -10,6 +9,8 @@
     - file: note/mathmodel
     - file: note/astrology
     - file: note/crypto
+    - file: note/23.12
+    - file: note/pre1
 - file: proj
   sections:
     - file: swarm/Swarm.md
@@ -18,6 +19,7 @@
       title: 红楼遗梦
 - file: wonder
   sections:
+    - file: wonder/23.12.8
     - file: wonder/23.12.1
     - file: wonder/23.11.24
     - file: wonder/23.11.17

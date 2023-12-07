@@ -6,6 +6,8 @@ I will upload one of my ideas, fantasies, or proposals every frivolous Friday, m
 
 ### 目录
 
+23.12.8  可设性
+
 23.12.1  国际关系续论
 
 23.11.24  国际关系模型
