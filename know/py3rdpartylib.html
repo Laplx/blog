@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html lang="zh-Hans" >
 
   <head>
     <meta charset="utf-8" />
@@ -75,7 +75,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="next" title="Python 代码规范" href="pyPEP8.html" />
     <link rel="prev" title="The Matrix Cookbook" href="cookbook.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:language" content="zh-Hans"/>
   </head>
   
   
@@ -429,7 +429,7 @@ document.write(`
 <p>在如anaconda3/Lib/site-packages下新建.pth文件（名称随意），内容为要加入的路径（可相对路径）<br />
 从Lib上级目录起其下的所有.pth文件都能被加入搜索路径</p>
 </li>
-<li><p>[?] 永久修改配置 PYTHONPATH …</p></li>
+<li><p>[?] 永久修改配置 PYTHONPATH ...</p></li>
 </ul>
 </li>
 <li><p><strong>版本不匹配</strong>：</p>
@@ -449,7 +449,7 @@ document.write(`
 <section id="pythonanaconda">
 <h2>2. Python与Anaconda<a class="headerlink" href="#pythonanaconda" title="Permalink to this heading">#</a></h2>
 <p>我的电脑里后来才发现有三个py内核，conda带的、微软商店下的、官网装的，建议清楚自己使用的解释器版本和地址<br />
-（我发现有些安装选择了Global，不过在用户文件夹下似乎有一个’代理’的地方[?]，环境变量直接使用WindowsApps下的地址非根权限会拒绝访问）<br />
+（我发现有些安装选择了Global，不过在用户文件夹下似乎有一个'代理'的地方[?]，环境变量直接使用WindowsApps下的地址非根权限会拒绝访问）<br />
 一般ipython在anaconda3\Scripts下，打开后 <code class="docutils literal notranslate"><span class="pre">pwd</span></code> 可能不同</p>
 <div class="tip admonition">
 <p class="admonition-title">小白学习时间</p>
@@ -473,7 +473,7 @@ pyc为二进制文件，即解释前先编译成的字节码（PythonCodeObject�
 <p>conda install 安装在anaconda3/pkgs下，conda能够管理各环境而pip只对特定环境进行包管理<br />
 pip install（conda里的python的pip）安装在Lib/site-packages，这个文件夹有可能不认需要添加</p>
 <p>conda命令一直停留在 <code class="docutils literal notranslate"><span class="pre">Solving</span> <span class="pre">environment</span></code> 的问题：翻墙（从网上看可能还有其他不少原因会导致）</p>
-<p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">activate</span></code> 激活环境，’base’是基础环境，可以尝试virtualenv，使用环境隔离</p>
+<p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">activate</span></code> 激活环境，'base'是基础环境，可以尝试virtualenv，使用环境隔离</p>
 <p>其他解决方案：各种重装、使用anaconda下的IDE（包都装了，基本不存在问题）</p>
 </section>
 </section>

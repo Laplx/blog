@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html lang="zh-Hans" >
 
   <head>
     <meta charset="utf-8" />
@@ -77,7 +77,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="next" title="Notion: Excellent Player" href="23.7.7.html" />
     <link rel="prev" title="Frivolity: Winner-Take-All Game" href="23.7.21.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:language" content="zh-Hans"/>
   </head>
   
   
@@ -415,7 +415,7 @@ document.write(`
 I = I(主) I(谓) I(宾) + I(定) I(宾) + I(状) I(谓) + I(谓) I(补) + \cdots
 \]</div>
 <p>这个定义方式保证同样的几个实词，分成两句说和一句说有相同的信息量。</p>
-<p>虚词应该直接定义为信息量为0的词，如 <span class="math notranslate nohighlight">\(I(但)=0\)</span> <span class="math notranslate nohighlight">\(I(也)=0\)</span>。这个角度来说，’是’不能算虚词。</p>
+<p>虚词应该直接定义为信息量为0的词，如 <span class="math notranslate nohighlight">\(I(但)=0\)</span> <span class="math notranslate nohighlight">\(I(也)=0\)</span>。这个角度来说，'是'不能算虚词。</p>
 <p>目前认为 <span class="math notranslate nohighlight">\(I(是) = I(一定) = 1\)</span>、<span class="math notranslate nohighlight">\(I(有) = I(存在) = 1\)</span> 而 <span class="math notranslate nohighlight">\(I(不是) =  I(一定不) = 0\)</span>、<span class="math notranslate nohighlight">\(I(可能) &lt; 0\)</span>（到底多少还应细化可能的含义才可以确定）</p>
 <p>以上关键词的信息量推导自众所周知的香农的概念，他的信息量无关语义，这里可以构造出对接的地方。我得到的是 <span class="math notranslate nohighlight">\(I(p) = p\log p + p\)</span>（具体过程问我）。</p>
 <p>容我解释一下，这个负信息量是有一定道理的。</p>
@@ -427,7 +427,7 @@ I(而它不是红色) &gt; 0
 \end{aligned}
 \right.
 \end{split}\]</div>
-<p>一个很重要的概念是’无知信息量’。我们简单一想就会发现，语义的信息量是依赖于语境的，或者说相对于预设的。<span class="math notranslate nohighlight">\(I(2|1) = I(2\&amp;1) - I(1)\)</span> 而有些时候这个1句是隐藏的——所以我们需要一个不加预设的’无知信息量’。在你啥啥不懂的情况下突然告诉你它不是红色有什么用呢？还有无数种颜色可选。但为什么大家会认为有信息量？因为本来在大家眼里，它可能是红色的、黄色的、绿色的（一个分布），但现在排除掉一个了。在’可能是红色’这个（负的）语境下，这句话是有正信息量的。</p>
+<p>一个很重要的概念是'无知信息量'。我们简单一想就会发现，语义的信息量是依赖于语境的，或者说相对于预设的。<span class="math notranslate nohighlight">\(I(2|1) = I(2\&amp;1) - I(1)\)</span> 而有些时候这个1句是隐藏的——所以我们需要一个不加预设的'无知信息量'。在你啥啥不懂的情况下突然告诉你它不是红色有什么用呢？还有无数种颜色可选。但为什么大家会认为有信息量？因为本来在大家眼里，它可能是红色的、黄色的、绿色的（一个分布），但现在排除掉一个了。在'可能是红色'这个（负的）语境下，这句话是有正信息量的。</p>
 <p>那么还有海量的实词，它们如何标定？一个非常的朴素的想法是，越稀有越有价值——考察搭配的概率。</p>
 <p>（下面是两个相关参考。空间精力有限，先讲这么多……）</p>
 <p><strong>Reference</strong></p>
