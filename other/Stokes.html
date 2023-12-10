@@ -68,8 +68,6 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'other/Stokes';</script>
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -413,106 +411,105 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="stokes">
+  <section id="stokes">
 <h1>Stokes 公式<a class="headerlink" href="#stokes" title="Permalink to this heading">#</a></h1>
-<p>假设某界面上下有四束平面电磁波，介质 1 中入射与出射电磁波为 <span class="math notranslate nohighlight">\(\vec{E}_{1}, \vec{E}_{1}^{\prime}\)</span>，介质 2 中入射与出射电磁波为 <span class="math notranslate nohighlight">\(\vec{E}_{2}, \vec{E}_{2}^{\prime}\)</span>。</p>
+<p>假设某界面上下有四束平面电磁波，介质 1 中入射与出射电磁波为 $\vec{E}<em>{1}, \vec{E}</em>{1}^{\prime}$，介质 2 中入射与出射电磁波为 $\vec{E}<em>{2}, \vec{E}</em>{2}^{\prime}$。</p>
 <p><img alt="图片" src="../_images/Stokes1.png" /></p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
+<p>$$
 \begin{array}{l}
-\vec{E}_{1} = \mathrm{Re}{( \vec{E}_{1} e^{ i \vec{k}_{1} \cdot \vec{r} - i \omega t } )} \\
-\vec{E}_{1}^{\prime} = \mathrm{Re}{( \vec{E}_{1}^{\prime} e^{ i \vec{k}_{1}^{\prime} \cdot \vec{r} - i \omega t } )} \\
-\vec{E}_{2} = \mathrm{Re}{( \vec{E}_{2} e^{ i \vec{k}_{2} \cdot \vec{r} - i \omega t } )} \\
-\vec{E}_{2}^{\prime} = \mathrm{Re}{( \vec{E}_{2}^{\prime} e^{ i \vec{k}_{2}^{\prime} \cdot \vec{r} - i \omega t } )}
+\vec{E}<em>{1} = \mathrm{Re}{( \vec{E}</em>{1} e^{ i \vec{k}<em>{1} \cdot \vec{r} - i \omega t } )} \
+\vec{E}</em>{1}^{\prime} = \mathrm{Re}{( \vec{E}<em>{1}^{\prime} e^{ i \vec{k}</em>{1}^{\prime} \cdot \vec{r} - i \omega t } )} \
+\vec{E}<em>{2} = \mathrm{Re}{( \vec{E}</em>{2} e^{ i \vec{k}<em>{2} \cdot \vec{r} - i \omega t } )} \
+\vec{E}</em>{2}^{\prime} = \mathrm{Re}{( \vec{E}<em>{2}^{\prime} e^{ i \vec{k}</em>{2}^{\prime} \cdot \vec{r} - i \omega t } )}
 \end{array}
-\end{split}\]</div>
+$$</p>
 <p><img alt="图片" src="../_images/Stokes2.png" /></p>
-<p>简单起见，以下忽略 <span class="math notranslate nohighlight">\(\mathrm{Re}\)</span> 与 <span class="math notranslate nohighlight">\(\vec{E}\)</span>。当反向传播时采用 <span class="math notranslate nohighlight">\(\bar{E}\)</span> 作为记号，当 <span class="math notranslate nohighlight">\(\bar{E}_{i}^{\prime} = E_{i}\)</span> 时，<span class="math notranslate nohighlight">\(\bar{E}_{i} = E_{i}^{\prime}\)</span>。界面处的振幅反射率与振幅折射率定义为</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
+<p>简单起见，以下忽略 $\mathrm{Re}$ 与 $\vec{E}$。当反向传播时采用 $\bar{E}$ 作为记号，当 $\bar{E}<em>{i}^{\prime} = E</em>{i}$ 时，$\bar{E}<em>{i} = E</em>{i}^{\prime}$。界面处的振幅反射率与振幅折射率定义为</p>
+<p>$$
 \begin{array}{l}
-r_{1} = \frac{E_{1}^{\prime}}{E_{1}} &amp; E_{2} = 0 \\
-t_{1} = \frac{E_{2}^{\prime}}{E_{1}} &amp; E_{2} = 0 \\
-r_{2} = \frac{E_{2}^{\prime}}{E_{2}} &amp; E_{1} = 0 \\
+r_{1} = \frac{E_{1}^{\prime}}{E_{1}} &amp; E_{2} = 0 \
+t_{1} = \frac{E_{2}^{\prime}}{E_{1}} &amp; E_{2} = 0 \
+r_{2} = \frac{E_{2}^{\prime}}{E_{2}} &amp; E_{1} = 0 \
 t_{2} = \frac{E_{1}^{\prime}}{E_{2}} &amp; E_{1} = 0
 \end{array}
-\end{split}\]</div>
+$$</p>
 <p>如果界面上的反射与折射源于上下折射率的不同，相位偏移来源于 Maxwell 方程组，则满足</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
+<p>$$
 \begin{array}{l}
-r_{1} + r_{2} = 0 \\
+r_{1} + r_{2} = 0 \
 r_{1}^{2} + t_{1} t_{2} = 1
 \end{array}
-\end{split}\]</div>
+$$</p>
 <p>如果表示介质板的等效反射与折射系数，相位偏移源于介质板内部的光程差，则满足</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
+<p>$$
 \begin{array}{l}
-r_{1} r_{1}^{*} + t_{1}^{*} t_{2} = 1 \\
-r_{1}^{*} t_{1} + r_{2} t_{1}^{*} = 0
+r_{1} r_{1}^{<em>} + t_{1}^{</em>} t_{2} = 1 \
+r_{1}^{<em>} t_{1} + r_{2} t_{1}^{</em>} = 0
 \end{array}
-\end{split}\]</div>
+$$</p>
 <section id="id1">
 <h2>介质交界面处的等效系数<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h2>
 <p>以 s 光为例，Maxwell 方程组的边界条件为</p>
 <p><img alt="图片" src="../_images/Stokes3.png" /></p>
-<div class="math notranslate nohighlight">
-\[ \begin{align}\begin{aligned}
-\begin{array}{l}\\\begin{split}\varepsilon_{r1} \cdot 0 = \varepsilon_{r2} \cdot 0 \\\end{split}\\\begin{split}E_{1s} + E_{1s}^{\prime} = E_{2s} + E_{2s}^{\prime} \\\end{split}\\\begin{split}B_{1s} \sin \theta_{1} + B_{1s}^{\prime} \sin \theta_{1}^{\prime} = B_{2s} \sin \theta_{2} + B_{2s}^{\prime} \sin \theta_{2}^{\prime} \\\end{split}\\\begin{split}B_{1s} \cos \theta_{1} - B_{1s}^{\prime} \cos \theta_{1}^{\prime} = B_{2s} \cos \theta_{2} + B_{2s}^{\prime} \cos \theta_{2}^{\prime} \\\end{split}\\\begin{split}k_{1} E_{1} = \omega B_{1} \quad k_{1} E_{1}^{\prime} = \omega B_{1}^{\prime} \quad k_{1} = \sqrt{\varepsilon_{r1}} \frac{\omega}{c} \\\end{split}\\k_{2} E_{2} = \omega B_{2} \quad k_{2} E_{2}^{\prime} = \omega B_{2}^{\prime} \quad k_{2} = \sqrt{\varepsilon_{r2}} \frac{\omega}{c}\\\end{array}
-\end{aligned}\end{align} \]</div>
+<p>$$
+\begin{array}{l}</p>
+<p>\varepsilon_{r1} \cdot 0 = \varepsilon_{r2} \cdot 0 \</p>
+<p>E_{1s} + E_{1s}^{\prime} = E_{2s} + E_{2s}^{\prime} \</p>
+<p>B_{1s} \sin \theta_{1} + B_{1s}^{\prime} \sin \theta_{1}^{\prime} = B_{2s} \sin \theta_{2} + B_{2s}^{\prime} \sin \theta_{2}^{\prime} \</p>
+<p>B_{1s} \cos \theta_{1} - B_{1s}^{\prime} \cos \theta_{1}^{\prime} = B_{2s} \cos \theta_{2} + B_{2s}^{\prime} \cos \theta_{2}^{\prime} \</p>
+<p>k_{1} E_{1} = \omega B_{1} \quad k_{1} E_{1}^{\prime} = \omega B_{1}^{\prime} \quad k_{1} = \sqrt{\varepsilon_{r1}} \frac{\omega}{c} \</p>
+<p>k_{2} E_{2} = \omega B_{2} \quad k_{2} E_{2}^{\prime} = \omega B_{2}^{\prime} \quad k_{2} = \sqrt{\varepsilon_{r2}} \frac{\omega}{c}</p>
+<p>\end{array}
+$$</p>
 <p><img alt="图片" src="../_images/Stokes4.png" /></p>
-<p>则考虑 <span class="math notranslate nohighlight">\(t = 0\)</span> 时刻空间中的电磁波，令所有的 <span class="math notranslate nohighlight">\(k\)</span> 反向，所有的 <span class="math notranslate nohighlight">\(B\)</span> 反向，则所有的 <span class="math notranslate nohighlight">\(E\)</span> 不变，上述方程依旧成立。注意上两张图中的 <span class="math notranslate nohighlight">\(E_{1}\)</span> 未必相等，而是由 Maxwell 方程组保证可能出现相等的情况。介质表面只有两个自由度（只有两束光是能任意选择大小的）。</p>
+<p>则考虑 $t = 0$ 时刻空间中的电磁波，令所有的 $k$ 反向，所有的 $B$ 反向，则所有的 $E$ 不变，上述方程依旧成立。注意上两张图中的 $E_{1}$ 未必相等，而是由 Maxwell 方程组保证可能出现相等的情况。介质表面只有两个自由度（只有两束光是能任意选择大小的）。</p>
 </section>
 <section id="id2">
 <h2>介质板的等效系数<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h2>
-<p>介质板的相位偏移来源于内部光程，以介质薄膜为例，<span class="math notranslate nohighlight">\(E_{2} = 0\)</span>时</p>
+<p>介质板的相位偏移来源于内部光程，以介质薄膜为例，$E_{2} = 0$时</p>
 <p><img alt="图片" src="../_images/Stokes5.png" /></p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
+<p>$$
 \begin{array}{l}
-E_{1}^{\prime} = E_{1} ( r + t r^{\prime} t^{\prime} e^{i \Delta \varphi} ( \sum_{j = 0}^{\infty} [ r^{\prime 2} e^{i \Delta \varphi}]^{j} ) ) \\
-E_{2}^{\prime} = E_{1} ( t t^{\prime} e^{i \Delta \varphi^{\prime}} \sum_{j = 0}^{\infty} [ r^{\prime 2} e^{i \Delta \varphi}]^{j} ) \\
+E_{1}^{\prime} = E_{1} ( r + t r^{\prime} t^{\prime} e^{i \Delta \varphi} ( \sum_{j = 0}^{\infty} [ r^{\prime 2} e^{i \Delta \varphi}]^{j} ) ) \
+E_{2}^{\prime} = E_{1} ( t t^{\prime} e^{i \Delta \varphi^{\prime}} \sum_{j = 0}^{\infty} [ r^{\prime 2} e^{i \Delta \varphi}]^{j} ) \
 \end{array}
-\end{split}\]</div>
-<p>则考虑 <span class="math notranslate nohighlight">\(t = 0\)</span> 时刻空间中的电磁波，令所有的 <span class="math notranslate nohighlight">\(k\)</span> 反向，所有的 <span class="math notranslate nohighlight">\(B\)</span> 反向，则所有的 <span class="math notranslate nohighlight">\(E\)</span> 不变。由于光线反向传播所有的 <span class="math notranslate nohighlight">\(\Delta \varphi\)</span> 反号，<span class="math notranslate nohighlight">\(r, t, r^{\prime}, t^{\prime}\)</span> 为实数，因此新的 <span class="math notranslate nohighlight">\(\bar{E}_{1}, \bar{E}_{1}^{\prime}, \bar{E}_{2}, \bar{E}_{2}^{\prime}\)</span> 满足原本 <span class="math notranslate nohighlight">\(E_{1}^{*}, E_{1}^{\prime *}, E_{2}^{*}, E_{2}^{\prime *}\)</span> 间的关系。</p>
+$$</p>
+<p>则考虑 $t = 0$ 时刻空间中的电磁波，令所有的 $k$ 反向，所有的 $B$ 反向，则所有的 $E$ 不变。由于光线反向传播所有的 $\Delta \varphi$ 反号，$r, t, r^{\prime}, t^{\prime}$ 为实数，因此新的 $\bar{E}<em>{1}, \bar{E}</em>{1}^{\prime}, \bar{E}<em>{2}, \bar{E}</em>{2}^{\prime}$ 满足原本 $E_{1}^{*}, E_{1}^{\prime <em>}, E_{2}^{</em>}, E_{2}^{\prime *}$ 间的关系。</p>
 <p><img alt="图片" src="../_images/Stokes6.png" /></p>
 </section>
 <section id="id3">
 <h2>构造<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h2>
-<p>假设初始只有 <span class="math notranslate nohighlight">\(E_{1} = 1\)</span> 入射，产生了 <span class="math notranslate nohighlight">\(E_{1}^{\prime} = r_{1}, E_{2}^{\prime} = t_{1}\)</span>。</p>
+<p>假设初始只有 $E_{1} = 1$ 入射，产生了 $E_{1}^{\prime} = r_{1}, E_{2}^{\prime} = t_{1}$。</p>
 <p><img alt="图片" src="../_images/Stokes7.png" /></p>
 <p><strong>对于两介质分界面</strong>，</p>
 <ol class="arabic simple">
-<li><p>构造 <span class="math notranslate nohighlight">\(\bar{E}_{1}^{\prime} = r_{1}\)</span>，产生 <span class="math notranslate nohighlight">\(\bar{E}_{1} = r_{1}^{2}, \bar{E}_{2} = r_{1} t_{1}\)</span>。将光线反向，振幅不变。</p></li>
-<li><p>再构造 <span class="math notranslate nohighlight">\(E_{2}^{\prime} = t_{1}\)</span>，类似有 <span class="math notranslate nohighlight">\(E_{1} = t_{1} t_{2}, E_{2} = t_{1} r_{2}\)</span>。这两种情况叠加即为初始情况。</p></li>
+<li><p>构造 $\bar{E}<em>{1}^{\prime} = r</em>{1}$，产生 $\bar{E}<em>{1} = r</em>{1}^{2}, \bar{E}<em>{2} = r</em>{1} t_{1}$。将光线反向，振幅不变。</p></li>
+<li><p>再构造 $E_{2}^{\prime} = t_{1}$，类似有 $E_{1} = t_{1} t_{2}, E_{2} = t_{1} r_{2}$。这两种情况叠加即为初始情况。</p></li>
 </ol>
-<div class="math notranslate nohighlight">
-\[\begin{split}
+<p>$$
 \begin{array}{l}
-r_{1}^{2} + t_{1} t_{2} = 1 \\
+r_{1}^{2} + t_{1} t_{2} = 1 \
 r_{1} t_{1} + t_{1} r_{2} = 0
 \end{array}
-\end{split}\]</div>
+$$</p>
 <p><img alt="图片" src="../_images/Stokes8.png" /></p>
 <p><strong>对于介质板的等效系数</strong></p>
 <ol class="arabic simple">
-<li><p>构造 <span class="math notranslate nohighlight">\(\bar{E}_{1}^{\prime} = r_{1}^{*}\)</span>，则出射光为 <span class="math notranslate nohighlight">\(\bar{E}_{1} = r_{1}^{*} r_{1}, \bar{E}_{2} = r_{1}^{*} t_{1}\)</span>。反向后为 <span class="math notranslate nohighlight">\(E_{1}^{\prime} = r_{1}, E_{1} = r_{1} r_{1}^{*}, E_{2} = r_{1} t_{1}^{*}\)</span>。</p></li>
-<li><p>类似构造 <span class="math notranslate nohighlight">\(E_{2}^{\prime} = t_{1}, E_{1} = t_{1} t_{2}^{*}, E_{2} = t_{1} r_{2}^{*}\)</span>。</p></li>
+<li><p>构造 $\bar{E}<em>{1}^{\prime} = r</em>{1}^{<em>}$，则出射光为 $\bar{E}<em>{1} = r</em>{1}^{</em>} r_{1}, \bar{E}<em>{2} = r</em>{1}^{<em>} t_{1}$。反向后为 $E_{1}^{\prime} = r_{1}, E_{1} = r_{1} r_{1}^{</em>}, E_{2} = r_{1} t_{1}^{*}$。</p></li>
+<li><p>类似构造 $E_{2}^{\prime} = t_{1}, E_{1} = t_{1} t_{2}^{<em>}, E_{2} = t_{1} r_{2}^{</em>}$。</p></li>
 </ol>
-<div class="math notranslate nohighlight">
-\[\begin{split}
+<p>$$
 \begin{array}{l}
-r_{1} r_{1}^{*} + t_{1} t_{2}^{*} = 1 \\
-r_{1} t_{1}^{*} + t_{1} r_{2}^{*} = 0
+r_{1} r_{1}^{<em>} + t_{1} t_{2}^{</em>} = 1 \
+r_{1} t_{1}^{<em>} + t_{1} r_{2}^{</em>} = 0
 \end{array}
-\end{split}\]</div>
+$$</p>
 </section>
 <section id="id4">
 <h2>以下命题成立<a class="headerlink" href="#id4" title="Permalink to this heading">#</a></h2>
 <p>反向的两束光线的电场矢量和磁场矢量无法同时相消。</p>
-<p>对于介质交界面，如果允许存在 <span class="math notranslate nohighlight">\(E_{1} e^{ i \vec{k}_{1} \cdot \vec{r} - i \omega t }, E_{1}^{\prime} e^{ i \vec{k}_{1}^{\prime} \cdot \vec{r} - i \omega t }, E_{2} e^{ i \vec{k}_{2} \cdot \vec{r} - i \omega t }, E_{2}^{\prime} e^{ i \vec{k}_{2}^{\prime} \cdot \vec{r} - i \omega t }\)</span>，则允许存在 <span class="math notranslate nohighlight">\(E_{1} e^{ - i \vec{k}_{1} \cdot \vec{r} - i \omega t }, E_{1}^{\prime} e^{ - i \vec{k}_{1}^{\prime} \cdot \vec{r} - i \omega t }, E_{2} e^{ - i \vec{k}_{2} \cdot \vec{r} - i \omega t }, E_{2}^{\prime} e^{ - i \vec{k}_{2}^{\prime} \cdot \vec{r} - i \omega t }\)</span>。</p>
-<p>对于介质板，如果允许存在 <span class="math notranslate nohighlight">\(E_{1} e^{ i \vec{k}_{1} \cdot \vec{r} - i \omega t }, E_{1}^{\prime} e^{ i \vec{k}_{1}^{\prime} \cdot \vec{r} - i \omega t }, E_{2} e^{ i \vec{k}_{2} \cdot \vec{r} - i \omega t }, E_{2}^{\prime} e^{ i \vec{k}_{2}^{\prime} \cdot \vec{r} - i \omega t }\)</span>，则允许存在 <span class="math notranslate nohighlight">\(E_{1}^{*} e^{ - i \vec{k}_{1} \cdot \vec{r} - i \omega t }, E_{1}^{\prime *} e^{ - i \vec{k}_{1}^{\prime} \cdot \vec{r} - i \omega t }, E_{2}^{*} e^{ - i \vec{k}_{2} \cdot \vec{r} - i \omega t }, E_{2}^{\prime *} e^{ - i \vec{k}_{2}^{\prime} \cdot \vec{r} - i \omega t }\)</span>。</p>
+<p>对于介质交界面，如果允许存在 $E_{1} e^{ i \vec{k}<em>{1} \cdot \vec{r} - i \omega t }, E</em>{1}^{\prime} e^{ i \vec{k}<em>{1}^{\prime} \cdot \vec{r} - i \omega t }, E</em>{2} e^{ i \vec{k}<em>{2} \cdot \vec{r} - i \omega t }, E</em>{2}^{\prime} e^{ i \vec{k}<em>{2}^{\prime} \cdot \vec{r} - i \omega t }$，则允许存在 $E</em>{1} e^{ - i \vec{k}<em>{1} \cdot \vec{r} - i \omega t }, E</em>{1}^{\prime} e^{ - i \vec{k}<em>{1}^{\prime} \cdot \vec{r} - i \omega t }, E</em>{2} e^{ - i \vec{k}<em>{2} \cdot \vec{r} - i \omega t }, E</em>{2}^{\prime} e^{ - i \vec{k}_{2}^{\prime} \cdot \vec{r} - i \omega t }$。</p>
+<p>对于介质板，如果允许存在 $E_{1} e^{ i \vec{k}<em>{1} \cdot \vec{r} - i \omega t }, E</em>{1}^{\prime} e^{ i \vec{k}<em>{1}^{\prime} \cdot \vec{r} - i \omega t }, E</em>{2} e^{ i \vec{k}<em>{2} \cdot \vec{r} - i \omega t }, E</em>{2}^{\prime} e^{ i \vec{k}<em>{2}^{\prime} \cdot \vec{r} - i \omega t }$，则允许存在 $E</em>{1}^{*} e^{ - i \vec{k}<em>{1} \cdot \vec{r} - i \omega t }, E</em>{1}^{\prime <em>} e^{ - i \vec{k}<em>{1}^{\prime} \cdot \vec{r} - i \omega t }, E</em>{2}^{</em>} e^{ - i \vec{k}<em>{2} \cdot \vec{r} - i \omega t }, E</em>{2}^{\prime *} e^{ - i \vec{k}_{2}^{\prime} \cdot \vec{r} - i \omega t }$。</p>
 </section>
 </section>
 

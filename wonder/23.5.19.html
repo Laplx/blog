@@ -68,8 +68,6 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'wonder/23.5.19';</script>
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -410,11 +408,11 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="frivolity-moments-entropy">
+  <section id="frivolity-moments-entropy">
 <h1>Frivolity: Moments Entropy<a class="headerlink" href="#frivolity-moments-entropy" title="Permalink to this heading">#</a></h1>
 <section id="id1">
 <h2>朋友圈熵<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h2>
-<p>身边似乎有无数持续的或快或慢的random number generator，朋友圈只是其中之一。它能够在0-24h内的时间中随机性的产生新的朋友圈——当然，这取决于不同人的偏好和他的好友的偏好（以及屏蔽某些好友朋友圈的偏好）。或许傍晚时分和饭点的朋友圈数量比较密集。于是乎每个人都可以给出自己的朋友圈（微分）熵 <span class="math notranslate nohighlight">\(H = \int p(t) log p(t) dt\)</span> 那么互信息 <span class="math notranslate nohighlight">\(I(x;y)\)</span>，不能说（几乎可以说）是两人共友的程度，也至少是别人朋友圈与你相仿的程度。还可以用相对熵量化各个朋友圈之间的距离，再做聚类，实现朋友圈画像的提取。（不过，以上并未考虑朋友圈的内容，我想可以增加一个维度的变量以表示朋友圈的各个类型，具体操作在此略去。）</p>
+<p>身边似乎有无数持续的或快或慢的random number generator，朋友圈只是其中之一。它能够在0-24h内的时间中随机性的产生新的朋友圈——当然，这取决于不同人的偏好和他的好友的偏好（以及屏蔽某些好友朋友圈的偏好）。或许傍晚时分和饭点的朋友圈数量比较密集。于是乎每个人都可以给出自己的朋友圈（微分）熵 $H = \int p(t) log p(t) dt$ 那么互信息 $I(x;y)$，不能说（几乎可以说）是两人共友的程度，也至少是别人朋友圈与你相仿的程度。还可以用相对熵量化各个朋友圈之间的距离，再做聚类，实现朋友圈画像的提取。（不过，以上并未考虑朋友圈的内容，我想可以增加一个维度的变量以表示朋友圈的各个类型，具体操作在此略去。）</p>
 <p>（好吧，其实我觉得即使泊松过程也比这个好……）</p>
 <p>还没完！这似乎是一个相当大且复杂的话题——一个邻接矩阵的有向图结构上附加了一定的发朋友圈概率发布和一定的刷朋友圈概率分布和因人而异的一定的点赞概率分布。例如研究点赞时间距朋友圈发出时间的分布（朋友圈点赞熵），别人给别人点赞后给你现在朋友圈点赞的概率分布……</p>
 </section>

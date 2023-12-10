@@ -68,8 +68,6 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'wonder/23.10.20';</script>
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -410,48 +408,42 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="frivolity-theory-of-theory">
+  <section id="frivolity-theory-of-theory">
 <h1>Frivolity: Theory of Theory<a class="headerlink" href="#frivolity-theory-of-theory" title="Permalink to this heading">#</a></h1>
 <section id="id1">
 <h2>理论的理论<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h2>
 <p>我要讲的是“学科的学科”——虽然高中课本里哲学似乎便这么宣称——但这里讲的是言之有物的理论构建，而非关乎世界本质的基础支撑。</p>
 <p>广义的理论（Theory）可以等同为知识（Knowledge），而知识被我分为 Experience、Analysis、Science 三种层级。Experience 指经验性的总结 Synthesize 和解释 Explain，例如我们可以对厕所的规划和使用形成学问，对什么样的音乐是好听的形成学问，但其来源都是已有事物的 Application，类似一个经验丰富的老技工。Analysis 指在一定抽象程度上建立的统一分析框架 Analytical Frame，大家在平常能见到的“XX学”都已经达到了这样的标准；但 Analysis 在现实中仍然有可能只能做解释或归纳性的预测。Science 被定义为 Modeling 模型化现实，给出考察对象之间的作用关联，其目的是预测 Predict 和控制 Control。我们这里的理论 Theory 便是狭义的理论，特指科学学科 Science。我给出的范式是：</p>
-<div class="math notranslate nohighlight">
-\[
+<p>$$
 \mathcal{X} \rightarrow X \rightarrow \boxed{\mathbb{T}} \rightarrow Y \rightarrow \mathcal{Y}
-\]</div>
-<p><span class="math notranslate nohighlight">\(\mathcal{X} \rightarrow X\)</span> 和 <span class="math notranslate nohighlight">\(\mathcal{Y} \rightarrow Y\)</span> 都是概念化 Conceptualize 的过程。<span class="math notranslate nohighlight">\(\mathcal{X}\)</span> 和 <span class="math notranslate nohighlight">\(\mathcal{Y}\)</span> 是现实世界的对象或情形，<span class="math notranslate nohighlight">\(X\)</span> 和 <span class="math notranslate nohighlight">\(Y\)</span> 是我们理论的输入和输出。（注意<span class="math notranslate nohighlight">\(X\)</span>可以不仅仅是某个数值变量“政府年度固定投资额”，还可以是“财政政策不变”这样更为抽象的输入或问询。）科学理论的核心是相关与因果。仅相关的关联性可以做到预测，而因果性（并不是一个容易论断的东西）可以做控制和应用。中间的模型机制 Laws or Theorems <span class="math notranslate nohighlight">\(T\)</span> 和概念 Concepts <span class="math notranslate nohighlight">\(C\)</span> 组成了一个完整的理论 <span class="math notranslate nohighlight">\(\mathbb{T}=\{T_1,\cdots,T_i,C_1,\cdots,C_j\}\)</span> 。每个定理（或定理的一部分）都可以写成 <span class="math notranslate nohighlight">\(c = T(c_1,\cdots,c_n)\)</span>，其中 <span class="math notranslate nohighlight">\(c\)</span> 是 <span class="math notranslate nohighlight">\(C\)</span> 的具象输入。我们这里缺少了几个理论里常见的模块，但其实已经纳入机制 <span class="math notranslate nohighlight">\(T\)</span> 内了，包括假设 Assumption 和公理 Axiom ——一种未经验证的假定的<span class="math notranslate nohighlight">\(C\)</span>之间的关联性；引理 Lemma 和推论 Corollary ——也是定理们特定的同义重复。</p>
-<p>利用不变性定理，当把 <span class="math notranslate nohighlight">\(\mathbb{T}\)</span> 视作通用图灵机，我们给出其 Kolmogorov 复杂度 <span class="math notranslate nohighlight">\(K(T)\)</span>（注意是对其中定律和定理部分 <span class="math notranslate nohighlight">\(T\)</span> 的描述，准确来说特定的模型下应记 <span class="math notranslate nohighlight">\(K(T|c)\)</span>），表示了理论的复杂度或丰富程度。这样避免了推论不推论的问题——可惜存在不可计算性。</p>
-<p>理论的另一组成部分是概念化（以及我想 <span class="math notranslate nohighlight">\(K(\mathbb{T}) \approx K(C) + K(T)\)</span>，不过 <span class="math notranslate nohighlight">\(K(C)\)</span> 的价值有待商榷），我们用描述度 <span class="math notranslate nohighlight">\(R(C)\)</span> 表示概念化映射 <span class="math notranslate nohighlight">\(C: \mathcal{X} \rightarrow c_X\)</span> 的定义域，等于理论的适用范围 <span class="math notranslate nohighlight">\(R(T)\)</span>。参照柯氏复杂度的上界，我们有 <strong>Theory Inequality</strong></p>
-<div class="math notranslate nohighlight">
-\[
+$$</p>
+<p>$\mathcal{X} \rightarrow X$ 和 $\mathcal{Y} \rightarrow Y$ 都是概念化 Conceptualize 的过程。$\mathcal{X}$ 和 $\mathcal{Y}$ 是现实世界的对象或情形，$X$ 和 $Y$ 是我们理论的输入和输出。（注意$X$可以不仅仅是某个数值变量“政府年度固定投资额”，还可以是“财政政策不变”这样更为抽象的输入或问询。）科学理论的核心是相关与因果。仅相关的关联性可以做到预测，而因果性（并不是一个容易论断的东西）可以做控制和应用。中间的模型机制 Laws or Theorems $T$ 和概念 Concepts $C$ 组成了一个完整的理论 $\mathbb{T}={T_1,\cdots,T_i,C_1,\cdots,C_j}$ 。每个定理（或定理的一部分）都可以写成 $c = T(c_1,\cdots,c_n)$，其中 $c$ 是 $C$ 的具象输入。我们这里缺少了几个理论里常见的模块，但其实已经纳入机制 $T$ 内了，包括假设 Assumption 和公理 Axiom ——一种未经验证的假定的$C$之间的关联性；引理 Lemma 和推论 Corollary ——也是定理们特定的同义重复。</p>
+<p>利用不变性定理，当把 $\mathbb{T}$ 视作通用图灵机，我们给出其 Kolmogorov 复杂度 $K(T)$（注意是对其中定律和定理部分 $T$ 的描述，准确来说特定的模型下应记 $K(T|c)$），表示了理论的复杂度或丰富程度。这样避免了推论不推论的问题——可惜存在不可计算性。</p>
+<p>理论的另一组成部分是概念化（以及我想 $K(\mathbb{T}) \approx K(C) + K(T)$，不过 $K(C)$ 的价值有待商榷），我们用描述度 $R(C)$ 表示概念化映射 $C: \mathcal{X} \rightarrow c_X$ 的定义域，等于理论的适用范围 $R(T)$。参照柯氏复杂度的上界，我们有 <strong>Theory Inequality</strong></p>
+<p>$$
 K(T) \le K(T|R(T)) +  S(T) + c_0 \tag{1}
-\]</div>
-<p>其中 <span class="math notranslate nohighlight">\(S(T) = log(R(T))\)</span> 为理论熵 Theory Entropy。这说明即使我们明晰了理论在现实中的适用范围，它的复杂度仍然存在一个下界。</p>
-<p>定义理论的质量 <span class="math notranslate nohighlight">\(Q(T) = \frac{S(T)}{K(T)}\)</span>，由此不难料想物理学的理论 <span class="math notranslate nohighlight">\(Q(Physics)\)</span> 会很高。</p>
+$$</p>
+<p>其中 $S(T) = log(R(T))$ 为理论熵 Theory Entropy。这说明即使我们明晰了理论在现实中的适用范围，它的复杂度仍然存在一个下界。</p>
+<p>定义理论的质量 $Q(T) = \frac{S(T)}{K(T)}$，由此不难料想物理学的理论 $Q(Physics)$ 会很高。</p>
 <p>我们利用链式法则</p>
-<div class="math notranslate nohighlight">
-\[
+<p>$$
 K(T_1,T_2) = K(T_1) + K(T_2|T_1) + O(logK(T_1,T_2))
-\]</div>
-<p>考虑一个理论的泛化。由于 <span class="math notranslate nohighlight">\(K(T_2|T_1) \le K(T_2)\)</span> ，则</p>
-<div class="math notranslate nohighlight">
-\[
+$$</p>
+<p>考虑一个理论的泛化。由于 $K(T_2|T_1) \le K(T_2)$ ，则</p>
+<p>$$
 Q(\sum T) \ge \frac{\sum S(T)}{\sum K(T)} \tag{2}
-\]</div>
+$$</p>
 <p>等号在理论满足可加性（即异质建模）时成立，否则抽象化能够提高理论的质量。</p>
-<p>考虑一个理论的修正。应有 <span class="math notranslate nohighlight">\(Q(T,\delta T) \ge Q(T)\)</span>，利用 <span class="math notranslate nohighlight">\(O(\frac{logK}{K}) \rightarrow 0\)</span> 得到 <strong>Revision Inequality</strong></p>
-<div class="math notranslate nohighlight">
-\[
+<p>考虑一个理论的修正。应有 $Q(T,\delta T) \ge Q(T)$，利用 $O(\frac{logK}{K}) \rightarrow 0$ 得到 <strong>Revision Inequality</strong></p>
+<p>$$
 K(T) \frac{\delta S}{S} \ge K(\delta T|T) \tag{3}
-\]</div>
+$$</p>
 <p>修正理论真正的内禀复杂度存在由其延拓范围控制的上界。</p>
 <p>然后关于理论的质量，通过类似 Godel 不完备性的手段，我来指出一个可能存在的理论的质量上界 <strong>Theory Quality Bound</strong></p>
-<div class="math notranslate nohighlight">
-\[
+<p>$$
 Q(T) \le \frac{S(\mathcal{T})}{K_0},\ \forall T \in R(\mathcal{T}) \tag{4}
-\]</div>
-<p>（<span class="math notranslate nohighlight">\(\mathcal{T}\)</span> 为全部理论的理论，没错就是今天我们的主角；<span class="math notranslate nohighlight">\(K_0\)</span> 是通用图灵机执行该不等式的固定的最短长度。）</p>
+$$</p>
+<p>（$\mathcal{T}$ 为全部理论的理论，没错就是今天我们的主角；$K_0$ 是通用图灵机执行该不等式的固定的最短长度。）</p>
 <p>鉴于不可计算性，我们可能永远无法得知一门学问的极限究竟在哪里——学无止境，但我们将趋近它。</p>
 <p>（其实还有很多可以继续写，暂时到这里吧！）</p>
 </section>
