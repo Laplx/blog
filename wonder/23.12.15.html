@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Frivolity: A Dividend Signal Model &#8212; My Blog</title>
+    <title>Frivolity: Dividend Signaling Model &#8212; My Blog</title>
   
   
   
@@ -74,6 +74,8 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Notion: Settability" href="23.12.8.html" />
+    <link rel="prev" title="周五碎笔 Friday" href="../wonder.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -164,7 +166,7 @@ const thebe_selector_output = ".output, .cell_output"
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
+        <ul class="current nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="../note.html">学习评记 Notes</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../note/evol_game.html">Outline of Evolutionary Game Theory</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../note/mechbrief.html">A Brief Draft of Classical Mechanics</a></li>
@@ -183,7 +185,8 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../hlm/hlm_index.html">红楼遗梦</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../wonder.html">周五碎笔 Friday</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../wonder.html">周五碎笔 Friday</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Frivolity: Dividend Signaling Model</a></li>
 <li class="toctree-l2"><a class="reference internal" href="23.12.8.html">Notion: Settability</a></li>
 <li class="toctree-l2"><a class="reference internal" href="23.12.1.html">Sequel: Model for the Nations II</a></li>
 <li class="toctree-l2"><a class="reference internal" href="23.11.24.html">Frivolity: Model for the Nations</a></li>
@@ -379,7 +382,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Frivolity: A Dividend Signal Model</h1>
+    <h1>Frivolity: Dividend Signaling Model</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -401,16 +404,22 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="frivolity-a-dividend-signal-model">
-<h1>Frivolity: A Dividend Signal Model<a class="headerlink" href="#frivolity-a-dividend-signal-model" title="Permalink to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="frivolity-dividend-signaling-model">
+<h1>Frivolity: Dividend Signaling Model<a class="headerlink" href="#frivolity-dividend-signaling-model" title="Permalink to this heading">#</a></h1>
 <section id="id1">
 <h2>一个股利信号模型<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h2>
-<p>来尝试做一个可以解释正向 / 反向股利信号的模型。我这里叫正向指的是发放股利公告公布后，公司股价上升的情况，即投资者认为是公司盈利好、富裕现金多的信号；反向信号即公告后股价下跌。</p>
+<p>来尝试做一个可以解释正向 / 反向股利信号的模型。我这里叫正向指的是公告发放股利后，公司股价上升的情况，即投资者认为是公司盈利好、富裕现金多的信号；反向信号即公告后股价下跌。</p>
 <p>模型的设定如下：</p>
 <p><img alt="" src="../_images/23.12.15.png" /></p>
 <p>我们纳入代理问题的考量。存在投资者（外部股权）和内部代理人（经理，可能持有股份）两方，公司正在经营一个新项目。这里关键的假设有：风险中性（贝叶斯均衡）；风险项目的产出简化为两点分布，以一定概率 <span class="math notranslate nohighlight">\(\alpha\)</span> 获得现值 <span class="math notranslate nohighlight">\(R\)</span>，<span class="math notranslate nohighlight">\(1-\alpha\)</span> 概率亏空为 <span class="math notranslate nohighlight">\(0\)</span>；私人收益线性函数（见下）。</p>
-<p>当下第一期实现了收入 <span class="math notranslate nohighlight">\(R_0\)</span>，但之后仍然存在风险：好项目获得 <span class="math notranslate nohighlight">\(R\)</span> 的概率为 <span class="math notranslate nohighlight">\(\alpha_H - \tau \theta\)</span>（<span class="math notranslate nohighlight">\(0\)</span> 的概率为 <span class="math notranslate nohighlight">\(1-\alpha_H+ \tau \theta\)</span>），坏项目获得 <span class="math notranslate nohighlight">\(R\)</span> 的概率为 <span class="math notranslate nohighlight">\(\alpha_L - \tau \theta\)</span>，且 <span class="math notranslate nohighlight">\(\alpha_H &gt; \alpha_L\)</span>。其中 <span class="math notranslate nohighlight">\(\theta\)</span> 为经理的偷懒程度，<span class="math notranslate nohighlight">\(\theta \in [0,1]\)</span>，<span class="math notranslate nohighlight">\(\theta = 0\)</span> 为认真工作；<span class="math notranslate nohighlight">\(\tau\)</span> 为偷懒对项目经营的危险程度。这里的信息不对称表现为外部投资者不清楚 <span class="math notranslate nohighlight">\(\alpha\)</span> 并赋以 <span class="math notranslate nohighlight">\(\alpha_H\)</span> 概率 <span class="math notranslate nohighlight">\(\gamma\)</span>（<span class="math notranslate nohighlight">\(\alpha_L\)</span> 概率 <span class="math notranslate nohighlight">\(1-\gamma\)</span>），而经理知道自己是 <span class="math notranslate nohighlight">\(\alpha_H\)</span> 还是 <span class="math notranslate nohighlight">\(\alpha_L\)</span>。经理决定股利分配政策，实施发放股利 <span class="math notranslate nohighlight">\(D\)</span>，为市场所观测。之后由董事会（投资者控制）决定经理报酬方案 <span class="math notranslate nohighlight">\(R^a\)</span>（根据信号 <span class="math notranslate nohighlight">\(D\)</span> 和未来项目收入 <span class="math notranslate nohighlight">\(R\)</span> 获得报酬，即 <span class="math notranslate nohighlight">\(R^a(D,R)\)</span> 且默认失败没有补偿 <span class="math notranslate nohighlight">\(R^a(D,0) = 0\)</span>）。最后项目执行，经理选择 <span class="math notranslate nohighlight">\(\theta\)</span> 并最终依概率得到 <span class="math notranslate nohighlight">\(R\)</span> 或 <span class="math notranslate nohighlight">\(0\)</span>。（流程可见上图）</p>
-<p>当一部分当期收入作为股利时，另一部分留存收益 <span class="math notranslate nohighlight">\(R-D\)</span> 进行再投资，这会提高将来的产出。我们假设未来项目成功的话现值 <span class="math notranslate nohighlight">\(R = \frac{R_0}{\mu} + \beta (R-D)(1-w\theta)\)</span>，其中 <span class="math notranslate nohighlight">\(\mu\)</span> 为折现率，通常 <span class="math notranslate nohighlight">\(\mu = WACC\)</span>；<span class="math notranslate nohighlight">\(\beta\)</span> 为总投资回报率，通常 <span class="math notranslate nohighlight">\(\beta = \frac{ROIC}{WACC} &gt; 1\)</span>（公司有盈利能力）。<span class="math notranslate nohighlight">\(w\theta (R-D)\)</span> 为代理成本（与留存收益成正比），<span class="math notranslate nohighlight">\(w\)</span> 代表了代理问题的严重性（挪用现金比例上限）。</p>
+<p>当下第一期实现了收入 <span class="math notranslate nohighlight">\(R_0\)</span>，但之后仍然存在风险：好项目获得 <span class="math notranslate nohighlight">\(R\)</span> 的概率为 <span class="math notranslate nohighlight">\(\alpha_H - \tau \theta\)</span>（<span class="math notranslate nohighlight">\(0\)</span> 的概率为 <span class="math notranslate nohighlight">\(1-\alpha_H+ \tau \theta\)</span>），坏项目获得 <span class="math notranslate nohighlight">\(R\)</span> 的概率为 <span class="math notranslate nohighlight">\(\alpha_L - \tau \theta\)</span>，且 <span class="math notranslate nohighlight">\(\alpha_H &gt; \alpha_L\)</span>。其中 <span class="math notranslate nohighlight">\(\theta\)</span> 为经理的偷懒程度，<span class="math notranslate nohighlight">\(\theta \in [0,1]\)</span>，<span class="math notranslate nohighlight">\(\theta = 0\)</span> 为认真工作；<span class="math notranslate nohighlight">\(\tau\)</span> 表示了偷懒对项目经营的危险程度。</p>
+<p>这里的信息不对称表现为外部投资者不清楚 <span class="math notranslate nohighlight">\(\alpha\)</span> 并赋以 <span class="math notranslate nohighlight">\(\alpha_H\)</span> 概率 <span class="math notranslate nohighlight">\(\gamma\)</span>（<span class="math notranslate nohighlight">\(\alpha_L\)</span> 概率 <span class="math notranslate nohighlight">\(1-\gamma\)</span>），而经理知道自己是 <span class="math notranslate nohighlight">\(\alpha_H\)</span> 还是 <span class="math notranslate nohighlight">\(\alpha_L\)</span>。经理决定股利分配政策，实施发放股利 <span class="math notranslate nohighlight">\(D\)</span>，为市场所观测。之后由董事会（投资者控制）决定经理报酬方案 <span class="math notranslate nohighlight">\(R^a\)</span>（根据信号 <span class="math notranslate nohighlight">\(D\)</span> 和未来项目收入 <span class="math notranslate nohighlight">\(R\)</span> 获得报酬，即 <span class="math notranslate nohighlight">\(R^a(D,R)\)</span> 且默认失败没有补偿 <span class="math notranslate nohighlight">\(R^a(D,0) = 0\)</span>）。最后项目执行，经理选择 <span class="math notranslate nohighlight">\(\theta\)</span> 并最终依概率得到 <span class="math notranslate nohighlight">\(R\)</span> 或 <span class="math notranslate nohighlight">\(0\)</span>。（流程可见上图）</p>
+<p>当一部分当期收入作为股利时，另一部分留存收益 <span class="math notranslate nohighlight">\(R-D\)</span> 将进行再投资，这会提高未来的产出。我们假设如果项目成功的话，现值</p>
+<div class="math notranslate nohighlight">
+\[
+R = \frac{R_0}{\mu} + \beta (R-D)(1-w\theta)
+\]</div>
+<p>其中 <span class="math notranslate nohighlight">\(\mu\)</span> 为折现率，通常 <span class="math notranslate nohighlight">\(\mu = WACC\)</span>；<span class="math notranslate nohighlight">\(\beta\)</span> 为总投资回报率，通常 <span class="math notranslate nohighlight">\(\beta = \frac{ROIC}{WACC} &gt; 1\)</span>（公司有盈利能力）。<span class="math notranslate nohighlight">\(w\theta (R-D)\)</span> 为代理成本（与留存收益成正比），<span class="math notranslate nohighlight">\(w\)</span> 代表了代理问题的严重性（挪用现金比例上限）。</p>
 <p>经理的效用函数为</p>
 <div class="math notranslate nohighlight">
 \[
@@ -452,7 +461,7 @@ U_{i}=(1-\eta) D+(\alpha-\tau \theta)\left(\frac{R_0}{\mu}+\beta\left(R_0-D\righ
 \[\begin{split}
 \begin{aligned}
 &amp; R^a(D)=\eta^{\prime}\left(R_0\left(\frac{1}{\mu}+\beta\right)-\beta D\right) \\
-&amp; \text{ then } D=R_0, \eta_H^{\prime} = \frac{R_w \mu}{R_0 \tau} \text{ or }  D=0, \eta_L^{\prime} = \eta_H^{\prime} + \mu(\frac{w}{\tau} - \beta_L)
+&amp; \text{then } D=R_0, \eta_H^{\prime} = \frac{R_w \mu}{R_0 \tau} \text{ or }  D=0, \eta_L^{\prime} = \eta_H^{\prime} + \mu(\frac{w}{\tau} - \beta_L)
 \end{aligned}
 \end{split}\]</div>
 <p>而分离均衡的出现要求</p>
@@ -474,7 +483,7 @@ D_L=R_0
 \end{aligned}
 \end{split}\]</div>
 <p>简便起见，我们令 <span class="math notranslate nohighlight">\(\beta_L = \frac{w}{\tau}\)</span> 即最低工资，这样 <span class="math notranslate nohighlight">\(\eta'_H = \eta'_L = \eta\)</span>，持股比例不变。两种情况（正向 / 反向）对应 <span class="math notranslate nohighlight">\(\alpha_L \beta_L&gt;1&gt;\alpha_H \beta_H \ / \ \alpha_L \beta_L&lt;1&lt;\alpha_H \beta_H\)</span>。</p>
-<p>我们假设投入好项目的总值一定胜过投入坏项目，即 <span class="math notranslate nohighlight">\(\alpha_L R_0\left(\frac{1}{\mu}+\beta_L\right)&lt;\alpha_H R_0\left(\frac{1}{\mu}+\beta_H\right)\)</span>。但边际产出 <span class="math notranslate nohighlight">\(\alpha_H \beta_H\)</span> 与 <span class="math notranslate nohighlight">\(\alpha_L \beta_L\)</span> 关系并不明确——对于成熟的公司和项目，<span class="math notranslate nohighlight">\(\alpha_L \beta_L &gt; \alpha_H \beta_H\)</span>；而对于新兴领域的项目和公司，<span class="math notranslate nohighlight">\(\alpha_H \beta_H &gt; \alpha_L \beta_L\)</span>，好项目机会急需资金扩张。</p>
+<p>我们假设投入好项目的总值一定胜过投入坏项目，即 <span class="math notranslate nohighlight">\(\alpha_L R_0\left(\frac{1}{\mu}+\beta_L\right)&lt;\alpha_H R_0\left(\frac{1}{\mu}+\beta_H\right)\)</span>。但边际产出 <span class="math notranslate nohighlight">\(\alpha_H \beta_H\)</span> 与 <span class="math notranslate nohighlight">\(\alpha_L \beta_L\)</span> 关系并不明确——对于成熟的项目和公司，<span class="math notranslate nohighlight">\(\alpha_L \beta_L &gt; \alpha_H \beta_H\)</span>；而对于新兴领域的项目和公司，<span class="math notranslate nohighlight">\(\alpha_H \beta_H &gt; \alpha_L \beta_L\)</span>，好项目机会急需资金扩张。</p>
 <p>于是我们看到，正向和反向的股利信号都有可能出现。</p>
 <p>考虑股利发放公告公布前公司的股权市值：</p>
 <div class="math notranslate nohighlight">
@@ -487,7 +496,7 @@ V_0 &amp; = \gamma\left(D_H+\alpha_H\left(\frac{R_0}{\mu}+\beta R_0-\beta D_H\ri
 \end{split}\]</div>
 <p>公告后市值 <span class="math notranslate nohighlight">\(D_H \rightarrow V_H\)</span> 或 <span class="math notranslate nohighlight">\(D_L \rightarrow V_L\)</span>。</p>
 <p>结合前面的系数条件，我们不难得到总是有 <span class="math notranslate nohighlight">\(V_H &gt; V_0 &gt; V_L\)</span>。</p>
-<p>反向股利信号真的存在吗？微软自1986年IPO后，迅速成长，很多年采取零股利政策。2003年，微软第一次派发现金股利，公司股价却一度下跌。</p>
+<p>反向股利信号真的存在吗？微软自1986年IPO后，迅速成长，很多年采取零股利政策。2003年，微软第一次宣布派发现金股利，公司股价却一度下跌。</p>
 </section>
 </section>
 
@@ -522,6 +531,24 @@ V_0 &amp; = \gamma\left(D_H+\alpha_H\left(\frac{R_0}{\mu}+\beta R_0-\beta D_H\ri
   
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="../wonder.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">周五碎笔 Friday</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="23.12.8.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Notion: Settability</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div></div>
   
 </div>
