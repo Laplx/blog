@@ -428,13 +428,11 @@ document.write(`
 <p>影响国家决策的无非是两个方面：一边讲发展，一边要安全（就像投资决策的 <span class="math notranslate nohighlight">\(\mu\)</span> 和 <span class="math notranslate nohighlight">\(\sigma\)</span> 那样）。或者说，国际关系无非是 Benefit 和 Security 的综合作用（Inner &amp; Outer）。不过我们这里要把原来的 IS-LM-BP model 说的详细一些，把 <span class="math notranslate nohighlight">\(NX\)</span> 拆开写为 <span class="math notranslate nohighlight">\(NX_{ij}(e_{ij},Y_i,Y_j,r_{ij})\)</span> 表示 <span class="math notranslate nohighlight">\(i\)</span> 国向 <span class="math notranslate nohighlight">\(j\)</span> 国的净出口。即有 <span class="math notranslate nohighlight">\(NX_{ij}(e_{ij},Y_i,Y_j,r_{ij})\)</span> <span class="math notranslate nohighlight">\(=\)</span> <span class="math notranslate nohighlight">\(KF_{ij}(i_i,i_j,K_i,K_j,r_{ij})\)</span>。注意实际上我们应分写进口 <span class="math notranslate nohighlight">\(IM\)</span> 和出口 <span class="math notranslate nohighlight">\(EX\)</span> 函数，鉴于双向大量贸易和几乎不贸易在净值上无法区别。总而言之：</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-\begin{equation}
 \tag{IB}
-	\begin{split}
+	\begin{align}
 	Y(L,K,A) &amp; = C(Y,\dot{Y},i,T,PI) \\
 	&amp; + I(i,T) + G + NX
-	\end{split}
-\end{equation}
+	\end{align}
 \end{split}\]</div>
 <div class="math notranslate nohighlight">
 \[
@@ -462,16 +460,14 @@ W(C,U,D) = WA(Y,PI,G_N) \tag{SW}
 <p>分别代表了流动性均衡与社会福利均衡。（<span class="math notranslate nohighlight">\(MS\)</span> 为货币供给。<span class="math notranslate nohighlight">\(WA\)</span> 为 Wealth Allocation 财富分配，以提供福利；同时我们默认储蓄对福利的增量很小）其实应设计要素均衡 <span class="math notranslate nohighlight">\((PF)\)</span>，如劳动力所有者收入。</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-\begin{equation}
 \tag{XG}
-    \begin{split}
+    \begin{align}
     &amp; \dot{L} = \dot{L}(\dot{Y},\dot{P},L,N,D)\\
     &amp; \dot{K} = I + KF - \delta_K\\
     &amp; \dot{A} = \dot{A}(G_A,I,L,A)\\
     &amp; \dot{N} = \dot{N}(\dot{W},N,\delta_N)\\
     &amp; \dot{D} = \dot{D}(G_D,I,N,D,U)
-    \end{split}
-\end{equation}
+    \end{align}
 \end{split}\]</div>
 <p>（其中 <span class="math notranslate nohighlight">\(\delta_K\)</span> 为资本折旧率，<span class="math notranslate nohighlight">\(\delta_N\)</span> 为死亡率。<span class="math notranslate nohighlight">\((XG)\)</span> 增长部分等式并未严谨考量变量）</p>
 <p>以上各函数关于各变量偏导的符号自行推断（因此可假设一些简单的数学形式）。篇幅有限（欢迎来讨论 <span class="math notranslate nohighlight">\(D\)</span> 和 <span class="math notranslate nohighlight">\(U\)</span> 这些变量的问题），就不介绍实例了。（不妨看看朝鲜半岛？这个模型告诉我们会出现南北分立的 buffer contries 吗）</p>
