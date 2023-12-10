@@ -4,6 +4,8 @@
 
 *（杭州亚运会·奥体中心）*
 
+**勘误**：大致修正了 23.11.24 中 $(IB)$ 式无法显示的问题。
+
 ### 这里有什么？What's here?
 
 这里是 <font face="Consolas" size=4><b>Lapl</b></font><font face="Consolas" size=4 color="red"><b>x</b></font> <font face="Consolas" size=4><b>(Hao Chen)</b></font> 的 GithubPage 博客。

@@ -6,8 +6,17 @@ logo: 'logo.png'
 html:
   favicon: favicon.ico
   google_analytics_id: G-PPZXJ9B1BG
+  announcement: "期末考顺利 Good Luck with Your Exam!"
+
+parse:
+  myst_enable_extensions:
+    - dollarmath
+    - amsmath
 
 latex:
   latex_documents:
-    targetname: book.tex、
+    targetname: book.tex
 
+sphinx:
+  config:
+    language: zh-Hans
