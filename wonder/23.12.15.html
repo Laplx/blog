@@ -68,6 +68,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'wonder/23.12.15';</script>
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -408,90 +410,98 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section id="frivolity-dividend-signaling-model">
+  <section class="tex2jax_ignore mathjax_ignore" id="frivolity-dividend-signaling-model">
 <h1>Frivolity: Dividend Signaling Model<a class="headerlink" href="#frivolity-dividend-signaling-model" title="Permalink to this heading">#</a></h1>
 <section id="id1">
 <h2>一个股利信号模型<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h2>
 <p>来尝试做一个可以解释正向 / 反向股利信号的模型。我这里叫正向指的是公告发放股利后，公司股价上升的情况，即投资者认为是公司盈利好、富裕现金多的信号；反向信号即公告后股价下跌。</p>
 <p>模型的设定如下：</p>
 <p><img alt="" src="../_images/23.12.15.png" /></p>
-<p>我们纳入代理问题的考量。存在投资者（外部股权）和内部代理人（经理，可能持有股份）两方，公司正在经营一个新项目。这里关键的假设有：风险中性（贝叶斯均衡）；风险项目的产出简化为两点分布，以一定概率 $\alpha$ 获得现值 $R$，$1-\alpha$ 概率亏空为 $0$；私人收益线性函数（见下）。</p>
-<p>当下第一期实现了收入 $R_0$，但之后仍然存在风险：好项目获得 $R$ 的概率为 $\alpha_H - \tau \theta$（$0$ 的概率为 $1-\alpha_H+ \tau \theta$），坏项目获得 $R$ 的概率为 $\alpha_L - \tau \theta$，且 $\alpha_H &gt; \alpha_L$。其中 $\theta$ 为经理的偷懒程度，$\theta \in [0,1]$，$\theta = 0$ 为认真工作；$\tau$ 表示了偷懒对项目经营的危险程度。</p>
-<p>这里的信息不对称表现为外部投资者不清楚 $\alpha$ 并赋以 $\alpha_H$ 概率 $\gamma$（$\alpha_L$ 概率 $1-\gamma$），而经理知道自己是 $\alpha_H$ 还是 $\alpha_L$。经理决定股利分配政策，实施发放股利 $D$，为市场所观测。之后由董事会（投资者控制）决定经理报酬方案 $R^a$（根据信号 $D$ 和未来项目收入 $R$ 获得报酬，即 $R^a(D,R)$ 且默认失败没有补偿 $R^a(D,0) = 0$）。最后项目执行，经理选择 $\theta$ 并最终依概率得到 $R$ 或 $0$。（流程可见上图）</p>
-<p>当一部分当期收入作为股利时，另一部分留存收益 $R-D$ 将进行再投资，这会提高未来的产出。我们假设如果项目成功的话，现值</p>
-<p>$$
+<p>我们纳入代理问题的考量。存在投资者（外部股权）和内部代理人（经理，可能持有股份）两方，公司正在经营一个新项目。这里关键的假设有：风险中性（贝叶斯均衡）；风险项目的产出简化为两点分布，以一定概率 <span class="math notranslate nohighlight">\(\alpha\)</span> 获得现值 <span class="math notranslate nohighlight">\(R\)</span>，<span class="math notranslate nohighlight">\(1-\alpha\)</span> 概率亏空为 <span class="math notranslate nohighlight">\(0\)</span>；私人收益线性函数（见下）。</p>
+<p>当下第一期实现了收入 <span class="math notranslate nohighlight">\(R_0\)</span>，但之后仍然存在风险：好项目获得 <span class="math notranslate nohighlight">\(R\)</span> 的概率为 <span class="math notranslate nohighlight">\(\alpha_H - \tau \theta\)</span>（<span class="math notranslate nohighlight">\(0\)</span> 的概率为 <span class="math notranslate nohighlight">\(1-\alpha_H+ \tau \theta\)</span>），坏项目获得 <span class="math notranslate nohighlight">\(R\)</span> 的概率为 <span class="math notranslate nohighlight">\(\alpha_L - \tau \theta\)</span>，且 <span class="math notranslate nohighlight">\(\alpha_H &gt; \alpha_L\)</span>。其中 <span class="math notranslate nohighlight">\(\theta\)</span> 为经理的偷懒程度，<span class="math notranslate nohighlight">\(\theta \in [0,1]\)</span>，<span class="math notranslate nohighlight">\(\theta = 0\)</span> 为认真工作；<span class="math notranslate nohighlight">\(\tau\)</span> 表示了偷懒对项目经营的危险程度。</p>
+<p>这里的信息不对称表现为外部投资者不清楚 <span class="math notranslate nohighlight">\(\alpha\)</span> 并赋以 <span class="math notranslate nohighlight">\(\alpha_H\)</span> 概率 <span class="math notranslate nohighlight">\(\gamma\)</span>（<span class="math notranslate nohighlight">\(\alpha_L\)</span> 概率 <span class="math notranslate nohighlight">\(1-\gamma\)</span>），而经理知道自己是 <span class="math notranslate nohighlight">\(\alpha_H\)</span> 还是 <span class="math notranslate nohighlight">\(\alpha_L\)</span>。经理决定股利分配政策，实施发放股利 <span class="math notranslate nohighlight">\(D\)</span>，为市场所观测。之后由董事会（投资者控制）决定经理报酬方案 <span class="math notranslate nohighlight">\(R^a\)</span>（根据信号 <span class="math notranslate nohighlight">\(D\)</span> 和未来项目收入 <span class="math notranslate nohighlight">\(R\)</span> 获得报酬，即 <span class="math notranslate nohighlight">\(R^a(D,R)\)</span> 且默认失败没有补偿 <span class="math notranslate nohighlight">\(R^a(D,0) = 0\)</span>）。最后项目执行，经理选择 <span class="math notranslate nohighlight">\(\theta\)</span> 并最终依概率得到 <span class="math notranslate nohighlight">\(R\)</span> 或 <span class="math notranslate nohighlight">\(0\)</span>。（流程可见上图）</p>
+<p>当一部分当期收入作为股利时，另一部分留存收益 <span class="math notranslate nohighlight">\(R-D\)</span> 将进行再投资，这会提高未来的产出。我们假设如果项目成功的话，现值</p>
+<div class="math notranslate nohighlight">
+\[
 R = \frac{R_0}{\mu} + \beta (R-D)(1-w\theta)
-$$</p>
-<p>其中 $\mu$ 为折现率，通常 $\mu = WACC$；$\beta$ 为总投资回报率，通常 $\beta = \frac{ROIC}{WACC} &gt; 1$（公司有盈利能力）。$w\theta (R-D)$ 为代理成本（与留存收益成正比），$w$ 代表了代理问题的严重性（挪用现金比例上限）。</p>
+\]</div>
+<p>其中 <span class="math notranslate nohighlight">\(\mu\)</span> 为折现率，通常 <span class="math notranslate nohighlight">\(\mu = WACC\)</span>；<span class="math notranslate nohighlight">\(\beta\)</span> 为总投资回报率，通常 <span class="math notranslate nohighlight">\(\beta = \frac{ROIC}{WACC} &gt; 1\)</span>（公司有盈利能力）。<span class="math notranslate nohighlight">\(w\theta (R-D)\)</span> 为代理成本（与留存收益成正比），<span class="math notranslate nohighlight">\(w\)</span> 代表了代理问题的严重性（挪用现金比例上限）。</p>
 <p>经理的效用函数为</p>
-<p>$$
+<div class="math notranslate nohighlight">
+\[
 U_a=\eta D+(\alpha-\tau \theta) R^a(D)+ \left(w\left(R_0-D\right)+R_w\right) \theta
-$$</p>
-<p>其中 $\eta$ 为经理原持股比例，得到分红的一部分。私人收益函数 $w(R_0-D)+R_w$，常数项 $R_w$ 是怠工本身（如休闲）带来的效用。注意第二项为未来项目带来的薪酬预期（失败为 $0$）。</p>
+\]</div>
+<p>其中 <span class="math notranslate nohighlight">\(\eta\)</span> 为经理原持股比例，得到分红的一部分。私人收益函数 <span class="math notranslate nohighlight">\(w(R_0-D)+R_w\)</span>，常数项 <span class="math notranslate nohighlight">\(R_w\)</span> 是怠工本身（如休闲）带来的效用。注意第二项为未来项目带来的薪酬预期（失败为 <span class="math notranslate nohighlight">\(0\)</span>）。</p>
 <p>投资者的效用函数为</p>
-<p>$$
+<div class="math notranslate nohighlight">
+\[
 U_{i}=(1-\eta) D+(\alpha-\tau \theta)\left(\frac{R_0}{\mu}+\beta\left(R_0-D\right)(1-\omega \theta)-R^a(D)\right)
-$$</p>
-<p>以上 $R_0, \mu, \alpha_{H/L}, \beta_{H/L}, w, R_w, \tau, \eta, \gamma$ 均为共同知识。我们这里假设了很多线性形式，可以料到最值会处在两极。</p>
+\]</div>
+<p>以上 <span class="math notranslate nohighlight">\(R_0, \mu, \alpha_{H/L}, \beta_{H/L}, w, R_w, \tau, \eta, \gamma\)</span> 均为共同知识。我们这里假设了很多线性形式，可以料到最值会处在两极。</p>
 <p>先来看最后一步，我们认为经理不会怠工。这个激励合约需要满足的条件：</p>
-<p>$$
+<div class="math notranslate nohighlight">
+\[\begin{split}
 \begin{aligned}
-&amp; \text { Step 4. } U_a=\left(w R_0+R_w-w D-\tau R^a\right) \theta+\alpha R^a+\eta D \
-&amp; \max U_{a} \Rightarrow R^a(D) \geqslant \frac{w}{\tau}\left(R_0-D\right)+\frac{R_w}{\tau}, \theta=0 \
-&amp; (\alpha-\tau)\left(\frac{R_0}{\mu}+\beta\left(R_0-D\right)(1-w)\right) \leqslant \alpha\left(\frac{R_0}{\mu}+\beta\left(R_0-D\right)-\frac{w\left(R_0-D\right)+R_w}{\tau}\right) \
+&amp; \text { Step 4. } U_a=\left(w R_0+R_w-w D-\tau R^a\right) \theta+\alpha R^a+\eta D \\
+&amp; \max U_{a} \Rightarrow R^a(D) \geqslant \frac{w}{\tau}\left(R_0-D\right)+\frac{R_w}{\tau}, \theta=0 \\
+&amp; (\alpha-\tau)\left(\frac{R_0}{\mu}+\beta\left(R_0-D\right)(1-w)\right) \leqslant \alpha\left(\frac{R_0}{\mu}+\beta\left(R_0-D\right)-\frac{w\left(R_0-D\right)+R_w}{\tau}\right) \\
 &amp; \text { loose } \alpha w \leqslant \tau^2\left(\frac{1}{\mu}+\beta\right)
 \end{aligned}
-$$</p>
+\end{split}\]</div>
 <p>最后的不等式条件说明怠工成本应比较大或项目价值足够大。</p>
 <p>考虑混同均衡：</p>
-<p>$$
+<div class="math notranslate nohighlight">
+\[\begin{split}
 \begin{aligned}
-&amp; \text{ Pooling Equilibrium: }D_H=D_L=D \
-&amp; \max U_{i} \Rightarrow R^a(D)=\frac{w\left(R_0-D\right)+R_{w}}{\tau} \
-&amp; \text { Step 2. } U_a=\eta D+\frac{\alpha \omega}{\tau}\left(R_0-D\right)+\frac{\alpha R_w}{\tau}+R_w+w\left(R_0-D\right) \
-&amp; =\left(\eta-\frac{\alpha+\tau}{\tau} w\right) D+\left(w R_0+R_{w}\right) \frac{\alpha+\tau}{\tau} \
-&amp; \Rightarrow D=R_0 \text { or } 0\
+&amp; \text{ Pooling Equilibrium: }D_H=D_L=D \\
+&amp; \max U_{i} \Rightarrow R^a(D)=\frac{w\left(R_0-D\right)+R_{w}}{\tau} \\
+&amp; \text { Step 2. } U_a=\eta D+\frac{\alpha \omega}{\tau}\left(R_0-D\right)+\frac{\alpha R_w}{\tau}+R_w+w\left(R_0-D\right) \\
+&amp; =\left(\eta-\frac{\alpha+\tau}{\tau} w\right) D+\left(w R_0+R_{w}\right) \frac{\alpha+\tau}{\tau} \\
+&amp; \Rightarrow D=R_0 \text { or } 0\\
 \end{aligned}
-$$</p>
-<p>（若持股比较大则 $D=R_0$，反之为 $0$）</p>
-<p>我们希望现实中的信号情形为分离均衡。但由于 $R^a(D,R)$ 函数未定，均衡数量恐怕不少。考虑一种常见的方式——股权激励 $R^a = \eta' R$，$\eta'_{H/L}$ 为未来允诺的持股比例。</p>
+\end{split}\]</div>
+<p>（若持股比较大则 <span class="math notranslate nohighlight">\(D=R_0\)</span>，反之为 <span class="math notranslate nohighlight">\(0\)</span>）</p>
+<p>我们希望现实中的信号情形为分离均衡。但由于 <span class="math notranslate nohighlight">\(R^a(D,R)\)</span> 函数未定，均衡数量恐怕不少。考虑一种常见的方式——股权激励 <span class="math notranslate nohighlight">\(R^a = \eta' R\)</span>，<span class="math notranslate nohighlight">\(\eta'_{H/L}\)</span> 为未来允诺的持股比例。</p>
 <p>在混同均衡下，有</p>
-<p>$$
+<div class="math notranslate nohighlight">
+\[\begin{split}
 \begin{aligned}
-&amp; R^a(D)=\eta^{\prime}\left(R_0\left(\frac{1}{\mu}+\beta\right)-\beta D\right) \
+&amp; R^a(D)=\eta^{\prime}\left(R_0\left(\frac{1}{\mu}+\beta\right)-\beta D\right) \\
 &amp; \text{then } D=R_0, \eta_H^{\prime} = \frac{R_w \mu}{R_0 \tau} \text{ or }  D=0, \eta_L^{\prime} = \eta_H^{\prime} + \mu(\frac{w}{\tau} - \beta_L)
 \end{aligned}
-$$</p>
+\end{split}\]</div>
 <p>而分离均衡的出现要求</p>
-<p>$$
+<div class="math notranslate nohighlight">
+\[\begin{split}
 \begin{aligned}
-&amp; \text{ Separating Equilibrium: } \
-&amp; \text { Step 2. } U_a=\alpha R^a(D)+\eta D \
-&amp; \qquad\quad =\left(\eta-\eta^{\prime} \alpha \beta\right) D+\eta^{\prime} \alpha R_0\left(\frac{1}{\mu}+\beta\right) \
-&amp; \Rightarrow \left(\eta^{\prime} \alpha \beta\right)_L&gt;\eta&gt;\left(\eta^{\prime} \alpha \beta\right)_H \text{ or } \left(\eta^{\prime} \alpha \beta\right)_H&gt;\eta&gt;\left(\eta^{\prime} \alpha \beta\right)_L \
-&amp; \text{ corresponding to }\left{\begin{array} { l }
-{ D _ { H } = R _ { 0 } } \
+&amp; \text{ Separating Equilibrium: } \\
+&amp; \text { Step 2. } U_a=\alpha R^a(D)+\eta D \\
+&amp; \qquad\quad =\left(\eta-\eta^{\prime} \alpha \beta\right) D+\eta^{\prime} \alpha R_0\left(\frac{1}{\mu}+\beta\right) \\
+&amp; \Rightarrow \left(\eta^{\prime} \alpha \beta\right)_L&gt;\eta&gt;\left(\eta^{\prime} \alpha \beta\right)_H \text{ or } \left(\eta^{\prime} \alpha \beta\right)_H&gt;\eta&gt;\left(\eta^{\prime} \alpha \beta\right)_L \\
+&amp; \text{ corresponding to }\left\{\begin{array} { l } 
+{ D _ { H } = R _ { 0 } } \\
 { D _ { L } = 0 }
-\end{array} \text{ or } \left{\begin{array}{l}
-D_H=0 \
+\end{array} \text{ or } \left\{\begin{array}{l}
+D_H=0 \\
 D_L=R_0
-\end{array}\right.\right. \
+\end{array}\right.\right. \\
 &amp;
 \end{aligned}
-$$</p>
-<p>简便起见，我们令 $\beta_L = \frac{w}{\tau}$ 即最低工资，这样 $\eta'_H = \eta'_L = \eta$，持股比例不变。两种情况（正向 / 反向）对应 $\alpha_L \beta_L&gt;1&gt;\alpha_H \beta_H \ / \ \alpha_L \beta_L&lt;1&lt;\alpha_H \beta_H$。</p>
-<p>我们假设投入好项目的总值一定胜过投入坏项目，即 $\alpha_L R_0\left(\frac{1}{\mu}+\beta_L\right)&lt;\alpha_H R_0\left(\frac{1}{\mu}+\beta_H\right)$。但边际产出 $\alpha_H \beta_H$ 与 $\alpha_L \beta_L$ 关系并不明确——对于成熟的项目和公司，$\alpha_L \beta_L &gt; \alpha_H \beta_H$；而对于新兴领域的项目和公司，$\alpha_H \beta_H &gt; \alpha_L \beta_L$，好项目机会急需资金扩张。</p>
+\end{split}\]</div>
+<p>简便起见，我们令 <span class="math notranslate nohighlight">\(\beta_L = \frac{w}{\tau}\)</span> 即最低工资，这样 <span class="math notranslate nohighlight">\(\eta'_H = \eta'_L = \eta\)</span>，持股比例不变。两种情况（正向 / 反向）对应 <span class="math notranslate nohighlight">\(\alpha_L \beta_L&gt;1&gt;\alpha_H \beta_H \ / \ \alpha_L \beta_L&lt;1&lt;\alpha_H \beta_H\)</span>。</p>
+<p>我们假设投入好项目的总值一定胜过投入坏项目，即 <span class="math notranslate nohighlight">\(\alpha_L R_0\left(\frac{1}{\mu}+\beta_L\right)&lt;\alpha_H R_0\left(\frac{1}{\mu}+\beta_H\right)\)</span>。但边际产出 <span class="math notranslate nohighlight">\(\alpha_H \beta_H\)</span> 与 <span class="math notranslate nohighlight">\(\alpha_L \beta_L\)</span> 关系并不明确——对于成熟的项目和公司，<span class="math notranslate nohighlight">\(\alpha_L \beta_L &gt; \alpha_H \beta_H\)</span>；而对于新兴领域的项目和公司，<span class="math notranslate nohighlight">\(\alpha_H \beta_H &gt; \alpha_L \beta_L\)</span>，好项目机会急需资金扩张。</p>
 <p>于是我们看到，正向和反向的股利信号都有可能出现。</p>
 <p>考虑股利发放公告公布前公司的股权市值：</p>
-<p>$$
+<div class="math notranslate nohighlight">
+\[\begin{split}
 \begin{aligned}
-V_0 &amp; = \gamma\left(D_H+\alpha_H\left(\frac{R_0}{\mu}+\beta R_0-\beta D_H\right)\right) \
-&amp; \quad +(1-\gamma)\left(D_L+\alpha_L\left(\frac{R_0}{\mu}+\beta R_0-\beta D_L\right)\right) \
+V_0 &amp; = \gamma\left(D_H+\alpha_H\left(\frac{R_0}{\mu}+\beta R_0-\beta D_H\right)\right) \\
+&amp; \quad +(1-\gamma)\left(D_L+\alpha_L\left(\frac{R_0}{\mu}+\beta R_0-\beta D_L\right)\right) \\
 &amp; = \gamma V_H+(1-\gamma) V_L
 \end{aligned}
-$$</p>
-<p>公告后市值 $D_H \rightarrow V_H$ 或 $D_L \rightarrow V_L$。</p>
-<p>结合前面的系数条件，我们不难得到总是有 $V_H &gt; V_0 &gt; V_L$。</p>
+\end{split}\]</div>
+<p>公告后市值 <span class="math notranslate nohighlight">\(D_H \rightarrow V_H\)</span> 或 <span class="math notranslate nohighlight">\(D_L \rightarrow V_L\)</span>。</p>
+<p>结合前面的系数条件，我们不难得到总是有 <span class="math notranslate nohighlight">\(V_H &gt; V_0 &gt; V_L\)</span>。</p>
 <p>反向股利信号真的存在吗？微软自1986年IPO后，迅速成长，很多年采取零股利政策。2003年，微软第一次宣布派发现金股利，公司股价却一度下跌。</p>
 </section>
 </section>

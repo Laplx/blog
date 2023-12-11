@@ -68,6 +68,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'wonder/23.9.8';</script>
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -408,19 +410,19 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section id="frivolity-new-game-of-life">
+  <section class="tex2jax_ignore mathjax_ignore" id="frivolity-new-game-of-life">
 <h1>Frivolity: New Game of Life<a class="headerlink" href="#frivolity-new-game-of-life" title="Permalink to this heading">#</a></h1>
 <section id="id1">
 <h2>新生命游戏<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h2>
 <p>Conway 的生命游戏是一个零玩家的元胞自动机（cellular automata）。每个单元格即一个细胞，其有生死两种状态； 当细胞的周围少于两个活细胞时，其会死于孤立；周围多于三个活细胞时，其会死于拥挤；两个或三个时能继续存活；当死细胞周围刚好有三个活细胞时，其会被繁殖激活。</p>
 <p><img alt="" src="../_images/23.9.8.gif" /></p>
 <p><em>（涌现出了的各式各样的模式，上图为滑翔者枪 glider gun）</em></p>
-<p><em>（有非常多网页实现此程序，推荐一个 conwaylife.com）</em></p>
+<p><em>（有非常多网页实现此程序，推荐一个 <a class="reference external" href="http://conwaylife.com">conwaylife.com</a>）</em></p>
 <p>（灵感来自军训时的迷彩服）我想把生命游戏扩展到多种类（部落），它们以不同颜色表示。下面以双色为例。</p>
 <p><img alt="" src="../_images/23.9.8(2).png" /></p>
 <p>除了单色下已有的模式，列举一个新发现的模式：</p>
 <p><img alt="" src="../_images/23.9.8(5).gif" /></p>
-<p>（$2\times2$方块具有很强的稳定性，几乎不会被吞噬；吐司、灯塔、蜂巢等稳定结构均可以充当飞船反射镜，将另一个颜色的宇宙飞船以$45^{\circ}$角反弹为滑翔机，或称拓荒者；风车、四风车均能被拓荒者侵占）</p>
+<p>（<span class="math notranslate nohighlight">\(2\times2\)</span>方块具有很强的稳定性，几乎不会被吞噬；吐司、灯塔、蜂巢等稳定结构均可以充当飞船反射镜，将另一个颜色的宇宙飞船以<span class="math notranslate nohighlight">\(45^{\circ}\)</span>角反弹为滑翔机，或称拓荒者；风车、四风车均能被拓荒者侵占）</p>
 <p>（将规则中允许 cell that has 4 living same-color cells around keep alive 还能看到领地的城墙、界河等等现象）</p>
 <p>可能还具有一些研究和现实的意义，在此按下不表。程序附于页末（py tk库制作）。</p>
 <p>这里再发散一下，其实我们还可以多样化。棋盘可以使用各种密铺图形，它们不必相同，甚至可以模拟各种地理环境；规则也可以因此更加复杂，并向现实匹配；还可以增高维度，变成立方的生命游戏……</p>
