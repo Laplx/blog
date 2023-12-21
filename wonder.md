@@ -6,6 +6,8 @@ I will upload one of my ideas, fantasies, or proposals every frivolous Friday, m
 
 ### 目录
 
+23.12.22 斜塔，粥
+
 23.12.15  一个股利信号模型
 
 23.12.8  可设性

@@ -2,9 +2,7 @@
 
 ![](./introg.jpg)
 
-*（杭州亚运会·奥体中心）*
-
-**勘误**：大致修正了 23.11.24 中 $(IB)$ 式无法显示的问题。
+*（平阳·火烧云）*
 
 ### 这里有什么？What's here?
 
@@ -22,9 +20,9 @@ This is my blog. I create ideas, make studies and share informations here.
 
 ### 每周一句  Weekly sentence
 
-The end may justify the means as long as there is something that justifies the end.
+A large income is the best recipe for happiness I ever heard of.
 
-—— Leon Trotsky
+—— Jane Austen
 
 ### 欢迎评论！Comments
 
