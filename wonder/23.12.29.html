@@ -416,7 +416,7 @@ document.write(`
 <h1>Frivolity: Theory about Making Friends<a class="headerlink" href="#frivolity-theory-about-making-friends" title="Permalink to this heading">#</a></h1>
 <section id="id1">
 <h2>交友论<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h2>
-<p>让我们从一个功利的视角建模人们怎么交友。评判朋友的价值可能非常不合适——不过连精神损失也可以经过鉴定来补偿一定的费用呢，这里姑且做个货币价值的量化，并按邪恶的经济学家们喜欢的方式假设一些理性人，他们打算最大化自己的效用啦。</p>
+<p>让我们从一个功利的视角建模人们怎么交友。评判朋友的价值可能非常不合适——不过毕竟连精神损失也可以经过鉴定来补偿一定的费用呢，这里姑且做个货币价值的量化，并按邪恶的经济学家们喜欢的方式假设一些理性人，他们打算最大化自己的效用啦。</p>
 <p><span class="math notranslate nohighlight">\(V_{ji}\)</span> 表示 <span class="math notranslate nohighlight">\(j\)</span> 对 <span class="math notranslate nohighlight">\(i\)</span> 而言的价值。我把朋友带来的价值简单的分为两部分：内在价值和外在价值。内在即心理价值，如倾诉、分享、玩乐，都满足了人一定的情感需求；外在即物质价值或现实价值，一般是帮忙或者所谓的”人情“。</p>
 <p><span class="math notranslate nohighlight">\(C_{ij}\)</span> 表示 <span class="math notranslate nohighlight">\(i\)</span> 对 <span class="math notranslate nohighlight">\(j\)</span> 付出的交友成本。不过这里的成本更加通用化，以具体事物作衡量，并不等同于某个人实际感受到的效用（比如对于社牛，可能他们专门出去找好友玩、参加联谊交往活动等并不会感觉有多心累或浪费时间精力）。</p>
 <p><span class="math notranslate nohighlight">\(\theta_{ji}\)</span> 表示 <span class="math notranslate nohighlight">\(j\)</span> 对 <span class="math notranslate nohighlight">\(i\)</span> 的亲密度。想了想我觉得不应直接假设 <span class="math notranslate nohighlight">\(\theta_{ji} = \theta_{ij}\)</span>，很可能双方对友谊的认知存在偏差。但或许对于情商高的人，他们能够更快的意识到差距并调整 <span class="math notranslate nohighlight">\(\left \vert \theta_{ji} - \theta_{ij} \right \vert\)</span> 趋于 0。<span class="math notranslate nohighlight">\(\theta\)</span> 取决于双方对友谊付出的成本多少，及环境外生的互动系数 <span class="math notranslate nohighlight">\(\mu_{ij} = \mu_{ji}\)</span>（不同来源性质的好友天生会产生亲密度的差别，比如中学里和同班同学的关系自然会高于一般的非同班同学）。而在某些特殊函数形式下可以造成 <span class="math notranslate nohighlight">\(\theta_{ji} = \theta_{ij}\)</span> ——接下来为了简单的解析结果，我们令 <span class="math notranslate nohighlight">\(\theta_{ji}(C_{ji},C_{ij},\mu_{ji}) = \mu_{ji} C_{ji} C_{ij}\)</span>。</p>
@@ -424,19 +424,21 @@ document.write(`
 <p>等一下，这并不简单，这个期权不止是美式的，甚至不知道可能有哪些可以行权。再者，我们这里还需要两个假设：不考虑跨人际交往（”我朋友的朋友……“）；不考虑关系网的延伸（<span class="math notranslate nohighlight">\(i,j \in I\)</span> 均为已知的一群人）（理论上还应该考虑新认识陌生人可能的”启动成本“）。但我们这里稍稍不讲道理的简化一点，想象一群欧式期权，它们依 <span class="math notranslate nohighlight">\((S,K,T)\)</span> 联合概率分布，以表征不确定性。</p>
 <p><span class="math notranslate nohighlight">\(S\)</span> 指一些 issues in life（也许是一个向量），<span class="math notranslate nohighlight">\(K\)</span> 为使用好友这个”人情“（租）所需要付出的成本。不过这里应写为函数 <span class="math notranslate nohighlight">\(K_{ji}(\theta_{ji})\)</span>，令 <span class="math notranslate nohighlight">\(K_{ji} = (1-\theta_{ji})S_i + \theta_{ji}K_j\)</span>，<span class="math notranslate nohighlight">\(S\)</span> 是到期时的针对issue的花费。那么不难发现 <span class="math notranslate nohighlight">\(P_{ji}(\theta_{ji})  = \theta_{ji} S_i N(d_1) - \theta_{ji} K_j e^{-rT} N(d_2) = p_{ji} \theta_{ji}\)</span>，<span class="math notranslate nohighlight">\(V_{ji} = D_{ji} + P_{ji}  = v_{ji} \theta_{ji}\)</span>，价值正比于亲密度。</p>
 <p>注意到这个式子需要存在交友无套利均衡（有点好笑），并且大家都能对 <span class="math notranslate nohighlight">\(K_i\)</span> 了解精准。</p>
-<p>于是，最终的选择满足
-$<span class="math notranslate nohighlight">\(
+<p>于是，最终的选择满足</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
 \max \limits_{\{C_{ji}\}} \sum \limits_{j \neq i} U_i(V_{ji}) - U_i(C_{ji})\\
 s.t. \ C_i = \sum \limits_{j \neq i} C_{ji}
-\)</span><span class="math notranslate nohighlight">\(
-让我们来看一个经典的前景理论的情况，即
-\)</span><span class="math notranslate nohighlight">\(
+\end{split}\]</div>
+<p>让我们来看一个经典的前景理论的情况，即</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
 U(x)=\left\{\begin{array}{cc}
 x^\alpha &amp; x \geq 0 \\
 -\lambda\left(-x\right)^\alpha &amp; x&lt;0
 \end{array}\right.
-\)</span><span class="math notranslate nohighlight">\(
-求解这个规划立刻得到 \)</span>C_{ji} \propto (R_{ji}^\alpha - \lambda_i)^{\frac{1}{1-\alpha}}<span class="math notranslate nohighlight">\(，其中 \)</span>R_{ji} = v_{ji} \mu_{ji} C_{ij}<span class="math notranslate nohighlight">\(，表征了好友 \)</span>j<span class="math notranslate nohighlight">\( 对 \)</span>i$ 的价值比率。</p>
+\end{split}\]</div>
+<p>求解这个规划立刻得到 <span class="math notranslate nohighlight">\(C_{ji} \propto (R_{ji}^\alpha - \lambda_i)^{\frac{1}{1-\alpha}}\)</span>，其中 <span class="math notranslate nohighlight">\(R_{ji} = v_{ji} \mu_{ji} C_{ij}\)</span>，表征了好友 <span class="math notranslate nohighlight">\(j\)</span> 对 <span class="math notranslate nohighlight">\(i\)</span> 的价值比率。</p>
 <p>概括一下主要思想：交友最终还是会达到边际投入等于边际产出；交友成本将被更多的投入在高价值的人或爱社交的人身上；对于务实的人，<span class="math notranslate nohighlight">\(\alpha\)</span> 较大，或对于不爱社交的人，<span class="math notranslate nohighlight">\(\lambda\)</span> （社交厌恶的程度）较大，都会驱使 <span class="math notranslate nohighlight">\(R\)</span> 大的项更为突出，他们只会把精力投入到主要的人身上。</p>
 <p>好吧，我们至少保证这个理论看上去符合直觉了！……</p>
 </section>
