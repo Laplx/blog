@@ -2,7 +2,7 @@
 
 ![](./introg.jpg)
 
-*（平阳·火烧云）*
+*（喀什·毛像）*
 
 ### 这里有什么？What's here?
 
@@ -20,9 +20,11 @@ This is my blog. I create ideas, make studies and share informations here.
 
 ### 每周一句  Weekly sentence
 
-A large income is the best recipe for happiness I ever heard of.
+大雨落幽燕，白浪滔天，秦皇岛外打鱼船。一片汪洋都不见，知向谁边？
 
-—— Jane Austen
+往事越千年，魏武挥鞭，东临碣石有遗篇。萧瑟秋风今又是，换了人间。
+
+—— 毛泽东《浪淘沙·北戴河》
 
 ### 欢迎评论！Comments
 
