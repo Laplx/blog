@@ -420,38 +420,38 @@ document.write(`
 \text{ easy } E
 \end{array} \right.
 \end{split}\]</div>
-<p>这个荣誉税 honor tax 指的是某些荣誉课每周加一些事情的现象，而且这些事情对期末成绩几乎没有影响，纯纯占用学习时间罢了（注意我们这里在功利的评判期末价值）。因此相当于上交了一定比例的精力（若用之学习带来的知识流的机会成本）。在不考虑荣誉税，且学生可以自由退选课以最大化绩点的情形下有：
-$$</p>
-<div class="amsmath math notranslate nohighlight" id="equation-a00f856f-47c7-493c-aa0c-6e1248c25f54">
-<span class="eqno">(1)<a class="headerlink" href="#equation-a00f856f-47c7-493c-aa0c-6e1248c25f54" title="Permalink to this equation">#</a></span>\[\begin{align}
+<p>这个荣誉税 honor tax 指的是某些荣誉课每周加一些事情的现象，而且这些事情对期末成绩几乎没有影响，纯纯占用学习时间罢了（注意我们这里在功利的评判期末价值）。因此相当于上交了一定比例的精力（若用之学习带来的知识流的机会成本）。在不考虑荣誉税，且学生可以自由退选课以最大化绩点的情形下有：</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align}
 &amp;\text{ C\&amp;C Theorem 1:} \\
 &amp;\quad V = H + E = \frac{K}{r} \\
 &amp;\text{ Proposition: Free Course Market }
-\end{align}\]</div>
+\end{align}
+\end{split}\]</div>
+<p><span class="math notranslate nohighlight">\(K\)</span> is the knowledge flow a student earned during each week. <span class="math notranslate nohighlight">\(r\)</span> corresponds to the level of the student's learning skill or forgetting rate, while more risk means weaker ability and a higher <span class="math notranslate nohighlight">\(r\)</span>.  <span class="math notranslate nohighlight">\(r_o\)</span> is the standard forgetting rate of a person.</p>
 <div class="math notranslate nohighlight">
-\[
-$K$ is the knowledge flow a student earned during each week. $r$ corresponds to the level of the student's learning skill or forgetting rate, while more risk means weaker ability and a higher $r$.  $r_o$ is the standard forgetting rate of a person.
-\]</div>
-<div class="amsmath math notranslate nohighlight" id="equation-9e1f43aa-8767-4fbe-b437-8e8944f42e3d">
-<span class="eqno">(2)<a class="headerlink" href="#equation-9e1f43aa-8767-4fbe-b437-8e8944f42e3d" title="Permalink to this equation">#</a></span>\[\begin{align}
+\[\begin{split}
+\begin{align}
 &amp;\text{ C\&amp;C Theorem 2:} \\
 &amp;\quad V = H + E = \frac{K}{r} + \frac{-\tau H}{r_o}
-\end{align}\]</div>
+\end{align}
+\end{split}\]</div>
+<p>Thus honor courses only to students if no academic value is considered. <span class="math notranslate nohighlight">\(walc = r (1+ \frac{\tau}{r_o}\frac{H}{H+E})\)</span> gets larger when the honor leverage <span class="math notranslate nohighlight">\(\frac{H}{H+E}\)</span> becomes larger.</p>
+<p>For market, we have</p>
 <div class="math notranslate nohighlight">
-\[ \begin{align}\begin{aligned}
-Thus honor courses only to students if no academic value is considered. $walc = r (1+ \frac{\tau}{r_o}\frac{H}{H+E})$ gets larger when the honor leverage $\frac{H}{H+E}$ becomes larger.\\For market, we have
-\end{aligned}\end{align} \]</div>
-<p>r = r_o + \beta(r_M-r_o)
-$<span class="math notranslate nohighlight">\(
-where \)</span>\beta = \frac{Cov(GPA_M,GPA_S)}{V(GPA_M)}<span class="math notranslate nohighlight">\( can be calculated by the average variation of the whole undergraduate students' GPA (the market GPA) and the correlation between the market GPA and the avergae GPA of students in the same learning level.
-\)</span>$</p>
-<div class="amsmath math notranslate nohighlight" id="equation-c31d0575-c914-471a-be9b-4385c95c0b04">
-<span class="eqno">(3)<a class="headerlink" href="#equation-c31d0575-c914-471a-be9b-4385c95c0b04" title="Permalink to this equation">#</a></span>\[\begin{align}
+\[
+r = r_o + \beta(r_M-r_o)
+\]</div>
+<p>where <span class="math notranslate nohighlight">\(\beta = \frac{Cov(GPA_M,GPA_S)}{V(GPA_M)}\)</span> can be calculated by the average variation of the whole undergraduate students' GPA (the market GPA) and the correlation between the market GPA and the avergae GPA of students in the same learning level.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align}
 &amp;\text{ Additional values: } \\
 &amp;\quad V' = V + \sum\limits_i r_wT_i + Ac(H)
-\end{align}\]</div>
-<p>$<span class="math notranslate nohighlight">\(
-\)</span>T_i<span class="math notranslate nohighlight">\( is the reviewing time of course i and \)</span>r_w<span class="math notranslate nohighlight">\( is the knowledge output rate in reviewing weeks, \)</span>r_w &gt; r &gt; r_o<span class="math notranslate nohighlight">\(. Here we don't give a thorough consideration of how students arrange their time across different courses with different test dates. \)</span>Ac(H)<span class="math notranslate nohighlight">\( is a function of academic value of \)</span>H<span class="math notranslate nohighlight">\( honor course credits, probably concave. Then  we will get a maximizing point of \)</span>H^*$ (the best course structure).</p>
+\end{align}
+\end{split}\]</div>
+<p><span class="math notranslate nohighlight">\(T_i\)</span> is the reviewing time of course i and <span class="math notranslate nohighlight">\(r_w\)</span> is the knowledge output rate in reviewing weeks, <span class="math notranslate nohighlight">\(r_w &gt; r &gt; r_o\)</span>. Here we don't give a thorough consideration of how students arrange their time across different courses with different test dates. <span class="math notranslate nohighlight">\(Ac(H)\)</span> is a function of academic value of <span class="math notranslate nohighlight">\(H\)</span> honor course credits, probably concave. Then  we will get a maximizing point of <span class="math notranslate nohighlight">\(H^*\)</span> (the best course structure).</p>
 </section>
 </section>
 
