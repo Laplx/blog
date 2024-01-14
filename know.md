@@ -6,7 +6,7 @@ Here are some files and e-books I have collected. Hoping these helps.
 
 ### 个人图书
 
-[library.laplx.cc](library.laplx.cc)
+<library.laplx.cc>
 
 *（每年1月、7月更新 updated every Jan. and Jul.）*
 

@@ -6,6 +6,8 @@ I will upload one of my ideas, fantasies, or proposals every frivolous Friday, m
 
 ### 目录
 
+*24.1.12下周一起更新*
+
 24.1.5  CC 定理
 
 23.12.29  交友论
