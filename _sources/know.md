@@ -1,14 +1,12 @@
-# 资料分享 Knowledge
+# 资料分享
 
 这里有我收集的一些文件和电子书，以期帮助。
-
-Here are some files and e-books I have collected. Hoping these helps.
 
 ### 个人图书
 
 <library.laplx.cc>
 
-*（每年1月、7月更新 updated every Jan. and Jul.）*
+*（每年1月、7月更新）*
 
 ### 数理
 

@@ -1,3 +1,3 @@
-# Astrology
+# Astrology Basics
 
 ![](./astrology.jpg)

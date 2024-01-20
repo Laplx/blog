@@ -1,12 +1,12 @@
-#   周五碎笔 Friday
+#   周五碎笔
 
 我将在每周五上传一则自己的点子、狂想或提议，多半大概是无用且荒谬的，权飨看客。
 
-I will upload one of my ideas, fantasies, or proposals every frivolous Friday, most of which are probably useless and ridiculous. A good idea often starts as a bad one.
-
 ### 目录
 
-*24.1.12下周一起更新*
+24.1.19  天体金融学
+
+24.1.12  交通成本
 
 24.1.5  CC 定理
 
@@ -83,5 +83,3 @@ I will upload one of my ideas, fantasies, or proposals every frivolous Friday, m
 ---
 
 作者（Laplx）对“周五碎笔”内**全部内容享有著作权**。
-
-The author (Laplx) **holds copyright to all content** in 'Frivolous Friday'.

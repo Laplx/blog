@@ -1,34 +1,52 @@
-# 首页 Welcome
+# 首页
+
+```{card} Click here for English version
+:link: https://en.laplx.cc
+```
 
 ![](./introg.jpg)
 
-*（苏州吴江·开弦弓村）*
+*（1992年1月22日，邓小平参观深圳仙湖植物园）*
 
-### 这里有什么？What's here?
+### 这里有什么？
 
 这里是 <font face="Consolas" size=4><b>Lapl</b></font><font face="Consolas" size=4 color="red"><b>x</b></font> <font face="Consolas" size=4><b>(Hao Chen)</b></font> 的 GithubPage 博客。
 
 我会分享我创作和收集的一些文件、课题与想法。
 
-This is my blog. I create ideas, make studies and share informations here.
+### 怎么联系我？
 
-### 怎么联系我？Want to contact me?
+邮箱：laplx@foxmail.com  laplx@outlook.com(国内可能收不到)
 
-邮箱 email：laplx@foxmail.com  laplx@outlook.com(may not be receivable in China)
+单位：复旦大学经济学院
 
-单位 affiliation：复旦大学经济学院 School of Economics, Fudan University, Shanghai
+### 每周一句
 
-### 每周一句  Weekly sentence
+```{epigraph}
+成长的方向是独立人格，进步的标志是自由宽容。
 
-以“己”为中心，像石子一般投入水中，和别人所联系成的社会关系，不像团体中的分子一般大家立在一个平面上的，而是像水的波纹一般，一圈圈推出去，愈推愈远，也愈推愈薄。
+整齐划一的运动越来越少了，参差百态成为幸福的本源。
 
-—— 费孝通《乡土中国》
+五千年的古文明，三十年的大变局。
 
-### 欢迎评论！Comments
+变局之中，泥沙俱下。有些目标甚至越来越远了，有些方向越来越模糊。
 
-评论需使用 Github accounts。
+……
 
-发布内容须遵守国家法律法规。Comments must comply with relevant laws and regulations.
+那照亮古希腊奥林匹亚村的阳光，也将同样照亮北京紫禁城。
+
+那些来自西方的运动规则、和平理念和欢乐精神，也将同样进驻我们的内心。
+
+如果我们为五星红旗感到骄傲，那么也可以为五环旗感到自豪。
+
+-- 南方周末2008新年献词
+```
+
+### 欢迎评论！
+
+评论需使用 Github 账户。
+
+发布内容须遵守国家法律法规。
 
 
 ```{div}
