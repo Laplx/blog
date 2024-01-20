@@ -63,8 +63,6 @@
     - file: know/py3rdpartylib
     - file: know/pyPEP8
     - file: know/Gregg.md
-      title: Gregg Shorthand md
-    - url: https://laplx.cc/know/Gregg.pdf
       title: Gregg Shorthand
 - file: sund
   sections:
