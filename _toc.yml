@@ -1,5 +1,4 @@
 - file: intro
-  title: 首页
 - file: note
   sections:
     - file: note/23.12
@@ -64,6 +63,8 @@
     - file: know/py3rdpartylib
     - file: know/pyPEP8
     - file: know/Gregg.md
+      title: Gregg Shorthand md
+    - url: https://laplx.cc/know/Gregg.pdf
       title: Gregg Shorthand
 - file: sund
   sections:
