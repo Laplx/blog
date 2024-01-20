@@ -1,4 +1,5 @@
 - file: intro
+  title: 首页
 - file: note
   sections:
     - file: note/23.12

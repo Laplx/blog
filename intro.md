@@ -1,7 +1,8 @@
-# 首页
+# 首页 - 欢迎
 
-```{card} Click here for English version
+```{card}
 :link: https://en.laplx.cc
+Click here for English version
 ```
 
 ![](./introg.jpg)
@@ -22,7 +23,6 @@
 
 ### 每周一句
 
-```{epigraph}
 成长的方向是独立人格，进步的标志是自由宽容。
 
 整齐划一的运动越来越少了，参差百态成为幸福的本源。
@@ -39,8 +39,7 @@
 
 如果我们为五星红旗感到骄傲，那么也可以为五环旗感到自豪。
 
--- 南方周末2008新年献词
-```
+—— 南方周末2008新年献词
 
 ### 欢迎评论！
 
