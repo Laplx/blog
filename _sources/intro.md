@@ -1,4 +1,4 @@
-# 首页 - 欢迎
+# 首页
 
 ```{card}
 :link: https://en.laplx.cc
@@ -17,7 +17,7 @@ Click here for English version
 
 ### 怎么联系我？
 
-邮箱：laplx@foxmail.com  laplx@outlook.com(国内可能收不到)
+邮箱：laplx@foxmail.com  laplx@outlook.com
 
 单位：复旦大学经济学院
 
