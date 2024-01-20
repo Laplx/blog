@@ -1,8 +1,6 @@
-# 友情特供 Column
+# 友情特供
 
 邀请其他人写点内容发在这里。
-
-I invite others to write something here.
 
 ### ljh（山姆）
 

@@ -1,8 +1,6 @@
-# 学习评记 Notes
+# 学习记录
 
 分享我的各类笔记，部分原创，部分为摘要和评论。转载请务必联系。
-
-Share my own notes here. Some are original, and some are abstracts or comments. Please be sure to contact me if reproducing.
 
 ### 个人笔记
 
@@ -59,5 +57,3 @@ Git 基础
 ---
 
 作者（Laplx）对“学习评记”内**全部内容享有著作权**。
-
-The author (Laplx) **holds copyright to all content** in 'Notes'.
