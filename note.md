@@ -16,6 +16,8 @@
 
 [*Laplx* 物理竞赛笔记（下）](note/phy-2.pdf)
 
+[*Laplx* 改革开放史](https://laplx.cc/note/china_reform)
+
 ### 期刊月读
 
 23.12

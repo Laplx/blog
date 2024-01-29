@@ -19,6 +19,7 @@
       title: 红楼遗梦
 - file: wonder
   sections:
+    - file: wonder/24.1.26
     - file: wonder/24.1.19
     - file: wonder/24.1.12
     - file: wonder/24.1.5
