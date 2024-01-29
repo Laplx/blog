@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Frivolity: Transportation Cost &#8212; My Blog</title>
+    <title>Frivolity: Transportation Cost &#8212; Laplx&#39;s Blog</title>
   
   
   
@@ -186,6 +186,7 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 </li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../wonder.html">周五碎笔</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="24.1.26.html">Frivolity: Infinite Turing Machine</a></li>
 <li class="toctree-l2"><a class="reference internal" href="24.1.19.html">Frivolity: Astrofinance</a></li>
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">Frivolity: Transportation Cost</a></li>
 <li class="toctree-l2"><a class="reference internal" href="24.1.5.html">Frivolity: C&amp;C Theorem</a></li>
@@ -424,7 +425,7 @@ f + w t
 f_0 + As + wt + be^{\gamma t} + p \approx Const
 \]</div>
 <p>其中 <span class="math notranslate nohighlight">\(f= f_0 +As\)</span>，<span class="math notranslate nohighlight">\(f_0\)</span> 表示机场、火车站安检进站等固定成本，<span class="math notranslate nohighlight">\(s\)</span> 为机场、火车站的距离，<span class="math notranslate nohighlight">\(A\)</span> 则与城市交通能力有关。除了工资 <span class="math notranslate nohighlight">\(w\)</span> 的机会成本外，环境造成的成本也许是指数形式的 <span class="math notranslate nohighlight">\(be^{\gamma t}\)</span>。</p>
-<p>不过！——国铁的定价基本是统一按照一定的计算规则来的（部分广铁除外）。时速 300 km/h 及以上的线路，G 字头车二等座票价率一般为 0.46 元/公里，D 字头为 0.31 或 0.37 元/公里；并递远递减，分段计价；一等座、特等座和商务座的票价，则分别按照二等座票价的 1.6 倍、1.8 倍和 3 倍计算。而机票甚至还有价格走势；同时还要剔除凌晨、饭点等起抵时间对作息和行程安排的影响。德国和日本或许是最佳的样本，一方面铁路客运发达，一方面相较而言市场化一点。京沪高铁等几条线路这些年前开始推动市场化浮动定价，我们可以姑且作个初步的观察。我从12306网站上爬取了上海至北京的车次票价 <span class="math notranslate nohighlight">\(p\)</span> 和用时 <span class="math notranslate nohighlight">\(t\)</span>，<span class="math notranslate nohighlight">\(w\)</span> 的回归结果约为 0.72 元/分钟（<span class="math notranslate nohighlight">\(R^2 = 0.64\)</span>，二等座），而商务座 <span class="math notranslate nohighlight">\(w\)</span> 约为 2.63 元/分钟（一天工作9小时，相当于11万和38万的年薪）。并且 <span class="math notranslate nohighlight">\(v\)</span> 对各舱位来说相近，确实是 <span class="math notranslate nohighlight">\(b\)</span> 的差别。单就线性回归而言，飞机的 <span class="math notranslate nohighlight">\(w\)</span> 可能在 2.3 元/分钟附近（飞机经济舱的数据更加复杂，这样子做意义不大），确实比铁路要小一些，说明乘坐环境大概没有高铁舒服吧。</p>
+<p>不过！——国铁的定价基本是统一按照一定的计算规则来的（部分广铁除外）。时速 300 km/h 及以上的线路，G 字头车二等座票价率一般为 0.46 元/公里，D 字头为 0.31 或 0.37 元/公里；并递远递减，分段计价；一等座、特等座和商务座的票价，则分别按照二等座票价的 1.6 倍、1.8 倍和 3 倍计算。而机票甚至还有价格走势；同时还要剔除凌晨、饭点等起抵时间对作息和行程安排的影响。德国和日本或许是最佳的样本，一方面铁路客运发达，一方面相较而言市场化一点。京沪高铁等几条线路这些年开始推动市场化浮动定价，我们可以姑且作个初步的观察。我从12306网站上爬取了上海至北京的车次票价 <span class="math notranslate nohighlight">\(p\)</span> 和用时 <span class="math notranslate nohighlight">\(t\)</span>，<span class="math notranslate nohighlight">\(w\)</span> 的回归结果约为 0.72 元/分钟（<span class="math notranslate nohighlight">\(R^2 = 0.64\)</span>，二等座），而商务座 <span class="math notranslate nohighlight">\(w\)</span> 约为 2.63 元/分钟（一天工作9小时，相当于11万和38万的年薪）。并且 <span class="math notranslate nohighlight">\(v\)</span> 对各舱位来说相近，确实是 <span class="math notranslate nohighlight">\(b\)</span> 的差别。单就线性回归而言，飞机的 <span class="math notranslate nohighlight">\(w\)</span> 可能在 2.3 元/分钟附近（飞机经济舱的数据更加复杂，这样子做意义不大），确实比铁路要小一些，说明乘坐环境大概没有高铁舒服吧。</p>
 </section>
 </section>
 
