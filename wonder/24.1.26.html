@@ -424,8 +424,10 @@ document.write(`
 <p><strong>Descriptive Complexity Thesis:</strong></p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-K = \{K(M)|M \in \mathbb{M}\}, \tilde{K} = \{K(\tilde{M})|\tilde{M} \in \tilde{\mathbb{M}}\}\\
-K \in TE,\tilde{K} \in RE
+\begin{aligned}
+K = \{K(M)|M \in \mathbb{M}\},&amp; \tilde{K} = \{K(\tilde{M})|\tilde{M} \in \tilde{\mathbb{M}}\}\\
+K \in TE,&amp; \tilde{K} \in RE
+\end{aligned}
 \end{split}\]</div>
 <p><span class="math notranslate nohighlight">\(K(M)\)</span> 即描述该 TM 的 Kolmogorov 复杂度，<span class="math notranslate nohighlight">\(\{K,\tilde{K}\}\)</span> 可以称作最佳描述语言；这里有一个对偶。无限计算机之间同样可以进行图灵归约，这个可计算过程应能够映射到对 <span class="math notranslate nohighlight">\(\tilde{K} \in RE\)</span> 的算术操作上来。</p>
 <p>左半边的理论 <span class="math notranslate nohighlight">\(Th(\mathcal{M})\)</span>（模型语言 <span class="math notranslate nohighlight">\(\mathcal{M}\)</span> 的真句的集）即我们通俗所谓的理科，能为人所理解，拥有确定而有限的输入和计算过程并给出确定的输出，像一个函数；右半边的理论 <span class="math notranslate nohighlight">\(Th(\tilde{\mathcal{M}})\)</span> 即文科，两者同样因图灵屏障泾渭分明。（BTW，23.10.20 篇我曾自己试图定义 theory，后来发现数理逻辑里有了，应该是等价的）</p>
