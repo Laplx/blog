@@ -1,0 +1,792 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="zh-Hans" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Information and Computation Theory for Interdiscipliners &#8212; Laplx&#39;s Blog</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-PPZXJ9B1BG"></script>
+    <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){ dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'G-PPZXJ9B1BG');
+            </script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'note/info_compu';</script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="zh-Hans"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    首页
+                </a>
+            </li>
+        </ul>
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../note.html">学习记录</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="23.12.html">Read: 23.12</a></li>
+<li class="toctree-l2"><a class="reference internal" href="evol_game.html">Outline of Evolutionary Game Theory</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mechbrief.html">A Brief Draft of Classical Mechanics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="millerorr.html">Proof of Miller-Orr Model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="solow.html">Solow Model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="intro_causalinfer.html">Introduction to Causal Inference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mathmodel.html">Elements of Mathmatical Modeling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="astrology.html">Astrology Basics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="crypto.html">Cryptocurrency Basics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pre1.html">Pre 1</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../proj.html">课题探讨</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../swarm/Swarm.html">打卡软件 Swarm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../hlm/hlm_index.html">红楼遗梦</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../wonder.html">周五碎笔</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../wonder/24.2.2.html">Special: How Wenzhou Develops</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wonder/24.1.26.html">Frivolity: Infinite Turing Machine</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wonder/24.1.19.html">Frivolity: Astrofinance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wonder/24.1.12.html">Frivolity: Transportation Cost</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wonder/24.1.5.html">Frivolity: C&amp;C Theorem</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wonder/23.12.29.html">Frivolity: Theory about Making Friends</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wonder/23.12.22.html">Frivolity: Leaning, Gluing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wonder/23.12.15.html">Frivolity: Dividend Signaling Model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wonder/23.12.8.html">Notion: Settability</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wonder/23.12.1.html">Sequel: Model for the Nations II</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wonder/23.11.24.html">Frivolity: Model for the Nations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wonder/23.11.17.html">Notion: The Apple that Never Lands</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wonder/23.11.10.html">Frivolity: Weighted Synchronicity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wonder/23.11.3.html">Frivolity: Love in Evolution and Equilirium</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wonder/23.10.27.html">Frivolity: Red-light Preference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wonder/23.10.20.html">Frivolity: Theory of Theory</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wonder/23.10.13.html">Frivolity: Stand up and Cheer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wonder/23.10.6.html">Frivolity: Knoid</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wonder/23.9.29.html">Frivolity: The Limit of Handwritting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wonder/23.9.22.html">Frivolity: Measure Design</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wonder/23.9.15.html">Frivolity: Can I Update in Time</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wonder/23.9.8.html">Frivolity: New Game of Life</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wonder/23.9.1.html">Frivolity: Theory of lazing in military training</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wonder/23.8.25.html">Frivolity: Currency Reverie</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wonder/23.8.18.html">Notion: Templatization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wonder/23.8.11.html">Frivolity: Annealed Polity Emerges</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wonder/23.8.4.html">Frivolity: WeRun Pattern</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wonder/23.7.28.html">Frivolity: Meme Alive</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wonder/23.7.21.html">Frivolity: Winner-Take-All Game</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wonder/23.7.14.html">Frivolity: Semantic Information</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wonder/23.7.7.html">Notion: Excellent Player</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wonder/23.6.30.html">Frivolity: How to Get a Path</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wonder/23.6.23.html">Notion: Hype Significance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wonder/23.6.16.html">Frivolity: Homomorphic Observation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wonder/23.6.9.html">Frivolity: Dots and Boxes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wonder/23.6.2.html">Frivolity: Choose Your Seat</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wonder/23.5.26.html">Frivolity: Introduction to Roll Theory</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wonder/23.5.19.html">Frivolity: Moments Entropy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wonder/23.5.12.html">Frivolity: Touter or Scalper</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wonder/23.5.5.html">Frivolity: Start and Bikes on Campus</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../know.html">资料分享</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../know/cookbook.html">The Matrix Cookbook</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../know/py3rdpartylib.html">Python 第三方库管理等问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../know/pyPEP8.html">Python 代码规范</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../know/Gregg.html">Gregg Shorthand</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../sund.html">其他收录</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../sund/articles.html">文章集萃</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sund/links.html">外部链接</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sund/ques.html">趣味问题集</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sund/folkscience.html">民科小传</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sund/toiletology.html">厕学</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sund/xingqisiji.html">行乞寺记</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sund/olympics.html">谈竞赛</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../other.html">友情特供</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../other/Stokes.html">Stokes 公式</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../other/Newton.html">Newton 力学</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../other/quantum_form.html">量子力学的形式理论</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../other/rglights.html">十字路口的选择</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../other/planck.html">Planck 公式在历史上是怎么诞生的</a></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/note/info_compu.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Information and Computation Theory for Interdiscipliners</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contents">Contents</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#entropy">1 Entropy</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#coding-statistics-and-investment">2  Coding, Statistics and Investment</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#communication">3  Communication</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#automaton-and-language">4  Automaton and Language</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#computability">5  Computability</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#complexity">6  Complexity</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="information-and-computation-theory-for-interdiscipliners">
+<h1>Information and Computation Theory for Interdiscipliners<a class="headerlink" href="#information-and-computation-theory-for-interdiscipliners" title="Permalink to this heading">#</a></h1>
+<p>This note compiles two well-known textbooks: Michael Sipser, <em>Introduction to the Theory of Computation (3e)</em> and Thomas M. Cover &amp; Joy A. Thomas, <em>Elements of Information Theory (2e)</em>. No preknowledge is required and knowing a bit of discrete math is better.</p>
+<section id="contents">
+<h2>Contents<a class="headerlink" href="#contents" title="Permalink to this heading">#</a></h2>
+<p><strong>1  Entropy</strong></p>
+<p><strong>2  Coding, Statistics and Investment</strong></p>
+<p><strong>3  Communication</strong></p>
+<p><strong>4  Automaton and Language</strong></p>
+<p><strong>5  Computability</strong></p>
+<p><strong>6  Complexity</strong></p>
+</section>
+<section id="entropy">
+<h2>1 Entropy<a class="headerlink" href="#entropy" title="Permalink to this heading">#</a></h2>
+<p><strong>1.1</strong></p>
+<p>entropy <span class="math notranslate nohighlight">\(H(X) = - \sum\limits_{x\in \mathcal{X}} p(x)logp(x) = -Elogp(X)\)</span></p>
+<p>joint entropy, conditional entropy  <span class="math notranslate nohighlight">\(H(X,Y)=H(X)+H(Y|X)\)</span>  <em>note:</em> usually <span class="math notranslate nohighlight">\(H(X|Y) \neq H(X|Y=y)\)</span></p>
+<p>relative entropy(KL distance) <span class="math notranslate nohighlight">\(D(p\|q)=- \sum\limits_{x\in \mathcal{X}} p(x)log\frac{p(x)}{q(x)} = -Elog\frac{p(X)}{q(X)}\)</span> usually <span class="math notranslate nohighlight">\(D(p\|q) \neq D(q\|p)\)</span></p>
+<p>mutual inforamtion <span class="math notranslate nohighlight">\(I(X;Y)=D(p(x,y)\|p(x)p(y))\)</span></p>
+<p><span class="math notranslate nohighlight">\(I(X;Y)=H(X)+H(Y)-H(X,Y)=H(X)-H(X|Y)\)</span>  <span class="math notranslate nohighlight">\(I(X;X)=H(X)\)</span>  Venn diagram</p>
+<p>chain rule <span class="math notranslate nohighlight">\(H(X_1,\cdots,X_n)=\sum\limits_{i=1}^nH(X_i|X_{i-1},\cdots,X_1),\ I(X_1,\cdots,X_n;Y)=\sum\limits_{i=1}^nI(X_i;Y|X_{i-1},\cdots,X_1)\)</span></p>
+<p>Jesen Ineq: <span class="math notranslate nohighlight">\(\text{convex func. }f\text{ and a RV }X,\ Ef(X)\geq f(EX)\)</span></p>
+<p>Info. Ineq: <span class="math notranslate nohighlight">\(D(p\|q)\geq 0,\text{ eq. iff }p=q\)</span>  <span class="math notranslate nohighlight">\(I(X;Y)\geq 0, \text{ eq. iff }X\ id.\ Y\)</span></p>
+<p><span class="math notranslate nohighlight">\(H(X)\leq log|\mathcal{X}|\)</span>  <span class="math notranslate nohighlight">\(H(X_1,\cdots,X_n)\leq \sum\limits_{i=1}^nH(X_i)\)</span></p>
+<p>log_sum Ineq: <span class="math notranslate nohighlight">\(\sum_{i=1}^n a_i \log \frac{a_i}{b_i} \geq\left(\sum_{i=1}^n a_i\right) \log \frac{\sum_{i=1}^n a_i}{\sum_{i=1}^n b_i}\)</span>  <span class="math notranslate nohighlight">\(D(p\|q)\)</span> is convex about <span class="math notranslate nohighlight">\((p,q)\)</span> and <span class="math notranslate nohighlight">\(H(p)\)</span> is concave about <span class="math notranslate nohighlight">\(p\)</span>.</p>
+<p>Markov chain <span class="math notranslate nohighlight">\(X\rightarrow Y\rightarrow Z,\ I(X;Z|Y)=0\)</span> Data Processing Ineq: <span class="math notranslate nohighlight">\(I(X;Y)\geq I(X;Z),\text{ eq. iff }I(X;Y|Z)=0\)</span></p>
+<p><span class="math notranslate nohighlight">\(\theta \rightarrow X \rightarrow T(X)\)</span>  sufficient statistics <span class="math notranslate nohighlight">\(I(\theta ;X)=I(\theta ;T(X))\)</span> or <span class="math notranslate nohighlight">\(X\ id.\ \theta\text{ when }T(X)\text{ is given}\)</span>  minimal suf. stat. <span class="math notranslate nohighlight">\(\theta \rightarrow T(X) \rightarrow U(X) \rightarrow X\)</span></p>
+<p>Fano Ineq: <span class="math notranslate nohighlight">\(X\rightarrow Y \rightarrow \hat{X},\ P_e=Pr(X\neq \hat{X}),\ H_e = -P_elogP_e -(1-P_e)log(1-P_e),\\ H(X|Y)\leq H(X|\hat{X})\leq H_e + P_eH(X)\leq  H_e + P_elog|\mathcal{X}|\)</span></p>
+<p><span class="math notranslate nohighlight">\(X \sim p(x),\ Y \sim q(y),\ Pr(X=Y)\geq 2^{-H(p)-D(p\|q)}\)</span>​</p>
+<p><strong>1.2</strong></p>
+<p>(weak)LLN, asymptotic equipartition property AEP: <span class="math notranslate nohighlight">\(X_1,\cdots,X_n \overset{iid.}{\sim}p(x),\ -\frac{1}{n}logp(X_1,\cdots,X_n) \overset{p}{\rightarrow} H(X)\)</span></p>
+<p>typical set <span class="math notranslate nohighlight">\(A^n_\epsilon \subset \mathcal{X}^n\)</span>  <span class="math notranslate nohighlight">\(\text{large }n,\ Pr(A^n_\epsilon) &gt; 1-\epsilon,\ (1-\epsilon)2^{n(H(X)-\epsilon)} \leq |A^n_\epsilon| \leq 2^{n(H(X)+\epsilon)}\)</span> (In short, <span class="math notranslate nohighlight">\(A^n_\epsilon\)</span> has roughly <span class="math notranslate nohighlight">\(2^{nH}\)</span> elements with equal prob. <span class="math notranslate nohighlight">\(2^{-nH}\)</span>.)</p>
+<p>Nearly <span class="math notranslate nohighlight">\(nH\)</span> bits can express sequence <span class="math notranslate nohighlight">\(X^n\)</span>.(typical set <span class="math notranslate nohighlight">\(n(H+\epsilon)+1\)</span> bit and nontypical <span class="math notranslate nohighlight">\(nlog|\mathcal{X}|+1\)</span> bit)</p>
+<p>In the sense of first-order exponent, among all sets that have <span class="math notranslate nohighlight">\(Pr&gt;1-\epsilon\)</span>，<span class="math notranslate nohighlight">\(A^n_\epsilon\)</span>​ is the minimal.</p>
+<p>stationary stochastic process, stationary Markov chain</p>
+<p>entropy rate of a sto. <span class="math notranslate nohighlight">\(\{X_i\}\)</span>: <span class="math notranslate nohighlight">\(H(\mathcal{X}) = \lim\limits_{n\rightarrow \infty}\frac{1}{n}H(X_1,\cdots,X_n)\)</span>(if limit exists)</p>
+<p>for stn. sto. <span class="math notranslate nohighlight">\(\text{also } = \lim\limits_{n\rightarrow \infty}H(X_n|X_{n-1},\cdots,X_1)\)</span> <em>proof: Stolz-Cesaro Means Th.</em></p>
+<p>for stn. MC of trans. mx <span class="math notranslate nohighlight">\(P\)</span> and stn. dis. <span class="math notranslate nohighlight">\(\mu = P\mu\)</span>, <span class="math notranslate nohighlight">\(H(\mathcal{X}) = H(X_2|X_1) = -\sum\limits_{ij}\mu_iP_{ij}logP_{ij}\)</span></p>
+<p>Second law of thermodynamics: as time <span class="math notranslate nohighlight">\(n\uparrow\)</span>, <span class="math notranslate nohighlight">\(D(\mu_n\|\mu'_n)\downarrow,\text{ esp. }D(\mu_n\|\mu);\\ \text{if stn. dis. is uni.(equal a priori prob. principle) } H(X_n)\uparrow;\\ \text{for stn. MC }H(X_n|X_1)\uparrow;\\ \text{operator(e.g. shuffling) }T\ id.\ X,\ H(TX)\geq H(X)\)</span></p>
+<p><span class="math notranslate nohighlight">\(\text{stn. MC }\{X_n\},\ Y_i = \phi(X_i),\ H(\mathcal{Y})=\lim\limits_{n\rightarrow \infty}H(Y_n|Y_{n-1},\cdots,Y_1)=\lim\limits_{n\rightarrow \infty}H(Y_n|Y_{n-1},\cdots,Y_1,X_1)\)</span></p>
+<p>Shannon-McMillan-Breiman(general AEP) Th: <span class="math notranslate nohighlight">\(H\)</span> is the entropy rate of a finite ergodic sto. <span class="math notranslate nohighlight">\({X_n}\)</span>, <span class="math notranslate nohighlight">\(-\frac{1}{n}logp(X_0,\cdots,X_{n-1}) \overset{a.s.}{\rightarrow} H\)</span>​  <em>proof: Sandwich Th.</em></p>
+<p><strong>1.3</strong></p>
+<p>differential entropy <span class="math notranslate nohighlight">\(h(X)= -\int_Sf(x)logf(x)dx\)</span> (<span class="math notranslate nohighlight">\(S\)</span> is the support set of RV <span class="math notranslate nohighlight">\(X\)</span>​)</p>
+<p>joint diff. ent., conditional diff. ent., relative ent., MI, AEP are in the same way.</p>
+<p><em>example:</em> <span class="math notranslate nohighlight">\(h(\mathcal{N}(\mu,\Sigma))=\frac{n}{2}+\frac{1}{2}log(2\pi)^n|\Sigma|\)</span>; for bivar. <span class="math notranslate nohighlight">\(\mathcal{N}_2\)</span>, <span class="math notranslate nohighlight">\(I(X_1;X_2)=-\frac{1}{2}log(1-\rho^2)\)</span>​</p>
+<p><span class="math notranslate nohighlight">\(h(aX)=h(X)+log|a|,\ h(AX)=h(X)+log|detA|\)</span></p>
+<p>Among all dis. with <span class="math notranslate nohighlight">\(\Sigma=EXX'\)</span>, Gauss dis. has max ent. <span class="math notranslate nohighlight">\(h(X)\le \frac{1}{2}log(2\pi e)^n|\Sigma|\)</span> <em>proof: <span class="math notranslate nohighlight">\(D(f\|N)\geq 0,\ \int flogN = \int NlogN\)</span></em></p>
+<p>estimation error (if have side info. <span class="math notranslate nohighlight">\(Y\)</span>) <span class="math notranslate nohighlight">\(E(X-\hat{X})^2\geq \frac{1}{2\pi e}e^{2h(X|Y)}\)</span></p>
+<p>Similarly, <span class="math notranslate nohighlight">\(A^n_\epsilon = \{x\in S^n:-\frac{1}{n}logp(x)-h(X)|\leq \epsilon\}\)</span>. While in discrete case we use cardinal <span class="math notranslate nohighlight">\(|A^n_\epsilon| \overset{\cdot}{=} 2^{nH}\)</span>, in continuous case we use volume <span class="math notranslate nohighlight">\(V(A^n_\epsilon)\overset{\cdot}{=} 2^{nh}\)</span> (like a cube with side length <span class="math notranslate nohighlight">\(2^h\)</span>).</p>
+<p>relation with discrete ent: dis. <span class="math notranslate nohighlight">\(p(x)\)</span> is Riemann integrable, <span class="math notranslate nohighlight">\(X\)</span> is partitioned as <span class="math notranslate nohighlight">\(X^\Delta\)</span> by intervals with length <span class="math notranslate nohighlight">\(\Delta\)</span>, then <span class="math notranslate nohighlight">\(\lim\limits_{\Delta \rightarrow 0} H(X^\Delta)+log\Delta = h(X)\)</span>. Thus a <span class="math notranslate nohighlight">\(n\)</span> bit quantized cont. RV <span class="math notranslate nohighlight">\(X\)</span> has a ent. of <span class="math notranslate nohighlight">\(h(X)+n\)</span>.</p>
+<p><em>more:</em> several ineq. about det can be derived thru ent. of a multivar ndis. <em>e.g.</em> Hadamard ineq: <span class="math notranslate nohighlight">\(\prod\limits_i \Sigma_{ii} \geq |\Sigma|\geq \prod\limits_i \sigma^2_i\)</span> where <span class="math notranslate nohighlight">\(\sigma^2_i\)</span> is the cond. variance of <span class="math notranslate nohighlight">\(X_i\)</span> given other <span class="math notranslate nohighlight">\(X_j\)</span>, or <span class="math notranslate nohighlight">\(\sigma^2_n = \frac{|\Sigma_n|}{|\Sigma_{n-1}|}\)</span></p>
+<p><strong>1.4</strong></p>
+<p>Maximun entropy dis./prin./estimation  <span class="math notranslate nohighlight">\(\max\limits_f h(f)\text{ s.t. }f(x)\geq 0,\ \int_Sf(x)dx = 1,\ \int_S f(x)r_i(x)dx = \alpha_i\)</span></p>
+<p><span class="math notranslate nohighlight">\(f^*(x)=e^{\lambda_0+\sum\limits_i \lambda_i r_i(x)}=\frac{e^{\sum\limits_i\lambda r_i(x)}}{\int_S e^{\sum\limits_i\lambda r_i(x)}dx}\)</span> <em>proof: Lagrange; Info ineq.</em></p>
+<p><em>example:</em> Boltzmann dis. <span class="math notranslate nohighlight">\(S=[0,+\infty),\ EX=\mu,\ f(x)=\frac{1}{\mu}e^{-\frac{x}{\mu}}\)</span></p>
+<p><span class="math notranslate nohighlight">\(S=(-\infty,+\infty),\ EX=\alpha_1,\ EX^2=\alpha_2,\ f(x)=\mathcal{N}(\alpha_1,\alpha_2-\alpha_1^2)\)</span> but when we have third moment constraint, <span class="math notranslate nohighlight">\(\lambda_3\)</span> needs to be <span class="math notranslate nohighlight">\(0\)</span> to aviod <span class="math notranslate nohighlight">\(\int^{+\infty}_{-\infty}f=\infty\)</span>, and therefore this method may be out of work. However we can add some carefully devised perturbation onto the original <span class="math notranslate nohighlight">\(\mathcal{N}\)</span> to get whatever <span class="math notranslate nohighlight">\(\alpha_3\)</span> while holding <span class="math notranslate nohighlight">\(\alpha_1\)</span> and <span class="math notranslate nohighlight">\(\alpha_2\)</span>. Thus <span class="math notranslate nohighlight">\(\sup h(f)=h(\mathcal{N}(\alpha_1,\alpha_2-\alpha_1^2))=\frac{1}{2}\ln2\pi e(\alpha_2-\alpha_1^2)\)</span>, the max ent. is only <span class="math notranslate nohighlight">\(\epsilon\)</span>-reachable.</p>
+<p>diff. ent. rate <span class="math notranslate nohighlight">\(h(\mathcal{X})=\lim\limits_{n\rightarrow \infty}\frac{1}{n}h(X_1,\cdots,X_n) \overset{stn.}{=} \lim\limits_{n\rightarrow \infty} h(X_n|X^{n-1})\)</span></p>
+<p>for Gauss stno. <span class="math notranslate nohighlight">\(h(\mathcal{X})=\frac{1}{2}log2\pi e+\frac{1}{4\pi}\int^\pi_{-\pi}logS(\lambda)d\lambda\)</span>, <span class="math notranslate nohighlight">\(\sigma^2_\infty = \frac{1}{2\pi e}2^{2h}\)</span>(best em. error given inf. history)</p>
+<p>AR model, autocorrelation func. <span class="math notranslate nohighlight">\(R(k)=EX_iX_{i+k}\)</span>  power spectral density PSD <span class="math notranslate nohighlight">\(S(\lambda) = \mathcal{F}(R(k))\)</span></p>
+<p>Burg Th: <span class="math notranslate nohighlight">\(p\text{ order Gaussian-Markov autoreg. sto.}\\X_i=\sum_{j=1}^p a_j X_{i-j}+Z_i,\ Z_i\overset{iid.}{\sim}\mathcal{N}(0,\sigma^2)\\\text{attains the max ent. rate among all sto. satisfying the conditions}\\ E X_i X_{i+k}=\alpha_k, 1 \leq k \leq p,\forall i\)</span></p>
+<p><span class="math notranslate nohighlight">\(a_i,\sigma^2\)</span> can be solved from Yule-Walker equations: <span class="math notranslate nohighlight">\(R(m)=\sum\limits_{k=1}^p a_k R(m-k)+\sigma^2 \delta_{m, 0},1 \leq m \leq p\)</span>​</p>
+</section>
+<section id="coding-statistics-and-investment">
+<h2>2  Coding, Statistics and Investment<a class="headerlink" href="#coding-statistics-and-investment" title="Permalink to this heading">#</a></h2>
+<p><strong>2.1</strong></p>
+<p>source coding <span class="math notranslate nohighlight">\(C: \mathcal{X}\rightarrow \mathcal{D}^*,\ l(x)=|C(x)|,\ L(C)=El(X)\)</span> (alphabet <span class="math notranslate nohighlight">\(\mathcal{D}=\{1,\dots,D-1\}\)</span>)</p>
+<p>nonsigular <span class="math notranslate nohighlight">\(\supset\)</span> uniquely decodable <span class="math notranslate nohighlight">\(\supset\)</span> instantaneous/prefix</p>
+<p>Kraft ineq: for inst. code on D, code word length <span class="math notranslate nohighlight">\(l_1,\dots\)</span>, <span class="math notranslate nohighlight">\(\sum\limits_i D^{-l_i}\leq 1\)</span> <em>proof: all code words' son sets disjoint.</em></p>
+<p>optimal code  <span class="math notranslate nohighlight">\(H_D(X)\le L&lt; H_D(X)+1,\text{ eq. iff. }D^{-l_i}=p_i\)</span> D-adic dis. <em>proof: Shannon coding by Lagrange</em></p>
+<p>Shannon coding: <span class="math notranslate nohighlight">\(l_i=\lceil log_D \frac{1}{p_i}\rceil\)</span> (to prove the upper bound)</p>
+<p>for stno. <span class="math notranslate nohighlight">\(\{X_n\}\)</span>, <span class="math notranslate nohighlight">\(L\rightarrow H(\mathcal{X})\)</span>  Shannon First Th (Noiseless Coding Th): <span class="math notranslate nohighlight">\(H(\mathcal{X})\le L\le H(\mathcal{X})+\frac{1}{n}\)</span></p>
+<p>for wrong code(using <span class="math notranslate nohighlight">\(q(x)\)</span>), the length will increased by <span class="math notranslate nohighlight">\(D(p\|q)\)</span></p>
+<p>Acc. all uni. decodable codes satisfy Kraft ineq.(McMillian ineq.) so they are no better than prefix codes.</p>
+<p>Huffman coding <span class="math notranslate nohighlight">\(C_{H}\)</span>​ is optimal.  Shannon-Fano-Elias coding</p>
+<p>Shannon coding is competitive optimal <span class="math notranslate nohighlight">\(Pr(l(X)\ge l'(X)+c)\le \frac{1}{2^{c-1}}\)</span>​</p>
+<p>(refer to <em>5.5</em> for Kolmogorov complexity)</p>
+<p><strong>2.2</strong></p>
+<p>prob. simplex <span class="math notranslate nohighlight">\(\mathcal{P}\)</span>  type <span class="math notranslate nohighlight">\(P_x\)</span> on <span class="math notranslate nohighlight">\(\mathcal{X}\)</span>, type class <span class="math notranslate nohighlight">\(T(P)=\{x\in \mathcal{X}^n:P_x=P\},\ P\in \mathcal{P}^n\)</span></p>
+<p><span class="math notranslate nohighlight">\(1.\ |\mathcal{P}^n|\le (n+1)^{|\mathcal{X}^|}\quad 2.\ Q^n(x)=2^{-n(D(P_x\|Q)+H(P_x))}\quad 3.\ |T(P)|\overset{\cdot}{=} 2^{nH(P)}\quad 4.\ Q^n(T(P))\overset{\cdot}{=} 2^{-nD(P\|Q)}\)</span></p>
+<p>(<span class="math notranslate nohighlight">\(x=\{x_1,\dots,x_n\},\ X_i \overset{iid.}{\sim}Q(x)\)</span>​)</p>
+<p>seq. typical set <span class="math notranslate nohighlight">\(T_\epsilon^{Q^n}=\{x:D(P_x\|Q)\le \epsilon\},\ Pr(T_\epsilon^{Q^n})\rightarrow 1,\ D(P_x\|Q)\overset{a.s.}{\rightarrow}0\)</span>​</p>
+<p>Large deviation theory  Sanov Th: <span class="math notranslate nohighlight">\(\text{subset }E\subset \mathcal{P},\ Q^n(E)\le (n+1)^{|\mathcal{X}|}2^{-nD^*},\ D^*=\min\limits_{P\in E}D(P\|Q);\\ \text{if }E\text{ is the closure of its interior, }-\frac{1}{n}logQ^n(E) \rightarrow  D^*\)</span></p>
+<p>if constraints <span class="math notranslate nohighlight">\(E=\{P:\sum\limits_xP(x)g_i(x)\ge \alpha_i\}\)</span>, we can get <span class="math notranslate nohighlight">\(P^*(x)=\frac{Q(x)e^{\sum\limits_i\lambda g_i(x)}}{\sum\limits_{x\in \mathcal{X}}Q(x)e^{\sum\limits_i\lambda g_i(x)}}\)</span>​ using Lagrange.​</p>
+<p>jointly typical set <span class="math notranslate nohighlight">\(A^n_\epsilon = \{(x^n,y^n)\in \mathcal{X}^n\times \mathcal{Y}^n: \left|-\frac{1}{n} \log p\left(x^n\right)-H(X)\right|&lt;\epsilon,\ \left|-\frac{1}{n} \log p\left(y^n\right)-H(Y)\right|&lt;\epsilon,\\ \left|-\frac{1}{n} \log p\left(x^n, y^n\right)-H(X, Y)\right|&lt;\epsilon\},\ Pr(A^n_\epsilon)\rightarrow 1\)</span></p>
+<p><span class="math notranslate nohighlight">\((\tilde{X}^n,\tilde{Y}^n)\sim p(x^n)p(y^n),\ Pr((\tilde{X}^n,\tilde{Y}^n)\in A^n_\epsilon)\rightarrow2^{-nI(X;Y)}\)</span> <em>proof: Sanov Th.</em></p>
+<p><span class="math notranslate nohighlight">\(\text{closed convex set }E \subset \mathcal{P},\ Q\notin E,\ P^* = \arg\min\limits_{P\in E}D(P\|Q),\ \forall P\in E,\ D(P\|Q)\ge D(P\|P^*)+D(P^*\|Q)\)</span></p>
+<p>Conditional Limit Th: <span class="math notranslate nohighlight">\(\text{seq. }X^n\overset{iid.}{\sim}Q,\ n\rightarrow \infty,\ Pr(X_i=x|P_{X^n}\in E)\overset{p}{\rightarrow}P^*(x)\)</span> (i.e. type <span class="math notranslate nohighlight">\(P^*\)</span> represents the whole set)  <em>proof: <span class="math notranslate nohighlight">\(D(P_1\|P_2)\ge \frac{1}{2\ln2}\|P_1-P_2\|^2_1\)</span>, D's convergence implies <span class="math notranslate nohighlight">\(\mathcal{L_1}\)</span> norm's convergence. (Taylor: <span class="math notranslate nohighlight">\(D(P_1\|P_2)= \frac{1}{2}\chi^2_{P_1,P_2}+\ldots\)</span>)</em></p>
+<p>Hypo test <span class="math notranslate nohighlight">\(X_i \overset{iid.}{\sim}Q(x),\ H_1:Q=P_1,\ H_2:Q=P_2\)</span>, Neyman-Pearson Lem: likelihood ratio <span class="math notranslate nohighlight">\(T\ge 0\)</span>, acceptance region <span class="math notranslate nohighlight">\(A_n(T)=\{x^n:\frac{P_1(x^n)}{P_2(x^n)}&gt;T\},\ \alpha^*=P^n_1(A^c_n(T)),\ \beta^*=P^n_2(A_n(T)),\\ \text{ other regions with }\alpha\le \alpha^*\text{ must have }\beta\ge \beta^*\)</span></p>
+<p><span class="math notranslate nohighlight">\(\frac{P_1(X^n)}{P_2(X^n)}&gt;T\)</span> equals to <span class="math notranslate nohighlight">\(D(P_{X^n}\|P_2)-D(P_{X^n}\|P_1)&gt;\frac{1}{n}logT\)</span>, under this constraint we minimize <span class="math notranslate nohighlight">\(D(P\|P_2)\)</span>(also <span class="math notranslate nohighlight">\(D(P\|P_1)\)</span>) using Lagrange and get <span class="math notranslate nohighlight">\(P_\lambda = \frac{P^\lambda_1(x)P^{1-\lambda}_2(x)}{\sum\limits_{x\in \mathcal{X}} P^\lambda_1(x)P^{1-\lambda}_2(x)}\)</span> to estimate <span class="math notranslate nohighlight">\(\alpha_n \overset{\cdot}{=}2^{-nD(P_\lambda\|P_1)}\)</span>, <span class="math notranslate nohighlight">\(\beta_n \overset{\cdot}{=}2^{-nD(P_\lambda\|P_2)}\)</span>. (<span class="math notranslate nohighlight">\(\lambda\)</span> can be determined by <span class="math notranslate nohighlight">\(D(P_{X^n}\|P_2)-D(P_{X^n\|P_1})=\frac{1}{n}logT\)</span>​​.)</p>
+<p><img alt="" src="../_images/info.jpg" /></p>
+<p>relative ent. AEP: <span class="math notranslate nohighlight">\(X_1,\cdots,X_n \overset{iid.}{\sim}P_1(x),\ \forall P_2(x),\ -\frac{1}{n}log\frac{P_1(X_1,\cdots,X_n)}{P_2(X_1,\cdots,X_n)} \overset{p}{\rightarrow} D(P_1\|P_2)\)</span></p>
+<p>relative ent. typical set <span class="math notranslate nohighlight">\(P_1(A^n_\epsilon(P_1\|P_2))&gt;1-\epsilon,\ P_2(A^n_\epsilon(P_1\|P_2))\rightarrow 2^{-nD(P_1\|P_2)}\)</span></p>
+<p>Chernoff-Stein Lem: <span class="math notranslate nohighlight">\(\alpha_n=P^n_1(A^c_n),\ \beta_n=P^n_2(A_n),\ \beta^\epsilon_n =\min\limits_{A_n\subset \mathcal{X},\alpha_n&lt;\epsilon}\beta_n,\ \lim\limits_{n\rightarrow \infty}\frac{1}{n}log\beta^\epsilon_n=-D(P_1\|P_2)\)</span></p>
+<p>when Bayesian weighted <span class="math notranslate nohighlight">\(D^*=\min\limits_{A_n} \lim\limits_{n\rightarrow \infty}-\frac{1}{n}log(\pi_1\alpha_n+\pi_2\beta_n)\)</span>, Chernoff Info. <span class="math notranslate nohighlight">\(C(P_1,P_2)=D^*=D(P_\lambda\|P_1)=D(P_\lambda\|P_2)\)</span> or <span class="math notranslate nohighlight">\(C(P_1,P_2)=-\min\limits_{0\le\lambda\le 1} log(\sum\limits_xP^\lambda_1(x)P^{1-\lambda}_2(x))\)</span></p>
+<p>(<em>note:</em> <span class="math notranslate nohighlight">\(D^*\)</span> is not related to <span class="math notranslate nohighlight">\(\pi_1,\pi_2\)</span> since large sample will eliminate a priori knowledge <span class="math notranslate nohighlight">\(\frac{\pi_1}{\pi_2}\frac{P_1(X_n)}{P_2(X_n)}\overset{?}{\sim}T\)</span>​)</p>
+<p>Score func. <span class="math notranslate nohighlight">\(V=\frac{\partial}{\partial\theta}\ln f(X;\theta),\ EV=0\)</span>  Fisher Info. <span class="math notranslate nohighlight">\(J(\theta)=EV^2=-E\frac{\partial^2}{\partial\theta^2}\ln f(X;\theta)\)</span>  <span class="math notranslate nohighlight">\(J_n(\theta)=nJ(\theta)\)</span></p>
+<p>Cramer-Rao Ineq: <span class="math notranslate nohighlight">\(\text{unbiased stat. }T(X)\text{ of }\theta,\ \Sigma(T)\ge J^{-1}(\theta)\)</span> (for multivar. it means mx <span class="math notranslate nohighlight">\(\Sigma-J^{-1}\)</span>​ is semipositive.)(Similarly, for biased stat. we have <span class="math notranslate nohighlight">\(b_T(\theta)=ET-\theta,\ E(T-\theta)^2\ge \frac{(1+b'_T(\theta))^2}{J(\theta)}+b^2_T(\theta)\)</span>.)</p>
+<p><em>proof: Cauchy-Schwarz Ineq. for <span class="math notranslate nohighlight">\(V-EV\)</span> and <span class="math notranslate nohighlight">\(T-ET\)</span>.</em></p>
+<p>some senses: for para. dis. family <span class="math notranslate nohighlight">\(\{p_\theta(x)\}\)</span>, <span class="math notranslate nohighlight">\(\theta\rightarrow \theta',\ D(p_\theta\|p_\theta')\sim \frac{J(\theta)}{2}\)</span>; de Brujin Ineq. <span class="math notranslate nohighlight">\(Z\ id.\ X,\ Z\sim \mathcal{N}(0,1),\ \frac{\partial}{\partial t}h(X+\sqrt{t}Z)=\frac{1}{2}J(X+\sqrt{t}Z),\text{ if limit exists, }\frac{\partial}{\partial t}h(X+\sqrt{t}Z)\big|_{t=0}=\frac{1}{2}J(X)\)</span> (<span class="math notranslate nohighlight">\(h\)</span>'s base is <span class="math notranslate nohighlight">\(e\)</span>); Just like ent. power <span class="math notranslate nohighlight">\(2^{nH(X)}\)</span> can be seemed as the volume of typical set, Fisher info. <span class="math notranslate nohighlight">\(J(X)\)</span> can be seemed as the surface area, where <span class="math notranslate nohighlight">\(J(X)=\int \frac{(\frac{\partial f}{\partial x})^2}{f}dx\)</span>; Fisher info's convolution ineq. <span class="math notranslate nohighlight">\(\frac{1}{J(X+Y)}\ge \frac{1}{J(X)}+\frac{1}{J(Y)}\)</span></p>
+<p>ent. powe,r Ineq: <span class="math notranslate nohighlight">\(X\ id.\ Y,\ \dim X=\dim Y=n,\ 2^{\frac{2}{n}h(X+Y)}\ge 2^{\frac{2}{n}h(X)}+2^{\frac{2}{n}h(Y)}\)</span> or <span class="math notranslate nohighlight">\(h(X+Y)\ge h(X'+Y')\)</span>, where <span class="math notranslate nohighlight">\(X',Y'\sim \mathcal{N},\ X'\ id.\ Y',\ h(X')=h(X),\ h(Y')=h(Y)\)</span></p>
+<p><strong>2.3</strong></p>
+<p>Kelly game  <span class="math notranslate nohighlight">\(b^*=p\)</span>​  Gambling conservation Th: <span class="math notranslate nohighlight">\(W^*+H=logm\)</span>​ (for uniform fair oppo. game)</p>
+<p>estimation of entropy of English (Shannon letter guessing game)</p>
+<p>potfolio <span class="math notranslate nohighlight">\(\mathcal{B}=\{b\in \mathcal{R}^m:b_i\ge 0, \sum\limits_{i=1}^m b_i =1\}\)</span> <span class="math notranslate nohighlight">\(X\sim F(x),\ S=b'X\)</span></p>
+<p>first and second moment method: Sharpe-Markowitz theory, CAPM</p>
+<p>growth rate <span class="math notranslate nohighlight">\(W(b,F)=\int logS dF = Elogb'X\)</span>  <span class="math notranslate nohighlight">\(S_n = \prod\limits_{i=1}^n S_i,\ \frac{1}{n}logS_n \overset{a.s.}{\rightarrow}W,\ S_n\overset{\cdot}{=} 2^{nW}\)</span></p>
+<p>log optimal porfolio <span class="math notranslate nohighlight">\(W^*(F)=\max\limits_b W(b,F)\)</span></p>
+<p><span class="math notranslate nohighlight">\(W(b,F)\)</span> is concave about <span class="math notranslate nohighlight">\(b\)</span>, linear about <span class="math notranslate nohighlight">\(F\)</span>, and <span class="math notranslate nohighlight">\(W^*(F)\)</span> is convex about <span class="math notranslate nohighlight">\(F\)</span>​.</p>
+<p><span class="math notranslate nohighlight">\(b^*\)</span>'s KT condition: <span class="math notranslate nohighlight">\(E(\frac{b'X}{{b^{*}}'X})\le 1,\ E(\frac{X_i}{{b^*}'X})=1\text{ if }b^*_i&gt;0,\le 1\text{ if }b^*_i=0\)</span></p>
+<p>causal portfolio <span class="math notranslate nohighlight">\(b_i:\mathcal{R}_+^{m(i-1)}\rightarrow \mathcal{B}\)</span>  log optimal is the best. <span class="math notranslate nohighlight">\(ElogS^*_n = nW^*\ge ElogS_n\)</span></p>
+<p>Side info. raises growth rate. <span class="math notranslate nohighlight">\(\Delta W=\int_y f(y) \Delta W_{Y=y}\le I(X;Y)\)</span></p>
+<p><span class="math notranslate nohighlight">\(W^*_{\infty}=\lim\limits_{n\rightarrow \infty}\frac{1}{n}W^*(X_1,\cdots,X_n) \overset{stn.}{=} \lim\limits_{n\rightarrow \infty} W^*(X_n|X^{n-1})\)</span></p>
+<p><span class="math notranslate nohighlight">\(\frac{S_n}{S^*_n}\text{ is a supermartingale, }\overset{a.s.}{\rightarrow}V,\ EV\le 1,\ Pr(\sup\limits_n\frac{S_n}{S^*_n}\ge t)\le \frac{1}{t}\)</span></p>
+<p>universal portfolio: <span class="math notranslate nohighlight">\(S^*_n(x^n)=\max\limits_b \prod\limits_{i=1}^nb'x_i,\ \hat{S_n}(x^n)=\prod\limits_{i=1}^n\hat{b}'_i(x^{i-1})x_i,\ \max\limits_{\hat{b}}\min\limits_{x^n}\frac{S_n(x^n)}{S^*_n(x^n)}=V_n,\\ V_n=(\sum\limits_{n_1+\dots+n_m=n}\binom{n}{n_1,\dots,n_m}2^{-nH(\frac{n_1}{n},\dots,\frac{n_m}{n})})^{-1}\sim n^{-\frac{m-1}{2}}\)</span></p>
+<p><span class="math notranslate nohighlight">\(\hat{b}_{n+1}(x^i)=\frac{\int_\mathcal{B}bS_i(b,x^i)d\mu(b)}{\int_\mathcal{B}S_i(b,x^i)d\mu(b)},\ \hat{S}_n(x^n)=\int_\mathcal{B}S_n(b,x^n)d\mu(b)\)</span>​</p>
+</section>
+<section id="communication">
+<h2>3  Communication<a class="headerlink" href="#communication" title="Permalink to this heading">#</a></h2>
+<p><strong>3.1</strong></p>
+<p>discrete channel <span class="math notranslate nohighlight">\((\mathcal{X},p(y|x),\mathcal{Y})\)</span>  DMC  n-th extension <span class="math notranslate nohighlight">\(p(y_k|x^k,y^{k-1})=p(y_k|x_k)\)</span>, non-feedback <span class="math notranslate nohighlight">\(p(x_k|x^{k-1},y^{k-1})=p(x_k|x^{k-1})\)</span>, thus <span class="math notranslate nohighlight">\(p(y^n|x^n)=\prod\limits_i p(y_i|x_i)\)</span>​</p>
+<p><span class="math notranslate nohighlight">\((M,n)\)</span> code of channel: message index set <span class="math notranslate nohighlight">\(W\in \mathcal{W}=\{1,\dots,M\}\)</span>, coding func. <span class="math notranslate nohighlight">\(X^n:\mathcal{W}\rightarrow \mathcal{X}^n\)</span> and codebook <span class="math notranslate nohighlight">\(\mathcal{C}=\{x^n(1),\dots,x^n(M)\}\)</span>, decoding func. <span class="math notranslate nohighlight">\(g:\mathcal{Y}\rightarrow \mathcal{W}\)</span></p>
+<p><span class="math notranslate nohighlight">\(W\rightarrow X^n(W) \rightarrow Y^n \rightarrow \hat{W}\)</span></p>
+<p>conditional, maximum, average prob. of error <span class="math notranslate nohighlight">\(\lambda_i = \sum\limits_{y^n}p(y^n|x^n(i))I(g(y^n)\neq i),\ \lambda=\max\limits_i \lambda_i,\ P^n_e=\bar{\lambda_i}\)</span></p>
+<p>rate <span class="math notranslate nohighlight">\(R=\frac{logM}{n}\)</span> bit/trans.  achievable rate <span class="math notranslate nohighlight">\(n\rightarrow\infty,\ \lambda\rightarrow 0\)</span></p>
+<p>channel capacity <span class="math notranslate nohighlight">\(C=\max\limits_{p(x)}I(X;Y)\)</span>  <span class="math notranslate nohighlight">\(0\le C=\max\limits_{p(x)} H(Y)-H(Y|X)\le \min (log|\mathcal{X}|,log|\mathcal{Y}|)\)</span></p>
+<p><em>note:</em> we use max not sup here since <span class="math notranslate nohighlight">\(I(X;Y)\)</span> is a concave func. on convex set of <span class="math notranslate nohighlight">\(p(x)\)</span> and several algo. can compute this maximum.</p>
+<p>direct understanding: For each typical seq. <span class="math notranslate nohighlight">\(X^n\)</span> there are roughly <span class="math notranslate nohighlight">\(2^{nH(Y|X)}\)</span> seq. of <span class="math notranslate nohighlight">\(Y^n\)</span> corresponding to it, and the total number of <span class="math notranslate nohighlight">\(Y^n\)</span> (typical) is <span class="math notranslate nohighlight">\(2^{nH(Y)}\)</span>, so nearly <span class="math notranslate nohighlight">\(2^{nI(X;Y)}\)</span> disjointed image sets of diff. inputs <span class="math notranslate nohighlight">\(X^n\)</span> can be seperated in one transmission. (or think of jointly typical <span class="math notranslate nohighlight">\(Pr=2^{-nI}\)</span>​)</p>
+<p><em>example:</em> BSC <span class="math notranslate nohighlight">\(C=1-H(p)\)</span>, BEC <span class="math notranslate nohighlight">\(C=1-\alpha\)</span>  symmetric channel</p>
+<p>Channel Coding Th (Shannon Second Th): <span class="math notranslate nohighlight">\(\text{DMC, }\forall R&lt;C,\ \exist (2^{nR},n)\text{ code, }\lambda\rightarrow 0;\text{ Conversely, }\forall (2^{nR},n)\text{ code with }\lambda\rightarrow 0\text{ must has }R\le C\)</span></p>
+<p><em>proof: randomly generated codebook, jointly typical decoding, so error comes from either not jointly typical <span class="math notranslate nohighlight">\(Y^n\)</span> or other possible inputs that are jointly typical with: <span class="math notranslate nohighlight">\(Pr(V^n\neq \hat{V}^n)=Pr((X^n(i),Y^n)\notin A^n_\epsilon)+\)</span><span class="math notranslate nohighlight">\(\sum\limits_{j\neq i}Pr((X^n(j),Y^n)\in A^n_\epsilon)\)</span>; for converse th, Fano ineq. and Data-processing ineq. lead to <span class="math notranslate nohighlight">\(nR=H(W^{uni.})\le 1+P^n_e nR+nC\)</span>.</em> (strong converse edition: <span class="math notranslate nohighlight">\(R&lt;C,\ P^n_e \rightarrow 0;\ R&gt;C,\  P^n_e \rightarrow 1\)</span>)</p>
+<p><em>note:</em> equality needs 1. coding <span class="math notranslate nohighlight">\(X^n(W)\)</span> and decoding <span class="math notranslate nohighlight">\(\hat{W}\)</span> are sufficient(all diff.); 2. <span class="math notranslate nohighlight">\(Y_i\ id.\)</span>; 3. <span class="math notranslate nohighlight">\(X_i\)</span>'s dis. is <span class="math notranslate nohighlight">\(p^*(x)\)</span>.</p>
+<p>Hamming code, error-detecting code  minimum weight and minimun distance  parity check mx. <span class="math notranslate nohighlight">\(H(c+e_i)=He_i\)</span>  systematic code <span class="math notranslate nohighlight">\((n,k,d)\)</span>  <span class="math notranslate nohighlight">\(\text{e.g. Hamming } r(H)=l,\ n=2^l-1,\ k=2^l-l-1,\ d=3\)</span> block code and convolutional code  <em>more:</em> BCH code, LDPC code, turbo code.</p>
+<p>feedback code <span class="math notranslate nohighlight">\(x_i(W,Y^{i-1})\)</span>, feedback capacity <span class="math notranslate nohighlight">\(C_{FB}=C\)</span> (feedback can simplify coding but cannot enlarge capacity of DMC.)</p>
+<p>Source-Channel Seperation Th: (<span class="math notranslate nohighlight">\(Pr(V^n\neq \hat{V}^n)=\sum\limits_{v^n}p(v^n)\lambda_{v^n}\)</span>)</p>
+<p><span class="math notranslate nohighlight">\(\{V^n\}\text{ satisfies AEP (ergodic stno.)},\ H(\mathcal{V})&lt;C,\ \exist \text{ source-channel code},\ Pr(V^n\neq \hat{V}^n)\rightarrow 0,\text{ vice versa}\)</span></p>
+<p>Thus two-step way is equally efficient. First we do data compressing (from AEP): nearly all prob. is in a seq. set with size <span class="math notranslate nohighlight">\(2^{nH}\)</span>, and we can use <span class="math notranslate nohighlight">\(R&gt;H\)</span> code to express this info. source with little error. Second we do data transmitting (from Joint AEP): for large grouping length <span class="math notranslate nohighlight">\(n\)</span>, nearly all inputs and outputs are jointly typical with <span class="math notranslate nohighlight">\(2^{-nI}\)</span> prob. of exception, and we can use <span class="math notranslate nohighlight">\(R&lt;\max I=C\)</span> code to keep error prob. low. This Th. <span class="math notranslate nohighlight">\(H&lt;C\)</span> combines the two, telling that we can devise source code(exprssing efficiently) and channel code(confronting noise) seperatedly.</p>
+<p><strong>3.2</strong></p>
+<p>Gaussian channel <span class="math notranslate nohighlight">\(Y_i = X_i +Z_i,\ Z_i \sim \mathcal{N}(0,N)\)</span>  power constraint <span class="math notranslate nohighlight">\(\frac{1}{n}\sum\limits_i x_i^2 \le P\)</span></p>
+<p><span class="math notranslate nohighlight">\(C=\max\limits_{f(x):EX^2\le P}I(X;Y)=\frac{1}{2}log(1+\frac{P}{N})\)</span> bit/trans.</p>
+<p><em>proof: <span class="math notranslate nohighlight">\(EY^2=P+N,\ I(X;Y)=h(Y)-h(Z),\text{ when }Y\sim \mathcal{N}(0,P+N)\text{ i.e. }X\sim \mathcal{N}(0,P) \text{ max}\)</span></em></p>
+<p>Similarly, code <span class="math notranslate nohighlight">\((2^{nR},n)\)</span> with <span class="math notranslate nohighlight">\(R&lt;C\)</span> is achievable. (Each decoding ball's radius is <span class="math notranslate nohighlight">\(\sqrt{nN}\)</span> and outputs' <span class="math notranslate nohighlight">\(\sqrt{n(P+N)}\)</span>, so the number of disjointed balls is no more than <span class="math notranslate nohighlight">\((\frac{P+N}{N})^{\frac{n}{2}}\)</span>​.)</p>
+<p>finite bandwidth <span class="math notranslate nohighlight">\(W\)</span>  Nyquist-Shannon Sampling Th: signal <span class="math notranslate nohighlight">\(f(t)\)</span> with maximum cut-off freq. <span class="math notranslate nohighlight">\(W\)</span> can be completely determined by sampling seq. of <span class="math notranslate nohighlight">\(\frac{1}{2W}\)</span> s time interval. Thus it can be seemed as a vec. in <span class="math notranslate nohighlight">\(2WT\)</span> dof/dim space.</p>
+<p>bandwidth <span class="math notranslate nohighlight">\(W\)</span>, noise psd <span class="math notranslate nohighlight">\(\frac{N_0}{2}\)</span>, noise power <span class="math notranslate nohighlight">\(N_0W\)</span> (spherical ndis. with covarmx <span class="math notranslate nohighlight">\(\frac{N_0}{2}I\)</span>)  AWGN channel</p>
+<p><span class="math notranslate nohighlight">\(C=Wlog(1+\frac{P}{N_0W})\)</span>​ bit/s (Shannon Formula)  <span class="math notranslate nohighlight">\(W\rightarrow \infty,\ C=W\cdot SNR=\frac{P}{N_0}\)</span> nat/s</p>
+<p>parallel Gaussian channel <span class="math notranslate nohighlight">\(\sum EX^2\le P,\ C=\max I(X^k;Y^k)\)</span>  max power allocation: <span class="math notranslate nohighlight">\(P_i=(v-N_i)^+,\ \sum (v-N_i)^+=P\)</span>​ (water-filling)</p>
+<p>correlated noise (memory channel can also convert to this) <span class="math notranslate nohighlight">\(\frac{1}{n}tr(\Sigma_X)\le P,\ C_n=\max \frac{1}{2n}log\frac{|\Sigma_X+\Sigma_Z|}{|\Sigma_Z|}\)</span>, also sloved by water filling onto <span class="math notranslate nohighlight">\(\Sigma_Z\)</span>'s eigen values <span class="math notranslate nohighlight">\(\lambda_i\)</span>. <span class="math notranslate nohighlight">\(C_n=\frac{1}{2n}\sum\limits_{i=1}^n log(1+\frac{(\lambda-\lambda_i)^+}{\lambda_i}),\ \sum\limits_{i=1}^n(\lambda-\lambda_i)^+=nP\)</span></p>
+<p><em>more:</em> for stno, covarmx is Toeplitz mx, when <span class="math notranslate nohighlight">\(n\rightarrow \infty\)</span> the envelop of its eigenvalues approaches the power spectral <span class="math notranslate nohighlight">\(N(f)\)</span> of this stno. ; feedback Gaussian channel <span class="math notranslate nohighlight">\(C_{n,FB}=\max\limits_{tr(\Sigma_X)\le nP}\frac{1}{2n}log\frac{|\Sigma_{X+Z}|}{|\Sigma_Z|}\)</span>, <span class="math notranslate nohighlight">\(X^n\)</span> is no longer id. with <span class="math notranslate nohighlight">\(Z^n\)</span> and <span class="math notranslate nohighlight">\(X=BZ+V\)</span> miximizes. <span class="math notranslate nohighlight">\(C_{n,FB}\le \min (C_n+\frac{1}{2},2C_n)\)</span> is only slightly higher than <span class="math notranslate nohighlight">\(C_n\)</span>.</p>
+<p><strong>3.3</strong></p>
+<p>reproduction/code point <span class="math notranslate nohighlight">\(\hat{X}(X)\)</span>, Dirichlet partition  Lloyd algo.</p>
+<p>distortion measure <span class="math notranslate nohighlight">\(d(x,\hat{x})\)</span>​  Hamming distortion, squared error distortion</p>
+<p><span class="math notranslate nohighlight">\((2^{nR},n)\)</span> rate distortion code  <span class="math notranslate nohighlight">\((R,D)\)</span> achievable <span class="math notranslate nohighlight">\(\lim\limits_{n\rightarrow \infty}Ed(X^n,g_n(f_n(X^n)))\le D\)</span></p>
+<p>rator. func. <span class="math notranslate nohighlight">\(R(D)=\inf\limits_D \text{achi.}R=\min \limits_{p(\hat{x}|x):D}I(X;\hat{X})\)</span> (Shannon Third Th. <span class="math notranslate nohighlight">\(R\ge R(D_0)\Leftrightarrow D\le D_0\)</span>)</p>
+<p><em>example:</em> (Ham. distortion, <span class="math notranslate nohighlight">\(R(D)=0\)</span> at other large <span class="math notranslate nohighlight">\(D\)</span>) <span class="math notranslate nohighlight">\(B(p)\)</span> source: <span class="math notranslate nohighlight">\(R(D)=H(p)-H(D),\ 0\le D\le \min(p,1-p)\)</span>; <span class="math notranslate nohighlight">\(\mathcal{N}(0,\sigma^2)\)</span> source: <span class="math notranslate nohighlight">\(R(D)=\frac{1}{2}log\frac{\sigma^2}{D},\ 0\le D\le \sigma^2\)</span> (similarly, ball of radius <span class="math notranslate nohighlight">\(\sqrt{nD}\)</span> filling in ball of radius <span class="math notranslate nohighlight">\(\sqrt{n\sigma^2}\)</span>, the number of codewords equals to <span class="math notranslate nohighlight">\(2^{nR(D)}\)</span>); parallel(multindis.) source: <span class="math notranslate nohighlight">\(R(D)=\sum\limits_i\frac{1}{2}log\frac{\sigma^2_i}{D_i},\ D_i=\min (\lambda,\sigma^2_i),\ \sum\limits_i D_i=D\)</span> (i.e. anti-waterfilling on the spectral)</p>
+<p>Similarly, for combined source and channel coding, <span class="math notranslate nohighlight">\(D=\frac{1}{n}\sum\limits_{i=1}^n Ed(V_i,\hat{V_i})\)</span> can be achieved iff <span class="math notranslate nohighlight">\(C&gt;R(D)\)</span>.</p>
+<p><em>more:</em> rator. is achi. when grouping length <span class="math notranslate nohighlight">\(n\)</span>​ is enough.(so put them together to describe will have less distortion than considering seperatedly)  distortion typical set, strong typical set  Blahut-Arimoto algo. for computing rator func.</p>
+<p>universal source code: <span class="math notranslate nohighlight">\(\exist (2^{nR},n)\text{ code, }\forall \text{ source }Q\text{ with }H(Q)&lt;R,\ P^n_e \rightarrow 0\)</span>​</p>
+<p><em>more:</em> minimax redundancy, Lemple-Ziv(LZ) coding</p>
+<p>multiaccess channel, broadcast channel, relay channel, interference channel</p>
+<p>multiaccess: <em>example:</em> binary addition and multiplication channel  capacity region <span class="math notranslate nohighlight">\(\pmb{R}\in\mathcal{C}\)</span> i.e. convex hull of <span class="math notranslate nohighlight">\(R(S)=\sum\limits_{i\in S} R_i,\ X(S)=\{X_i:\in S\},\ \forall S\subset \{1,\dots,m\},\ R(S)\le I(X(S);Y|X(S^c))\Leftrightarrow P^n_e\rightarrow 0\)</span>  onion-peeling at corner points</p>
+<p>for Gausssion, denote <span class="math notranslate nohighlight">\(C(x)=\frac{1}{2}log(1+x)\)</span>, <span class="math notranslate nohighlight">\(\sum\limits_{i\in S} R_i \le C(\frac{\sum\limits_{i\in S}P_i}{N})\)</span>; total code-rate <span class="math notranslate nohighlight">\(C(\frac{mP}{N})\)</span> will approach infty when <span class="math notranslate nohighlight">\(m\rightarrow \infty\)</span> but mean of each sender will approach <span class="math notranslate nohighlight">\(0\)</span>​​​.  CDMA(the polyline), FDMA and TDMA(the curve)</p>
+<p>for source coding, Slepian-Wolf Th: <span class="math notranslate nohighlight">\(\forall S\subset \{1,\dots,m\},\ R(S)&gt; H(X(S)|X(S^c))\Leftrightarrow P^n_e\rightarrow 0\)</span></p>
+<p><img alt="" src="../_images/channel.jpg" /></p>
+<p>digest: Shannon's three theorems. 1. non-distortion/lossless length-variable source-coding: (unidecodable) <span class="math notranslate nohighlight">\(R&gt;H\)</span> (<span class="math notranslate nohighlight">\(L\)</span> is rate <span class="math notranslate nohighlight">\(R\)</span>)  2. noisy channel-coding: <span class="math notranslate nohighlight">\(R&lt;C\)</span> (AWGN <span class="math notranslate nohighlight">\(C=B\log(1+\frac{S}{N})\)</span>)  3. fidelity-criteria/lossy source-coding: <span class="math notranslate nohighlight">\(R&gt;R(D)\)</span></p>
+</section>
+<section id="automaton-and-language">
+<h2>4  Automaton and Language<a class="headerlink" href="#automaton-and-language" title="Permalink to this heading">#</a></h2>
+<p><strong>4.1</strong></p>
+<p>computation model  finite automation FDA</p>
+<p>transition function <span class="math notranslate nohighlight">\(\delta:Q\times \Sigma\rightarrow Q\)</span>, accept state, languge <span class="math notranslate nohighlight">\(L(M)=A\)</span></p>
+<p>regular language  regular operation: union <span class="math notranslate nohighlight">\(\cup\)</span>, concatenation <span class="math notranslate nohighlight">\(\circ\)</span>, star <span class="math notranslate nohighlight">\(^*\)</span></p>
+<p>nondeterministic <span class="math notranslate nohighlight">\(\epsilon\)</span> NFA <span class="math notranslate nohighlight">\(\delta:Q\times \Sigma_\epsilon \rightarrow \mathcal{P}(Q)\)</span></p>
+<p><span class="math notranslate nohighlight">\(NFA=DFA\)</span></p>
+<p><span class="math notranslate nohighlight">\(REG\)</span>'s closure under regular operation</p>
+<p>regular expression <span class="math notranslate nohighlight">\(REX\)</span>: <span class="math notranslate nohighlight">\(R = a\in \Sigma \text{ or } \epsilon \text{ or } \varnothing \text{ or } R_1\cup R_2  \text{ or } R_1\circ R_2  \text{ or } R_1^*\)</span>​</p>
+<p>token, lexical analyzer</p>
+<p>GNFA (like contraction) <span class="math notranslate nohighlight">\(\delta:(Q-\{q_{acc}\})\times (Q-\{q_{acc}\}) \rightarrow \mathcal{R}\)</span>​</p>
+<p>equivalence: a language is regular iff it can be expressed by regex. <em>proof: construction in closure; GNFA</em></p>
+<p>irregular lang. <em>example:</em> <span class="math notranslate nohighlight">\(A=\{0^n1^n|n\geq 0\}\)</span></p>
+<p>Pumping Lem: <span class="math notranslate nohighlight">\(\text{lang.} A \in REG,\ \exist p,\ \forall \text{ string }s\text{ with a length of no less than }p, s=xyz \text{ and:}\\1.\forall i\geq 0,\ xy^iz\in A\quad 2.|y|&gt;0\quad 3.|xy|\leq p\)</span></p>
+<p><strong>4.2</strong></p>
+<p>parser, context-free grammar, context-free language CFL</p>
+<p>parse tree  leftmost derivation  ambiguous, inherently ambig.</p>
+<p>Chomsky normal form: <span class="math notranslate nohighlight">\(A\rightarrow BC\)</span> or <span class="math notranslate nohighlight">\(A\rightarrow a\)</span> (or <span class="math notranslate nohighlight">\(S\rightarrow \epsilon\)</span>​)</p>
+<p>pushdown automaton PDA  stack  <span class="math notranslate nohighlight">\(\delta:Q\times \Sigma_\epsilon\times \Gamma_\epsilon \rightarrow \mathcal{P}(Q\times \Gamma_\epsilon)\)</span></p>
+<p>equivalence: a language is context-free iff it can be recognized by a PDA. <em>proof: sign symbol <span class="math notranslate nohighlight">\(\$\)</span>, nondeter. substitution and comparison; <span class="math notranslate nohighlight">\(A_{pq}\)</span> for string that brings PDA from state <span class="math notranslate nohighlight">\(p\)</span> and empty stack to <span class="math notranslate nohighlight">\(q\)</span> and empty stack <span class="math notranslate nohighlight">\(\rightarrow A_{pr}A_{rq}\)</span> or <span class="math notranslate nohighlight">\(\rightarrow a A_{rs} b\)</span>​</em></p>
+<p><span class="math notranslate nohighlight">\(REG \subset CFL\)</span></p>
+<p>CFL's Pumping Lem: <span class="math notranslate nohighlight">\(\dots s=uvxyz \text{ and:}\\1.\forall i\geq 0,\ uv^ixy^iz\in A\quad 2.|vy|&gt;0\quad 3.|vxy|\leq p\)</span></p>
+<p><em>more:</em> DPDA, DCFL  leftmost reduction, valid string, handle, forced handle, DCFG</p>
+<p><em>more:</em> dotted rule  DK-test  almost(end sign lang.) equivalence of DCFG and DPDA  LR(k) grammar</p>
+</section>
+<section id="computability">
+<h2>5  Computability<a class="headerlink" href="#computability" title="Permalink to this heading">#</a></h2>
+<p><strong>5.1</strong></p>
+<p>Turing machine, configuration  <span class="math notranslate nohighlight">\(L(M)\)</span></p>
+<p>Turing-recognizable, decidable</p>
+<p>variants and robustness: multitape TM, nondeterministic TM, enumerator  recursive enumerable</p>
+<p>algorithm, Hilbert's problem, Church-Turing Thesis</p>
+<p>description of TM</p>
+<p><strong>5.2</strong></p>
+<p>decidable problem(language): <span class="math notranslate nohighlight">\(A,\ E,\ EQ\)</span> for <span class="math notranslate nohighlight">\(DFA(REX),\ CFG\)</span> except <span class="math notranslate nohighlight">\(EQ_{CFG}\)</span>​</p>
+<p><span class="math notranslate nohighlight">\(REG \subset CFL \subset DECI \subset RE\)</span>​</p>
+<p>universal TM  <span class="math notranslate nohighlight">\(A_{TM}\)</span> is undecidable. <em>proof: contradiction, Cantor diagonal method</em></p>
+<p>The set of all TM <span class="math notranslate nohighlight">\(\{\langle M\rangle \}\)</span> is countable but the set of all lang. <span class="math notranslate nohighlight">\(\mathcal{L}\)</span> is uncountable, thus <span class="math notranslate nohighlight">\(\exist\ lang. A \notin RE\)</span>.</p>
+<p><span class="math notranslate nohighlight">\(A,\ \overline{A} \in RE \Rightarrow A \in DECI\)</span>   <span class="math notranslate nohighlight">\(\overline{A_{TM}} \notin RE\)</span>​</p>
+<p><strong>5.3</strong></p>
+<p>reduction  undeci: <span class="math notranslate nohighlight">\(HALT_{TM},\ E_{TM},\ REG_{TM},\ EQ_{TM}\)</span> <em>proof: reduct to <span class="math notranslate nohighlight">\(A_{TM}\)</span> etc.​</em></p>
+<p>Rice Th: <span class="math notranslate nohighlight">\(P \text{ is a non-trivial property},\ L_p = \{\langle M\rangle | L(M) \in P\} \text{ is undeci.}\)</span> (not all TM descriptions belong to set <span class="math notranslate nohighlight">\(P\)</span> and <span class="math notranslate nohighlight">\(L(M_1)=L(M_2),\ \langle M_2\rangle \in P \text{ iff } \langle M_1\rangle \in P\)</span>.)</p>
+<p>computation history  LBA  <span class="math notranslate nohighlight">\(A_{LBA}\)</span> is deci. but <span class="math notranslate nohighlight">\(E_{LBA}\)</span> is undeci.</p>
+<p><em>more:</em> <span class="math notranslate nohighlight">\(ALL_{CFG},\ PCP\)</span></p>
+<p>computable function  mapping(many-one) reducibility: <span class="math notranslate nohighlight">\(\exist\text{ computable func. } f:\Sigma^*\rightarrow\Sigma^*,\ \forall \omega,\ \omega\in A \Leftrightarrow f(\omega)\in B\)</span>  <span class="math notranslate nohighlight">\(A\leq_m B\)</span>​</p>
+<p>If <span class="math notranslate nohighlight">\(A\)</span> is undeci/unre then <span class="math notranslate nohighlight">\(B\)</span> is undeci/unre; if <span class="math notranslate nohighlight">\(B\)</span> is deci/re then <span class="math notranslate nohighlight">\(A\)</span> is deci/re.</p>
+<p><span class="math notranslate nohighlight">\(A\leq_m B \Leftrightarrow \overline{A} \leq_m \overline{B}\)</span>  <em>example:</em> <span class="math notranslate nohighlight">\(A_{TM} \leq_m \overline{EQ_{TM}}\)</span>​</p>
+<p><strong>5.4</strong></p>
+<p><span class="math notranslate nohighlight">\(SELF\)</span>​ machine that obtains its own description</p>
+<p>Recursion Th: <span class="math notranslate nohighlight">\(T \text{ is a TM of func. } t: \Sigma^* \times \Sigma^* \rightarrow \Sigma^*,\ \exist\text{ TM R of func. } r:\Sigma^* \rightarrow \Sigma^*,\ \forall \omega ,\ r(\omega) = t(\langle R\rangle, \omega)\)</span></p>
+<p>minimal description of TM <span class="math notranslate nohighlight">\(MIN_{TM}\)</span>  fixed point <span class="math notranslate nohighlight">\(\exist F,\ f(\langle F\rangle) = F\)</span>​</p>
+<p>mathematical logic: model, formula <span class="math notranslate nohighlight">\(\supset\)</span> sentence <span class="math notranslate nohighlight">\(\supset\)</span> theory</p>
+<p><span class="math notranslate nohighlight">\(Th(\mathbb{N},+)\)</span> is deci. <em>proof: NDA recursion</em>  <span class="math notranslate nohighlight">\(Th(\mathbb{N},+,\times)\)</span> is undeci.</p>
+<p>oracle TM  <span class="math notranslate nohighlight">\(T^{A_{TM}}\)</span> is much stronger but there still be some lang. it can not deci.</p>
+<p>A decidable relative to B  Turing reducible <span class="math notranslate nohighlight">\(A\leq_T B\)</span>  <em>example:</em> <span class="math notranslate nohighlight">\(E_{TM} \leq_T A_{TM}\)</span>​</p>
+<p><strong>5.5</strong></p>
+<p>minimal description of string <span class="math notranslate nohighlight">\(d(x)\)</span>, descriptive(Kolmogorov) complexity <span class="math notranslate nohighlight">\(K(x) =\min |\langle M,\omega \rangle|\)</span> where <span class="math notranslate nohighlight">\(x\)</span> is on the tape when <span class="math notranslate nohighlight">\(M\)</span> halts on the input <span class="math notranslate nohighlight">\(\omega\)</span> (or <span class="math notranslate nohighlight">\(K(x)=\min\limits_{p:\mathcal{U}(p)=x}l(p)\)</span>​)</p>
+<p><span class="math notranslate nohighlight">\(K(x)\)</span> is uncomputable.  Godel incompleteness theorem, Berry paradox</p>
+<p><span class="math notranslate nohighlight">\(K(xy) \leq K(x)+K(y)+O(logK(x))\)</span> but can not reach <span class="math notranslate nohighlight">\(K(x)+K(y)+O(1)\)</span>.</p>
+<p><span class="math notranslate nohighlight">\(\forall \text{ desc. lang. } A ,\ \exist c_A,\ \forall x,\ K(x)\leq K_A(x)+c_A\)</span>​</p>
+<p><span class="math notranslate nohighlight">\(|\{x\in \{0,1\}^*:K(x)&lt;k\}|&lt;2^k\)</span>  for integer <span class="math notranslate nohighlight">\(n\)</span>, <span class="math notranslate nohighlight">\(K(n)\le log^*n+c\)</span></p>
+<p><span class="math notranslate nohighlight">\(\forall \mathcal{U},\ \sum\limits_{p:\mathcal{U}(p)\text{halts}} 2^{-l(p)}\le 1\)</span> (by Kraft ineq.)  <span class="math notranslate nohighlight">\(sto. \{X^n\} \overset{iid.}{\sim} f(x),\ \frac{1}{n} EK(X^n|n)\rightarrow H(X)\)</span> (by source coding th.)</p>
+<p><em>more:</em> c-compressible  There always exists incompressible string of any length.(<span class="math notranslate nohighlight">\(\lim\limits_{n\rightarrow \infty}\frac{K(x^n|n)}{n}=1\)</span>) There exists a constant <span class="math notranslate nohighlight">\(b\)</span> for <span class="math notranslate nohighlight">\(\forall x, d(x)\)</span> is incompressible by <span class="math notranslate nohighlight">\(b\)</span>​.</p>
+<p>universal prob. <span class="math notranslate nohighlight">\(P_{\mathcal{U}}(x)=\sum\limits_{p:\mathcal{U}(p)=x} 2^{-l(p)}\)</span>  <span class="math notranslate nohighlight">\(\forall \text{ computer } A ,\ \exist c_A,\ \forall x,\ P_{\mathcal{U}}(x)\ge c_A P_{A}(x)\)</span>​</p>
+<p>equivalence: <span class="math notranslate nohighlight">\(\exist c,\ \forall x,\ |log\frac{1}{P_{\mathcal{U}}(x)}-K(x)|\le c\)</span></p>
+<p>Chaitin <span class="math notranslate nohighlight">\(\Omega=\sum\limits_{p:\mathcal{U}(p)\text{halts}} 2^{-l(p)}\)</span></p>
+<p><em>more:</em> Kolmogorov structure function, Kol. minimal sufficient statistics</p>
+</section>
+<section id="complexity">
+<h2>6  Complexity<a class="headerlink" href="#complexity" title="Permalink to this heading">#</a></h2>
+<p><strong>6.1</strong></p>
+<p>big O notation, small O notation</p>
+<p>Unlike compuability, complexity depends on the computing model.</p>
+<p>time complexity <span class="math notranslate nohighlight">\(TIME(f(n))\)</span>  <em>note:</em> <span class="math notranslate nohighlight">\(TIME(O(nlogn)) \subset REG\)</span></p>
+<p><span class="math notranslate nohighlight">\(P=\bigcup\limits_k TIME(n^k)\)</span>  PATH, REL_PRIME, CFL</p>
+<p>verifier, certificate  <span class="math notranslate nohighlight">\(NP=\bigcup\limits_k NTIME(n^k)=P\_VERI \subset EXPTIME\)</span>  HAM_PATH, COMPOSITES, CLIQUE</p>
+<p><span class="math notranslate nohighlight">\(P\overset{?}{=}NP\)</span>  NP-complete  SAT</p>
+<p>polynomial time computable function, polynomial time reduction <span class="math notranslate nohighlight">\(A\leq_PB\)</span></p>
+<p><em>more:</em> cnf formula, 3SAT(is NPc)</p>
+<p>Cook-Levin Th: SAT is NPc. <em>proof: tableau, window <span class="math notranslate nohighlight">\(\phi_{cell}\wedge\phi_{start}\wedge\phi_{move}\wedge\phi_{accept}\)</span>​</em></p>
+<p><strong>6.2</strong></p>
+<p>space complexity <span class="math notranslate nohighlight">\(SPACE(f(n))\)</span>​</p>
+<p><span class="math notranslate nohighlight">\(SPACE(f(n))\subset TIME(2^{O(f(n))})\subset SPACE(2^{O(f(n))})\)</span></p>
+<p>Savitch Th: <span class="math notranslate nohighlight">\(\forall f: \mathbb{N}\rightarrow\mathbb{R}^+,\ \text{where}\ f(n)\geq n(\text{acc.}\ logn),\ NSPACE(f(n))\subseteq SPACE(f^2(n))\)</span></p>
+<p><span class="math notranslate nohighlight">\(PSPACE=NPSPACE \supseteq NP\)</span></p>
+<p>PSPACE-complete PSAPCE-hard  TQBF, FORMULA_GAME</p>
+<p>bitape TM  <span class="math notranslate nohighlight">\(L=SPACE(logn)\overset{?}{=}NL\)</span></p>
+<p>log space transducer, log space reduction <span class="math notranslate nohighlight">\(A\leq_LB\)</span></p>
+<p>PATH is NLc, <span class="math notranslate nohighlight">\(NL=coNL\subseteq P\)</span></p>
+<p><strong>6.3</strong></p>
+<p>space constructible(<span class="math notranslate nohighlight">\(f(n)\geq O(logn)\)</span>), time constructible(<span class="math notranslate nohighlight">\(f(n)\geq O(nlogn)\)</span>)</p>
+<p>Hierarchy Th: <span class="math notranslate nohighlight">\(\forall\ \text{constructible}\ f: \mathbb{N}\rightarrow\mathbb{N},\ \exist\ \text{lang.}\ A,\\ \text{decidable in space } O(f(n))\text{ but not } o(f(n));\ \text{in time } O(f(n))\text{ but not } o(f(n)/logn)\)</span></p>
+<p><span class="math notranslate nohighlight">\(NL \subsetneq PSPACE\)</span>, <span class="math notranslate nohighlight">\(PSAPCE \subsetneq EXPSPACE\)</span>, <span class="math notranslate nohighlight">\(P\subsetneq EXPTIME\)</span></p>
+<p><em>more:</em> EXPSPACE-complete  circuit complexity</p>
+<p><em>advanced topics:</em> approx. algorithm, probabilistic TM (BPP), prime, alternating TM, IP=PSPACE, parallel RAM (NC), cryptography(private-key cryptosystem, pulic-key cryptosystem RSA)</p>
+<p><em>family picture:</em></p>
+<p><img alt="" src="../_images/compu.jpg" /></p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./note"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contents">Contents</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#entropy">1 Entropy</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#coding-statistics-and-investment">2  Coding, Statistics and Investment</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#communication">3  Communication</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#automaton-and-language">4  Automaton and Language</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#computability">5  Computability</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#complexity">6  Complexity</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Laplx (Hao Chen)
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
