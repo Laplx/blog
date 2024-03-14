@@ -4,19 +4,23 @@
 
 ### 个人笔记
 
-*Laplx* 多元统计讲义（拖拉……）
+[信息与计算](note/info_compu.pdf)
 
-[*Laplx* 多元统计手稿](note/multistat_o.pdf)
+[拓扑学](note/topology.pdf)
 
-[*Laplx* 线性代数笔记](note/la.pdf)
+[基础分析与代数](note/anal.pdf)
 
-[*Laplx* 概率统计笔记](note/probstat.pdf)
+[多元统计（暂为手稿）](note/multistat_o.pdf)
 
-[*Laplx* 物理竞赛笔记（上）](note/phy-1.pdf)
+[线性代数](note/la.pdf)
 
-[*Laplx* 物理竞赛笔记（下）](note/phy-2.pdf)
+[概率统计](note/probstat.pdf)
 
-[*Laplx* 改革开放史](https://laplx.cc/note/china_reform)
+[物理竞赛笔记（上）](note/phy-1.pdf)
+
+[物理竞赛笔记（下）](note/phy-2.pdf)
+
+[改革开放史](https://laplx.cc/note/china_reform)
 
 ### 期刊月读
 
@@ -26,13 +30,15 @@
 
 ### 书著摘要
 
-Jorgen W. Weibull, *Evolutionary Game Theory*, MIT Press, 1995  演化博弈论  
+**Lecture Notes** of *Microeconometrics. Methods and applications*, A. Colin Cameron & Pravin K. Trivedi  微观经济计量学
+
+**Lecture Notes** of Differential Game Theory and Mean Field Game Theory
+
+Jorgen W. Weibull, *Evolutionary Game Theory*, MIT Press, 1995  演化博弈论
 
 Hirsch, Smale & Devaney, *Differential Equations, Dynamical Systems, and an Introduction to Chaos*,  Elsevier Inc., 2013  微分方程、动力系统与混沌引论
 
 Norbert Weiner, *Cybernetics, or Control and Communication in the Animal and the Machine*, MIT Press, 1948 and 1961  控制论
-
-**Lecture Notes** of Differential Game Theory and Mean Field Game Theory
 
 ### 其他手稿
 
