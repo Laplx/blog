@@ -19,6 +19,8 @@
       title: 红楼遗梦
 - file: wonder
   sections:
+    - file: wonder/24.5.3
+    - file: wonder/24.4.26
     - file: wonder/24.2.2
     - file: wonder/24.1.26
     - file: wonder/24.1.19
@@ -75,6 +77,7 @@
     - file: sund/toiletology
     - file: sund/xingqisiji
     - file: sund/olympics
+    - file: sund/citymetro
 - file: other
   sections:
     - file: other/Stokes
