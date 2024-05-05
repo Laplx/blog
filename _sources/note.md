@@ -16,11 +16,13 @@
 
 [概率统计](note/probstat.pdf)
 
+[博弈论](note/game.pdf)
+
 [物理竞赛笔记（上）](note/phy-1.pdf)
 
 [物理竞赛笔记（下）](note/phy-2.pdf)
 
-[改革开放史](https://laplx.cc/note/china_reform)
+[改革开放史](note/china_reform.pdf)
 
 ### 期刊月读
 
