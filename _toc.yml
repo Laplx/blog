@@ -1,7 +1,7 @@
 - file: intro
+
 - file: note
   sections:
-    - file: note/23.12
     - file: note/evol_game
     - file: note/mechbrief
     - file: note/millerorr
@@ -10,15 +10,15 @@
     - file: note/mathmodel
     - file: note/astrology
     - file: note/crypto
-    - file: note/pre1
-- file: proj
-  sections:
     - file: swarm/Swarm.md
       title: 打卡软件 Swarm
     - file: hlm/hlm_index.md
       title: 红楼遗梦
+    - file: note/pre1
+    
 - file: wonder
   sections:
+    - file: wonder/24.7.12
     - file: wonder/24.5.3
     - file: wonder/24.4.26
     - file: wonder/24.2.2
@@ -61,15 +61,10 @@
     - file: wonder/23.5.19
     - file: wonder/23.5.12
     - file: wonder/23.5.5
-- file: know
-  sections:
-    - file: know/cookbook.md
-    - file: know/py3rdpartylib
-    - file: know/pyPEP8
-    - file: know/Gregg.md
-      title: Gregg Shorthand
+
 - file: sund
   sections:
+    - file: know
     - file: sund/articles
     - file: sund/links
     - file: sund/ques
@@ -78,6 +73,7 @@
     - file: sund/xingqisiji
     - file: sund/olympics
     - file: sund/citymetro
+
 - file: other
   sections:
     - file: other/Stokes

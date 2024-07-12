@@ -5,27 +5,17 @@
 Click here for English version
 ```
 
-![](./introg.jpg)
-
-*（重重叠叠）*
-
-### 这里有什么？
-
 这里是 <font face="Consolas" size=4><b>Lapl</b></font><font face="Consolas" size=4 color="red"><b>x</b></font> <font face="Consolas" size=4><b>(Hao Chen)</b></font> 的 GithubPage 博客。
 
 我会分享我创作和收集的一些文件、课题与想法。
 
-### 怎么联系我？
+---
 
 邮箱：laplx@foxmail.com  laplx@outlook.com
 
 单位：复旦大学经济学院
 
-### 每周一句
-
-证监会（CSRC）补空间的基本群是 $\{a,b|aba=bab\}$.（雾）
-
-### 欢迎评论！
+---
 
 评论需使用 Github 账户。
 

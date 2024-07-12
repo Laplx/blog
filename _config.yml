@@ -6,7 +6,6 @@ logo: 'logo.png'
 html:
   favicon: favicon.ico
   google_analytics_id: G-PPZXJ9B1BG
-  announcement: '<b>1st Anniversary!</b>🥳'
 
 parse:
   myst_enable_extensions:
