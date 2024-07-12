@@ -5,7 +5,7 @@
 Click here for English version
 ```
 
-这里是 <font face="Consolas" size=4><b>Lapl</b></font><font face="Consolas" size=4 color="red"><b>x</b></font> <font face="Consolas" size=4><b>(Hao Chen)</b></font> 的 GithubPage 博客。
+这里是 <font face="Consolas" size=4><b>Laplx</b></font> <font face="Consolas" size=4><b>(Hao Chen)</b></font> 的 GithubPage 博客。
 
 我会分享我创作和收集的一些文件、课题与想法。
 
