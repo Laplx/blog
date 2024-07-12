@@ -10,7 +10,7 @@
 
 趣味问题
 
-个人图书 <library.laplx.cc>
+[个人图书](library.laplx.cc)
 
 ---
 
