@@ -14,10 +14,12 @@
       title: 打卡软件 Swarm
     - file: hlm/hlm_index.md
       title: 红楼遗梦
+    - file: note/FinCrisis_tirole.md
     - file: note/corfin_pre
     
 - file: wonder
   sections:
+    - file: wonder/24.8.2
     - file: wonder/24.7.12
     - file: wonder/24.5.3
     - file: wonder/24.4.26

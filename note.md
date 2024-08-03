@@ -46,9 +46,11 @@
 
 #### 其他
 
-搜索引擎介绍
+[搜索引擎介绍](note/browser.pdf)
 
-Git 基础
+[Git 基础](note/git.pdf)
+
+**Summary** of Tirole, Jean. *Financial Crises, Liquidity, and the International Monetary System*. Princeton University Press, 2002  金融危机，流动性和国际货币体制
 
 **Presentation** of Zhuo Chen, Zhiguo He, Chun Liu, *The financing of local government in China: Stimulus loan wanes and shadow banking waxes*, Journal of Financial Economics, Volume 137, Issue 1, 2020
 
