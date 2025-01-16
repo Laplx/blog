@@ -1,0 +1,600 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="zh-Hans" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Notion: Geometric Hermeneutics &#8212; Laplx&#39;s Blog</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
+  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-PPZXJ9B1BG"></script>
+    <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){ dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'G-PPZXJ9B1BG');
+            </script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'wonder/25.1.10';</script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Frivolity: Attempts at Symmetry in Game" href="24.8.2.html" />
+    <link rel="prev" title="周五碎笔" href="../wonder.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="zh-Hans"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="Laplx's Blog - Home"/>
+    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="Laplx's Blog - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    首页
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../note.html">学习记录</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../note/evol_game.html">Outline of Evolutionary Game Theory</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../note/mechbrief.html">A Brief Draft of Classical Mechanics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../note/millerorr.html">Proof of Miller-Orr Model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../note/solow.html">Solow Model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../note/intro_causalinfer.html">Introduction to Causal Inference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../note/mathmodel.html">Elements of Mathmatical Modeling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../note/astrology.html">Astrology Basics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../note/crypto.html">Cryptocurrency Basics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../swarm/Swarm.html">打卡软件 Swarm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../hlm/hlm_index.html">红楼遗梦</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../note/FinCrisis_tirole.html">Tirole: Financial Crisis, Liquidity, and the International Monetary System</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../note/corfin_pre.html">CorFin Pre</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../wonder.html">周五碎笔</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Notion: Geometric Hermeneutics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="24.8.2.html">Frivolity: Attempts at Symmetry in Game</a></li>
+<li class="toctree-l2"><a class="reference internal" href="24.7.12.html">Frivolity: Ludology</a></li>
+<li class="toctree-l2"><a class="reference internal" href="24.5.3.html">Frivolity: Anniversary and Phantom Traffic Jams</a></li>
+<li class="toctree-l2"><a class="reference internal" href="24.4.26.html">Frivolity: Regression on Channel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="24.2.2.html">Special: How Wenzhou Develops</a></li>
+<li class="toctree-l2"><a class="reference internal" href="24.1.26.html">Frivolity: Infinite Turing Machine</a></li>
+<li class="toctree-l2"><a class="reference internal" href="24.1.19.html">Frivolity: Astrofinance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="24.1.12.html">Frivolity: Transportation Cost</a></li>
+<li class="toctree-l2"><a class="reference internal" href="24.1.5.html">Frivolity: C&amp;C Theorem</a></li>
+<li class="toctree-l2"><a class="reference internal" href="23.12.29.html">Frivolity: Theory about Making Friends</a></li>
+<li class="toctree-l2"><a class="reference internal" href="23.12.22.html">Frivolity: Leaning, Gluing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="23.12.15.html">Frivolity: Dividend Signaling Model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="23.12.8.html">Notion: Settability</a></li>
+<li class="toctree-l2"><a class="reference internal" href="23.12.1.html">Sequel: Model for the Nations II</a></li>
+<li class="toctree-l2"><a class="reference internal" href="23.11.24.html">Frivolity: Model for the Nations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="23.11.17.html">Notion: The Apple that Never Lands</a></li>
+<li class="toctree-l2"><a class="reference internal" href="23.11.10.html">Frivolity: Weighted Synchronicity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="23.11.3.html">Frivolity: Love in Evolution and Equilirium</a></li>
+<li class="toctree-l2"><a class="reference internal" href="23.10.27.html">Frivolity: Red-light Preference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="23.10.20.html">Frivolity: Theory of Theory</a></li>
+<li class="toctree-l2"><a class="reference internal" href="23.10.13.html">Frivolity: Stand up and Cheer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="23.10.6.html">Frivolity: Knoid</a></li>
+<li class="toctree-l2"><a class="reference internal" href="23.9.29.html">Frivolity: The Limit of Handwritting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="23.9.22.html">Frivolity: Measure Design</a></li>
+<li class="toctree-l2"><a class="reference internal" href="23.9.15.html">Frivolity: Can I Update in Time</a></li>
+<li class="toctree-l2"><a class="reference internal" href="23.9.8.html">Frivolity: New Game of Life</a></li>
+<li class="toctree-l2"><a class="reference internal" href="23.9.1.html">Frivolity: Theory of lazing in military training</a></li>
+<li class="toctree-l2"><a class="reference internal" href="23.8.25.html">Frivolity: Currency Reverie</a></li>
+<li class="toctree-l2"><a class="reference internal" href="23.8.18.html">Notion: Templatization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="23.8.11.html">Frivolity: Annealed Polity Emerges</a></li>
+<li class="toctree-l2"><a class="reference internal" href="23.8.4.html">Frivolity: WeRun Pattern</a></li>
+<li class="toctree-l2"><a class="reference internal" href="23.7.28.html">Frivolity: Meme Alive</a></li>
+<li class="toctree-l2"><a class="reference internal" href="23.7.21.html">Frivolity: Winner-Take-All Game</a></li>
+<li class="toctree-l2"><a class="reference internal" href="23.7.14.html">Frivolity: Semantic Information</a></li>
+<li class="toctree-l2"><a class="reference internal" href="23.7.7.html">Notion: Excellent Player</a></li>
+<li class="toctree-l2"><a class="reference internal" href="23.6.30.html">Frivolity: How to Get a Path</a></li>
+<li class="toctree-l2"><a class="reference internal" href="23.6.23.html">Notion: Hype Significance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="23.6.16.html">Frivolity: Homomorphic Observation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="23.6.9.html">Frivolity: Dots and Boxes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="23.6.2.html">Frivolity: Choose Your Seat</a></li>
+<li class="toctree-l2"><a class="reference internal" href="23.5.26.html">Frivolity: Introduction to Roll Theory</a></li>
+<li class="toctree-l2"><a class="reference internal" href="23.5.19.html">Frivolity: Moments Entropy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="23.5.12.html">Frivolity: Touter or Scalper</a></li>
+<li class="toctree-l2"><a class="reference internal" href="23.5.5.html">Frivolity: Start and Bikes on Campus</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../sund.html">其他收录</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../know.html">资料分享</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sund/articles.html">文章集萃</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sund/links.html">外部链接</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sund/ques.html">趣味问题集</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sund/folkscience.html">民科小传</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sund/toiletology.html">厕学</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sund/xingqisiji.html">行乞寺记</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sund/olympics.html">谈竞赛</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sund/citymetro.html">城市铁道</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../other.html">友情特供</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../other/Stokes.html">Stokes 公式</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../other/Newton.html">Newton 力学</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../other/quantum_form.html">量子力学的形式理论</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../other/rglights.html">十字路口的选择</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../other/planck.html">Planck 公式在历史上是怎么诞生的</a></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/wonder/25.1.10.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Notion: Geometric Hermeneutics</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">语言的几何学阐释</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#meaning">Meaning</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reading">Reading</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#language">Language</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#argumentation">Argumentation</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="notion-geometric-hermeneutics">
+<h1>Notion: Geometric Hermeneutics<a class="headerlink" href="#notion-geometric-hermeneutics" title="Permalink to this heading">#</a></h1>
+<section id="id1">
+<h2>语言的几何学阐释<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h2>
+<p><img alt="" src="../_images/25.1.10.jpg" /></p>
+<section id="meaning">
+<h3>Meaning<a class="headerlink" href="#meaning" title="Permalink to this heading">#</a></h3>
+<p>我们不能理解完全不依靠<strong>现实</strong>的意义。（现实指的不一定就是真实存在发生的，而是一种类似生活经验的东西）所有的意思（意义，关于另外一种 “意义” 见下一小节）都指代了一系列可能的现实世界过程（称作<strong>宇宙</strong> <span class="math notranslate nohighlight">\(u\)</span>）。某一时刻的宇宙 <span class="math notranslate nohighlight">\(u(t)\)</span> 称作世界，是一系列状态信息的集合（能想象到的所有信息都可以如此纳入）<span class="math notranslate nohighlight">\(\{\pi^1,\pi^2,\dots\}\)</span>（暂时先把不可数的打包在一起，写成可数的形式；注意我们可以想象虚空中的抽象状态，但它仍然是一个与其他事实状态无二的东西）。一个半宇宙（前向/后向宇宙）指 <span class="math notranslate nohighlight">\(\{u_t\}_{t\ge 0}\)</span> 或 <span class="math notranslate nohighlight">\(\{u_t\}_{t\le 0}\)</span>，包含一个给定的始终点 <span class="math notranslate nohighlight">\(u_0\)</span>。注意我们目前没说 <span class="math notranslate nohighlight">\(u(t)\)</span> 随时间的变化满足一定的规律（比如 Newton's Law），它允许了一切天马行空的假设与想象力。所有这些平行宇宙的集合 <span class="math notranslate nohighlight">\(\mathcal{O}\)</span> 称作<strong>客观集</strong>，鉴于它们都是思考的对象（因此可能可以认为启蒙运动是在扩展客观集）。建模时状态是<strong>外禀</strong>的；例如总有人知道电场的存在，有人的世界里是不知道的（“因为太愚昧或太聪明而获得自由的幻象” 亨利·詹姆斯《使节》）。对于某个读者来说，他所能理解的一切宇宙集合记作<strong>知识域</strong> <span class="math notranslate nohighlight">\(\mathcal{K}=\hat{\mathcal{O}}\)</span>。但这里面有一些宇宙大概是符合一些规律的，我们把符合该规律的集合称作<strong>真域</strong> <span class="math notranslate nohighlight">\(\mathcal{T}\)</span>；同样，比方说或许有人眼里 Newton's Law 和大家的不一样，故每个读者都有自己认为的真域 <span class="math notranslate nohighlight">\(\mathcal{U}=\hat{\mathcal{T}}\)</span>。<strong>意思空间</strong> <span class="math notranslate nohighlight">\(\mathcal{M}=\mathcal{P}(\mathcal{O})\)</span>，真理空间 <span class="math notranslate nohighlight">\(\mathcal{M}_T=\mathcal{P}(\mathcal{T})\)</span>。意思之间存在包含关系 <span class="math notranslate nohighlight">\(m_1\subset m_2\)</span>；空/<strong>无知</strong>意思点 <span class="math notranslate nohighlight">\(0\in \mathcal{M}\)</span> 表示全集背景，无穷远/<strong>未知</strong>意思点 <span class="math notranslate nohighlight">\(\infty\)</span> 代表空集，其没有任何可理解的意义。</p>
+<p>我们可以对意思之间进行简单的运算，包括<strong>反义</strong> <span class="math notranslate nohighlight">\(m^c\)</span>、<strong>且（独立）</strong><span class="math notranslate nohighlight">\(m_1\cap m_2\)</span>、<strong>或</strong> <span class="math notranslate nohighlight">\(m_1\cup m_2\)</span>。如果 <span class="math notranslate nohighlight">\(m_1, m_2\)</span> 对应的文本是 <span class="math notranslate nohighlight">\(w_1, w_2\)</span>，总文本 <span class="math notranslate nohighlight">\(w=w_1w_2\)</span> 对应的（作者的）意思是 <span class="math notranslate nohighlight">\(m\)</span>，<span class="math notranslate nohighlight">\(m\)</span> 不一定是 <span class="math notranslate nohighlight">\(m_1\cap m_2\)</span>。<strong>顺序和</strong> <span class="math notranslate nohighlight">\(m_1+m_2\)</span>，我们需要定义嵌入映射 <span class="math notranslate nohighlight">\(\phi:u \mapsto u^+/u^-\)</span> 将时间压缩进半宇宙内，以实现时间上的先后关系，故 <span class="math notranslate nohighlight">\(m_1+m_2\)</span> <span class="math notranslate nohighlight">\(=\{u\in m_1\cap m_2: \exist \phi_1,\phi_2,u_1\in m_1,u_2\in m_2 \text{ s.t. }u=\phi_1(u_1)+\phi_2(u_2)\}\)</span> 对应于顺叙的文本 <span class="math notranslate nohighlight">\(w\)</span>。（对于始终点的衔接问题，设想一群在 <span class="math notranslate nohighlight">\(T\)</span> 后就暂停演化的宇宙；即使受到真视域的限制，注意到人脑中状态序列的有限性和模糊性，这一点仍然可以成立。）</p>
+<p>对于<strong>可能</strong>性，可以设想一个<strong>虚拟状态</strong> <span class="math notranslate nohighlight">\(\chi\)</span>，有其取值范围和概率分布 <span class="math notranslate nohighlight">\(P_\chi\)</span>；因此 “苹果很可能是红的” 对于一个意识里几乎只认为苹果具有红色和绿色的读者来说，这句话的意思应由如 <span class="math notranslate nohighlight">\(\chi \text{ uni.dis. on } [0,1],\)</span> <span class="math notranslate nohighlight">\(m= \{u(\text{exist red apples},\chi&lt;0.8),u(\text{exist green apples},\chi&lt;0.2)\}\)</span> 表示。</p>
+</section>
+<section id="reading">
+<h3>Reading<a class="headerlink" href="#reading" title="Permalink to this heading">#</a></h3>
+<p>任一文本片段 <span class="math notranslate nohighlight">\(w: \mathcal{M}\rightarrow \mathcal{P}(\mathcal{M})\)</span>，将一个前文的起始意思（<strong>语境</strong>）接续到下一个时刻所理解的意思上，以一个模糊的方式，故其像是一子集。</p>
+<p>首先需要提及的一点是所谓阐释循环里的<strong>视域</strong> <span class="math notranslate nohighlight">\(\mathcal{H} \subset \mathcal{M}\)</span>，它限制了读者在阅读此段文本时可供理解选择的意思范围。我们知道伽达默尔和海德格尔认为存在一些（文本/作者视域和读者视域间的） gap，跨越空隙（pull up）即是<strong>视域融合</strong>/协商（Horizont-verschmelzung）；例如 “To spread around him that primeval joy / Which fill'd himself, he rais'd his <em>plastic</em> arm”（Akenside, The Plaesures of the Imagination），18世纪的诗人肯定不会觉得造物主举起了他的塑料假肢——如果打开封闭的历史视域，我们会理解成造物主举起他柔韧的手臂。赫希宣称意义归于作者的意识，如果只诉诸文本本身，它可以表达几乎任何东西；例如 “苹果烂了” 在某些玄幻的小说里是不是 “明天是世界末日” 的意思？（包含这些宇宙吗？）</p>
+<p>事实上在这个框架里他们的观点是完全可以调和的。我们仍然认为文本作为一个功能性系统（福柯）具有自身的意义（die Sache 主题，or 'what is there'），且不同读者得到不同的阐释，<strong>可能</strong>不能客观的理解文本（偏见/前判断，反映在模型里便是视域）；但显然存在一个被指涉的思想（referred-to thought，语文老师：这道阅读理解题需要用别的话表达出作者的思想），阐释的获得很可能需要读者对真实作者（依其<strong>意图</strong>）进行一定的揣测（比如我知道我在阅读一个19世纪的小说），并根据可能释义的<strong>价值</strong> <span class="math notranslate nohighlight">\(\mathcal{V}(m)\)</span>（指成为意图的可能性，例如读者不会认为18世纪诗人想表达上帝具有一个塑料手臂；但也完全可能包括其他东西，比如读者自己的<strong>偏好</strong>）来（模糊的）选择最可能的意思。当目前视域内缺乏合理的解释时——这便代表着存在一个绝对的（准确而言，相对于世界上其他接触的文本）可接受释义的<strong>阈值</strong> <span class="math notranslate nohighlight">\(\mathcal{V}\ge\mathcal{V}_0\)</span>，视域的协商和调整就出现了。注意我们不区分意思和意义，而赫希所谓的 significance 意义是真实的、事后的意义（如评价某句话 “为所有人指明了方向”，赏析一段文字的技巧影响），我们不予以关照和考虑（相信这能够区分，尽管理解的文本意义就是携带现实偏见的）。（考虑到随意的造句练习或学习权威教材的时候，我们可能会把 <span class="math notranslate nohighlight">\(\mathcal{V}\)</span> 视作一个正常数。）</p>
+<p>伊瑟尔的想法更进一步，他强调足够大的空隙是必要的（“创新标准”），阅读过程需要 shocks 亦即不断顿悟的瞬间。这同样可以放在心流模型下，读者的效用来自于两部分：一是学习与娱乐过程（切换视域）带来的<strong>心流</strong>（将过于可预测的东西陌生化导致的期待与对期待的不信任形成的张力；且每个读者均有自己适合的学习斜率的范围，超出则会感到无趣/受挫），另一是<strong>审美</strong>与叙事的体验（史蒂文斯 “诗歌让可见之物变得朦胧一些”——你可以认为诗歌的释义像纤维丛那样——陌生化也会提供康德的形式的美感；同时，不只陌生化，小说对现实事物“摹仿的满足”也是受欢迎的，这也是很多对几乎只关注非解释性文本的伊瑟尔的批判的来源）。</p>
+<p><strong>相似度</strong> <span class="math notranslate nohighlight">\(s\)</span> 是重要的，它反映了读者对意思的区分程度。Attention is all your need。我们把它作为一种宇宙间的距离度量开展，<span class="math notranslate nohighlight">\(s(u_1,u_2)\)</span> 可以通过多种方式定义，如 <span class="math notranslate nohighlight">\(\sum\limits_i \alpha_id_i(\pi^i_1,\pi^i_2)\)</span>，其中 <span class="math notranslate nohighlight">\(i\)</span> 是状态列表的索引。因此可以诱导出意思之间的距离 <span class="math notranslate nohighlight">\(s(m_1,m_2)\)</span>，甚至 Hausdorff 测度的方式构造子集的内积 <span class="math notranslate nohighlight">\(\langle m_1,m_2\rangle=\int f_{m_1}(u)f_{m_2}(u) d\mu\)</span>（互信息亦可）。（有些问题里不妨假设不同读者具有相似的 <span class="math notranslate nohighlight">\(s\)</span>。）</p>
+<p>读者通过自己的判断准则来根据 <span class="math notranslate nohighlight">\(w\)</span> 和前文 <span class="math notranslate nohighlight">\(m\)</span>  在视域 <span class="math notranslate nohighlight">\(\mathcal{H}\)</span> 内生成新的阐释，依靠的便是 <span class="math notranslate nohighlight">\(\mathcal{V}_s(m)\)</span> 作为一个评估函数（与 <span class="math notranslate nohighlight">\(s\)</span> 有关）来选取较优的解 <span class="math notranslate nohighlight">\(\hat{m}=\max\limits_{x\in \mathcal{H}}\mathcal{V}_s(x)\)</span>；<span class="math notranslate nohighlight">\(s\)</span>、<span class="math notranslate nohighlight">\(\mathcal{V}_s\)</span> 和 <span class="math notranslate nohighlight">\(\mathcal{H}\)</span> 皆反映了读者的前判断。（一个可行的假设是理性读者，他们的价值函数反比于与真实意图间的距离。）前文可以是上下文吗？当然，事实上我们经常<strong>回退</strong>并重新改正视域和选取的释义，包括只依靠记忆力迅速改正。注意到搜索具有的保守与模糊性，最终认为的并不一定极优，且可能是一个（相对而言）很小的区域，把它确定的视作某一个点对接下来的分析没有本质差异（创作时的模糊性同理）。因此整个阅读阐释的过程可见图，<span class="math notranslate nohighlight">\(m, \mathcal{H}, s, \mathcal{V}\)</span> 在过程中均会持续变化（比如说到 “这个苹果” 的时候，<span class="math notranslate nohighlight">\(s\)</span> 会集中聚焦到与该苹果相关的状态身上）。关于伽达默尔所谓需要的共同基础，注意到这个可以相互理解的基础不是针对视域，而是对读者而言最大的知识域（假设他能够把视域扫描到整个知识域范围）。</p>
+<p><strong>学习</strong>过程就是在阅读某些文本时候（几乎皆通过扩张视域的方式）读者修改了 <span class="math notranslate nohighlight">\(\mathcal{U}\)</span> 或 <span class="math notranslate nohighlight">\(\mathcal{K}\)</span>。如新知的获得必然带来 <span class="math notranslate nohighlight">\(\mathcal{K}\)</span> 的扩大，且将视域重新置于新增的宇宙集合中；对于事实性文本，阅读时常有 <span class="math notranslate nohighlight">\(\mathcal{H}=\mathcal{U}\)</span>，不断改进该集合以认识真实世界，且此时读者主要任务是在理解意义，<span class="math notranslate nohighlight">\(\mathcal{V}\)</span> 基本为常数，故叙述应越严谨越好（数学语言，或约定而非俗成的语言）。</p>
+<p>语义的<strong>信息量</strong>仍可按照熟悉的方式定义，互信息 <span class="math notranslate nohighlight">\(I_s(m_1,m_2) = H_s(m_1)-H_s(m_1|m_2)\)</span>（在 <span class="math notranslate nohighlight">\(\mathcal{O}\)</span> 上等概率的假定下，熵 <span class="math notranslate nohighlight">\(H_s(m)\)</span> 可能取 <span class="math notranslate nohighlight">\(p_m=\frac{\mu(m)}{\mu(\hat{\mathcal{M}})}\)</span> 时二值变量的形式）；单段文本的信息量即 <span class="math notranslate nohighlight">\(I_s(m)=I_s(m,0)\)</span>，<span class="math notranslate nohighlight">\(I(0)=0\)</span>。下标突出信息与读者的注意力有关，例如领导发言表示 “做好这一点非常重要”（记 <span class="math notranslate nohighlight">\(w'\)</span>，前文为 <span class="math notranslate nohighlight">\(w\)</span>），如果某人没有意识到敷衍执行会带来翻天覆地的后果，则在其眼里敷衍的宇宙和重视的宇宙非常相似，<span class="math notranslate nohighlight">\(I_s(m'|m)\)</span> 会很小；同样，如果这是无聊的让所有人都不明其指的官话，信息量自然也非常少。一个两片段文本，当<strong>上下文无关</strong>即 <span class="math notranslate nohighlight">\(I(m_1,m_2)=0\)</span> 时，（简单的并列文法下）易得 <span class="math notranslate nohighlight">\(I(m) = I(m_1)+I(m_2)\)</span>，此时记 <span class="math notranslate nohighlight">\(m= m_1\cap m_2\)</span>。</p>
+<p>将假设总结一下的话便是：<strong>Hyp1</strong> 视域可扩张，且常保守的扩张；<strong>Hyp2</strong> 价值准则（仅揣测意图），且会回退；<strong>Hyp3</strong> 等概率原理。<strong>模糊性</strong>至少包括：<span class="math notranslate nohighlight">\(u\)</span> 宇宙区分的；<span class="math notranslate nohighlight">\(w(m)\)</span> 文本映射的；<span class="math notranslate nohighlight">\(m\)</span> 意义选择的。</p>
+</section>
+<section id="language">
+<h3>Language<a class="headerlink" href="#language" title="Permalink to this heading">#</a></h3>
+<p>正如上节所述，自然语言符号的暧昧性/模糊性导致了文本和意义的分离。我们想从符号学的角度强调几点：一，词汇符号具有<strong>任意性</strong>和<strong>差异性</strong>。符号本身是任意的，且它们的所指是通过差异化区分开来的（否定性的认知；我把它叫做船<strong>仅仅</strong>是因为它不是 “火车” “骡子” 等别的什么东西），这直接造成了自然文本的模糊性。二，一定的<strong>约定性</strong>。<span class="math notranslate nohighlight">\(\exists m, w(m)\)</span> 未知。可以想象我们会因此对一些 <span class="math notranslate nohighlight">\(w\)</span> 直接作出规则性的约定（肯定性而非否定性），如定义的概念、专有名词与语法结构。如果考虑完全约定性的数学语言系统，则它的文本能够完全定义概念（对于应可明确表达的意思可以称之为概念 <span class="math notranslate nohighlight">\(c\in \mathcal{M}\)</span>），表述命题和定理。（不讨论形式逻辑系统的实现，不关系是否自洽或完备。）三、符号意义的<strong>管制</strong>。<span class="math notranslate nohighlight">\(w\)</span> 没有唯一确定的定义方式，似乎可以无厘头的把它的像变得很大，再由视域和价值限制它。“苹果烂了”当中的 <span class="math notranslate nohighlight">\(w=\{\text{烂了}\}, w(0)\)</span> 是否可以包括 <span class="math notranslate nohighlight">\(m=\{\text{所有一个苹果烂了的宇宙}\}\)</span> 还是 <span class="math notranslate nohighlight">\(m=\{\text{所有东西至少有一个烂了的宇宙}\}\)</span>？显然只纳入后者更符合直觉，我们应该遵从这一点。否则会陷入一种怀疑主义——不能完全失去对意义的经验的管制，尽管想象力和修辞极大的削弱了这一点。</p>
+<p>其实之前并未展示清楚后文 <span class="math notranslate nohighlight">\(w_2\)</span> 一般如何在前文 <span class="math notranslate nohighlight">\(w_1\)</span> 的基础上推进意义（或者说 <span class="math notranslate nohighlight">\(w\)</span> 映射的结构如何），这一点涉及到的便是构造意义时满足的一定的结构规则即<strong>语法</strong>。我们可以在诸多层级上划分 <span class="math notranslate nohighlight">\(w\)</span>，这些若干个 <span class="math notranslate nohighlight">\(w_i\)</span> 通过不同层级的多种语法规则（词法、句法与文法）将各自的意思 <span class="math notranslate nohighlight">\(m_i\)</span> 互相作用组织成总的意思 <span class="math notranslate nohighlight">\(m=g(m_1,\dots,m_k)\)</span>。从 Chomsky 的体系来看，我们可以近似找到一个最广的 CFL——称作<strong>句法</strong>（可以说我们处理句法规则时的思维跟 (N)PDA 其实也相差不多），里面的单元称作词（常表达一类事物、动作存在发生的宇宙）；如何用物理上更基本的元件组成它们是<strong>词法</strong>（morphology, phonology），我们无必要关注；而将句子表达出的复杂意思块进一步拼接的统称为<strong>文法</strong>（narratology etc.），通常是上下文相关的。如顺叙文法下，<span class="math notranslate nohighlight">\(g_{chron} = m_1+\dots+m_k\)</span>，而独立时 <span class="math notranslate nohighlight">\(g_{list}=m_1\cap \dots \cap m_k\)</span> 可以称为并列文法/句法。</p>
+<p>在这里还需要指出并区分词 <span class="math notranslate nohighlight">\(w\)</span> 的两种类型：<strong>实词</strong>便是前面所描述的 <span class="math notranslate nohighlight">\(w: \mathcal{M}\rightarrow \mathcal{P}(\mathcal{M})\)</span>；<strong>虚词</strong>理论上可以视为它的特例，几乎只射向特定的异化的<strong>结构性</strong>语义，可以说 <span class="math notranslate nohighlight">\(w\)</span> 的像均在特殊的（若干个）点 <span class="math notranslate nohighlight">\(\tilde{m}\)</span>（不具备任何真实世界状态的那些宇宙）上，它们（注意包括<strong>标点</strong>等）只有功能性的指征作用，但对意义加工非常重要。规则里每个成分的 <span class="math notranslate nohighlight">\(m_i\)</span> 亦由正常阅读的流程及其 <span class="math notranslate nohighlight">\(\mathcal{H}_i\)</span> 选出；一般而言，如果我们把远端视为更细化的意思，对于走向远端即意思会随着行文逐步精确（至少就作者而言）的文本，<span class="math notranslate nohighlight">\(\mathcal{H}_i \subseteq \mathcal{P}(m_i)\)</span> for <span class="math notranslate nohighlight">\(i\)</span> step。（当然，鉴于非确定性，要发挥语法规则也需要记忆力的参与。）</p>
+<p>例如因果关系，<span class="math notranslate nohighlight">\(g(\text{因为},m_1,\text{所以},m_2)\subseteq\overline{m_1+\overline{m_2}} \cap \mathcal{H}\)</span>，因为还有很多情况下读者是通过想象许多可能的机制理解的，此时结果要远小于右边的项。</p>
+<p>前面说到我们可以通过语法的组织结构以及一些基本的运算方式（由 “不”、“和”、“或” 等特定字符表征）进行加工，达到非常多样化的意思表达；而进一步让语言魅力丰富起来的，还有<strong>修辞</strong> <span class="math notranslate nohighlight">\(r: \mathcal{M}\rightarrow \mathcal{M}\)</span>（从字面义到实际欲表达的意义）。其包括比喻、象征、反复、举例等等手法，遗憾的是没人且为了美感也不允许进行校准（见下一小节），只能通过读者自己思考感悟。在修辞对应下后续进行释义的文本会存在一个<strong>拉回</strong> <span class="math notranslate nohighlight">\(w^*=r^*(w)\)</span>。正因为 <span class="math notranslate nohighlight">\(r\)</span> 的模糊性，尼采才认为 “什么是真理呢？一群活动的隐喻、转喻和拟人法，也就是一大堆已经被诗意的和修辞的强化、转移和修饰了的人类关系”；他认为原本命名现实的语言遭受了陈腐修辞的征服性入侵，它们不再能被证实（显然），因此从语言滑向了信仰（异化）。</p>
+<p>一般修辞的出现常由特定词汇（及慢慢俗成的短语）标识或被读者发现可靠的拉回义。还有很多词汇的历时变化由一些文本率先的尝试，经过受众尝试思考 <span class="math notranslate nohighlight">\(r\)</span> 并固化下来导致。因此词汇的释义部分在使用中差异化及流变形成，部分由定义直接推得。</p>
+<p><strong>异化</strong>/虚化指词语出现的<strong>本身</strong>形式具备的内涵，纯粹由与其他语言语义的关系所存在，就像虚词那样。异化比我们想象的要普遍，常由一些社会环境因素或大规模的<strong>失义</strong>（<span class="math notranslate nohighlight">\(w(m)\cap \mathcal{H}=\infty\)</span>，评价很低 <span class="math notranslate nohighlight">\(\mathcal{V}\approx 0\)</span>）形成（或共同形成）。例如一个有权威的作者发表了大段的晦涩论述，而后面反倒很简单的义项被众人所理解了，大家却可能会开始反复使用前段的语汇、行文，最终以形成一异化的词义。当这样社会语境中的功能体系扩大之后，便容易出现语言陷阱（所谓 “牢笼”、差劣的意识形态，乔治·奥威尔《政治与英语》）。</p>
+<p>（看到了吗？此处也精挑细选了论述的朦胧感。上段使用了未被详细挑明的晦涩、义项、语汇、社会语境等词，不知道屏幕前的读者又将怎样理解。）</p>
+</section>
+<section id="argumentation">
+<h3>Argumentation<a class="headerlink" href="#argumentation" title="Permalink to this heading">#</a></h3>
+<p>再对一些更加整体的话题补充一下。行文时我们常会<strong>引用</strong>其他语录，或小说中人物展开了言语交流，这里都涉及到嵌套宇宙 <span class="math notranslate nohighlight">\(\{\pi^1,\dots,\pi^{nested}\}\)</span>，其中 <span class="math notranslate nohighlight">\(\pi^{nested}\)</span> 是被引语言的所指，且基本都具有原宇宙中一些状态 <span class="math notranslate nohighlight">\(\pi^l\)</span> 作为信息的物理载体（如发言人物的讲话行为等，但 “根据……” 很可能只依附于虚拟状态）。</p>
+<p>在论述时，还会见到<strong>反驳性</strong>补充的现象（指会有与历史路径近似逆向的推进，并不一定有反驳这么显性，但对于读者原本所理解的一些较极化的词义会重新进行削弱；与之相对的<strong>支持性</strong>文本则沿着向论点的一个方向持续前进），这被概括为语言的<strong>晶体性</strong> crystallinity，亦即像在晶格里一样每个结晶出来的词汇都以量子化的方式推进意思，最终不断细化接近要点，见图。（图中还画了一种特殊的语言场合即辩论。）这是一种<strong>校正</strong>的方法，以阐明作者的论点所在（将正常读者的释义框限在可接受的小误差区域内，注意这不代表着论证的可靠性）。可以通过例题、举例与更多的段落/作品甚至社会层面进行校正。</p>
+<p>论述逻辑上，常见的两大类<strong>逻辑</strong>归纳/演绎可以简洁的表示为由远/近处的宇宙集合推向近/远处的宇宙集合。</p>
+<hr class="docutils" />
+<p>（我没有讨论包括无意识在内的一系列问题，但）我想应该用更多例子或者比上面更加清晰且优秀的理论框架来打败或修缮它，否则我可以自洽的维持这一体系并持续批驳那些企图通过长篇似明似暗的语文大论来阐释阐释学原理的人，因为这不是在写诗。</p>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./wonder"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../wonder.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">周五碎笔</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="24.8.2.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Frivolity: Attempts at Symmetry in Game</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">语言的几何学阐释</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#meaning">Meaning</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reading">Reading</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#language">Language</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#argumentation">Argumentation</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Laplx (Hao Chen)
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
