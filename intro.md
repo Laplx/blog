@@ -13,7 +13,7 @@ Click here for English version
 
 邮箱：laplx@foxmail.com  laplx@outlook.com
 
-单位：复旦大学经济学院
+单位：复旦大学
 
 ---
 
