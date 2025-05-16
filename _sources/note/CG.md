@@ -24,25 +24,24 @@ $$
 
 第二个等号代入了 $x_i$ 和 $\nabla f$ 的表达式。接下来我们要确定这些 $p_i$。共轭梯度法告诉我们，以下两个条件在我们目前的 setting 下等价：
 
-**Theorem**
-
+**Theorem** $\quad$ The following two are equivalent:
 $$
 \begin{align}
-\mathrm{(i)}& \quad p_i'Ap_j = 0,\ i\neq j \\
-\mathrm{(ii)}& \quad x_i = \arg\min_{x\in L_i}f(x),\ L_i := \text{span}\{p_0,\dots,p_{i-1}\}+x_0\tag{2}
+\mathrm{(i)}& \quad p_i'Ap_j = 0,\ i\neq j \tag{2} \\
+\mathrm{(ii)}& \quad x_i = \arg\min_{x\in L_i}f(x),\ L_i := \text{span}\{p_0,\dots,p_{i-1}\}+x_0 \tag{3}
 \end{align}
 $$
 
-归纳证明，因此 $\mathrm{(i)}$ 处可以修改为 $j<i$；初始位于 $x_0$，只有一个 $p_0$（很自然的，我们会先选择负梯度方向 $p_0 = b - Ax_0$），$$\mathrm{(i)}$$ 自动成立，我们只需要选取恰当的 $\alpha_0$ 则 $\mathrm{(ii)}$ 也符合。之后我们将在 $0,\dots,i$ 成立有 $\mathrm{(i)}$ $\mathrm{(ii)}$ 等价的情况下说明 $i+1$ 的正确性。
+归纳证明，因此 $\mathrm{(i)}$ 处可以修改为 $j<i$；初始位于 $x_0$，只有一个 $p_0$（很自然的，我们会先选择负梯度方向 $p_0 = b - Ax_0$），$\mathrm{(i)}$ 自动成立，我们只需要选取恰当的 $\alpha_0$ 则 $\mathrm{(ii)}$ 也符合。之后我们将在 $0,\dots,i$ 成立有 $\mathrm{(i)}$ $\mathrm{(ii)}$ 等价的情况下说明 $i+1$ 的正确性。
 
-$\mathrm{(i)}\rightarrow \mathrm{(ii)}$：我们需要说明，$\exists\ \alpha_i>0,\ \text{s.t. } x_{i+1} = x_i + \alpha_i p_i = \arg\min_{x\in L_{i+1}}f(x).$ $L_{i+1} = \{x\in \mathbb{R}^n|x = x_0 + \sum_{j=0}^{i}\gamma_j p_j, \gamma_j \in \mathbb{R}\}.$
+$\mathrm{(i)}\rightarrow \mathrm{(ii)}$：我们需要说明，$\exists\ \alpha_i>0,\ \text{s.t. } x_{i+1} = x_i + \alpha_i p_i = \arg\min_{x\in L_{i+1}}f(x).$ 其中 $L_{i+1} = \{x\in \mathbb{R}^n|x = x_0 + \sum_{j=0}^{i}\gamma_j p_j, \gamma_j \in \mathbb{R}\}.$
 
 $g_j(\gamma_j):=f(x),\ g_j'(\alpha_j)=0,\ j<i$ 立刻得到一个结论
 
 **Corollary 1**
 
 $$
-\nabla f_i'p_j = 0,\ \forall j<i \tag{3}
+\nabla f_i'p_j = 0,\ \forall j<i \tag{4}
 $$
 
 亦即 $\nabla f_i \perp (L_i - x_0)$；还有一个垂直的表现形式见下面。利用 $\mathrm{(i)}$ 可以证明上式。
@@ -52,7 +51,7 @@ $\mathrm{(ii)}\rightarrow \mathrm{(i)}$：同上面基本一致，注意利用�
 目前为止我们仍然没有给出明确的每步 $p_i$ 的获取方式。我们采用一种非常自然的想法，考虑到我们想要最快的下降，处在每一步时走的新维度应该由 $\nabla f_i$ 提供（但我们说了，直接沿 $\nabla f_i$ 并不是最理想的方法；我们希望看长远一点，因为它缺乏类似 2 的各步最优的协调性）。因此 $p_i = -\nabla f_i + \sum_{j=0}^{i-1}\beta_j p_j$ 看上去很合适，再对两边点乘 $p_j'A$ 即可得到各个 $\beta_j$；但我们希望更简洁一点，$p_i = -\nabla f_i + \beta_{i-1} p_{i-1}$ 同样是可行的。此时得
 
 $$
-\beta_i = \frac{p_{i-1}' A \nabla f_i}{p_{i-1}'Ap_{i-1}} \tag{4}
+\beta_i = \frac{p_{i-1}' A \nabla f_i}{p_{i-1}'Ap_{i-1}} \tag{5}
 $$
 
 在这一更新方式下，还可以发现
@@ -134,13 +133,13 @@ $$
 此时 $A$ 不存在了，一切都按照 $\nabla f$ 的那些表达式来。虽然我们仍然可以按照线搜索取出 $\alpha_i$，但上面的主要定理也不存在了，那么使用这个搜索方向的更新式还有用吗（尤其在步长并不是精确或采用其他准则的时候）？具体而言，针对使用 Fletcher-Reeves 格式的 $\beta$ 和 Strong Wolfe 条件（系数满足 $0<c_1<c_2<\frac{1}{2}$）的 $\alpha$，我们有
 
 $$
--\frac{1}{1-c_2} \leq \frac{\nabla f\left(x_k\right)^T p_k}{\left\|\nabla f\left(x_k\right)\right\|^2} \leq \frac{2 c_2-1}{1-c_2} \tag{5}
+-\frac{1}{1-c_2} \leq \frac{\nabla f\left(x_k\right)^T p_k}{\left\|\nabla f\left(x_k\right)\right\|^2} \leq \frac{2 c_2-1}{1-c_2} \tag{6}
 $$
 
 这保证了我们行走在下降方向上。但是足够好了吗？如果 $\left\|\nabla f\left(x_k\right)\right\|$ 和 $\nabla f\left(x_k\right)^T p_k$ 都很小，搜索方向几乎和梯度垂直且移动缓慢，它的自我修复能力并不强。下面是 Dai-Yuan 格式（易见在线性梯度时与我们前面的各式都等价），它在一定条件下能保证全局的收敛性。
 
 $$
-\beta_{k+1}=\frac{\nabla f\left(x_{k+1}\right)^T \nabla f\left(x_{k+1}\right)}{\left(\nabla f\left(x_{k+1}\right)-\nabla f\left(x_k\right)\right)^T p_k} \tag{6}
+\beta_{k+1}=\frac{\nabla f\left(x_{k+1}\right)^T \nabla f\left(x_{k+1}\right)}{\left(\nabla f\left(x_{k+1}\right)-\nabla f\left(x_k\right)\right)^T p_k} \tag{7}
 $$
 
 我们将用 Zoutendijk 条件证明。

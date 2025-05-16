@@ -420,28 +420,23 @@ document.write(`
 \alpha_i = -\frac{p_i'\nabla f_i}{p_i'Ap_i} = -\frac{p_i'A x_0}{p_i'Ap_i} \tag{1}
 \]</div>
 <p>第二个等号代入了 <span class="math notranslate nohighlight">\(x_i\)</span> 和 <span class="math notranslate nohighlight">\(\nabla f\)</span> 的表达式。接下来我们要确定这些 <span class="math notranslate nohighlight">\(p_i\)</span>。共轭梯度法告诉我们，以下两个条件在我们目前的 setting 下等价：</p>
-<p><strong>Theorem</strong></p>
+<p><strong>Theorem</strong> <span class="math notranslate nohighlight">\(\quad\)</span> The following two are equivalent:
+$$</p>
+<div class="amsmath math notranslate nohighlight" id="equation-69727ca7-e426-4ac5-a76c-acf4cf6fe46f">
+<span class="eqno">()<a class="headerlink" href="#equation-69727ca7-e426-4ac5-a76c-acf4cf6fe46f" title="Permalink to this equation">#</a></span>\[\begin{align}
+\mathrm{(i)}&amp; \quad p_i'Ap_j = 0,\ i\neq j \tag{2} \\
+\mathrm{(ii)}&amp; \quad x_i = \arg\min_{x\in L_i}f(x),\ L_i := \text{span}\{p_0,\dots,p_{i-1}\}+x_0 \tag{3}
+\end{align}\]</div>
 <div class="math notranslate nohighlight">
-\[\begin{split}
-\begin{align}
-\mathrm{(i)}&amp; \quad p_i'Ap_j = 0,\ i\neq j \\
-\mathrm{(ii)}&amp; \quad x_i = \arg\min_{x\in L_i}f(x),\ L_i := \text{span}\{p_0,\dots,p_{i-1}\}+x_0\tag{2}
-\end{align}
-\end{split}\]</div>
-<p>归纳证明，因此 <span class="math notranslate nohighlight">\(\mathrm{(i)}\)</span> 处可以修改为 <span class="math notranslate nohighlight">\(j&lt;i\)</span>；初始位于 <span class="math notranslate nohighlight">\(x_0\)</span>，只有一个 <span class="math notranslate nohighlight">\(p_0\)</span>（很自然的，我们会先选择负梯度方向 <span class="math notranslate nohighlight">\(p_0 = b - Ax_0\)</span>），$<span class="math notranslate nohighlight">\(\mathrm{(i)}\)</span><span class="math notranslate nohighlight">\( 自动成立，我们只需要选取恰当的 \)</span>\alpha_0<span class="math notranslate nohighlight">\( 则 \)</span>\mathrm{(ii)}<span class="math notranslate nohighlight">\( 也符合。之后我们将在 \)</span>0,\dots,i<span class="math notranslate nohighlight">\( 成立有 \)</span>\mathrm{(i)}<span class="math notranslate nohighlight">\( \)</span>\mathrm{(ii)}<span class="math notranslate nohighlight">\( 等价的情况下说明 \)</span>i+1$ 的正确性。</p>
-<p><span class="math notranslate nohighlight">\(\mathrm{(i)}\rightarrow \mathrm{(ii)}\)</span>：我们需要说明，<span class="math notranslate nohighlight">\(\exists\ \alpha_i&gt;0,\ \text{s.t. } x_{i+1} = x_i + \alpha_i p_i = \arg\min_{x\in L_{i+1}}f(x).\)</span> <span class="math notranslate nohighlight">\(L_{i+1} = \{x\in \mathbb{R}^n|x = x_0 + \sum_{j=0}^{i}\gamma_j p_j, \gamma_j \in \mathbb{R}\}.\)</span></p>
-<p><span class="math notranslate nohighlight">\(g_j(\gamma_j):=f(x),\ g_j'(\alpha_j)=0,\ j&lt;i\)</span> 立刻得到一个结论</p>
-<p><strong>Corollary 1</strong></p>
-<div class="math notranslate nohighlight">
-\[
-\nabla f_i'p_j = 0,\ \forall j&lt;i \tag{3}
-\]</div>
+\[ \begin{align}\begin{aligned}归纳证明，因此 $\mathrm{(i)}$ 处可以修改为 $j&lt;i$；初始位于 $x_0$，只有一个 $p_0$（很自然的，我们会先选择负梯度方向 $p_0 = b - Ax_0$），$\mathrm{(i)}$ 自动成立，我们只需要选取恰当的 $\alpha_0$ 则 $\mathrm{(ii)}$ 也符合。之后我们将在 $0,\dots,i$ 成立有 $\mathrm{(i)}$ $\mathrm{(ii)}$ 等价的情况下说明 $i+1$ 的正确性。\\$\mathrm{(i)}\rightarrow \mathrm{(ii)}$：我们需要说明，$\exists\ \alpha_i&gt;0,\ \text{s.t. } x_{i+1} = x_i + \alpha_i p_i = \arg\min_{x\in L_{i+1}}f(x).$ 其中 $L_{i+1} = \{x\in \mathbb{R}^n|x = x_0 + \sum_{j=0}^{i}\gamma_j p_j, \gamma_j \in \mathbb{R}\}.$\\$g_j(\gamma_j):=f(x),\ g_j'(\alpha_j)=0,\ j&lt;i$ 立刻得到一个结论\\**Corollary 1**\end{aligned}\end{align} \]</div>
+<p>\nabla f_i'p_j = 0,\ \forall j&lt;i \tag{4}
+$$</p>
 <p>亦即 <span class="math notranslate nohighlight">\(\nabla f_i \perp (L_i - x_0)\)</span>；还有一个垂直的表现形式见下面。利用 <span class="math notranslate nohighlight">\(\mathrm{(i)}\)</span> 可以证明上式。</p>
 <p><span class="math notranslate nohighlight">\(\mathrm{(ii)}\rightarrow \mathrm{(i)}\)</span>：同上面基本一致，注意利用归纳的假设（<span class="math notranslate nohighlight">\(\leq i\)</span> 之内皆成立有 <span class="math notranslate nohighlight">\(\mathrm{(i)}\)</span>）<span class="math notranslate nohighlight">\(\Box\)</span></p>
 <p>目前为止我们仍然没有给出明确的每步 <span class="math notranslate nohighlight">\(p_i\)</span> 的获取方式。我们采用一种非常自然的想法，考虑到我们想要最快的下降，处在每一步时走的新维度应该由 <span class="math notranslate nohighlight">\(\nabla f_i\)</span> 提供（但我们说了，直接沿 <span class="math notranslate nohighlight">\(\nabla f_i\)</span> 并不是最理想的方法；我们希望看长远一点，因为它缺乏类似 2 的各步最优的协调性）。因此 <span class="math notranslate nohighlight">\(p_i = -\nabla f_i + \sum_{j=0}^{i-1}\beta_j p_j\)</span> 看上去很合适，再对两边点乘 <span class="math notranslate nohighlight">\(p_j'A\)</span> 即可得到各个 <span class="math notranslate nohighlight">\(\beta_j\)</span>；但我们希望更简洁一点，<span class="math notranslate nohighlight">\(p_i = -\nabla f_i + \beta_{i-1} p_{i-1}\)</span> 同样是可行的。此时得</p>
 <div class="math notranslate nohighlight">
 \[
-\beta_i = \frac{p_{i-1}' A \nabla f_i}{p_{i-1}'Ap_{i-1}} \tag{4}
+\beta_i = \frac{p_{i-1}' A \nabla f_i}{p_{i-1}'Ap_{i-1}} \tag{5}
 \]</div>
 <p>在这一更新方式下，还可以发现</p>
 <div class="math notranslate nohighlight">
@@ -497,12 +492,12 @@ x_i \in L_i &amp; =  \text{span}\{p_0,p_1,\dots,p_{i-1}\}+x_0 \\ &amp; = \text{s
 <p>此时 <span class="math notranslate nohighlight">\(A\)</span> 不存在了，一切都按照 <span class="math notranslate nohighlight">\(\nabla f\)</span> 的那些表达式来。虽然我们仍然可以按照线搜索取出 <span class="math notranslate nohighlight">\(\alpha_i\)</span>，但上面的主要定理也不存在了，那么使用这个搜索方向的更新式还有用吗（尤其在步长并不是精确或采用其他准则的时候）？具体而言，针对使用 Fletcher-Reeves 格式的 <span class="math notranslate nohighlight">\(\beta\)</span> 和 Strong Wolfe 条件（系数满足 <span class="math notranslate nohighlight">\(0&lt;c_1&lt;c_2&lt;\frac{1}{2}\)</span>）的 <span class="math notranslate nohighlight">\(\alpha\)</span>，我们有</p>
 <div class="math notranslate nohighlight">
 \[
--\frac{1}{1-c_2} \leq \frac{\nabla f\left(x_k\right)^T p_k}{\left\|\nabla f\left(x_k\right)\right\|^2} \leq \frac{2 c_2-1}{1-c_2} \tag{5}
+-\frac{1}{1-c_2} \leq \frac{\nabla f\left(x_k\right)^T p_k}{\left\|\nabla f\left(x_k\right)\right\|^2} \leq \frac{2 c_2-1}{1-c_2} \tag{6}
 \]</div>
 <p>这保证了我们行走在下降方向上。但是足够好了吗？如果 <span class="math notranslate nohighlight">\(\left\|\nabla f\left(x_k\right)\right\|\)</span> 和 <span class="math notranslate nohighlight">\(\nabla f\left(x_k\right)^T p_k\)</span> 都很小，搜索方向几乎和梯度垂直且移动缓慢，它的自我修复能力并不强。下面是 Dai-Yuan 格式（易见在线性梯度时与我们前面的各式都等价），它在一定条件下能保证全局的收敛性。</p>
 <div class="math notranslate nohighlight">
 \[
-\beta_{k+1}=\frac{\nabla f\left(x_{k+1}\right)^T \nabla f\left(x_{k+1}\right)}{\left(\nabla f\left(x_{k+1}\right)-\nabla f\left(x_k\right)\right)^T p_k} \tag{6}
+\beta_{k+1}=\frac{\nabla f\left(x_{k+1}\right)^T \nabla f\left(x_{k+1}\right)}{\left(\nabla f\left(x_{k+1}\right)-\nabla f\left(x_k\right)\right)^T p_k} \tag{7}
 \]</div>
 <p>我们将用 Zoutendijk 条件证明。</p>
 </section>
