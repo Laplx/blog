@@ -24,14 +24,13 @@ $$
 
 第二个等号代入了 $x_i$ 和 $\nabla f$ 的表达式。接下来我们要确定这些 $p_i$。共轭梯度法告诉我们，以下两个条件在我们目前的 setting 下等价：
 
-```{prf: theorem}
+**Theorem**
 $$
 \begin{align}
 \mathrm{(i)}& \quad p_i'Ap_j = 0,\ i\neq j \\
 \mathrm{(ii)}& \quad x_i = \arg\min_{x\in L_i}f(x),\ L_i := \text{span}\{p_0,\dots,p_{i-1}\}+x_0\tag{2}
 \end{align}
 $$
-```
 
 归纳证明，因此 $\mathrm{(i)}$ 处可以修改为 $j<i$；初始位于 $x_0$，只有一个 $p_0$（很自然的，我们会先选择负梯度方向 $p_0 = b - Ax_0$），$$\mathrm{(i)}$$ 自动成立，我们只需要选取恰当的 $\alpha_0$ 则 $\mathrm{(ii)}$ 也符合。之后我们将在 $0,\dots,i$ 成立有 $\mathrm{(i)}$ $\mathrm{(ii)}$ 等价的情况下说明 $i+1$ 的正确性。
 
@@ -39,13 +38,12 @@ $\mathrm{(i)}\rightarrow \mathrm{(ii)}$：我们需要说明，$\exists\ \alpha_
 
 $g_j(\gamma_j):=f(x),\ g_j'(\alpha_j)=0,\ j<i$ 立刻得到一个结论
 
-```{prf: corollary}
+**Corollary 1**
 $$
 \nabla f_i'p_j = 0,\ \forall j<i \tag{3}
 $$
-```
 
-亦即 $\nabla f_i \perp (L_i - x_0)$。利用 $\mathrm{(i)}$ 可以证明上式。
+亦即 $\nabla f_i \perp (L_i - x_0)$；还有一个垂直的表现形式见下面。利用 $\mathrm{(i)}$ 可以证明上式。
 
 $\mathrm{(ii)}\rightarrow \mathrm{(i)}$：同上面基本一致，注意利用归纳的假设（$\leq i$ 之内皆成立有 $\mathrm{(i)}$）$\Box$
 
@@ -63,13 +61,12 @@ $$
 
 以及（利用 $p_0 = - \nabla f_0,\ \nabla f_i = \nabla f_0 + \sum_{j=0}^{i-1}\alpha_j A p_j.$）
 
-```{prf: corollary}
+**Corollary 2**
 $$
 \begin{align}
 x_i \in L_i & =  \text{span}\{p_0,p_1,\dots,p_{i-1}\}+x_0 \\ & = \text{span}\{\nabla f_0,\nabla f_1,\dots,\nabla f_{i-1}\}+x_0 \\ & = \text{span}\{\nabla f_0, A \nabla f_0,\dots,A^{i-1}\nabla f_0\}+x_0
 \end{align}
 $$
-```
 
 同时还有（$\text{(4')}$ 由 $\text{(4)}$ 上下同乘 $\alpha_{i-1}$，可称 Fletcher–Reeves 式）
 
@@ -84,32 +81,52 @@ $$
 到这里最开始的图景应该已经解释清楚了。总结成算法如下（注意我们尽量减少矩阵相乘）：
 
 > **Input**: Initial $x_0$;
+>
 > **Output**: $x_k$;
-> 	Set $r_0 \leftarrow A x_0-b, p_0 \leftarrow-r_0, k \leftarrow 0$;
->     **while** $r_k \neq 0$ **do**
->         $\alpha_k \leftarrow \frac{r_k^T r_k}{p_k^T A p_k}$;
->         $x_{k+1} \leftarrow x_k+\alpha_k p_k$;
->         $r_{k+1} \leftarrow r_k+\alpha_k A p_k$;
->         $\beta_{k+1} \leftarrow \frac{r_{k+1}^T r_{k+1}}{r_k^T r_k}$;
->         $p_{k+1} \leftarrow-r_{k+1}+\beta_{k+1} p_k$;
->         $k \leftarrow k+1$;
->     **end while**
+>
+> ​	Set $r_0 \leftarrow A x_0-b, p_0 \leftarrow-r_0, k \leftarrow 0$;
+>
+>  **while** $r_k \neq 0$ **do**
+>
+> ​     $\alpha_k \leftarrow \frac{r_k^T r_k}{p_k^T A p_k}$;
+>
+> ​     $x_{k+1} \leftarrow x_k+\alpha_k p_k$;
+>
+> ​     $r_{k+1} \leftarrow r_k+\alpha_k A p_k$;
+>
+> ​     $\beta_{k+1} \leftarrow \frac{r_{k+1}^T r_{k+1}}{r_k^T r_k}$;
+>
+> ​     $p_{k+1} \leftarrow-r_{k+1}+\beta_{k+1} p_k$;
+>
+> ​     $k \leftarrow k+1$;
+>
+>  **end while**
 
 ---
 
 假设我们对目标函数的性质没有这么了解，一般的 $f$ 也可以使用上面的算法吗？直接的修改版本是：
 
 > **Input**: Initial $x_0$;
+>
 > **Output**: $x_k$;
-> 	Set $r_0 \leftarrow \nabla f(x_0), p_0 \leftarrow-r_0, k \leftarrow 0$;
->     **while** $r_k \neq 0$ **do**
->         $\alpha_k \leftarrow \text{step size}$;
->         $x_{k+1} \leftarrow x_k+\alpha_k p_k$;
->         $r_{k+1} \leftarrow \nabla f(x_{k+1})$;
->         $\beta_{k+1} \leftarrow -\frac{\nabla f_i'\nabla f_i}{\nabla f_{i-1}'\nabla f_{i-1}}$;
->         $p_{k+1} \leftarrow -r_{k+1}+\beta_{k+1} p_k$;
->         $k \leftarrow k+1$;
->     **end while**
+>
+> ​	Set $r_0 \leftarrow \nabla f(x_0), p_0 \leftarrow-r_0, k \leftarrow 0$;
+>
+>  **while** $r_k \neq 0$ **do**
+>
+> ​     $\alpha_k \leftarrow \text{step size}$;
+>
+> ​     $x_{k+1} \leftarrow x_k+\alpha_k p_k$;
+>
+> ​     $r_{k+1} \leftarrow \nabla f(x_{k+1})$;
+>
+> ​     $\beta_{k+1} \leftarrow -\frac{\nabla f_i'\nabla f_i}{\nabla f_{i-1}'\nabla f_{i-1}}$;
+>
+> ​     $p_{k+1} \leftarrow -r_{k+1}+\beta_{k+1} p_k$;
+>
+> ​     $k \leftarrow k+1$;
+>
+>  **end while**
 
 此时 $A$ 不存在了，一切都按照 $\nabla f$ 的那些表达式来。虽然我们仍然可以按照线搜索取出 $\alpha_i$，但上面的主要定理也不存在了，那么使用这个搜索方向的更新式还有用吗（尤其在步长并不是精确或采用其他准则的时候）？具体而言，针对使用 Fletcher-Reeves 格式的 $\beta$ 和 Strong Wolfe 条件（系数满足 $0<c_1<c_2<\frac{1}{2}$）的 $\alpha$，我们有
 
