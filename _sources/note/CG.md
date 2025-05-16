@@ -40,6 +40,7 @@ $\mathrm{(i)}\rightarrow \mathrm{(ii)}$：我们需要说明，$\exists\ \alpha_
 $g_j(\gamma_j):=f(x),\ g_j'(\alpha_j)=0,\ j<i$ 立刻得到一个结论
 
 **Corollary 1**
+
 $$
 \nabla f_i'p_j = 0,\ \forall j<i \tag{4}
 $$

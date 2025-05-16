@@ -431,10 +431,11 @@ document.write(`
 <p>归纳证明，因此 <span class="math notranslate nohighlight">\(\mathrm{(i)}\)</span> 处可以修改为 <span class="math notranslate nohighlight">\(j&lt;i\)</span>；初始位于 <span class="math notranslate nohighlight">\(x_0\)</span>，只有一个 <span class="math notranslate nohighlight">\(p_0\)</span>（很自然的，我们会先选择负梯度方向 <span class="math notranslate nohighlight">\(p_0 = b - Ax_0\)</span>），<span class="math notranslate nohighlight">\(\mathrm{(i)}\)</span> 自动成立，我们只需要选取恰当的 <span class="math notranslate nohighlight">\(\alpha_0\)</span> 则 <span class="math notranslate nohighlight">\(\mathrm{(ii)}\)</span> 也符合。之后我们将在 <span class="math notranslate nohighlight">\(0,\dots,i\)</span> 成立有 <span class="math notranslate nohighlight">\(\mathrm{(i)}\)</span> <span class="math notranslate nohighlight">\(\mathrm{(ii)}\)</span> 等价的情况下说明 <span class="math notranslate nohighlight">\(i+1\)</span> 的正确性。</p>
 <p><span class="math notranslate nohighlight">\(\mathrm{(i)}\rightarrow \mathrm{(ii)}\)</span>：我们需要说明，<span class="math notranslate nohighlight">\(\exists\ \alpha_i&gt;0,\ \text{s.t. } x_{i+1} = x_i + \alpha_i p_i = \arg\min_{x\in L_{i+1}}f(x).\)</span> 其中 <span class="math notranslate nohighlight">\(L_{i+1} = \{x\in \mathbb{R}^n|x = x_0 + \sum_{j=0}^{i}\gamma_j p_j, \gamma_j \in \mathbb{R}\}.\)</span>（注意这里想说的核心是，当我们把视野从子空间 <span class="math notranslate nohighlight">\(L_i\)</span> 扩展到 <span class="math notranslate nohighlight">\(L_{i+1}\)</span> 时，原先方向上均无需调整。）</p>
 <p><span class="math notranslate nohighlight">\(g_j(\gamma_j):=f(x),\ g_j'(\alpha_j)=0,\ j&lt;i\)</span> 立刻得到一个结论</p>
-<p><strong>Corollary 1</strong>
-$<span class="math notranslate nohighlight">\(
+<p><strong>Corollary 1</strong></p>
+<div class="math notranslate nohighlight">
+\[
 \nabla f_i'p_j = 0,\ \forall j&lt;i \tag{4}
-\)</span>$</p>
+\]</div>
 <p>亦即 <span class="math notranslate nohighlight">\(\nabla f_i \perp (L_i - x_0)\)</span>；还有一个垂直的表现形式见下面。利用 <span class="math notranslate nohighlight">\(\mathrm{(i)}\)</span> 可以证明上式。</p>
 <p><span class="math notranslate nohighlight">\(\mathrm{(ii)}\rightarrow \mathrm{(i)}\)</span>：同上面基本一致，注意利用归纳的假设（<span class="math notranslate nohighlight">\(\leq i\)</span> 之内皆成立有 <span class="math notranslate nohighlight">\(\mathrm{(i)}\)</span>）<span class="math notranslate nohighlight">\(\Box\)</span></p>
 <p>从上面定理可以马上得出共轭梯度法（二次函数下）在 <span class="math notranslate nohighlight">\(n\)</span> 步之内必定达到最优。因为 <span class="math notranslate nohighlight">\(\mathrm{(i)}\)</span> 表明了 <span class="math notranslate nohighlight">\(p_i\)</span> 们线性无关，故 <span class="math notranslate nohighlight">\(L_n\)</span> 应为 <span class="math notranslate nohighlight">\(\mathbb{R}^n\)</span>，其上最小值点 <span class="math notranslate nohighlight">\(x_n = x^*\)</span>。</p>
