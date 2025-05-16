@@ -83,39 +83,33 @@ $$
 
 到这里最开始的图景应该已经解释清楚了。总结成算法如下（注意我们尽量减少矩阵相乘）：
 
-```{prf:algorithm}
-Linear Conjugate Gradient Method
-Input: Initial $x_0$;
-Output: $x_k$;
-	Set $r_0 \leftarrow A x_0-b, p_0 \leftarrow-r_0, k \leftarrow 0$;
-    while $r_k \neq 0$ do
-        $\alpha_k \leftarrow \frac{r_k^T r_k}{p_k^T A p_k}$;
-        $x_{k+1} \leftarrow x_k+\alpha_k p_k$;
-        $r_{k+1} \leftarrow r_k+\alpha_k A p_k$;
-        $\beta_{k+1} \leftarrow \frac{r_{k+1}^T r_{k+1}}{r_k^T r_k}$;
-        $p_{k+1} \leftarrow-r_{k+1}+\beta_{k+1} p_k$;
-        $7, k \leftarrow k+1$;
-    end while
-```
+> **Input**: Initial $x_0$;
+> **Output**: $x_k$;
+> 	Set $r_0 \leftarrow A x_0-b, p_0 \leftarrow-r_0, k \leftarrow 0$;
+>     **while** $r_k \neq 0$ **do**
+>         $\alpha_k \leftarrow \frac{r_k^T r_k}{p_k^T A p_k}$;
+>         $x_{k+1} \leftarrow x_k+\alpha_k p_k$;
+>         $r_{k+1} \leftarrow r_k+\alpha_k A p_k$;
+>         $\beta_{k+1} \leftarrow \frac{r_{k+1}^T r_{k+1}}{r_k^T r_k}$;
+>         $p_{k+1} \leftarrow-r_{k+1}+\beta_{k+1} p_k$;
+>         $k \leftarrow k+1$;
+>     **end while**
 
 ---
 
 假设我们对目标函数的性质没有这么了解，一般的 $f$ 也可以使用上面的算法吗？直接的修改版本是：
 
-```{prf:algorithm}
-Linear Conjugate Gradient Method
-Input: Initial $x_0$;
-Output: $x_k$;
-	Set $r_0 \leftarrow \nabla f(x_0), p_0 \leftarrow-r_0, k \leftarrow 0$;
-    while $r_k \neq 0$ do
-        $\alpha_k \leftarrow \text{step size}$;
-        $x_{k+1} \leftarrow x_k+\alpha_k p_k$;
-        $r_{k+1} \leftarrow \nabla f(x_{k+1})$;
-        $\beta_{k+1} \leftarrow -\frac{\nabla f_i'\nabla f_i}{\nabla f_{i-1}'\nabla f_{i-1}}$;
-        $p_{k+1} \leftarrow -r_{k+1}+\beta_{k+1} p_k$;
-        $7, k \leftarrow k+1$;
-    end while
-```
+> **Input**: Initial $x_0$;
+> **Output**: $x_k$;
+> 	Set $r_0 \leftarrow \nabla f(x_0), p_0 \leftarrow-r_0, k \leftarrow 0$;
+>     **while** $r_k \neq 0$ **do**
+>         $\alpha_k \leftarrow \text{step size}$;
+>         $x_{k+1} \leftarrow x_k+\alpha_k p_k$;
+>         $r_{k+1} \leftarrow \nabla f(x_{k+1})$;
+>         $\beta_{k+1} \leftarrow -\frac{\nabla f_i'\nabla f_i}{\nabla f_{i-1}'\nabla f_{i-1}}$;
+>         $p_{k+1} \leftarrow -r_{k+1}+\beta_{k+1} p_k$;
+>         $k \leftarrow k+1$;
+>     **end while**
 
 此时 $A$ 不存在了，一切都按照 $\nabla f$ 的那些表达式来。虽然我们仍然可以按照线搜索取出 $\alpha_i$，但上面的主要定理也不存在了，那么使用这个搜索方向的更新式还有用吗（尤其在步长并不是精确或采用其他准则的时候）？具体而言，针对使用 Fletcher-Reeves 格式的 $\beta$ 和 Strong Wolfe 条件（系数满足 $0<c_1<c_2<\frac{1}{2}$）的 $\alpha$，我们有
 
