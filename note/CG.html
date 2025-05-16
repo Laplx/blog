@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>CorFin Pre &#8212; Laplx&#39;s Blog</title>
+    <title>共轭梯度法（CG Method） &#8212; Laplx&#39;s Blog</title>
   
   
   
@@ -70,7 +70,9 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'note/corfin_pre';</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'note/CG';</script>
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -304,7 +306,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../_sources/note/corfin_pre.md" target="_blank"
+      <li><a href="../_sources/note/CG.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -386,7 +388,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>CorFin Pre</h1>
+    <h1>共轭梯度法（CG Method）</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -400,29 +402,109 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="corfin-pre">
-<h1>CorFin Pre<a class="headerlink" href="#corfin-pre" title="Permalink to this heading">#</a></h1>
-<p><img alt="0001" src="../_images/00012.jpg" /></p>
-<p><img alt="0002" src="../_images/00022.jpg" /></p>
-<p><img alt="0003" src="../_images/00032.jpg" /></p>
-<p><img alt="0004" src="../_images/00042.jpg" /></p>
-<p><img alt="0005" src="../_images/00052.jpg" /></p>
-<p><img alt="0006" src="../_images/00062.jpg" /></p>
-<p><img alt="0007" src="../_images/00072.jpg" /></p>
-<p><img alt="0008" src="../_images/00082.jpg" /></p>
-<p><img alt="0009" src="../_images/00092.jpg" /></p>
-<p><img alt="0010" src="../_images/00102.jpg" /></p>
-<p><img alt="0011" src="../_images/00112.jpg" /></p>
-<p><img alt="0012" src="../_images/00122.jpg" /></p>
-<p><img alt="0013" src="../_images/00132.jpg" /></p>
-<p><img alt="0014" src="../_images/00142.jpg" /></p>
-<p><img alt="0015" src="../_images/00152.jpg" /></p>
-<p><img alt="0016" src="../_images/00162.jpg" /></p>
-<p><img alt="0017" src="../_images/00172.jpg" /></p>
-<p><img alt="0018" src="../_images/00182.jpg" /></p>
-<p><img alt="0019" src="../_images/00192.jpg" /></p>
-<p><img alt="0020" src="../_images/00202.jpg" /></p>
-<p><img alt="0021" src="../_images/00212.jpg" /></p>
+  <section class="tex2jax_ignore mathjax_ignore" id="cg-method">
+<h1>共轭梯度法（CG Method）<a class="headerlink" href="#cg-method" title="Permalink to this heading">#</a></h1>
+<p>如果初始点的选择不好或者函数行为不好时，最速下降法可能并不理想。我们先从几何和直觉上展示共轭梯度法，同时可以在后文理清数学逻辑后再来看看这两张图。</p>
+<p><img alt="CG" src="../_images/CG.jpg" /></p>
+<p>对于精确线搜索，最速下降法的前后两步的下降方向必定是垂直的，从而导致了可能的 zigzag 现象。共轭梯度法所选择的共轭方向 <span class="math notranslate nohighlight">\(p_i\)</span> 更加具备全局性；例如图中的二次函数 <span class="math notranslate nohighlight">\(f=\frac{1}{2}x'Ax-b'x,\ \nabla f = Ax-b\)</span>，第二步的方向一定指向最优点 <span class="math notranslate nohighlight">\(Ax^*=b\)</span>。右图可见共轭方向并不一定垂直，而是 <span class="math notranslate nohighlight">\(A\)</span> 意义下的垂直：<span class="math notranslate nohighlight">\(p_i'Ap_j = 0,\ i\neq j\)</span>。注意到对于 <span class="math notranslate nohighlight">\(A\in \mathbb{S}_+\)</span>，易证这一组 <span class="math notranslate nohighlight">\(\{p_i\}_{i=1}^n\)</span> 线性独立，我们希望逐步获得 <span class="math notranslate nohighlight">\(x^*\)</span> 在这组基上的表示。</p>
+<hr class="docutils" />
+<p>我们先考虑线性版本（即上面的 <span class="math notranslate nohighlight">\(f\)</span>）。</p>
+<div class="math notranslate nohighlight">
+\[
+\dots \overset{p_{i-1}}{\longrightarrow} x_i \overset{p_{i}}{\longrightarrow} \dots
+\]</div>
+<p>假装我们能获取每一步的搜索方向 <span class="math notranslate nohighlight">\(p_i\)</span>，那么由精确线搜索知 <span class="math notranslate nohighlight">\(p_i \perp -\nabla f_{i+1}\)</span>，其中 <span class="math notranslate nohighlight">\(\nabla f_{i+1} := \nabla f(x_{i+1})\)</span>，且 <span class="math notranslate nohighlight">\(x_i = x_0 + \sum_{j=0}^{i-1}\alpha_j p_j\)</span>，<span class="math notranslate nohighlight">\(\alpha_i\)</span> 记步长。</p>
+<p>同时我们可以直接得到一个关于搜索步长的表达式，对 <span class="math notranslate nohighlight">\(f(x_i + \alpha_i p_i) = g(\alpha_i),\ g'(\alpha_i) = 0\)</span> 得到</p>
+<div class="math notranslate nohighlight">
+\[
+\alpha_i = -\frac{p_i'\nabla f_i}{p_i'Ap_i} = -\frac{p_i'A x_0}{p_i'Ap_i} \tag{1}
+\]</div>
+<p>第二个等号代入了 <span class="math notranslate nohighlight">\(x_i\)</span> 和 <span class="math notranslate nohighlight">\(\nabla f\)</span> 的表达式。接下来我们要确定这些 <span class="math notranslate nohighlight">\(p_i\)</span>。共轭梯度法告诉我们，以下两个条件在我们目前的 setting 下等价：</p>
+<div class="highlight-{prf: notranslate"><div class="highlight"><pre><span></span>$$
+\begin{align}
+\mathrm{(i)}&amp; \quad p_i&#39;Ap_j = 0,\ i\neq j \\
+\mathrm{(ii)}&amp; \quad x_i = \arg\min_{x\in L_i}f(x),\ L_i := \text{span}\{p_0,\dots,p_{i-1}\}+x_0\tag{2}
+\end{align}
+$$
+</pre></div>
+</div>
+<p>归纳证明，因此 <span class="math notranslate nohighlight">\(\mathrm{(i)}\)</span> 处可以修改为 <span class="math notranslate nohighlight">\(j&lt;i\)</span>；初始位于 <span class="math notranslate nohighlight">\(x_0\)</span>，只有一个 <span class="math notranslate nohighlight">\(p_0\)</span>（很自然的，我们会先选择负梯度方向 <span class="math notranslate nohighlight">\(p_0 = b - Ax_0\)</span>），$<span class="math notranslate nohighlight">\(\mathrm{(i)}\)</span><span class="math notranslate nohighlight">\( 自动成立，我们只需要选取恰当的 \)</span>\alpha_0<span class="math notranslate nohighlight">\( 则 \)</span>\mathrm{(ii)}<span class="math notranslate nohighlight">\( 也符合。之后我们将在 \)</span>0,\dots,i<span class="math notranslate nohighlight">\( 成立有 \)</span>\mathrm{(i)}<span class="math notranslate nohighlight">\( \)</span>\mathrm{(ii)}<span class="math notranslate nohighlight">\( 等价的情况下说明 \)</span>i+1$ 的正确性。</p>
+<p><span class="math notranslate nohighlight">\(\mathrm{(i)}\rightarrow \mathrm{(ii)}\)</span>：我们需要说明，<span class="math notranslate nohighlight">\(\exists\ \alpha_i&gt;0,\ \text{s.t. } x_{i+1} = x_i + \alpha_i p_i = \arg\min_{x\in L_{i+1}}f(x).\)</span> <span class="math notranslate nohighlight">\(L_{i+1} = \{x\in \mathbb{R}^n|x = x_0 + \sum_{j=0}^{i}\gamma_j p_j, \gamma_j \in \mathbb{R}\}.\)</span></p>
+<p><span class="math notranslate nohighlight">\(g_j(\gamma_j):=f(x),\ g_j'(\alpha_j)=0,\ j&lt;i\)</span> 立刻得到一个结论</p>
+<div class="highlight-{prf: notranslate"><div class="highlight"><pre><span></span>$$
+\nabla f_i&#39;p_j = 0,\ \forall j&lt;i \tag{3}
+$$
+</pre></div>
+</div>
+<p>亦即 <span class="math notranslate nohighlight">\(\nabla f_i \perp (L_i - x_0)\)</span>。利用 <span class="math notranslate nohighlight">\(\mathrm{(i)}\)</span> 可以证明上式。</p>
+<p><span class="math notranslate nohighlight">\(\mathrm{(ii)}\rightarrow \mathrm{(i)}\)</span>：同上面基本一致，注意利用归纳的假设（<span class="math notranslate nohighlight">\(\leq i\)</span> 之内皆成立有 <span class="math notranslate nohighlight">\(\mathrm{(i)}\)</span>）<span class="math notranslate nohighlight">\(\Box\)</span></p>
+<p>目前为止我们仍然没有给出明确的每步 <span class="math notranslate nohighlight">\(p_i\)</span> 的获取方式。我们采用一种非常自然的想法，考虑到我们想要最快的下降，处在每一步时走的新维度应该由 <span class="math notranslate nohighlight">\(\nabla f_i\)</span> 提供（但我们说了，直接沿 <span class="math notranslate nohighlight">\(\nabla f_i\)</span> 并不是最理想的方法；我们希望看长远一点，因为它缺乏类似 2 的各步最优的协调性）。因此 <span class="math notranslate nohighlight">\(p_i = -\nabla f_i + \sum_{j=0}^{i-1}\beta_j p_j\)</span> 看上去很合适，再对两边点乘 <span class="math notranslate nohighlight">\(p_j'A\)</span> 即可得到各个 <span class="math notranslate nohighlight">\(\beta_j\)</span>；但我们希望更简洁一点，<span class="math notranslate nohighlight">\(p_i = -\nabla f_i + \beta_{i-1} p_{i-1}\)</span> 同样是可行的。此时得</p>
+<div class="math notranslate nohighlight">
+\[
+\beta_i = \frac{p_{i-1}' A \nabla f_i}{p_{i-1}'Ap_{i-1}} \tag{4}
+\]</div>
+<p>在这一更新方式下，还可以发现</p>
+<div class="math notranslate nohighlight">
+\[
+\nabla f_i'\nabla f_j = 0,\ \forall j&lt;i \tag{3'}
+\]</div>
+<p>以及（利用 <span class="math notranslate nohighlight">\(p_0 = - \nabla f_0,\ \nabla f_i = \nabla f_0 + \sum_{j=0}^{i-1}\alpha_j A p_j.\)</span>）</p>
+<div class="highlight-{prf: notranslate"><div class="highlight"><pre><span></span>$$
+\begin{align}
+x_i \in L_i &amp; =  \text{span}\{p_0,p_1,\dots,p_{i-1}\}+x_0 \\ &amp; = \text{span}\{\nabla f_0,\nabla f_1,\dots,\nabla f_{i-1}\}+x_0 \\ &amp; = \text{span}\{\nabla f_0, A \nabla f_0,\dots,A^{i-1}\nabla f_0\}+x_0
+\end{align}
+$$
+</pre></div>
+</div>
+<p>同时还有（<span class="math notranslate nohighlight">\(\text{(4')}\)</span> 由 <span class="math notranslate nohighlight">\(\text{(4)}\)</span> 上下同乘 <span class="math notranslate nohighlight">\(\alpha_{i-1}\)</span>，可称 Fletcher–Reeves 式）</p>
+<div class="math notranslate nohighlight">
+\[
+\alpha_i = -\frac{\nabla f_i'\nabla f_i}{p_i'Ap_i} \tag{1'}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+\beta_i = -\frac{\nabla f_i'\nabla f_i}{\nabla f_{i-1}'\nabla f_{i-1}} \tag{4'}
+\]</div>
+<p>到这里最开始的图景应该已经解释清楚了。总结成算法如下（注意我们尽量减少矩阵相乘）：</p>
+<blockquote>
+<div><p><strong>Input</strong>: Initial <span class="math notranslate nohighlight">\(x_0\)</span>;
+<strong>Output</strong>: <span class="math notranslate nohighlight">\(x_k\)</span>;
+Set <span class="math notranslate nohighlight">\(r_0 \leftarrow A x_0-b, p_0 \leftarrow-r_0, k \leftarrow 0\)</span>;
+<strong>while</strong> <span class="math notranslate nohighlight">\(r_k \neq 0\)</span> <strong>do</strong>
+<span class="math notranslate nohighlight">\(\alpha_k \leftarrow \frac{r_k^T r_k}{p_k^T A p_k}\)</span>;
+<span class="math notranslate nohighlight">\(x_{k+1} \leftarrow x_k+\alpha_k p_k\)</span>;
+<span class="math notranslate nohighlight">\(r_{k+1} \leftarrow r_k+\alpha_k A p_k\)</span>;
+<span class="math notranslate nohighlight">\(\beta_{k+1} \leftarrow \frac{r_{k+1}^T r_{k+1}}{r_k^T r_k}\)</span>;
+<span class="math notranslate nohighlight">\(p_{k+1} \leftarrow-r_{k+1}+\beta_{k+1} p_k\)</span>;
+<span class="math notranslate nohighlight">\(k \leftarrow k+1\)</span>;
+<strong>end while</strong></p>
+</div></blockquote>
+<hr class="docutils" />
+<p>假设我们对目标函数的性质没有这么了解，一般的 <span class="math notranslate nohighlight">\(f\)</span> 也可以使用上面的算法吗？直接的修改版本是：</p>
+<blockquote>
+<div><p><strong>Input</strong>: Initial <span class="math notranslate nohighlight">\(x_0\)</span>;
+<strong>Output</strong>: <span class="math notranslate nohighlight">\(x_k\)</span>;
+Set <span class="math notranslate nohighlight">\(r_0 \leftarrow \nabla f(x_0), p_0 \leftarrow-r_0, k \leftarrow 0\)</span>;
+<strong>while</strong> <span class="math notranslate nohighlight">\(r_k \neq 0\)</span> <strong>do</strong>
+<span class="math notranslate nohighlight">\(\alpha_k \leftarrow \text{step size}\)</span>;
+<span class="math notranslate nohighlight">\(x_{k+1} \leftarrow x_k+\alpha_k p_k\)</span>;
+<span class="math notranslate nohighlight">\(r_{k+1} \leftarrow \nabla f(x_{k+1})\)</span>;
+<span class="math notranslate nohighlight">\(\beta_{k+1} \leftarrow -\frac{\nabla f_i'\nabla f_i}{\nabla f_{i-1}'\nabla f_{i-1}}\)</span>;
+<span class="math notranslate nohighlight">\(p_{k+1} \leftarrow -r_{k+1}+\beta_{k+1} p_k\)</span>;
+<span class="math notranslate nohighlight">\(k \leftarrow k+1\)</span>;
+<strong>end while</strong></p>
+</div></blockquote>
+<p>此时 <span class="math notranslate nohighlight">\(A\)</span> 不存在了，一切都按照 <span class="math notranslate nohighlight">\(\nabla f\)</span> 的那些表达式来。虽然我们仍然可以按照线搜索取出 <span class="math notranslate nohighlight">\(\alpha_i\)</span>，但上面的主要定理也不存在了，那么使用这个搜索方向的更新式还有用吗（尤其在步长并不是精确或采用其他准则的时候）？具体而言，针对使用 Fletcher-Reeves 格式的 <span class="math notranslate nohighlight">\(\beta\)</span> 和 Strong Wolfe 条件（系数满足 <span class="math notranslate nohighlight">\(0&lt;c_1&lt;c_2&lt;\frac{1}{2}\)</span>）的 <span class="math notranslate nohighlight">\(\alpha\)</span>，我们有</p>
+<div class="math notranslate nohighlight">
+\[
+-\frac{1}{1-c_2} \leq \frac{\nabla f\left(x_k\right)^T p_k}{\left\|\nabla f\left(x_k\right)\right\|^2} \leq \frac{2 c_2-1}{1-c_2} \tag{5}
+\]</div>
+<p>这保证了我们行走在下降方向上。但是足够好了吗？如果 <span class="math notranslate nohighlight">\(\left\|\nabla f\left(x_k\right)\right\|\)</span> 和 <span class="math notranslate nohighlight">\(\nabla f\left(x_k\right)^T p_k\)</span> 都很小，搜索方向几乎和梯度垂直且移动缓慢，它的自我修复能力并不强。下面是 Dai-Yuan 格式（易见在线性梯度时与我们前面的各式都等价），它在一定条件下能保证全局的收敛性。</p>
+<div class="math notranslate nohighlight">
+\[
+\beta_{k+1}=\frac{\nabla f\left(x_{k+1}\right)^T \nabla f\left(x_{k+1}\right)}{\left(\nabla f\left(x_{k+1}\right)-\nabla f\left(x_k\right)\right)^T p_k} \tag{6}
+\]</div>
+<p>我们将用 Zoutendijk 条件证明。</p>
 </section>
 
     <script type="text/x-thebe-config">
