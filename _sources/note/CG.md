@@ -35,12 +35,11 @@ $$
 
 归纳证明，因此 $\mathrm{(i)}$ 处可以修改为 $j<i$；初始位于 $x_0$，只有一个 $p_0$（很自然的，我们会先选择负梯度方向 $p_0 = b - Ax_0$），$\mathrm{(i)}$ 自动成立，我们只需要选取恰当的 $\alpha_0$ 则 $\mathrm{(ii)}$ 也符合。之后我们将在 $0,\dots,i$ 成立有 $\mathrm{(i)}$ $\mathrm{(ii)}$ 等价的情况下说明 $i+1$ 的正确性。
 
-$\mathrm{(i)}\rightarrow \mathrm{(ii)}$：我们需要说明，$\exists\ \alpha_i>0,\ \text{s.t. } x_{i+1} = x_i + \alpha_i p_i = \arg\min_{x\in L_{i+1}}f(x).$ 其中 $L_{i+1} = \{x\in \mathbb{R}^n|x = x_0 + \sum_{j=0}^{i}\gamma_j p_j, \gamma_j \in \mathbb{R}\}.$
+$\mathrm{(i)}\rightarrow \mathrm{(ii)}$：我们需要说明，$\exists\ \alpha_i>0,\ \text{s.t. } x_{i+1} = x_i + \alpha_i p_i = \arg\min_{x\in L_{i+1}}f(x).$ 其中 $L_{i+1} = \{x\in \mathbb{R}^n|x = x_0 + \sum_{j=0}^{i}\gamma_j p_j, \gamma_j \in \mathbb{R}\}.$（注意这里想说的核心是，当我们把视野从子空间 $L_i$ 扩展到 $L_{i+1}$ 时，原先方向上均无需调整。）
 
 $g_j(\gamma_j):=f(x),\ g_j'(\alpha_j)=0,\ j<i$ 立刻得到一个结论
 
 **Corollary 1**
-
 $$
 \nabla f_i'p_j = 0,\ \forall j<i \tag{4}
 $$
@@ -49,7 +48,9 @@ $$
 
 $\mathrm{(ii)}\rightarrow \mathrm{(i)}$：同上面基本一致，注意利用归纳的假设（$\leq i$ 之内皆成立有 $\mathrm{(i)}$）$\Box$
 
-目前为止我们仍然没有给出明确的每步 $p_i$ 的获取方式。我们采用一种非常自然的想法，考虑到我们想要最快的下降，处在每一步时走的新维度应该由 $\nabla f_i$ 提供（但我们说了，直接沿 $\nabla f_i$ 并不是最理想的方法；我们希望看长远一点，因为它缺乏类似 $\mathrm{(ii)}$ 的各步最优的协调性）。因此 $p_i = -\nabla f_i + \sum_{j=0}^{i-1}\beta_j p_j$ 看上去很合适，再对两边点乘 $p_j'A$ 即可得到各个 $\beta_j$；但我们希望更简洁一点，$p_i = -\nabla f_i + \beta_{i-1} p_{i-1}$ 同样是可行的。此时得
+从上面定理可以马上得出共轭梯度法（二次函数下）在 $n$ 步之内必定达到最优。因为 $\mathrm{(i)}$ 表明了 $p_i$ 们线性无关，故 $L_n$ 应为 $\mathbb{R}^n$，其上最小值点 $x_n = x^*$。
+
+目前为止我们仍然没有给出明确的每步 $p_i$ 的获取方式。我们采用一种非常自然的想法，考虑到我们想要最快的下降，处在每一步时走的新维度应该由 $\nabla f_i$ 提供（但我们说了，直接沿 $\nabla f_i$ 并不是最理想的方法；我们希望看长远一点，因为它缺乏类似定理 $\mathrm{(ii)}$ 的各步最优的协调性）。因此 $p_i = -\nabla f_i + \sum_{j=0}^{i-1}\beta_j p_j$ 看上去很合适，再对两边点乘 $p_j'A$ 即可得到各个 $\beta_j$；但我们希望更简洁一点，$p_i = -\nabla f_i + \beta_{i-1} p_{i-1}$ 同样是可行的。此时得
 
 $$
 \beta_i = \frac{p_{i-1}' A \nabla f_i}{p_{i-1}'Ap_{i-1}} \tag{5}
