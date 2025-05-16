@@ -25,6 +25,7 @@ $$
 第二个等号代入了 $x_i$ 和 $\nabla f$ 的表达式。接下来我们要确定这些 $p_i$。共轭梯度法告诉我们，以下两个条件在我们目前的 setting 下等价：
 
 **Theorem** $\quad$ The following two are equivalent:
+
 $$
 \begin{align}
 \mathrm{(i)}& \quad p_i'Ap_j = 0,\ i\neq j \tag{2} \\

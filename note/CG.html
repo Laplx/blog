@@ -420,17 +420,22 @@ document.write(`
 \alpha_i = -\frac{p_i'\nabla f_i}{p_i'Ap_i} = -\frac{p_i'A x_0}{p_i'Ap_i} \tag{1}
 \]</div>
 <p>第二个等号代入了 <span class="math notranslate nohighlight">\(x_i\)</span> 和 <span class="math notranslate nohighlight">\(\nabla f\)</span> 的表达式。接下来我们要确定这些 <span class="math notranslate nohighlight">\(p_i\)</span>。共轭梯度法告诉我们，以下两个条件在我们目前的 setting 下等价：</p>
-<p><strong>Theorem</strong> <span class="math notranslate nohighlight">\(\quad\)</span> The following two are equivalent:
-$$</p>
-<div class="amsmath math notranslate nohighlight" id="equation-69727ca7-e426-4ac5-a76c-acf4cf6fe46f">
-<span class="eqno">()<a class="headerlink" href="#equation-69727ca7-e426-4ac5-a76c-acf4cf6fe46f" title="Permalink to this equation">#</a></span>\[\begin{align}
+<p><strong>Theorem</strong> <span class="math notranslate nohighlight">\(\quad\)</span> The following two are equivalent:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align}
 \mathrm{(i)}&amp; \quad p_i'Ap_j = 0,\ i\neq j \tag{2} \\
 \mathrm{(ii)}&amp; \quad x_i = \arg\min_{x\in L_i}f(x),\ L_i := \text{span}\{p_0,\dots,p_{i-1}\}+x_0 \tag{3}
-\end{align}\]</div>
+\end{align}
+\end{split}\]</div>
+<p>归纳证明，因此 <span class="math notranslate nohighlight">\(\mathrm{(i)}\)</span> 处可以修改为 <span class="math notranslate nohighlight">\(j&lt;i\)</span>；初始位于 <span class="math notranslate nohighlight">\(x_0\)</span>，只有一个 <span class="math notranslate nohighlight">\(p_0\)</span>（很自然的，我们会先选择负梯度方向 <span class="math notranslate nohighlight">\(p_0 = b - Ax_0\)</span>），<span class="math notranslate nohighlight">\(\mathrm{(i)}\)</span> 自动成立，我们只需要选取恰当的 <span class="math notranslate nohighlight">\(\alpha_0\)</span> 则 <span class="math notranslate nohighlight">\(\mathrm{(ii)}\)</span> 也符合。之后我们将在 <span class="math notranslate nohighlight">\(0,\dots,i\)</span> 成立有 <span class="math notranslate nohighlight">\(\mathrm{(i)}\)</span> <span class="math notranslate nohighlight">\(\mathrm{(ii)}\)</span> 等价的情况下说明 <span class="math notranslate nohighlight">\(i+1\)</span> 的正确性。</p>
+<p><span class="math notranslate nohighlight">\(\mathrm{(i)}\rightarrow \mathrm{(ii)}\)</span>：我们需要说明，<span class="math notranslate nohighlight">\(\exists\ \alpha_i&gt;0,\ \text{s.t. } x_{i+1} = x_i + \alpha_i p_i = \arg\min_{x\in L_{i+1}}f(x).\)</span> 其中 <span class="math notranslate nohighlight">\(L_{i+1} = \{x\in \mathbb{R}^n|x = x_0 + \sum_{j=0}^{i}\gamma_j p_j, \gamma_j \in \mathbb{R}\}.\)</span></p>
+<p><span class="math notranslate nohighlight">\(g_j(\gamma_j):=f(x),\ g_j'(\alpha_j)=0,\ j&lt;i\)</span> 立刻得到一个结论</p>
+<p><strong>Corollary 1</strong></p>
 <div class="math notranslate nohighlight">
-\[ \begin{align}\begin{aligned}归纳证明，因此 $\mathrm{(i)}$ 处可以修改为 $j&lt;i$；初始位于 $x_0$，只有一个 $p_0$（很自然的，我们会先选择负梯度方向 $p_0 = b - Ax_0$），$\mathrm{(i)}$ 自动成立，我们只需要选取恰当的 $\alpha_0$ 则 $\mathrm{(ii)}$ 也符合。之后我们将在 $0,\dots,i$ 成立有 $\mathrm{(i)}$ $\mathrm{(ii)}$ 等价的情况下说明 $i+1$ 的正确性。\\$\mathrm{(i)}\rightarrow \mathrm{(ii)}$：我们需要说明，$\exists\ \alpha_i&gt;0,\ \text{s.t. } x_{i+1} = x_i + \alpha_i p_i = \arg\min_{x\in L_{i+1}}f(x).$ 其中 $L_{i+1} = \{x\in \mathbb{R}^n|x = x_0 + \sum_{j=0}^{i}\gamma_j p_j, \gamma_j \in \mathbb{R}\}.$\\$g_j(\gamma_j):=f(x),\ g_j'(\alpha_j)=0,\ j&lt;i$ 立刻得到一个结论\\**Corollary 1**\end{aligned}\end{align} \]</div>
-<p>\nabla f_i'p_j = 0,\ \forall j&lt;i \tag{4}
-$$</p>
+\[
+\nabla f_i'p_j = 0,\ \forall j&lt;i \tag{4}
+\]</div>
 <p>亦即 <span class="math notranslate nohighlight">\(\nabla f_i \perp (L_i - x_0)\)</span>；还有一个垂直的表现形式见下面。利用 <span class="math notranslate nohighlight">\(\mathrm{(i)}\)</span> 可以证明上式。</p>
 <p><span class="math notranslate nohighlight">\(\mathrm{(ii)}\rightarrow \mathrm{(i)}\)</span>：同上面基本一致，注意利用归纳的假设（<span class="math notranslate nohighlight">\(\leq i\)</span> 之内皆成立有 <span class="math notranslate nohighlight">\(\mathrm{(i)}\)</span>）<span class="math notranslate nohighlight">\(\Box\)</span></p>
 <p>目前为止我们仍然没有给出明确的每步 <span class="math notranslate nohighlight">\(p_i\)</span> 的获取方式。我们采用一种非常自然的想法，考虑到我们想要最快的下降，处在每一步时走的新维度应该由 <span class="math notranslate nohighlight">\(\nabla f_i\)</span> 提供（但我们说了，直接沿 <span class="math notranslate nohighlight">\(\nabla f_i\)</span> 并不是最理想的方法；我们希望看长远一点，因为它缺乏类似 2 的各步最优的协调性）。因此 <span class="math notranslate nohighlight">\(p_i = -\nabla f_i + \sum_{j=0}^{i-1}\beta_j p_j\)</span> 看上去很合适，再对两边点乘 <span class="math notranslate nohighlight">\(p_j'A\)</span> 即可得到各个 <span class="math notranslate nohighlight">\(\beta_j\)</span>；但我们希望更简洁一点，<span class="math notranslate nohighlight">\(p_i = -\nabla f_i + \beta_{i-1} p_{i-1}\)</span> 同样是可行的。此时得</p>
