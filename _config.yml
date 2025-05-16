@@ -19,3 +19,5 @@ latex:
 sphinx:
   config:
     language: zh-Hans
+  extra_extensions:
+    - sphinx_proof

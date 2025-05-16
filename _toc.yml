@@ -2,20 +2,11 @@
 
 - file: note
   sections:
-    - file: note/evol_game
-    - file: note/mechbrief
-    - file: note/millerorr
-    - file: note/solow
-    - file: note/intro_causalinfer
-    - file: note/mathmodel
-    - file: note/astrology
-    - file: note/crypto
     - file: swarm/Swarm.md
       title: 打卡软件 Swarm
     - file: hlm/hlm_index.md
       title: 红楼遗梦
     - file: note/FinCrisis_tirole.md
-    - file: note/corfin_pre
     
 - file: wonder
   sections:
