@@ -25,6 +25,7 @@ $$
 第二个等号代入了 $x_i$ 和 $\nabla f$ 的表达式。接下来我们要确定这些 $p_i$。共轭梯度法告诉我们，以下两个条件在我们目前的 setting 下等价：
 
 **Theorem**
+
 $$
 \begin{align}
 \mathrm{(i)}& \quad p_i'Ap_j = 0,\ i\neq j \\
@@ -39,6 +40,7 @@ $\mathrm{(i)}\rightarrow \mathrm{(ii)}$：我们需要说明，$\exists\ \alpha_
 $g_j(\gamma_j):=f(x),\ g_j'(\alpha_j)=0,\ j<i$ 立刻得到一个结论
 
 **Corollary 1**
+
 $$
 \nabla f_i'p_j = 0,\ \forall j<i \tag{3}
 $$
@@ -62,6 +64,7 @@ $$
 以及（利用 $p_0 = - \nabla f_0,\ \nabla f_i = \nabla f_0 + \sum_{j=0}^{i-1}\alpha_j A p_j.$）
 
 **Corollary 2**
+
 $$
 \begin{align}
 x_i \in L_i & =  \text{span}\{p_0,p_1,\dots,p_{i-1}\}+x_0 \\ & = \text{span}\{\nabla f_0,\nabla f_1,\dots,\nabla f_{i-1}\}+x_0 \\ & = \text{span}\{\nabla f_0, A \nabla f_0,\dots,A^{i-1}\nabla f_0\}+x_0
