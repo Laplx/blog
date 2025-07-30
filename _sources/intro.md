@@ -5,7 +5,9 @@
 Click here for English version
 ```
 
-这里是 <font face="Consolas" size=4><b>Laplx</b></font> <font face="Consolas" size=4><b>(Hao Chen)</b></font> 的 GithubPage 博客。
+欢迎移步新网站：[spheremirror.com](spheremirror.com)
+
+这里是 <font face="Consolas" size=4><b>Laplx</b></font> <font face="Consolas" size=4><b>(Hao Chen)</b></font> 的旧 GithubPage 博客。
 
 我会分享我创作和收集的一些文件、课题与想法。
 
